@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alignment Theory Archive</title>
   <meta name="description" content="A curated research archive for Alignment Theory." />
-  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="../assets/styles.css" />
+
 </head>
 <body data-page="home">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -16,7 +17,8 @@
       <h1>Research Archive</h1>
       <p class="subtitle">A quiet, curated repository of artifacts, versions, and notes.</p>
     </div>
-    <nav class="site-nav" aria-label="Primary">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
       <a href="pages/manuscript.html">Manuscript</a>
       <a href="pages/framework.html">Framework</a>
       <a href="pages/essays.html">Essays</a>
@@ -51,6 +53,15 @@
       </div>
     </section>
 
+    <section class="doc-card start-here">
+      <h2>Start here</h2>
+      <div class="button-group">
+        <a class="button" href="pages/manuscript.html">Read Manuscript</a>
+        <a class="button" href="pages/library.html">Browse Library</a>
+        <a class="button" href="pages/media.html">Media (Podcast + YouTube)</a>
+      </div>
+    </section>
+
     <section class="grid-two">
       <article class="doc-card">
         <div class="doc-card-header">
@@ -74,5 +85,7 @@
   <footer class="site-footer">
     <p>Alignment Theory Archive. Maintained as a quiet research repository.</p>
   </footer>
+
+  <script src="assets/app.js"></script>
 </body>
 </html>

@@ -15,7 +15,8 @@
       <p class="eyebrow">Alignment Theory</p>
       <h1>Research Archive</h1>
     </div>
-    <nav class="site-nav" aria-label="Primary">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
       <a href="manuscript.html">Manuscript</a>
       <a href="framework.html">Framework</a>
       <a href="essays.html">Essays</a>
@@ -29,21 +30,31 @@
 
   <main id="main" class="page">
     <section class="placeholder">
-      <h2>Instruments (coming soon)</h2>
+      <h2>Instruments (in development)</h2>
+      <p class="muted">Availability and pricing will be published when stable.</p>
       <div class="grid-two">
         <article class="doc-card">
           <div class="doc-card-header">
-            <h3>Capacity Check-In</h3>
-            <span class="chip">Tool</span>
+            <h3>Public instruments</h3>
+            <span class="chip is-updated">Details pending</span>
           </div>
-          <p>Structured prompts to assess capacity, bandwidth, and constraints.</p>
+          <ul class="tool-list">
+            <li>Capacity Check-In</li>
+            <li>Alignment State Map</li>
+          </ul>
+          <p class="muted">Status: in development.</p>
         </article>
         <article class="doc-card">
           <div class="doc-card-header">
-            <h3>Alignment State Map</h3>
-            <span class="chip">Tool</span>
+            <h3>Subscriber instruments (in development)</h3>
+            <span class="chip is-updated">Details pending</span>
           </div>
-          <p>A mapping instrument for tracking alignment states across contexts.</p>
+          <ul class="tool-list">
+            <li>AI Chatbot</li>
+            <li>Guided analysis</li>
+            <li>Personal archive workspace</li>
+          </ul>
+          <p class="muted">Status: in development.</p>
         </article>
       </div>
     </section>
@@ -52,5 +63,7 @@
   <footer class="site-footer">
     <p>Alignment Theory Archive.</p>
   </footer>
+
+  <script src="../assets/app.js"></script>
 </body>
 </html>

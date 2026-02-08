@@ -239,9 +239,52 @@ const loadLibrary = async () => {
   }
 };
 
+const initNav = () => {
+  const nav = qs("#site-nav");
+  const toggle = qs(".nav-toggle");
+  if (!nav || !toggle) return;
+
+  const setExpanded = (isOpen) => {
+    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    toggle.textContent = isOpen ? "Close" : "Menu";
+    document.body.classList.toggle("nav-open", isOpen);
+  };
+
+  const closeNav = () => setExpanded(false);
+  const openNav = () => setExpanded(true);
+
+  toggle.addEventListener("click", () => {
+    const isOpen = toggle.getAttribute("aria-expanded") === "true";
+    if (isOpen) {
+      closeNav();
+    } else {
+      openNav();
+    }
+  });
+
+  nav.addEventListener("click", (event) => {
+    if (event.target && event.target.tagName === "A") {
+      closeNav();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeNav();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 960) {
+      closeNav();
+    }
+  });
+};
+
 const init = () => {
   loadMarkdown();
   loadLibrary();
+  initNav();
 };
 
 document.addEventListener("DOMContentLoaded", init);
