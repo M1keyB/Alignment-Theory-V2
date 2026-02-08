@@ -247,6 +247,7 @@ const initNav = () => {
   const setExpanded = (isOpen) => {
     toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
     toggle.textContent = isOpen ? "Close" : "Menu";
+    toggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
     document.body.classList.toggle("nav-open", isOpen);
   };
 

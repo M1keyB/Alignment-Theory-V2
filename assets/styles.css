@@ -631,9 +631,12 @@ body.nav-open::before {
 @media (max-width: 960px) {
   .nav-toggle {
     display: inline-flex;
-    margin-top: 0.75rem;
-    position: relative;
+    position: fixed;
+    top: env(safe-area-inset-top, 16px);
+    right: 16px;
     z-index: 40;
+    background: var(--paper);
+    box-shadow: var(--shadow);
   }
 
   .site-nav {
@@ -642,7 +645,7 @@ body.nav-open::before {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.35rem;
-    padding: 6rem 1.5rem 2rem;
+    padding: 6.5rem 1.5rem 2rem;
     background: var(--paper);
     opacity: 0;
     visibility: hidden;
