@@ -547,6 +547,19 @@ body.nav-open::before {
   display: flex;
   align-items: center;
   min-height: 44px;
+  list-style: none;
+}
+
+.toc-mobile summary::after {
+  content: "▾";
+  margin-left: auto;
+  font-size: 1.5rem;
+  color: var(--muted);
+  transition: transform var(--dur-quick) var(--ease-out);
+}
+
+.toc-mobile[open] summary::after {
+  transform: rotate(180deg);
 }
 
 .library-controls {
