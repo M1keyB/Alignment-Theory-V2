@@ -1,0 +1,42 @@
+﻿[
+  {
+    "title": "Constraint-Based Manuscript",
+    "type": "Manuscript",
+    "date": "2026-01-15",
+    "version": "v1.0",
+    "abstract": "Primary anchor manuscript detailing the constraint model.",
+    "link": "../pages/manuscript.html"
+  },
+  {
+    "title": "Framework Primer",
+    "type": "Framework Paper",
+    "date": "2026-01-05",
+    "version": "v0.3",
+    "abstract": "Working framework notes that map the core alignment concepts.",
+    "link": "../pages/framework.html"
+  },
+  {
+    "title": "Quiet Systems Essay",
+    "type": "Essay",
+    "date": "2025-12-20",
+    "version": "v0.1",
+    "abstract": "Short essay on quiet system design and constraint-aware research.",
+    "link": "../pages/essays.html"
+  },
+  {
+    "title": "Capacity Check-In",
+    "type": "Tool",
+    "date": "2026-01-18",
+    "version": "prototype",
+    "abstract": "Instrument concept for assessing capacity and constraint readiness.",
+    "link": "../pages/tools.html"
+  },
+  {
+    "title": "Case Notes: Alignment Drift",
+    "type": "Case Notes",
+    "date": "2025-11-02",
+    "version": "v0.2",
+    "abstract": "Observational notes documenting drift patterns and recovery signals.",
+    "link": "../pages/library.html"
+  }
+]
