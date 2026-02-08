@@ -1,14 +1,15 @@
 ﻿:root {
   color-scheme: light;
-  --bg: #f2efe9;
-  --paper: #fbf9f4;
-  --ink: #2a2724;
-  --muted: #7a726a;
-  --rule: #e6e0d8;
-  --accent: #3a352f;
-  --accent-quiet: rgba(58, 53, 47, 0.12);
-  --radius: 6px;
-  --shadow: 0 1px 0 rgba(30, 28, 25, 0.04);
+  --bg: #f3efe6;
+  --paper: #f8f4ec;
+  --ink: #2f2a26;
+  --ink-strong: #26211e;
+  --muted: #7c736b;
+  --rule: #e1d9cf;
+  --accent: #3b342f;
+  --accent-quiet: rgba(59, 52, 47, 0.1);
+  --radius: 8px;
+  --shadow: 0 1px 2px rgba(41, 34, 28, 0.04), 0 10px 20px rgba(41, 34, 28, 0.06);
   --max-width: 72ch;
 }
 
@@ -25,7 +26,7 @@ body {
   line-height: 1.7;
   letter-spacing: 0.005em;
   color: var(--ink);
-  background: radial-gradient(circle at top, #ffffff 0%, #f6f3ec 55%, #efeae1 100%);
+  background: radial-gradient(circle at top, #f9f5ed 0%, #f3efe6 55%, #ede7dd 100%);
 }
 
 a {
@@ -76,6 +77,7 @@ a {
   font-size: clamp(1.5rem, 2.2vw, 2rem);
   letter-spacing: 0.02em;
   font-weight: 500;
+  color: var(--ink-strong);
 }
 
 .subtitle {
@@ -111,9 +113,9 @@ a {
 .page {
   max-width: 1200px;
   margin: 0 auto;
-  padding: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 4vw, 3.5rem) 4rem;
+  padding: clamp(2.75rem, 5.5vw, 4.5rem) clamp(1.5rem, 4vw, 3.5rem) 4.5rem;
   display: grid;
-  gap: 2.5rem;
+  gap: 3rem;
 }
 
 .page-article {
@@ -131,8 +133,8 @@ a {
   background: var(--paper);
   border: 1px solid var(--rule);
   border-radius: var(--radius);
-  padding: clamp(1.5rem, 3vw, 2.5rem);
-  box-shadow: none;
+  padding: clamp(1.75rem, 3.2vw, 2.75rem);
+  box-shadow: var(--shadow);
 }
 
 .intro-card h2,
@@ -142,12 +144,13 @@ a {
   font-size: 1.15rem;
   font-weight: 500;
   letter-spacing: 0.01em;
+  color: var(--ink-strong);
 }
 
 .meta-grid {
   display: grid;
   gap: 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 1.75rem;
 }
 
 .meta-label {
@@ -166,7 +169,7 @@ a {
 .library-grid,
 .media-grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .doc-card-header {
@@ -180,6 +183,7 @@ a {
   margin: 0;
   font-size: 1.05rem;
   font-weight: 500;
+  color: var(--ink-strong);
 }
 
 .chip {
@@ -199,7 +203,7 @@ a {
   display: inline-block;
   margin-top: 0.65rem;
   text-decoration: none;
-  color: var(--ink);
+  color: var(--ink-strong);
   border-bottom: 1px solid var(--rule);
 }
 
@@ -210,7 +214,7 @@ a {
 }
 
 .site-footer {
-  padding: 2rem clamp(1.5rem, 4vw, 3.5rem);
+  padding: 2.25rem clamp(1.5rem, 4vw, 3.5rem);
   border-top: 1px solid var(--rule);
   background: var(--paper);
   color: var(--muted);
@@ -268,10 +272,11 @@ a {
 .doc-body h4 {
   margin-top: 2rem;
   font-weight: 500;
+  color: var(--ink-strong);
 }
 
 .doc-body p {
-  margin-bottom: 1.35rem;
+  margin-bottom: 1.45rem;
 }
 
 .doc-body ul {
@@ -280,7 +285,7 @@ a {
 
 .doc-body pre {
   padding: 1rem;
-  background: #f2eee7;
+  background: #f3eee5;
   border-radius: var(--radius);
   overflow: auto;
 }
@@ -296,6 +301,7 @@ a {
   font-size: 1.05rem;
   font-weight: 500;
   letter-spacing: 0.01em;
+  color: var(--ink-strong);
 }
 
 .toc-note {
@@ -335,6 +341,7 @@ a {
   border-radius: var(--radius);
   padding: 1rem 1.5rem;
   background: var(--paper);
+  box-shadow: var(--shadow);
 }
 
 .toc-mobile summary {
