@@ -687,6 +687,10 @@ body.nav-open::before {
     order: 10;
   }
 
+  .site-nav a[href*="index.html"] {
+    order: 0;
+  }
+
   .site-nav a[href*="library.html"] {
     order: 1;
   }
