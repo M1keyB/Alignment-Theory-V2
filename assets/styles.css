@@ -16,7 +16,13 @@
   --dur-slow: 220ms;
   --max-width: 72ch;
 }
-
+  .toc-panel {
+  position: sticky;
+  top: 1.5rem;
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
+}
+    
 *,
 *::before,
 *::after {
