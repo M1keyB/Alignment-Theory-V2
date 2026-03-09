@@ -1,0 +1,11 @@
+{
+  "name": "alignment-theory-archive",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static site for the Alignment Theory Research Archive",
+  "scripts": {
+    "start": "py -m http.server 8000",
+    "dev": "py -m http.server 8000",
+    "build": "powershell -Command \"Write-Output 'Static site only: no build step required.'\""
+  }
+}
