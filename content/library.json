@@ -24,6 +24,46 @@
     "link": "../pages/essays.html"
   },
   {
+    "title": "When Inner Life Becomes Performance",
+    "type": "Essay",
+    "date": "2026-03-10",
+    "version": "draft scaffold",
+    "abstract": "Essay scaffold on how inward states are converted into visible signals for approval, safety, status, and belonging.",
+    "link": "../pages/essay-when-inner-life-becomes-performance.html"
+  },
+  {
+    "title": "Core Axioms",
+    "type": "Framework Paper",
+    "date": "2026-03-10",
+    "version": "reference page",
+    "abstract": "Compressed starting assumptions underlying the Alignment Theory framework.",
+    "link": "../pages/core-axioms.html"
+  },
+  {
+    "title": "Core Laws",
+    "type": "Framework Paper",
+    "date": "2026-03-10",
+    "version": "reference page",
+    "abstract": "Law-like structural statements describing recurring dynamics across persons, systems, and culture.",
+    "link": "../pages/core-laws.html"
+  },
+  {
+    "title": "Biblical Grammar of Alignment Theory",
+    "type": "Framework Paper",
+    "date": "2026-03-10",
+    "version": "reference page",
+    "abstract": "Scriptural anchor translations linking biblical language to the framework's structural distinctions.",
+    "link": "../pages/biblical-grammar.html"
+  },
+  {
+    "title": "Metaphysical Claims",
+    "type": "Framework Paper",
+    "date": "2026-03-10",
+    "version": "reference page",
+    "abstract": "Largest claims of the framework concerning reality, truth, evil, meaning, salvation, and Christ.",
+    "link": "../pages/metaphysical-claims.html"
+  },
+  {
     "title": "Capacity Check-In",
     "type": "Tool",
     "date": "2026-01-18",

@@ -150,6 +150,19 @@ const highlightToc = (headings, tocLinks) => {
   headings.forEach((heading) => observer.observe(heading));
 };
 
+const initTocFromRoot = (root) => {
+  if (!root) return;
+
+  const headings = qsa("h2, h3", root);
+  const toc = qs("#toc-list");
+  const tocMobile = qs("#toc-list-mobile");
+  if (toc) buildToc(toc, headings);
+  if (tocMobile) buildToc(tocMobile, headings);
+
+  const tocLinks = qsa(".toc-list a");
+  highlightToc(headings, tocLinks);
+};
+
 const loadMarkdown = async () => {
   const container = qs("[data-markdown-src]");
   if (!container) return;
@@ -162,18 +175,16 @@ const loadMarkdown = async () => {
     const markdown = await response.text();
     const html = renderMarkdown(markdown);
     container.innerHTML = html;
-
-    const headings = qsa("h2, h3", container);
-    const toc = qs("#toc-list");
-    const tocMobile = qs("#toc-list-mobile");
-    if (toc) buildToc(toc, headings);
-    if (tocMobile) buildToc(tocMobile, headings);
-
-    const tocLinks = qsa(".toc-list a");
-    highlightToc(headings, tocLinks);
+    initTocFromRoot(container);
   } catch (error) {
     showMissing(container, "Artifact not found yet.");
   }
+};
+
+const initStaticToc = () => {
+  const root = qs("[data-static-toc]");
+  if (!root) return;
+  initTocFromRoot(root);
 };
 
 const libraryTemplate = (item) => {
@@ -284,6 +295,7 @@ const initNav = () => {
 
 const init = () => {
   loadMarkdown();
+  initStaticToc();
   loadLibrary();
   initNav();
 };
