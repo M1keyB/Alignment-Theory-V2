@@ -902,11 +902,18 @@ body.nav-open::before {
   .nav-toggle {
     display: inline-flex;
     position: fixed;
-    top: calc(env(safe-area-inset-top, 16px) + 10px);
+    bottom: calc(env(safe-area-inset-bottom, 16px) + 16px);
     right: 16px;
     z-index: 40;
     background: var(--paper);
-    box-shadow: var(--shadow);
+    min-width: 56px;
+    min-height: 56px;
+    padding: 0.7rem 1.15rem;
+    border-radius: 999px;
+    border-color: rgba(59, 52, 47, 0.14);
+    letter-spacing: 0.14em;
+    font-size: 0.68rem;
+    box-shadow: 0 14px 30px rgba(40, 33, 27, 0.16), 0 3px 8px rgba(40, 33, 27, 0.08);
   }
 
   .site-nav {
