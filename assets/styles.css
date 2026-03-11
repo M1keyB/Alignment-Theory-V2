@@ -650,6 +650,254 @@ body.nav-open::before {
   margin: 1.5rem 0;
 }
 
+.threshold-ladder-section {
+  overflow: hidden;
+}
+
+.threshold-section-header {
+  display: grid;
+  gap: 0.9rem;
+  margin-bottom: 2.05rem;
+}
+
+.threshold-section-header::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(59, 52, 47, 0.12) 0%, rgba(59, 52, 47, 0.26) 35%, rgba(59, 52, 47, 0.12) 100%);
+}
+
+.threshold-intro {
+  margin: 0;
+}
+
+.threshold-caption {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-style: italic;
+}
+
+.threshold-ladder {
+  counter-reset: none;
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1.1rem;
+  max-width: 48rem;
+  margin-left: 5.25rem;
+  margin-right: auto;
+}
+
+.threshold-step {
+  position: relative;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 3.75rem minmax(0, 1fr);
+  gap: 1.15rem;
+  align-items: start;
+}
+
+.threshold-step::after {
+  content: "";
+  position: absolute;
+  left: 1.86rem;
+  top: 3.3rem;
+  bottom: -1.28rem;
+  width: 3px;
+  background: linear-gradient(180deg, rgba(59, 52, 47, 0.42) 0%, rgba(59, 52, 47, 0.14) 100%);
+}
+
+.threshold-step:last-child::after {
+  display: none;
+}
+
+.threshold-step-threshold::after {
+  background: linear-gradient(180deg, rgba(59, 52, 47, 0.62) 0%, rgba(59, 52, 47, 0.22) 100%);
+}
+
+.threshold-step-marker {
+  position: relative;
+  z-index: 1;
+  width: 3.75rem;
+  min-height: 3.75rem;
+  display: grid;
+  place-items: center;
+}
+
+.threshold-step-marker span {
+  width: 2.7rem;
+  height: 2.7rem;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  border: 1px solid var(--rule);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.78) 0%, rgba(247, 242, 232, 0.94) 100%);
+  box-shadow: 0 10px 20px rgba(40, 33, 27, 0.08);
+  color: var(--ink-strong);
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.threshold-step-card,
+.threshold-summary-card,
+.threshold-framing,
+.threshold-branch {
+  background: rgba(255, 255, 255, 0.28);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem 1.2rem;
+}
+
+.threshold-step-card {
+  position: relative;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  max-width: 42rem;
+}
+
+.threshold-step-card::before {
+  content: "";
+  position: absolute;
+  left: -1.15rem;
+  top: 1.45rem;
+  width: 1rem;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(59, 52, 47, 0.28) 0%, rgba(59, 52, 47, 0.12) 100%);
+}
+
+.threshold-step-threshold .threshold-step-card,
+.threshold-outcome-card {
+  background:
+    linear-gradient(180deg, rgba(59, 52, 47, 0.05) 0%, rgba(59, 52, 47, 0.02) 100%),
+    rgba(255, 255, 255, 0.28);
+}
+
+.threshold-step-threshold .threshold-step-card {
+  border-color: rgba(59, 52, 47, 0.3);
+  box-shadow:
+    inset 0 0 0 1px rgba(59, 52, 47, 0.08),
+    0 8px 18px rgba(40, 33, 27, 0.05);
+}
+
+.threshold-step-kicker {
+  margin: 0 0 0.45rem;
+  color: var(--muted);
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.threshold-step-card h4,
+.threshold-summary-card h4,
+.threshold-framing h4 {
+  margin: 0 0 0.65rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink-strong);
+}
+
+.threshold-step-card ul,
+.threshold-branch ul {
+  margin: 0.15rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.threshold-step-card li,
+.threshold-branch li {
+  margin-bottom: 0.3rem;
+}
+
+.threshold-step-card li:last-child,
+.threshold-branch li:last-child {
+  margin-bottom: 0;
+}
+
+.threshold-outcome-card {
+  overflow: hidden;
+  position: relative;
+}
+
+.threshold-outcome-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.threshold-outcome-header h4,
+.threshold-branch h5 {
+  margin: 0;
+}
+
+.threshold-branches {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  padding-top: 0.4rem;
+}
+
+.threshold-branches::before {
+  content: "";
+  position: absolute;
+  top: -0.2rem;
+  left: 50%;
+  width: calc(100% - 8rem);
+  max-width: 16rem;
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent 0%, rgba(59, 52, 47, 0.26) 18%, rgba(59, 52, 47, 0.26) 82%, transparent 100%);
+}
+
+.threshold-branch {
+  position: relative;
+  padding-top: 1.35rem;
+}
+
+.threshold-branch::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 0.85rem;
+  transform: translateX(-50%);
+  background: rgba(59, 52, 47, 0.26);
+}
+
+.threshold-branch h5 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--ink-strong);
+  margin-bottom: 0.6rem;
+}
+
+.threshold-summary-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.7rem;
+}
+
+.threshold-summary-card p,
+.threshold-framing p {
+  margin: 0;
+}
+
+.threshold-sequence {
+  color: var(--ink-strong);
+  max-width: 34rem;
+  line-height: 1.85;
+  text-wrap: balance;
+}
+
+.threshold-framing {
+  margin-top: 0.9rem;
+}
+
 @media (max-width: 960px) {
   .nav-toggle {
     display: inline-flex;
@@ -760,6 +1008,50 @@ body.nav-open::before {
   .media-grid {
     grid-template-columns: 1fr;
   }
+
+  .threshold-ladder {
+    max-width: none;
+    margin-left: 0.35rem;
+    margin-right: 0;
+  }
+
+  .threshold-step {
+    grid-template-columns: 2.9rem minmax(0, 1fr);
+    gap: 0.85rem;
+  }
+
+  .threshold-step::after {
+    left: 1.4rem;
+  }
+
+  .threshold-step-marker {
+    width: 2.9rem;
+    min-height: 2.9rem;
+  }
+
+  .threshold-step-marker span {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .threshold-step-card::before {
+    left: -0.85rem;
+    width: 0.7rem;
+  }
+
+  .threshold-outcome-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .threshold-branches::before {
+    display: none;
+  }
+
+  .threshold-branch::before {
+    left: 1rem;
+    transform: none;
+  }
 }
 
 @media (min-width: 720px) {
@@ -771,6 +1063,11 @@ body.nav-open::before {
 
   .library-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .threshold-branches,
+  .threshold-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
