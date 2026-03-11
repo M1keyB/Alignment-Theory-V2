@@ -39,6 +39,9 @@ body {
   background-color: var(--bg);
   background-image: radial-gradient(circle at top, #f7f2e8 0%, #e4dac5 55%, #ebe4d9 100%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 35%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 a {
@@ -710,10 +713,6 @@ body.nav-open::before {
 
   .site-nav a[href*="media.html"] {
     order: 2;
-  }
-
-  .site-nav a[href*="tools.html"] {
-    order: 3;
   }
 
   .page-article {
