@@ -5,7 +5,7 @@ One of the simplest and most important laws in Alignment Theory is this:
 
 Low agency increases steerability.
 
-The claim is not rhetorical. It is structural.
+The claim is not rhetorical. It is structural.[^a1]
 
 Agency here does not mean abstract free will in the thinnest philosophical sense. It means something more practical and observable: usable capacity for reflection, restraint, flexibility, and truthful participation in action. A person with higher agency is not omnipotent or perfectly self-governing. They are simply more able to pause, perceive, discriminate, and respond without being immediately dominated by fear, compulsion, pressure, or external cues.
 
@@ -19,7 +19,7 @@ This is one reason purely moral explanations often fail. If a person is understo
 
 This does not erase responsibility. It makes responsibility more real, not less. It places moral life back inside actual conditions instead of treating the human being as though they float above stress, history, body, and environment.
 
-Fear is one of the clearest reducers of agency. Under fear, attention narrows. Time horizons collapse. threat cues dominate perception. Ambiguity becomes harder to tolerate. Quick answers become more attractive. Authority becomes more psychologically useful. The person becomes more likely to reach for externally supplied certainty, identity, or rule structure because those things reduce immediate cognitive burden.
+Fear is one of the clearest reducers of agency. Under fear, attention often narrows around threat cues and control-relevant signals.[^a2] Time horizons collapse. Ambiguity becomes harder to tolerate. Quick answers become more attractive. Authority becomes more psychologically useful. The person becomes more likely to reach for externally supplied certainty, identity, or rule structure because those things reduce immediate cognitive burden.
 
 This is one reason fear is so politically, commercially, and religiously powerful. Fear does not merely produce emotional pain. It changes the structure of participation. It makes people more externally governable.
 
@@ -29,7 +29,7 @@ Shame turns inward life into a self-monitoring theater. Instead of inhabiting ac
 
 Overload has the same effect.
 
-When a person is chronically overloaded, they lose slack. They may retain intelligence, but lose flexibility. They may retain moral aspiration, but lose embodied access to it. They may know what is true, yet be less able to remain there under pressure. This is one reason clarity often outruns capacity. A person can see before they can sustain what they see. When this happens, they become vulnerable to regression into systems that provide faster external structure.
+When a person is chronically overloaded, they lose slack. They may retain intelligence, but lose flexibility. They may retain moral aspiration, but lose embodied access to it. They may know what is true, yet be less able to remain there under pressure.[^a3] This is one reason clarity often outruns capacity. A person can see before they can sustain what they see. When this happens, they become vulnerable to regression into systems that provide faster external structure.
 
 This is not accidental.
 
@@ -82,3 +82,7 @@ Low agency increases steerability.
 That is not only a psychological observation. It is a law that helps explain why coercive systems work, why fear spreads so effectively, why people regress under overload, why external order so often replaces inner coherence, and why real restoration must involve more than visible behavioral correction.
 
 Any framework concerned with truth, freedom, moral formation, or salvation must take that law seriously. Otherwise it will keep mistaking managed behavior for restored humanity.
+
+[^a1]: Alignment Theory presents "low agency increases steerability" as a structural synthesis rather than a standalone experimental theorem. The citations below support key empirical pieces of that synthesis without claiming to exhaust it.
+[^a2]: For review-level evidence that anxiety and threat states bias attention toward threat-relevant cues, see [Valadez et al., "Attentional biases in human anxiety"](https://pubmed.ncbi.nlm.nih.gov/36252826/) and [Jiang et al., "Acute Stress Disrupts Attentional Bias to Threat-Related Stimuli"](https://pubmed.ncbi.nlm.nih.gov/29787030/).
+[^a3]: On chronic stress and degraded attention control, see [Qi et al., "Impact of Chronic Stress on Attention Control"](https://pubmed.ncbi.nlm.nih.gov/32929635/).

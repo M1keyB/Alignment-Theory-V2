@@ -48,7 +48,7 @@ That is the heart of the problem.
 
 A truly religious institution can sometimes avoid this distortion better than a secular one. A secular institution can sometimes embody it more completely than a church. The structural question is the same in both cases: What is the person being asked to adapt to in order to be considered righteous, safe, whole, or saved?
 
-This broadens Jesus' conflict with false religion considerably. If his conflict were only with bad theology inside one historical sect, the issue would remain narrow. But if his conflict was with sacred external order replacing inward truth, then the pattern is much larger. It includes any system in which visible belonging, visible performance, authorized interpretation, and external righteousness become substitutes for inward transformation.
+This broadens Jesus' conflict with false religion considerably.[^f1] If his conflict were only with bad theology inside one historical sect, the issue would remain narrow. But if his conflict was with sacred external order replacing inward truth, then the pattern is much larger. It includes any system in which visible belonging, visible performance, authorized interpretation, and external righteousness become substitutes for inward transformation.
 
 That makes his critique disturbingly relevant.
 
@@ -58,7 +58,7 @@ This is why false religion often feels stabilizing. It really does reduce anxiet
 
 That is why it is powerful.
 
-The broad path is broad partly because sacred external adaptation scales faster than inward transformation. It is easier to conform than to be remade. Easier to speak the language than to become truthful. Easier to wear the belonging markers than to let the law be written on the heart. Easier to inhabit a sacred system than to stand exposed before reality and God.
+The broad path is broad partly because sacred external adaptation scales faster than inward transformation.[^f2] It is easier to conform than to be remade. Easier to speak the language than to become truthful. Easier to wear the belonging markers than to let the law be written on the heart. Easier to inhabit a sacred system than to stand exposed before reality and God.
 
 This is one reason false religion can become so hard to leave. The person may not only be losing a community or a doctrine. They may be losing an entire externalized structure of salvation. What looked like certainty was also a shelter. What looked like holiness was also a permission system. What looked like righteousness was also a way of avoiding the deeper work of transformation.
 
@@ -90,3 +90,6 @@ That definition includes churches when they function that way. It also includes 
 The point is not to become allergic to all structure. The point is to distinguish structures that scaffold realignment from structures that replace it.
 
 Where sacred external order becomes the path, false religion is near.
+
+[^f1]: See especially [Matthew 23](https://www.biblegateway.com/passage/?search=Matthew+23&version=ESV), [Isaiah 29:13](https://www.biblegateway.com/passage/?search=Isaiah+29%3A13&version=ESV), and [Mark 7:6-8](https://www.biblegateway.com/passage/?search=Mark+7%3A6-8&version=ESV) for the biblical pattern of outward religiosity masking inward distance.
+[^f2]: For the narrow and broad path, see [Matthew 7:13-14](https://www.biblegateway.com/passage/?search=Matthew+7%3A13-14&version=ESV); for the law written within rather than merely imposed from outside, see [Jeremiah 31:31-34](https://www.biblegateway.com/passage/?search=Jeremiah+31%3A31-34&version=ESV), [Hebrews 8:10](https://www.biblegateway.com/passage/?search=Hebrews+8%3A10&version=ESV), and [Ezekiel 36:26-27](https://www.biblegateway.com/passage/?search=Ezekiel+36%3A26-27&version=ESV).

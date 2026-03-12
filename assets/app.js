@@ -22,17 +22,115 @@ const slugify = (value) => value
   .trim()
   .replace(/\s+/g, "-");
 
+const buildInlineRenderer = (footnotes, citationState, options = {}) => {
+  const allowFootnotes = options.allowFootnotes !== false;
+  const pattern = allowFootnotes
+    ? /\[\^([^\]]+)\]|\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g
+    : /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g;
+
+  return (value) => {
+    let html = "";
+    let lastIndex = 0;
+    let match;
+
+    while ((match = pattern.exec(value)) !== null) {
+      html += escapeHtml(value.slice(lastIndex, match.index));
+
+      if (allowFootnotes && match[1]) {
+        const footnoteId = match[1];
+        const definition = footnotes[footnoteId];
+
+        if (!definition) {
+          html += escapeHtml(match[0]);
+        } else {
+          if (!citationState.lookup[footnoteId]) {
+            citationState.order.push(footnoteId);
+            citationState.lookup[footnoteId] = citationState.order.length;
+          }
+
+          citationState.anchorCounts[footnoteId] = (citationState.anchorCounts[footnoteId] || 0) + 1;
+          const anchorId = `cite-${slugify(footnoteId)}-${citationState.anchorCounts[footnoteId]}`;
+
+          if (!citationState.firstAnchor[footnoteId]) {
+            citationState.firstAnchor[footnoteId] = anchorId;
+          }
+
+          html += `<sup class="citation"><a href="#ref-${slugify(footnoteId)}" id="${anchorId}">[${citationState.lookup[footnoteId]}]</a></sup>`;
+        }
+      } else {
+        const label = match[allowFootnotes ? 2 : 1];
+        const href = match[allowFootnotes ? 3 : 2];
+        html += `<a href="${escapeHtml(href)}">${escapeHtml(label)}</a>`;
+      }
+
+      lastIndex = pattern.lastIndex;
+    }
+
+    html += escapeHtml(value.slice(lastIndex));
+    return html;
+  };
+};
+
+const extractFootnotes = (lines) => {
+  const footnotes = {};
+  const contentLines = [];
+
+  lines.forEach((line) => {
+    const footnoteMatch = line.match(/^\[\^([^\]]+)\]:\s*(.*)$/);
+    if (footnoteMatch) {
+      footnotes[footnoteMatch[1]] = footnoteMatch[2].trim();
+      return;
+    }
+
+    contentLines.push(line);
+  });
+
+  return { footnotes, contentLines };
+};
+
+const buildReferences = (footnotes, citationState) => {
+  if (!citationState.order.length) return "";
+
+  const renderReferenceInline = buildInlineRenderer(footnotes, citationState, { allowFootnotes: false });
+  const items = citationState.order.map((footnoteId) => {
+    const refId = `ref-${slugify(footnoteId)}`;
+    const backlink = citationState.firstAnchor[footnoteId]
+      ? ` <a class="reference-backlink" href="#${citationState.firstAnchor[footnoteId]}" aria-label="Back to citation">↩</a>`
+      : "";
+
+    return `<li id="${refId}">${renderReferenceInline(footnotes[footnoteId])}${backlink}</li>`;
+  }).join("");
+
+  return `
+    <section class="references" aria-labelledby="references-title">
+      <h2 id="references-title">References</h2>
+      <ol>
+        ${items}
+      </ol>
+    </section>
+  `;
+};
+
 const renderMarkdown = (markdown) => {
-  const lines = markdown.replace(/\r\n/g, "\n").split("\n");
+  const normalizedLines = markdown.replace(/\r\n/g, "\n").split("\n");
+  const { footnotes, contentLines } = extractFootnotes(normalizedLines);
+  const lines = contentLines;
   let html = "";
   let buffer = [];
   let inList = false;
   let inCode = false;
   let codeLang = "";
+  const citationState = {
+    order: [],
+    lookup: {},
+    anchorCounts: {},
+    firstAnchor: {},
+  };
+  const renderInline = buildInlineRenderer(footnotes, citationState);
 
   const flushParagraph = () => {
     if (!buffer.length) return;
-    html += `<p>${escapeHtml(buffer.join(" "))}</p>`;
+    html += `<p>${renderInline(buffer.join(" "))}</p>`;
     buffer = [];
   };
 
@@ -79,7 +177,7 @@ const renderMarkdown = (markdown) => {
       const level = headingMatch[1].length;
       const text = headingMatch[2].trim();
       const id = slugify(text);
-      html += `<h${level} id="${id}">${escapeHtml(text)}</h${level}>`;
+      html += `<h${level} id="${id}">${renderInline(text)}</h${level}>`;
       continue;
     }
 
@@ -90,7 +188,7 @@ const renderMarkdown = (markdown) => {
         html += "<ul>";
         inList = true;
       }
-      html += `<li>${escapeHtml(listMatch[1])}</li>`;
+      html += `<li>${renderInline(listMatch[1])}</li>`;
       continue;
     }
 
@@ -103,6 +201,8 @@ const renderMarkdown = (markdown) => {
   if (inCode) {
     html += "</code></pre>";
   }
+
+  html += buildReferences(footnotes, citationState);
 
   return html;
 };

@@ -16,7 +16,7 @@ This framework argues that human beings live in tension between internal alignme
 
 The framework proposes that many personal and civilizational disorders arise when external systems of order outpace the human capacity for inward integration. Under sustained overload, persons and institutions increasingly substitute externally legible order for inward reality. The result is not true transformation, but performance, dependence, brittleness, and counterfeit coherence.
 
-Alignment Theory is therefore not only a framework for agency under pressure. It is a structural lens for understanding how persons and systems become coherent, fragmented, governed, counterfeited, and restored. It maps across psychology, religion, moral development, systems theory, and scripture. At its deepest level, it argues that truth is intrinsically integrative because reality itself is ordered through Logos; that evil is distortion rather than equal substance; that false religion is sacred external adaptation substituting for inward transformation; that salvation is realignment with reality itself under God; and that Christ is not merely morally exemplary, but structurally central to restored truth, freedom, and being.
+Alignment Theory is therefore not only a framework for agency under pressure. It is a structural lens for understanding how persons and systems become coherent, fragmented, governed, counterfeited, and restored. It maps across psychology, religion, moral development, systems theory, and scripture. At its deepest level, it argues that truth is intrinsically integrative because reality itself is ordered through Logos; that evil is distortion rather than equal substance; that false religion is sacred external adaptation substituting for inward transformation; that salvation is realignment with reality itself under God; and that Christ is not merely morally exemplary, but structurally central to restored truth, freedom, and being.[^m1]
 
 ## 1. The Problem This Framework Addresses
 
@@ -101,7 +101,7 @@ It widens under:
 
 This leads to one of the framework's central laws:
 
-Low agency increases steerability.
+Low agency increases steerability.[^m2]
 
 Where agency collapses, persons become more governable by fear, tribe, identity, authority, and narrative compression. Moral failure is often inseparable from degraded capacity. This does not erase responsibility, but it reframes it. Responsibility remains real, while still being shaped by the conditions under which choice remains usable.
 
@@ -115,7 +115,7 @@ At the personal level, lies require maintenance. Self-deception splits the perso
 
 At the institutional level, propaganda requires reinforcement. False systems become brittle. Image management expands. Metrics replace discernment. Maintenance load grows.
 
-At the spiritual level, deception hardens, while truth liberates.
+At the spiritual level, deception hardens, while truth liberates.[^m3]
 
 The framework therefore treats truth not as mere data, but as contact with reality that reduces fragmentation when it can actually be integrated.
 
@@ -159,7 +159,7 @@ False systems often preserve themselves by turning living inward realities into 
 
 ## 8. False Religion and Sacred External Order
 
-False religion is not merely wrong doctrine. It is the structural attempt to secure righteousness, belonging, and salvation through sacred external order rather than inward transformation and realignment with truth.
+False religion is not merely wrong doctrine. It is the structural attempt to secure righteousness, belonging, and salvation through sacred external order rather than inward transformation and realignment with truth.[^m4]
 
 This happens when:
 
@@ -200,7 +200,7 @@ This grammar does not replace exegesis. It names recurring patterns already pres
 
 The framework treats salvation as more than legal pardon or future destiny.
 
-Salvation is realignment with reality itself under God.
+Salvation is realignment with reality itself under God.[^m5]
 
 It is restoration from:
 
@@ -238,7 +238,7 @@ In him, the framework finds its center:
 - exposure of hypocrisy
 - restored relation to the Father
 
-If reality is ordered through Logos, then Christ is not simply one wise interpreter among many. He is the living center through whom coherence, meaning, freedom, and restored being become intelligible.
+If reality is ordered through Logos, then Christ is not simply one wise interpreter among many. He is the living center through whom coherence, meaning, freedom, and restored being become intelligible.[^m6]
 
 ## 12. What Alignment Theory Is Not
 
@@ -292,3 +292,10 @@ Human life is shaped by a tension between inward alignment with deeper reality a
 - Christ stands at the center as the living revelation of restored truth, freedom, and being.
 
 That is where the project now stands.
+
+[^m1]: For the theological backbone behind this cluster of claims, see [Jeremiah 31:31–34](https://www.biblegateway.com/passage/?search=Jeremiah+31%3A31-34&version=ESV), [Hebrews 8:10](https://www.biblegateway.com/passage/?search=Hebrews+8%3A10&version=ESV), [Ezekiel 36:26–27](https://www.biblegateway.com/passage/?search=Ezekiel+36%3A26-27&version=ESV), [2 Corinthians 3](https://www.biblegateway.com/passage/?search=2+Corinthians+3&version=ESV), [John 1:1–5, 14](https://www.biblegateway.com/passage/?search=John+1%3A1-5%2C14&version=ESV), and [John 15](https://www.biblegateway.com/passage/?search=John+15&version=ESV).
+[^m2]: Alignment Theory presents this as a structural law rather than a closed laboratory theorem. For related empirical patterns linking chronic stress and anxiety with degraded attention control and stronger threat-biased processing, see [Valadez et al., “Attentional biases in human anxiety”](https://pubmed.ncbi.nlm.nih.gov/36252826/) and [Qi et al., “Impact of Chronic Stress on Attention Control”](https://pubmed.ncbi.nlm.nih.gov/32929635/).
+[^m3]: [John 8:31–32](https://www.biblegateway.com/passage/?search=John+8%3A31-32&version=ESV); [2 Corinthians 3](https://www.biblegateway.com/passage/?search=2+Corinthians+3&version=ESV).
+[^m4]: [Matthew 23](https://www.biblegateway.com/passage/?search=Matthew+23&version=ESV); [Isaiah 29:13](https://www.biblegateway.com/passage/?search=Isaiah+29%3A13&version=ESV); [Mark 7:6–8](https://www.biblegateway.com/passage/?search=Mark+7%3A6-8&version=ESV).
+[^m5]: [Romans 12:1–2](https://www.biblegateway.com/passage/?search=Romans+12%3A1-2&version=NIV); [Jeremiah 31:31–34](https://www.biblegateway.com/passage/?search=Jeremiah+31%3A31-34&version=ESV); [Hebrews 8:10](https://www.biblegateway.com/passage/?search=Hebrews+8%3A10&version=ESV); [Ezekiel 36:26–27](https://www.biblegateway.com/passage/?search=Ezekiel+36%3A26-27&version=ESV).
+[^m6]: [John 1:1–5, 14](https://www.biblegateway.com/passage/?search=John+1%3A1-5%2C14&version=ESV); [Colossians 1:15–17](https://www.biblegateway.com/passage/?search=Colossians+1%3A15-17&version=ESV); [John 15](https://www.biblegateway.com/passage/?search=John+15&version=ESV).

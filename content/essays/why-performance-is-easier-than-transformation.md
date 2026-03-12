@@ -85,7 +85,7 @@ This is why performance can feel strangely exhausting. It is easier than transfo
 
 That is why transformation, though harder, is more restful. Once something is genuinely reordered inwardly, less performance energy is needed to maintain the outer expression. Fruit becomes possible because the tree has changed, not merely because the branch has been wired into position.
 
-This helps explain why the Bible is so wary of hypocrisy. Hypocrisy is not just moral inconsistency. It is the condition in which performance has become more developed than the inward life it claims to represent. The outside is managed. The inside remains largely untouched. Jesus attacks this structure repeatedly because it is the easiest counterfeit form of righteousness.
+This helps explain why the Bible is so wary of hypocrisy.[^p1] Hypocrisy is not just moral inconsistency. It is the condition in which performance has become more developed than the inward life it claims to represent. The outside is managed. The inside remains largely untouched. Jesus attacks this structure repeatedly because it is the easiest counterfeit form of righteousness.
 
 The system may still be morally serious.
 The person may still be sincere in their effort.
@@ -99,7 +99,7 @@ In relationships, performance is easier because a person can mimic care, attenti
 
 In politics and identity systems, performance is easier because public loyalty signals scale faster than real moral seriousness. The person learns how to appear aligned with the cause. Transformation, which would require deeper truthfulness, humility, and inward honesty, is much harder and much less visible.
 
-This is why the broad path is broad. Adaptation to visible order is easier than deep alignment with truth. The broad path does not always look openly immoral. Often it looks functional, rewarded, and socially reinforced. What makes it broad is that it can be traversed by outward adaptation alone.
+This is why the broad path is broad.[^p2] Adaptation to visible order is easier than deep alignment with truth. The broad path does not always look openly immoral. Often it looks functional, rewarded, and socially reinforced. What makes it broad is that it can be traversed by outward adaptation alone.
 
 The narrow path is harder because it asks more of the inside.
 
@@ -140,3 +140,6 @@ They do not always know how to become whole.
 That is why performance is easier than transformation.
 
 And that is why systems so often settle for it.
+
+[^p1]: See [Matthew 23](https://www.biblegateway.com/passage/?search=Matthew+23&version=ESV), [Isaiah 29:13](https://www.biblegateway.com/passage/?search=Isaiah+29%3A13&version=ESV), and [Mark 7:6-8](https://www.biblegateway.com/passage/?search=Mark+7%3A6-8&version=ESV) for the biblical critique of outward righteousness without inward reality.
+[^p2]: See [Matthew 7:13-14](https://www.biblegateway.com/passage/?search=Matthew+7%3A13-14&version=ESV).
