@@ -409,6 +409,7 @@ body.nav-open::before {
   color: var(--muted);
 }
 
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -457,6 +458,266 @@ body.nav-open::before {
 
 .doc-body p {
   margin-bottom: 1.45rem;
+}
+
+.orientation-line {
+  margin: 0 0 1.1rem;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.manuscript-intro-block,
+.law-tier,
+.spine-statement,
+.master-form,
+.lexicon-family,
+.translation-caution,
+.translation-matrix,
+.translation-notes {
+  background: rgba(255, 255, 255, 0.24);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 1.35rem 1.45rem;
+}
+
+.manuscript-intro-block,
+.law-tier,
+.lexicon-family,
+.translation-caution,
+.translation-matrix,
+.translation-notes {
+  margin-bottom: 1.4rem;
+}
+
+.manuscript-intro-block h2,
+.law-tier h2,
+.spine-statement h2,
+.master-form h2,
+.lexicon-family h2,
+.translation-caution h2,
+.translation-matrix h2,
+.translation-notes h2 {
+  margin: 0 0 0.75rem;
+}
+
+.manuscript-intro-block p:last-child,
+.law-tier p:last-child,
+.spine-statement p:last-child,
+.master-form p:last-child,
+.translation-caution p:last-child,
+.translation-notes p:last-child {
+  margin-bottom: 0;
+}
+
+.law-tier-header,
+.lexicon-entry-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.95rem;
+}
+
+.law-tier-header h2,
+.lexicon-entry-header h3 {
+  margin: 0;
+}
+
+.law-list,
+.lexicon-list,
+.translation-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.law-card,
+.lexicon-entry,
+.translation-pattern {
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(59, 52, 47, 0.1);
+  border-radius: var(--radius);
+  padding: 1.05rem 1.1rem;
+}
+
+.law-card h3,
+.lexicon-entry h3,
+.translation-pattern-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink-strong);
+}
+
+.law-number,
+.formal-label,
+.translation-label {
+  display: inline-block;
+  margin: 0 0 0.45rem;
+  color: var(--muted);
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.law-card p:last-child,
+.lexicon-entry p:last-child,
+.translation-cell p:last-child {
+  margin-bottom: 0;
+}
+
+.spine-statement,
+.master-form {
+  margin-bottom: 1.4rem;
+  background:
+    linear-gradient(180deg, rgba(59, 52, 47, 0.045) 0%, rgba(59, 52, 47, 0.015) 100%),
+    rgba(255, 255, 255, 0.24);
+}
+
+.spine-statement p,
+.master-form p {
+  margin: 0;
+  color: var(--ink-strong);
+}
+
+.compressed-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.compressed-list li + li {
+  margin-top: 0.4rem;
+}
+
+.lexicon-family-intro {
+  margin: 0 0 1rem;
+}
+
+.lexicon-list {
+  gap: 1.25rem;
+}
+
+.lexicon-entry {
+  padding: 1.2rem 1.25rem;
+}
+
+.lexicon-entry-header {
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 0.95rem;
+}
+
+.lexicon-entry-header h3 {
+  font-size: 1.08rem;
+}
+
+.formal-label {
+  margin: 0;
+  padding-bottom: 0.95rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(59, 52, 47, 0.12);
+  line-height: 1.6;
+  text-transform: none;
+  letter-spacing: 0.03em;
+  font-size: 0.86rem;
+}
+
+.lexicon-meta {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 0;
+}
+
+.lexicon-meta-block {
+  padding-top: 0.95rem;
+  border-top: 1px solid rgba(59, 52, 47, 0.12);
+}
+
+.lexicon-meta-block h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.78rem;
+  font-family: "Arial", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+}
+
+.lexicon-meta-block p {
+  margin: 0;
+  line-height: 1.72;
+}
+
+.translation-grid {
+  gap: 1.35rem;
+}
+
+.translation-pattern {
+  padding: 1.2rem 1.25rem;
+}
+
+.translation-pattern-header {
+  margin-bottom: 1rem;
+}
+
+.translation-pattern-header h3 {
+  margin-bottom: 0.35rem;
+  font-size: 1.08rem;
+  text-wrap: balance;
+}
+
+.translation-pattern-intro {
+  margin: 0;
+  color: var(--muted);
+}
+
+.translation-blocks {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.translation-cell {
+  padding: 1rem 1.05rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(59, 52, 47, 0.08);
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.translation-cell h4 {
+  margin: 0 0 0.4rem;
+  font-size: 0.78rem;
+  font-family: "Arial", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.translation-cell p {
+  margin: 0;
+}
+
+.translation-shared {
+  margin-top: 1rem;
+  padding-top: 0.95rem;
+  border-top: 1px solid rgba(59, 52, 47, 0.12);
+}
+
+.translation-shared h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.78rem;
+  font-family: "Arial", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+}
+
+.translation-shared p {
+  margin: 0;
+  color: var(--ink-strong);
+}
+
+.translation-caution {
+  border-style: dashed;
 }
 
 .grammar-body {
@@ -736,6 +997,15 @@ body.nav-open::before {
   color: var(--muted);
   font-size: 0.92rem;
   font-style: italic;
+}
+
+.threshold-subtitle {
+  margin: -0.25rem 0 0;
+  color: var(--muted);
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 
 .threshold-ladder {
@@ -1400,6 +1670,12 @@ body.nav-open::before {
     align-items: flex-start;
     flex-direction: column;
   }
+
+  .law-tier-header,
+  .lexicon-entry-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 720px) {
@@ -1428,6 +1704,18 @@ body.nav-open::before {
   }
 
   .grammar-entry-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .law-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lexicon-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .translation-blocks {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

@@ -128,6 +128,22 @@
     "link": "../pages/biblical-grammar.html"
   },
   {
+    "title": "Alignment Theory Lexicon",
+    "type": "Framework Paper",
+    "date": "2026-03-13",
+    "version": "reference page",
+    "abstract": "Stable native vocabulary paired with formal equivalents for readers crossing domains.",
+    "link": "../pages/lexicon.html"
+  },
+  {
+    "title": "One Pattern, Many Languages",
+    "type": "Framework Paper",
+    "date": "2026-03-13",
+    "version": "reference page",
+    "abstract": "Cross-disciplinary translation grid showing overlapping patterns across theology, psychology, neuroscience, organizational behavior, and systems theory.",
+    "link": "../pages/one-pattern-many-languages.html"
+  },
+  {
     "title": "Metaphysical Claims",
     "type": "Framework Paper",
     "date": "2026-03-10",

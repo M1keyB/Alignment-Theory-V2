@@ -235,6 +235,32 @@ const buildToc = (container, tocTargets) => {
   });
 };
 
+const ensureHeadingIds = (headings) => {
+  const seen = new Set();
+
+  headings.forEach((heading) => {
+    let id = heading.id ? heading.id.trim() : "";
+
+    if (!id) {
+      id = slugify(heading.textContent || "section");
+    }
+
+    if (!id) {
+      id = "section";
+    }
+
+    let uniqueId = id;
+    let suffix = 2;
+    while (seen.has(uniqueId) || document.getElementById(uniqueId) && document.getElementById(uniqueId) !== heading) {
+      uniqueId = `${id}-${suffix}`;
+      suffix += 1;
+    }
+
+    heading.id = uniqueId;
+    seen.add(uniqueId);
+  });
+};
+
 const highlightToc = (headings, tocLinks) => {
   if (!headings.length) return;
 
@@ -254,6 +280,7 @@ const initTocFromRoot = (root) => {
   if (!root) return;
 
   const headings = qsa("h2, h3", root);
+  ensureHeadingIds(headings);
   const toc = qs("#toc-list");
   const tocMobile = qs("#toc-list-mobile");
   if (toc) buildToc(toc, headings);
