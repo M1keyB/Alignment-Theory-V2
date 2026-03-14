@@ -194,6 +194,23 @@ body.nav-open::before {
   align-items: start;
 }
 
+.page-article--wide {
+  max-width: 1380px;
+}
+
+.page-article--wide .manuscript {
+  padding: clamp(2.1rem, 3vw, 3.3rem);
+}
+
+.page-article--wide .toc-desktop {
+  padding: 1.4rem 1.35rem;
+}
+
+.page-article--wide .toc-note {
+  max-width: 18rem;
+  line-height: 1.6;
+}
+
 .intro-card,
 .placeholder,
 .doc-card,
@@ -1466,6 +1483,473 @@ body.nav-open::before {
   margin: 0;
 }
 
+.explorer-shell {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.explorer-intro,
+.explorer-entry,
+.explorer-index,
+.explorer-reference-list,
+.explorer-thesis,
+.explorer-theme-card,
+.explorer-synthesis-card,
+.explorer-pattern-card,
+.explorer-use-card {
+  background: rgba(255, 255, 255, 0.24);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 1.35rem 1.45rem;
+}
+
+.explorer-intro h2,
+.explorer-entry h2,
+.explorer-index h2,
+.explorer-reference-list h2,
+.explorer-pattern-card h4,
+.explorer-use-card h4 {
+  margin: 0 0 0.75rem;
+}
+
+.explorer-intro {
+  display: grid;
+  gap: 1rem;
+}
+
+.explorer-framing-note {
+  border-style: dashed;
+  color: var(--ink-strong);
+}
+
+.explorer-entry-paths,
+.explorer-theme-grid,
+.explorer-entry-grid,
+.explorer-synthesis-grid,
+.explorer-pattern-grid,
+.explorer-study-grid,
+.explorer-use-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.explorer-entry-card {
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(59, 52, 47, 0.1);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.15rem;
+}
+
+.explorer-thesis,
+.explorer-theme-card,
+.explorer-synthesis-card,
+.explorer-study-card {
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(59, 52, 47, 0.1);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.15rem;
+}
+
+.explorer-entry-card h4,
+.explorer-thesis h3,
+.explorer-theme-card h3,
+.explorer-synthesis-card h3,
+.explorer-study-card h3,
+.explorer-entry-title-row h2,
+.explorer-related h4,
+.explorer-key-texts h4,
+.explorer-reference-list h4 {
+  margin: 0;
+}
+
+.explorer-entry-card p,
+.explorer-thesis p:last-child,
+.explorer-theme-card p:last-child,
+.explorer-synthesis-card p:last-child,
+.explorer-study-card p:last-child,
+.explorer-entry-card ul,
+.explorer-entry p:last-child,
+.explorer-pattern-card p:last-child,
+.explorer-use-card p:last-child {
+  margin-bottom: 0;
+}
+
+.explorer-entry-card ul,
+.explorer-theme-card ul,
+.explorer-study-card ul,
+.explorer-related ul,
+.explorer-reference-list ul {
+  margin: 0.85rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.explorer-entry-card li + li,
+.explorer-theme-card li + li,
+.explorer-study-card li + li,
+.explorer-related li + li,
+.explorer-reference-list li + li {
+  margin-top: 0.35rem;
+}
+
+.explorer-thesis {
+  background:
+    linear-gradient(180deg, rgba(59, 52, 47, 0.05) 0%, rgba(59, 52, 47, 0.02) 100%),
+    rgba(255, 255, 255, 0.22);
+}
+
+.explorer-theme-card,
+.explorer-synthesis-card {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.explorer-theme-note {
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(59, 52, 47, 0.12);
+}
+
+.explorer-theme-note h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.78rem;
+  font-family: "Arial", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+}
+
+.explorer-theme-note p {
+  margin: 0;
+}
+
+.explorer-synthesis-card {
+  min-height: 100%;
+}
+
+.explorer-synthesis-card ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.explorer-synthesis-line {
+  margin: 0;
+  color: var(--ink-strong);
+}
+
+.explorer-study-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.8rem;
+}
+
+.explorer-study-card li {
+  padding: 0.55rem 0;
+  border-top: 1px solid rgba(59, 52, 47, 0.1);
+}
+
+.explorer-study-card li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.explorer-study-card li:last-child {
+  padding-bottom: 0;
+}
+
+.explorer-entry {
+  display: grid;
+  gap: 1.15rem;
+  scroll-margin-top: 1.5rem;
+}
+
+.explorer-entry-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.explorer-key-texts {
+  padding: 1rem 1.05rem;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(59, 52, 47, 0.08);
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.explorer-key-texts p {
+  margin: 0.65rem 0 0;
+}
+
+.explorer-section-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.explorer-block {
+  padding-top: 0.95rem;
+  border-top: 1px solid rgba(59, 52, 47, 0.12);
+}
+
+.explorer-block h4 {
+  margin: 0 0 0.45rem;
+  font-size: 0.78rem;
+  font-family: "Arial", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+}
+
+.explorer-cross-domain {
+  background:
+    linear-gradient(180deg, rgba(59, 52, 47, 0.035) 0%, rgba(59, 52, 47, 0.015) 100%),
+    rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(59, 52, 47, 0.12);
+  border-radius: calc(var(--radius) - 2px);
+  padding: 1rem 1.05rem;
+}
+
+.explorer-cross-domain h4 {
+  margin-top: 0;
+}
+
+.explorer-related {
+  padding-top: 0.95rem;
+  border-top: 1px solid rgba(59, 52, 47, 0.12);
+}
+
+.explorer-chip-row,
+.explorer-inline-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.explorer-inline-links {
+  margin-top: 0.75rem;
+}
+
+.explorer-inline-links a,
+.explorer-pattern-card a,
+.explorer-use-card a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(59, 52, 47, 0.16);
+}
+
+.explorer-index-header {
+  display: grid;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+.explorer-pattern-card p,
+.explorer-use-card p {
+  color: var(--muted);
+}
+
+.explorer-reference-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.2rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.explorer-reference-list li {
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(59, 52, 47, 0.1);
+}
+
+.explorer-reference-list li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.explorer-reference-label {
+  color: var(--ink-strong);
+}
+
+.regulation-shell {
+  display: grid;
+  gap: 1.85rem;
+}
+
+.regulation-thesis,
+.regulation-model,
+.regulation-entry {
+  background: rgba(255, 255, 255, 0.24);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.65rem;
+}
+
+.regulation-thesis {
+  background:
+    linear-gradient(180deg, rgba(59, 52, 47, 0.05) 0%, rgba(59, 52, 47, 0.02) 100%),
+    rgba(255, 255, 255, 0.22);
+}
+
+.regulation-entry {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.regulation-entry-header,
+.regulation-model-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.regulation-thesis h2,
+.regulation-model h2,
+.regulation-entry h2 {
+  margin: 0 0 0.75rem;
+}
+
+.regulation-text-grid,
+.regulation-model-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.regulation-block,
+.regulation-model-card {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(59, 52, 47, 0.12);
+}
+
+.regulation-block h3,
+.regulation-model-card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 0.78rem;
+  font-family: "Arial", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+}
+
+.regulation-block p:last-child,
+.regulation-model-card p:last-child {
+  margin-bottom: 0;
+}
+
+.regulation-key-texts,
+.regulation-cross-note {
+  padding: 1rem 1.1rem;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(59, 52, 47, 0.08);
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.regulation-key-texts h3,
+.regulation-cross-note h3 {
+  margin: 0;
+  font-size: 0.78rem;
+  font-family: "Arial", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+}
+
+.regulation-key-texts p,
+.regulation-cross-note p {
+  margin: 0.6rem 0 0;
+}
+
+.regulation-model-card ul {
+  margin: 0.7rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.regulation-sequence {
+  margin: 0;
+  color: var(--ink-strong);
+}
+
+.regulation-inline-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+}
+
+.regulation-inline-links a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(59, 52, 47, 0.16);
+}
+
+.page-article--explorer {
+  max-width: 1380px;
+}
+
+.page-article--explorer .manuscript {
+  padding: clamp(2.1rem, 3vw, 3.3rem);
+}
+
+.page-article--explorer .toc-desktop {
+  padding: 1.4rem 1.35rem;
+}
+
+.page-article--explorer .toc-note {
+  max-width: 18rem;
+  line-height: 1.6;
+}
+
+.page-article--explorer .explorer-shell {
+  gap: 1.9rem;
+}
+
+.page-article--explorer .explorer-intro,
+.page-article--explorer .explorer-entry,
+.page-article--explorer .explorer-index,
+.page-article--explorer .explorer-reference-list {
+  padding: 1.55rem 1.7rem;
+}
+
+.page-article--explorer .explorer-entry {
+  gap: 1.4rem;
+}
+
+.page-article--explorer .explorer-theme-card,
+.page-article--explorer .explorer-synthesis-card,
+.page-article--explorer .explorer-study-card,
+.page-article--explorer .explorer-pattern-card,
+.page-article--explorer .explorer-entry-card,
+.page-article--explorer .explorer-thesis {
+  padding: 1.35rem 1.45rem;
+}
+
+.page-article--explorer .explorer-theme-card,
+.page-article--explorer .explorer-study-card,
+.page-article--explorer .explorer-entry-card {
+  line-height: 1.78;
+}
+
+.page-article--explorer .explorer-theme-note {
+  margin-top: 0.15rem;
+  padding-top: 1rem;
+}
+
+.page-article--explorer .explorer-block {
+  padding-top: 1.05rem;
+}
+
+.page-article--explorer .explorer-cross-domain,
+.page-article--explorer .explorer-key-texts {
+  padding: 1.15rem 1.2rem;
+}
+
+.page-article--explorer .explorer-section-grid {
+  gap: 1.1rem 1.35rem;
+}
+
+.page-article--explorer .explorer-inline-links {
+  gap: 0.7rem 1rem;
+}
+
+.page-article--explorer .explorer-study-card li {
+  padding: 0.65rem 0;
+}
+
 .home-primary-grid {
   align-items: start;
 }
@@ -1676,6 +2160,34 @@ body.nav-open::before {
     align-items: flex-start;
     flex-direction: column;
   }
+
+  .explorer-intro,
+  .explorer-entry,
+  .explorer-index,
+  .explorer-reference-list,
+  .regulation-thesis,
+  .regulation-model,
+  .regulation-entry,
+  .explorer-thesis,
+  .explorer-theme-card,
+  .explorer-synthesis-card,
+  .explorer-pattern-card,
+  .explorer-use-card,
+  .explorer-entry-card,
+  .explorer-study-card {
+    padding: 1.1rem 1rem;
+  }
+
+  .explorer-entry-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .regulation-entry-header,
+  .regulation-model-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 720px) {
@@ -1717,6 +2229,92 @@ body.nav-open::before {
 
   .translation-blocks {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .explorer-entry-paths {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .explorer-theme-grid,
+  .explorer-study-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .explorer-entry-grid,
+  .explorer-synthesis-grid,
+  .explorer-pattern-grid,
+  .explorer-use-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .explorer-section-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .regulation-text-grid,
+  .regulation-model-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  .page-article--wide {
+    grid-template-columns: minmax(14rem, 15.5rem) minmax(0, 1fr);
+    gap: 3.6rem;
+    align-items: start;
+  }
+
+  .page-article--wide .toc-panel {
+    max-width: 15.5rem;
+  }
+
+  .page-article--explorer {
+    grid-template-columns: minmax(14rem, 15.5rem) minmax(0, 1fr);
+    gap: 3.6rem;
+    align-items: start;
+  }
+
+  .page-article--explorer .toc-panel {
+    max-width: 15.5rem;
+  }
+
+  .page-article--explorer .explorer-theme-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.35rem;
+  }
+
+  .page-article--explorer .explorer-theme-grid > :first-child {
+    grid-column: 1 / -1;
+  }
+
+  .page-article--explorer .explorer-synthesis-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-article--wide {
+    gap: 4rem;
+  }
+
+  .page-article--explorer {
+    gap: 4rem;
+  }
+
+  .page-article--explorer .explorer-shell {
+    gap: 2.2rem;
+  }
+
+  .page-article--explorer .explorer-intro,
+  .page-article--explorer .explorer-entry,
+  .page-article--explorer .explorer-index,
+  .page-article--explorer .explorer-reference-list {
+    padding: 1.7rem 1.9rem;
+  }
+
+  .page-article--explorer .explorer-theme-grid {
+    grid-template-columns: 1.15fr 1fr;
+    gap: 1.5rem;
   }
 }
 
