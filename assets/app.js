@@ -413,10 +413,71 @@ const initNav = () => {
     }
   });
 
+  document.addEventListener("click", (event) => {
+    const isOpen = toggle.getAttribute("aria-expanded") === "true";
+    if (!isOpen) return;
+    if (nav.contains(event.target) || toggle.contains(event.target)) return;
+    closeNav();
+  });
+
   window.addEventListener("resize", () => {
     if (window.innerWidth > 960) {
       closeNav();
     }
+  });
+};
+
+const initRevealMotion = () => {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const revealTargets = [
+    ...qsa(".page > section"),
+    ...qsa(".page > article"),
+    ...qsa(".doc-body > section"),
+    ...qsa(".doc-body > nav"),
+    ...qsa(".framework-featured-card"),
+    ...qsa(".framework-hub-group"),
+    ...qsa(".precision-related-card"),
+    ...qsa(".backbone-distinct-card"),
+    ...qsa(".explorer-entry-card"),
+  ];
+
+  const uniqueTargets = Array.from(new Set(revealTargets)).filter((el) => !el.classList.contains("reveal-on-scroll"));
+
+  uniqueTargets.forEach((target, index) => {
+    target.classList.add("reveal-on-scroll");
+    target.style.setProperty("--reveal-delay", `${Math.min(index % 6, 5) * 40}ms`);
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: "0px 0px -8% 0px",
+  });
+
+  uniqueTargets.forEach((target) => observer.observe(target));
+};
+
+const initSwipeHints = () => {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const rails = qsa(".framework-featured-track");
+  if (!rails.length) return;
+
+  rails.forEach((rail, index) => {
+    const storageKey = `alignment-swipe-hint-${index}`;
+    if (window.innerWidth > 720 || window.localStorage.getItem(storageKey)) return;
+
+    window.setTimeout(() => {
+      rail.classList.add("is-hinting");
+      window.setTimeout(() => rail.classList.remove("is-hinting"), 1300);
+      window.localStorage.setItem(storageKey, "seen");
+    }, 550);
   });
 };
 
@@ -425,6 +486,8 @@ const init = () => {
   initStaticToc();
   loadLibrary();
   initNav();
+  initRevealMotion();
+  initSwipeHints();
 };
 
 document.addEventListener("DOMContentLoaded", init);
