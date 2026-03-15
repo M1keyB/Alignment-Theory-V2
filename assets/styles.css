@@ -2783,6 +2783,8 @@ body.nav-open::before {
   .nav-toggle {
     display: inline-flex;
     position: fixed;
+    top: auto;
+    left: auto;
     bottom: calc(env(safe-area-inset-bottom, 16px) + 16px);
     right: 16px;
     z-index: 40;
