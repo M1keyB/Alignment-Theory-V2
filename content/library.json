@@ -152,6 +152,14 @@
     "link": "../pages/research-backbone.html"
   },
   {
+    "title": "Mathematical Precision",
+    "type": "Framework Paper",
+    "date": "2026-03-14",
+    "version": "reference page",
+    "abstract": "A semi-formal systems model of load, regulation, coherence, fragmentation, and recovery in Alignment Theory.",
+    "link": "../pages/mathematical-precision.html"
+  },
+  {
     "title": "One Pattern, Many Languages",
     "type": "Framework Paper",
     "date": "2026-03-13",
