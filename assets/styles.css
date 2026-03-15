@@ -460,6 +460,155 @@ body.nav-open::before {
   }
 }
 
+.scales-jump {
+  margin-bottom: 1.4rem;
+  padding: 1.15rem 1.2rem;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(59, 52, 47, 0.1);
+  border-radius: var(--radius);
+}
+
+.scales-jump-label,
+.scale-card-label,
+.comparison-column-label {
+  display: inline-block;
+  margin: 0 0 0.55rem;
+  color: var(--muted);
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.scales-jump-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.scales-jump-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(59, 52, 47, 0.12);
+  background: rgba(255, 255, 255, 0.24);
+  text-decoration: none;
+  transition: border-color var(--dur-quick) var(--ease-out),
+    transform var(--dur-quick) var(--ease-out),
+    box-shadow var(--dur-quick) var(--ease-out);
+}
+
+.spine-flow {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.spine-step {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  padding: 0.85rem 0.95rem;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(59, 52, 47, 0.08);
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.spine-arrow {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.spine-step p {
+  margin: 0;
+}
+
+.scales-stack {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.scale-section {
+  padding: 1.35rem 1.45rem;
+  background: rgba(255, 255, 255, 0.24);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+.scale-section h2 {
+  margin: 0 0 0.55rem;
+}
+
+.scale-orientation {
+  margin: 0 0 1rem;
+  color: var(--muted);
+}
+
+.scale-card-grid {
+  display: grid;
+  gap: 0.95rem;
+}
+
+.scale-card {
+  padding: 1rem 1.05rem;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(59, 52, 47, 0.1);
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.scale-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.scale-card p:last-child {
+  margin-bottom: 0;
+}
+
+.comparison-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.comparison-row {
+  padding: 1.15rem 1.2rem;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(59, 52, 47, 0.1);
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.comparison-row h3 {
+  margin: 0 0 0.85rem;
+  font-size: 1.02rem;
+}
+
+.comparison-columns {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.comparison-column {
+  padding: 0.9rem 0.95rem;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(59, 52, 47, 0.08);
+  border-radius: calc(var(--radius) - 4px);
+}
+
+.comparison-column p:last-child {
+  margin-bottom: 0;
+}
+
+.scales-closing-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
 .doc-body {
   max-width: var(--max-width);
 }
@@ -735,6 +884,14 @@ body.nav-open::before {
 
 .translation-caution {
   border-style: dashed;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .scales-jump-links a:hover {
+    border-color: var(--muted);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 0 rgba(40, 33, 27, 0.08);
+  }
 }
 
 .grammar-body {
@@ -1483,6 +1640,207 @@ body.nav-open::before {
   margin: 0;
 }
 
+.hero-intro {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-intro .lead {
+  margin: 0;
+}
+
+.hero-intro .subtitle {
+  color: var(--ink);
+  max-width: 52rem;
+}
+
+.home-orientation,
+.home-secondary-destinations,
+.backbone-intro,
+.backbone-how-to-read,
+.backbone-thesis,
+.backbone-summary,
+.backbone-distinct,
+.backbone-domain,
+.backbone-references-card {
+  background: rgba(255, 255, 255, 0.24);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 1.35rem 1.45rem;
+}
+
+.home-secondary-destinations {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.home-secondary-destinations h3,
+.backbone-intro h2,
+.backbone-how-to-read h2,
+.backbone-thesis h2,
+.backbone-summary h2,
+.backbone-distinct h2,
+.backbone-domain h2,
+.backbone-references-card h2 {
+  margin: 0 0 0.75rem;
+}
+
+.framework-link-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.75rem;
+}
+
+.framework-link-cloud .text-link {
+  margin-top: 0;
+}
+
+.backbone-shell {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.backbone-grid,
+.backbone-support-grid,
+.backbone-distinct-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.backbone-domain {
+  display: grid;
+  gap: 1rem;
+}
+
+.backbone-domain-header,
+.backbone-entry-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.backbone-domain-header h2,
+.backbone-entry-header h3 {
+  margin: 0;
+}
+
+.backbone-domain-orientation,
+.backbone-entry-intro,
+.backbone-note {
+  margin: 0;
+  color: var(--muted);
+}
+
+.backbone-source-list,
+.backbone-support-list,
+.backbone-distinct-list {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.backbone-source-list li + li,
+.backbone-support-list li + li,
+.backbone-distinct-list li + li {
+  margin-top: 0.45rem;
+}
+
+.backbone-entry,
+.backbone-support-card,
+.backbone-distinct-card {
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(59, 52, 47, 0.1);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.15rem;
+}
+
+.backbone-entry h3,
+.backbone-support-card h3,
+.backbone-distinct-card h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink-strong);
+}
+
+.backbone-entry p:last-child,
+.backbone-support-card p:last-child,
+.backbone-distinct-card p:last-child {
+  margin-bottom: 0;
+}
+
+.support-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.16rem 0.48rem;
+  border-radius: 999px;
+  border: 1px solid rgba(59, 52, 47, 0.12);
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.support-label--direct {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.support-label--adjacent {
+  border-style: dashed;
+}
+
+.support-label--analogy,
+.support-label--theological {
+  background: rgba(59, 52, 47, 0.04);
+}
+
+.backbone-entry-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.backbone-entry-block {
+  padding: 0.9rem 0.95rem;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(59, 52, 47, 0.08);
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.backbone-entry-block h4 {
+  margin: 0 0 0.4rem;
+  font-size: 0.78rem;
+  font-family: "Arial", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+}
+
+.backbone-entry-block p,
+.backbone-entry-block ul {
+  margin: 0;
+}
+
+.backbone-entry-block ul {
+  padding-left: 1.05rem;
+}
+
+.backbone-entry-block li + li {
+  margin-top: 0.35rem;
+}
+
+.backbone-caution {
+  border-style: dashed;
+}
+
+.backbone-thesis,
+.backbone-distinct {
+  background:
+    linear-gradient(180deg, rgba(59, 52, 47, 0.04) 0%, rgba(59, 52, 47, 0.015) 100%),
+    rgba(255, 255, 255, 0.24);
+}
+
 .explorer-shell {
   display: grid;
   gap: 1.5rem;
@@ -2139,6 +2497,18 @@ body.nav-open::before {
     padding-bottom: 1.35rem;
   }
 
+  .home-orientation,
+  .home-secondary-destinations,
+  .backbone-intro,
+  .backbone-how-to-read,
+  .backbone-thesis,
+  .backbone-summary,
+  .backbone-distinct,
+  .backbone-domain,
+  .backbone-references-card {
+    padding: 1.1rem 1rem;
+  }
+
   .secondary-link-row {
     display: grid;
     gap: 0.2rem;
@@ -2159,6 +2529,17 @@ body.nav-open::before {
   .lexicon-entry-header {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .backbone-domain-header,
+  .backbone-entry-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .scale-section,
+  .comparison-row {
+    padding: 1.1rem 1rem;
   }
 
   .explorer-intro,
@@ -2231,6 +2612,17 @@ body.nav-open::before {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .scale-card-grid,
+  .comparison-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .backbone-support-grid,
+  .backbone-distinct-grid,
+  .backbone-entry-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .explorer-entry-paths {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2266,6 +2658,10 @@ body.nav-open::before {
 
   .page-article--wide .toc-panel {
     max-width: 15.5rem;
+  }
+
+  .comparison-columns {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .page-article--explorer {
