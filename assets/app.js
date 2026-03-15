@@ -475,7 +475,7 @@ const initSwipeHints = () => {
 
     window.setTimeout(() => {
       rail.classList.add("is-hinting");
-      window.setTimeout(() => rail.classList.remove("is-hinting"), 1300);
+      window.setTimeout(() => rail.classList.remove("is-hinting"), 1100);
       window.localStorage.setItem(storageKey, "seen");
     }, 550);
   });
