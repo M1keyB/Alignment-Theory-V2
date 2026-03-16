@@ -483,8 +483,10 @@ const initNav = () => {
         label: "Clarifications",
         links: [
           { href: "scaffolding-and-counterfeit-order.html", label: "Scaffolding and Counterfeit Order" },
+          { href: "emergency-order-and-triage.html", label: "Emergency Order and Triage" },
           { href: "coherence-markers.html", label: "Coherence Markers" },
           { href: "reintegration-conditions.html", label: "Reintegration Conditions" },
+          { href: "auditing-counterfeit-order.html", label: "Auditing Counterfeit Order" },
           { href: "stress-tests-and-limits.html", label: "Stress Tests and Limits" },
         ],
       },
