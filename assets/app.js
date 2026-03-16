@@ -595,15 +595,16 @@ const initRevealMotion = () => {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
   const revealTargets = [
-    ...qsa(".page > section"),
-    ...qsa(".page > article"),
-    ...qsa(".doc-body > section"),
-    ...qsa(".doc-body > nav"),
     ...qsa(".framework-featured-card"),
     ...qsa(".framework-hub-group"),
     ...qsa(".precision-related-card"),
     ...qsa(".backbone-distinct-card"),
+    ...qsa(".backbone-support-card"),
+    ...qsa(".backbone-entry"),
     ...qsa(".explorer-entry-card"),
+    ...qsa(".explorer-theme-card"),
+    ...qsa(".explorer-synthesis-card"),
+    ...qsa(".explorer-study-card"),
   ];
 
   const uniqueTargets = Array.from(new Set(revealTargets)).filter((el) => !el.classList.contains("reveal-on-scroll"));
