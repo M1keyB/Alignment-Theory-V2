@@ -3185,19 +3185,19 @@ body.nav-open::before {
     white-space: nowrap;
   }
 
-  .site-nav a {
+  .site-nav > a {
     order: 10;
   }
 
-  .site-nav a[href*="index.html"] {
+  .site-nav > a[href*="index.html"] {
     order: 0;
   }
 
-  .site-nav a[href*="library.html"] {
+  .site-nav > a[href*="library.html"] {
     order: 1;
   }
 
-  .site-nav a[href*="media.html"] {
+  .site-nav > a[href*="media.html"] {
     order: 2;
   }
 
