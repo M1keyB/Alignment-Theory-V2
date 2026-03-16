@@ -2267,6 +2267,73 @@ body.nav-open::before {
   color: var(--muted);
 }
 
+.copy-tool {
+  display: grid;
+  gap: 1rem;
+}
+
+.copy-tool-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.9rem;
+}
+
+.copy-tool-header p {
+  margin: 0;
+}
+
+.copy-text {
+  width: 100%;
+  min-height: 33rem;
+  padding: 1rem 1.05rem;
+  border: 1px solid rgba(59, 52, 47, 0.1);
+  border-radius: calc(var(--radius) - 2px);
+  background: rgba(255, 255, 255, 0.22);
+  color: var(--ink-strong);
+  font: inherit;
+  line-height: 1.72;
+  resize: vertical;
+}
+
+.copy-text[readonly] {
+  cursor: text;
+}
+
+.copy-button {
+  white-space: nowrap;
+}
+
+.copy-button.is-copied {
+  background: rgba(59, 52, 47, 0.88);
+  border-color: rgba(59, 52, 47, 0.92);
+  color: var(--paper-strong);
+}
+
+.ai-prompt-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.ai-prompt-card {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.ai-prompt-card p {
+  margin: 0;
+}
+
+.ai-prompt-text {
+  margin: 0;
+  padding: 0.95rem 1rem;
+  background: rgba(59, 52, 47, 0.05);
+  border: 1px solid rgba(59, 52, 47, 0.08);
+  border-radius: calc(var(--radius) - 2px);
+  color: var(--ink-strong);
+  line-height: 1.65;
+}
+
 @keyframes archive-rise {
   from {
     opacity: 0;
@@ -2877,6 +2944,7 @@ body.nav-open::before {
       transform var(--dur-slow) var(--ease-out),
       visibility 0s linear var(--dur-slow);
     overflow-y: auto;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     z-index: 34;
     backdrop-filter: none;
@@ -2933,6 +3001,8 @@ body.nav-open::before {
   .site-nav-section {
     display: grid;
     gap: 0.2rem;
+    width: 100%;
+    min-width: 0;
     margin-top: 0.5rem;
     padding-top: 0.55rem;
     border-top: 1px solid rgba(59, 52, 47, 0.08);
@@ -2976,8 +3046,10 @@ body.nav-open::before {
 
   .site-nav-group {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
     gap: 0.65rem;
     margin-top: 0.2rem;
+    width: 100%;
     min-width: 0;
   }
 
@@ -2993,7 +3065,9 @@ body.nav-open::before {
 
   .site-nav-cluster {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
     gap: 0;
+    width: 100%;
     padding: 0.2rem 0 0;
     border-top: 1px solid rgba(59, 52, 47, 0.06);
   }
@@ -3009,6 +3083,11 @@ body.nav-open::before {
     font-size: 0.6rem;
     letter-spacing: 0.16em;
     text-transform: uppercase;
+  }
+
+  .site-nav-cluster a {
+    display: block;
+    width: 100%;
   }
 
   .mobile-bottom-nav {
@@ -3249,6 +3328,16 @@ body.nav-open::before {
   .mobile-bottom-nav__label {
     font-size: 0.53rem;
     letter-spacing: 0.08em;
+  }
+
+  .copy-tool-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .copy-text {
+    min-height: 37rem;
+    padding: 0.95rem;
   }
 
   .grid-two,

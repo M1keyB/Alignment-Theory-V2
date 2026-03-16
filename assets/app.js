@@ -480,6 +480,15 @@ const initNav = () => {
         ],
       },
       {
+        label: "Clarifications",
+        links: [
+          { href: "scaffolding-and-counterfeit-order.html", label: "Scaffolding and Counterfeit Order" },
+          { href: "coherence-markers.html", label: "Coherence Markers" },
+          { href: "reintegration-conditions.html", label: "Reintegration Conditions" },
+          { href: "stress-tests-and-limits.html", label: "Stress Tests and Limits" },
+        ],
+      },
+      {
         label: "Metaphysical layer",
         links: [
           { href: "metaphysical-claims.html", label: "Metaphysical Claims" },
@@ -646,6 +655,58 @@ const initSwipeHints = () => {
   });
 };
 
+const initCopyTools = () => {
+  const copyButtons = qsa("[data-copy-target], [data-copy-text]");
+  if (!copyButtons.length) return;
+
+  const copyValue = async (value) => {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(value);
+      return;
+    }
+
+    const helper = document.createElement("textarea");
+    helper.value = value;
+    helper.setAttribute("readonly", "");
+    helper.style.position = "absolute";
+    helper.style.left = "-9999px";
+    document.body.appendChild(helper);
+    helper.select();
+    document.execCommand("copy");
+    document.body.removeChild(helper);
+  };
+
+  copyButtons.forEach((button) => {
+    const defaultLabel = button.textContent.trim();
+
+    button.addEventListener("click", async () => {
+      const targetId = button.dataset.copyTarget;
+      const target = targetId ? document.getElementById(targetId) : null;
+      const value = button.dataset.copyText
+        || (target
+          ? ("value" in target ? target.value : target.textContent || "")
+          : "");
+
+      if (!value.trim()) return;
+
+      try {
+        await copyValue(value);
+        button.textContent = "Copied";
+        button.classList.add("is-copied");
+        window.setTimeout(() => {
+          button.textContent = defaultLabel;
+          button.classList.remove("is-copied");
+        }, 1800);
+      } catch (error) {
+        button.textContent = "Copy failed";
+        window.setTimeout(() => {
+          button.textContent = defaultLabel;
+        }, 1800);
+      }
+    });
+  });
+};
+
 const init = () => {
   loadMarkdown();
   initStaticToc();
@@ -654,6 +715,7 @@ const init = () => {
   initNav();
   initRevealMotion();
   initSwipeHints();
+  initCopyTools();
 };
 
 document.addEventListener("DOMContentLoaded", init);
