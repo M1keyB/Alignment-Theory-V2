@@ -491,6 +491,18 @@ const initNav = () => {
         ],
       },
       {
+        label: "Deepening architecture",
+        links: [
+          { href: "metabolizing-truth.html", label: "Metabolizing Truth" },
+          { href: "what-inward-coherence-is.html", label: "What Inward Coherence Is" },
+          { href: "why-christ-is-structurally-central.html", label: "Why Christ Is Structurally Central" },
+          { href: "from-markers-to-indices.html", label: "From Markers to Indices" },
+          { href: "worked-case-study.html", label: "Worked Case Study" },
+          { href: "alignment-theory-sdt-virtue-ethics.html", label: "SDT and Virtue Ethics" },
+          { href: "on-the-inner-outer-distinction.html", label: "Inner / Outer Distinction" },
+        ],
+      },
+      {
         label: "Metaphysical layer",
         links: [
           { href: "metaphysical-claims.html", label: "Metaphysical Claims" },
