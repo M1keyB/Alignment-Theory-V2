@@ -3001,8 +3001,10 @@ body.nav-open::before {
   }
 
   .site-nav-section {
-    display: grid;
+    display: block;
     gap: 0.2rem;
+    flex: 0 0 auto;
+    align-self: stretch;
     width: 100%;
     min-width: 0;
     max-width: 100%;
@@ -3092,7 +3094,8 @@ body.nav-open::before {
   }
 
   .site-nav-cluster a {
-    display: block;
+    display: flex;
+    align-items: center;
     width: 100%;
     max-width: 100%;
   }
@@ -3214,10 +3217,12 @@ body.nav-open::before {
   }
 
   .site-nav {
+    top: max(0.6rem, env(safe-area-inset-top, 0px));
     left: 0.6rem;
     right: 0.6rem;
     bottom: calc(env(safe-area-inset-bottom, 0px) + 5.6rem);
-    max-height: calc(100dvh - 8rem);
+    max-height: none;
+    max-width: calc(100vw - 1.2rem);
   }
 
   .button,
