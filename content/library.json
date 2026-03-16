@@ -160,6 +160,14 @@
     "link": "../pages/mathematical-precision.html"
   },
   {
+    "title": "Cost of Simulation and Phase Transition",
+    "type": "Framework Paper",
+    "date": "2026-03-16",
+    "version": "reference page",
+    "abstract": "A trigger-mechanism page explaining how rising simulation cost forces movement toward revision, hardening, or collapse.",
+    "link": "../pages/cost-of-simulation-and-phase-transition.html"
+  },
+  {
     "title": "One Pattern, Many Languages",
     "type": "Framework Paper",
     "date": "2026-03-13",
