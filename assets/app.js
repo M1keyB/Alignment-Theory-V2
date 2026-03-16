@@ -505,6 +505,16 @@ const initNav = () => {
         ],
       },
       {
+        label: "Formation and order",
+        links: [
+          { href: "the-formation-mechanism.html", label: "The Formation Mechanism" },
+          { href: "three-forms-of-order.html", label: "Three Forms of Order" },
+          { href: "enforcement-coherence-and-hard-cases.html", label: "Enforcement and Hard Cases" },
+          { href: "toward-a-formation-index.html", label: "Toward a Formation Index" },
+          { href: "how-formation-fails.html", label: "How Formation Fails" },
+        ],
+      },
+      {
         label: "Metaphysical layer",
         links: [
           { href: "metaphysical-claims.html", label: "Metaphysical Claims" },
