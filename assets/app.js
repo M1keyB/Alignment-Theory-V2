@@ -460,66 +460,42 @@ const initNav = () => {
   if (!nav || !toggles.length) return;
 
   if (!nav.dataset.enhanced) {
-    const frameworkGroups = [
-      {
-        label: "Scripture and study",
-        links: [
-          { href: "biblical-grammar.html", label: "Biblical Grammar" },
-          { href: "scripture-explorer.html", label: "Scripture Explorer" },
-          { href: "scripture-regulation-and-inner-transformation.html", label: "Scripture and Regulation" },
-          { href: "lexicon.html", label: "Lexicon" },
-        ],
-      },
-      {
-        label: "Framework expansion",
-        links: [
-          { href: "framework.html", label: "Framework Center" },
-          { href: "research-backbone.html", label: "Research Backbone" },
-          { href: "one-pattern-across-scales.html", label: "One Pattern Across Scales" },
-          { href: "research-backbone.html#what-alignment-theory-adds", label: "Distinct Contribution" },
-        ],
-      },
-      {
-        label: "Clarifications",
-        links: [
-          { href: "scaffolding-and-counterfeit-order.html", label: "Scaffolding and Counterfeit Order" },
-          { href: "when-scaffolding-hardens.html", label: "When Scaffolding Hardens" },
-          { href: "emergency-order-and-triage.html", label: "Emergency Order and Triage" },
-          { href: "coherence-markers.html", label: "Coherence Markers" },
-          { href: "reintegration-conditions.html", label: "Reintegration Conditions" },
-          { href: "auditing-counterfeit-order.html", label: "Auditing Counterfeit Order" },
-          { href: "limits-of-diagnostic-application.html", label: "Limits of Diagnostic Application" },
-          { href: "stress-tests-and-limits.html", label: "Stress Tests and Limits" },
-        ],
-      },
-      {
-        label: "Deepening architecture",
-        links: [
-          { href: "metabolizing-truth.html", label: "Metabolizing Truth" },
-          { href: "what-inward-coherence-is.html", label: "What Inward Coherence Is" },
-          { href: "why-christ-is-structurally-central.html", label: "Why Christ Is Structurally Central" },
-          { href: "from-markers-to-indices.html", label: "From Markers to Indices" },
-          { href: "worked-case-study.html", label: "Worked Case Study" },
-          { href: "alignment-theory-sdt-virtue-ethics.html", label: "SDT and Virtue Ethics" },
-          { href: "on-the-inner-outer-distinction.html", label: "Inner / Outer Distinction" },
-        ],
-      },
-      {
-        label: "Formation and order",
-        links: [
-          { href: "the-formation-mechanism.html", label: "The Formation Mechanism" },
-          { href: "three-forms-of-order.html", label: "Three Forms of Order" },
-          { href: "enforcement-coherence-and-hard-cases.html", label: "Enforcement and Hard Cases" },
-          { href: "toward-a-formation-index.html", label: "Toward a Formation Index" },
-          { href: "how-formation-fails.html", label: "How Formation Fails" },
-        ],
-      },
-      {
-        label: "Metaphysical layer",
-        links: [
-          { href: "metaphysical-claims.html", label: "Metaphysical Claims" },
-        ],
-      },
+    const frameworkLinks = [
+      { href: "human-condition.html", label: "The Human Condition" },
+      { href: "why-humans-build-systems.html", label: "Why Humans Build Systems" },
+      { href: "from-human-regulation-to-alignment-theory.html", label: "From Human Regulation to Alignment Theory" },
+      { href: "core-laws.html", label: "Core Laws" },
+      { href: "scaffolding-and-counterfeit-order.html", label: "Scaffolding and Counterfeit Order" },
+      { href: "coherence-markers.html", label: "Coherence Markers" },
+      { href: "reintegration-conditions.html", label: "Reintegration Conditions" },
+      { href: "emergency-order-and-triage.html", label: "Emergency Order and Triage" },
+      { href: "when-scaffolding-hardens.html", label: "When Scaffolding Hardens" },
+      { href: "auditing-counterfeit-order.html", label: "Auditing Counterfeit Order" },
+      { href: "limits-of-diagnostic-application.html", label: "Limits of Diagnostic Application" },
+      { href: "stress-tests-and-limits.html", label: "Stress Tests and Limits" },
+      { href: "the-formation-mechanism.html", label: "The Formation Mechanism" },
+      { href: "three-forms-of-order.html", label: "Three Forms of Order" },
+      { href: "how-formation-fails.html", label: "How Formation Fails" },
+      { href: "enforcement-coherence-and-hard-cases.html", label: "Enforcement and Hard Cases" },
+      { href: "toward-a-formation-index.html", label: "Toward a Formation Index" },
+      { href: "from-markers-to-indices.html", label: "From Markers to Indices" },
+      { href: "metabolizing-truth.html", label: "Metabolizing Truth" },
+      { href: "what-inward-coherence-is.html", label: "What Inward Coherence Is" },
+      { href: "the-transition-trigger.html", label: "The Transition Trigger" },
+      { href: "worked-case-study.html", label: "Worked Case Study" },
+      { href: "formation-case-study.html", label: "Formation Case Study" },
+      { href: "one-pattern-across-scales.html", label: "One Pattern Across Scales" },
+      { href: "research-backbone.html#what-alignment-theory-adds", label: "Distinct Contribution" },
+      { href: "research-backbone.html", label: "Research Backbone" },
+      { href: "alignment-theory-sdt-virtue-ethics.html", label: "SDT and Virtue Ethics" },
+      { href: "on-the-inner-outer-distinction.html", label: "Inner / Outer Distinction" },
+      { href: "biblical-grammar.html", label: "Biblical Grammar" },
+      { href: "scripture-regulation-and-inner-transformation.html", label: "Scripture and Regulation" },
+      { href: "scripture-explorer.html", label: "Scripture Explorer" },
+      { href: "lexicon.html", label: "Lexicon" },
+      { href: "why-christ-is-structurally-central.html", label: "Why Christ Is Structurally Central" },
+      { href: "metaphysical-claims.html", label: "Metaphysical Claims" },
+      { href: "framework.html", label: "Framework Center" },
     ];
 
     const currentPath = window.location.pathname.split("/").pop() || "index.html";
@@ -534,36 +510,25 @@ const initNav = () => {
     summary.className = "site-nav-summary";
     summary.textContent = "Framework Paths";
 
-    const support = document.createElement("p");
-    support.className = "site-nav-support";
-    support.textContent = "Core destinations, foundations, and study layers.";
-
     const group = document.createElement("div");
     group.className = "site-nav-group";
 
-    frameworkGroups.forEach(({ label, links }) => {
-      const cluster = document.createElement("div");
-      cluster.className = "site-nav-cluster";
+    const pathLabel = document.createElement("p");
+    pathLabel.className = "site-nav-cluster-label";
+    pathLabel.textContent = "Follow the path →";
+    group.appendChild(pathLabel);
 
-      const clusterLabel = document.createElement("p");
-      clusterLabel.className = "site-nav-cluster-label";
-      clusterLabel.textContent = label;
-      cluster.appendChild(clusterLabel);
-
-      links.forEach(({ href, label: linkLabel }) => {
-        const link = document.createElement("a");
-        link.href = `${pageRoot}${href}`;
-        link.textContent = linkLabel;
-        if (currentPath === href) {
-          link.setAttribute("aria-current", "page");
-        }
-        cluster.appendChild(link);
-      });
-
-      group.appendChild(cluster);
+    frameworkLinks.forEach(({ href, label }) => {
+      const link = document.createElement("a");
+      link.href = `${pageRoot}${href}`;
+      link.textContent = label;
+      if (currentPath === href) {
+        link.setAttribute("aria-current", "page");
+      }
+      group.appendChild(link);
     });
 
-    section.append(summary, support, group);
+    section.append(summary, group);
     nav.appendChild(section);
     nav.dataset.enhanced = "true";
   }
