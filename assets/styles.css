@@ -2976,13 +2976,39 @@ body.nav-open::before {
 
   .site-nav-group {
     display: grid;
-    gap: 0;
+    gap: 0.65rem;
     margin-top: 0.2rem;
+    min-width: 0;
   }
 
   .site-nav-group a {
+    width: 100%;
+    min-width: 0;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: anywhere;
     font-size: 0.7rem;
     letter-spacing: 0.11em;
+  }
+
+  .site-nav-cluster {
+    display: grid;
+    gap: 0;
+    padding: 0.2rem 0 0;
+    border-top: 1px solid rgba(59, 52, 47, 0.06);
+  }
+
+  .site-nav-cluster:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .site-nav-cluster-label {
+    margin: 0 0 0.18rem;
+    color: var(--muted);
+    font-size: 0.6rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
   }
 
   .mobile-bottom-nav {

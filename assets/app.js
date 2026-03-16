@@ -460,16 +460,31 @@ const initNav = () => {
   if (!nav || !toggles.length) return;
 
   if (!nav.dataset.enhanced) {
-    const frameworkLinks = [
-      { href: "framework.html", label: "Framework Center" },
-      { href: "biblical-grammar.html", label: "Biblical Grammar" },
-      { href: "scripture-explorer.html", label: "Scripture Explorer" },
-      { href: "scripture-regulation-and-inner-transformation.html", label: "Scripture and Regulation" },
-      { href: "lexicon.html", label: "Lexicon" },
-      { href: "research-backbone.html", label: "Research Backbone" },
-      { href: "one-pattern-across-scales.html", label: "One Pattern Across Scales" },
-      { href: "research-backbone.html#what-alignment-theory-adds", label: "Distinct Contribution" },
-      { href: "metaphysical-claims.html", label: "Metaphysical Claims" },
+    const frameworkGroups = [
+      {
+        label: "Scripture and study",
+        links: [
+          { href: "biblical-grammar.html", label: "Biblical Grammar" },
+          { href: "scripture-explorer.html", label: "Scripture Explorer" },
+          { href: "scripture-regulation-and-inner-transformation.html", label: "Scripture and Regulation" },
+          { href: "lexicon.html", label: "Lexicon" },
+        ],
+      },
+      {
+        label: "Framework expansion",
+        links: [
+          { href: "framework.html", label: "Framework Center" },
+          { href: "research-backbone.html", label: "Research Backbone" },
+          { href: "one-pattern-across-scales.html", label: "One Pattern Across Scales" },
+          { href: "research-backbone.html#what-alignment-theory-adds", label: "Distinct Contribution" },
+        ],
+      },
+      {
+        label: "Metaphysical layer",
+        links: [
+          { href: "metaphysical-claims.html", label: "Metaphysical Claims" },
+        ],
+      },
     ];
 
     const currentPath = window.location.pathname.split("/").pop() || "index.html";
@@ -491,14 +506,26 @@ const initNav = () => {
     const group = document.createElement("div");
     group.className = "site-nav-group";
 
-    frameworkLinks.forEach(({ href, label }) => {
-      const link = document.createElement("a");
-      link.href = `${pageRoot}${href}`;
-      link.textContent = label;
-      if (currentPath === href) {
-        link.setAttribute("aria-current", "page");
-      }
-      group.appendChild(link);
+    frameworkGroups.forEach(({ label, links }) => {
+      const cluster = document.createElement("div");
+      cluster.className = "site-nav-cluster";
+
+      const clusterLabel = document.createElement("p");
+      clusterLabel.className = "site-nav-cluster-label";
+      clusterLabel.textContent = label;
+      cluster.appendChild(clusterLabel);
+
+      links.forEach(({ href, label: linkLabel }) => {
+        const link = document.createElement("a");
+        link.href = `${pageRoot}${href}`;
+        link.textContent = linkLabel;
+        if (currentPath === href) {
+          link.setAttribute("aria-current", "page");
+        }
+        cluster.appendChild(link);
+      });
+
+      group.appendChild(cluster);
     });
 
     section.append(summary, support, group);
