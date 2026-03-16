@@ -382,6 +382,52 @@ const initNav = () => {
   const toggle = qs(".nav-toggle");
   if (!nav || !toggle) return;
 
+  if (!nav.dataset.enhanced) {
+    const frameworkLinks = [
+      { href: "framework.html", label: "Framework Center" },
+      { href: "from-human-regulation-to-alignment-theory.html", label: "From Human Regulation" },
+      { href: "human-condition.html", label: "Human Condition" },
+      { href: "core-laws.html", label: "Core Laws" },
+      { href: "one-pattern-across-scales.html", label: "One Pattern Across Scales" },
+      { href: "research-backbone.html", label: "Research Backbone" },
+      { href: "biblical-grammar.html", label: "Biblical Grammar" },
+      { href: "lexicon.html", label: "Lexicon" },
+    ];
+
+    const currentPath = window.location.pathname.split("/").pop() || "index.html";
+    const pageRoot = currentPath === "index.html" ? "pages/" : "";
+    const section = document.createElement("details");
+    section.className = "site-nav-section";
+    if (document.body.dataset.page === "framework") {
+      section.open = true;
+    }
+
+    const summary = document.createElement("summary");
+    summary.className = "site-nav-summary";
+    summary.textContent = "Framework Paths";
+
+    const support = document.createElement("p");
+    support.className = "site-nav-support";
+    support.textContent = "Core destinations, foundations, and study layers.";
+
+    const group = document.createElement("div");
+    group.className = "site-nav-group";
+
+    frameworkLinks.forEach(({ href, label }) => {
+      const link = document.createElement("a");
+      link.href = `${pageRoot}${href}`;
+      link.textContent = label;
+      if (currentPath === href) {
+        link.setAttribute("aria-current", "page");
+      }
+      group.appendChild(link);
+    });
+
+    section.append(summary, support, group);
+    nav.appendChild(section);
+    nav.dataset.enhanced = "true";
+  }
+
   const setExpanded = (isOpen) => {
     toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
     toggle.textContent = isOpen ? "Close" : "Menu";
