@@ -216,6 +216,83 @@ const showMissing = (target, message) => {
   `;
 };
 
+const getCurrentPath = () => window.location.pathname.split("/").pop() || "index.html";
+
+const buildNavIcon = (name) => {
+  const paths = {
+    home: '<path d="M3.5 8.5 12 2l8.5 6.5"></path><path d="M5.5 7.5V20h13V7.5"></path>',
+    framework: '<rect x="4" y="4" width="16" height="16" rx="2.5"></rect><path d="M8 4v16"></path><path d="M4 10h16"></path>',
+    essays: '<path d="M6 4.5h12"></path><path d="M6 9h12"></path><path d="M6 13.5h8"></path><path d="M6 18h10"></path>',
+    library: '<path d="M5 5.5h5v13H5z"></path><path d="M10 5.5h4.5v13H10z"></path><path d="M14.5 5.5H19v13h-4.5z"></path>',
+    more: '<circle cx="6" cy="12" r="1.25" fill="currentColor" stroke="none"></circle><circle cx="12" cy="12" r="1.25" fill="currentColor" stroke="none"></circle><circle cx="18" cy="12" r="1.25" fill="currentColor" stroke="none"></circle>',
+  };
+
+  return `
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      ${paths[name] || ""}
+    </svg>
+  `;
+};
+
+const initMobileBottomNav = () => {
+  if (qs(".mobile-bottom-nav")) return;
+
+  const currentPath = getCurrentPath();
+  const inPagesDir = window.location.pathname.includes("/pages/");
+  const bodyPage = document.body.dataset.page || "";
+  const primaryKey = currentPath === "index.html" || bodyPage === "home"
+    ? "home"
+    : currentPath === "library.html" || bodyPage === "library"
+      ? "library"
+      : currentPath === "essays.html" || currentPath.startsWith("essay-") || bodyPage === "essays"
+        ? "essays"
+        : bodyPage === "framework"
+          ? "framework"
+          : "more";
+
+  const links = [
+    { key: "home", label: "Home", href: inPagesDir ? "../index.html" : "index.html" },
+    { key: "framework", label: "Framework", href: inPagesDir ? "framework.html" : "pages/framework.html" },
+    { key: "essays", label: "Essays", href: inPagesDir ? "essays.html" : "pages/essays.html" },
+    { key: "library", label: "Library", href: inPagesDir ? "library.html" : "pages/library.html" },
+  ];
+
+  const nav = document.createElement("nav");
+  nav.className = "mobile-bottom-nav";
+  nav.setAttribute("aria-label", "Mobile primary");
+
+  links.forEach(({ key, label, href }) => {
+    const link = document.createElement("a");
+    link.className = "mobile-bottom-nav__item";
+    link.href = href;
+    if (primaryKey === key) {
+      link.setAttribute("aria-current", "page");
+    }
+    link.innerHTML = `
+      <span class="mobile-bottom-nav__icon">${buildNavIcon(key)}</span>
+      <span class="mobile-bottom-nav__label">${label}</span>
+    `;
+    nav.appendChild(link);
+  });
+
+  const moreButton = document.createElement("button");
+  moreButton.type = "button";
+  moreButton.className = "mobile-bottom-nav__item bottom-nav-toggle";
+  moreButton.setAttribute("aria-expanded", "false");
+  moreButton.setAttribute("aria-controls", "site-nav");
+  moreButton.setAttribute("aria-label", "Open more navigation");
+  if (primaryKey === "more") {
+    moreButton.classList.add("is-current");
+  }
+  moreButton.innerHTML = `
+    <span class="mobile-bottom-nav__icon">${buildNavIcon("more")}</span>
+    <span class="mobile-bottom-nav__label">More</span>
+  `;
+  nav.appendChild(moreButton);
+
+  document.body.appendChild(nav);
+};
+
 const buildToc = (container, tocTargets) => {
   container.innerHTML = "";
   if (!tocTargets.length) {
@@ -379,19 +456,20 @@ const loadLibrary = async () => {
 
 const initNav = () => {
   const nav = qs("#site-nav");
-  const toggle = qs(".nav-toggle");
-  if (!nav || !toggle) return;
+  const toggles = qsa(".nav-toggle, .bottom-nav-toggle");
+  if (!nav || !toggles.length) return;
 
   if (!nav.dataset.enhanced) {
     const frameworkLinks = [
       { href: "framework.html", label: "Framework Center" },
-      { href: "from-human-regulation-to-alignment-theory.html", label: "From Human Regulation" },
-      { href: "human-condition.html", label: "Human Condition" },
-      { href: "core-laws.html", label: "Core Laws" },
-      { href: "one-pattern-across-scales.html", label: "One Pattern Across Scales" },
-      { href: "research-backbone.html", label: "Research Backbone" },
       { href: "biblical-grammar.html", label: "Biblical Grammar" },
+      { href: "scripture-explorer.html", label: "Scripture Explorer" },
+      { href: "scripture-regulation-and-inner-transformation.html", label: "Scripture and Regulation" },
       { href: "lexicon.html", label: "Lexicon" },
+      { href: "research-backbone.html", label: "Research Backbone" },
+      { href: "one-pattern-across-scales.html", label: "One Pattern Across Scales" },
+      { href: "research-backbone.html#what-alignment-theory-adds", label: "Distinct Contribution" },
+      { href: "metaphysical-claims.html", label: "Metaphysical Claims" },
     ];
 
     const currentPath = window.location.pathname.split("/").pop() || "index.html";
@@ -429,22 +507,35 @@ const initNav = () => {
   }
 
   const setExpanded = (isOpen) => {
-    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-    toggle.textContent = isOpen ? "Close" : "Menu";
-    toggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+    toggles.forEach((toggle) => {
+      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      if (toggle.classList.contains("bottom-nav-toggle")) {
+        toggle.setAttribute("aria-label", isOpen ? "Close more navigation" : "Open more navigation");
+        toggle.classList.toggle("is-current", isOpen || toggle.classList.contains("is-page-current"));
+      } else {
+        toggle.textContent = isOpen ? "Close" : "Menu";
+        toggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+      }
+    });
     document.body.classList.toggle("nav-open", isOpen);
   };
 
   const closeNav = () => setExpanded(false);
   const openNav = () => setExpanded(true);
 
-  toggle.addEventListener("click", () => {
-    const isOpen = toggle.getAttribute("aria-expanded") === "true";
-    if (isOpen) {
-      closeNav();
-    } else {
-      openNav();
+  toggles.forEach((toggle) => {
+    if (toggle.classList.contains("bottom-nav-toggle") && toggle.classList.contains("is-current")) {
+      toggle.classList.add("is-page-current");
     }
+
+    toggle.addEventListener("click", () => {
+      const isOpen = toggle.getAttribute("aria-expanded") === "true";
+      if (isOpen) {
+        closeNav();
+      } else {
+        openNav();
+      }
+    });
   });
 
   nav.addEventListener("click", (event) => {
@@ -460,9 +551,9 @@ const initNav = () => {
   });
 
   document.addEventListener("click", (event) => {
-    const isOpen = toggle.getAttribute("aria-expanded") === "true";
+    const isOpen = toggles.some((toggle) => toggle.getAttribute("aria-expanded") === "true");
     if (!isOpen) return;
-    if (nav.contains(event.target) || toggle.contains(event.target)) return;
+    if (nav.contains(event.target) || toggles.some((toggle) => toggle.contains(event.target))) return;
     closeNav();
   });
 
@@ -531,6 +622,7 @@ const init = () => {
   loadMarkdown();
   initStaticToc();
   loadLibrary();
+  initMobileBottomNav();
   initNav();
   initRevealMotion();
   initSwipeHints();
