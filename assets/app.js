@@ -464,9 +464,6 @@ const initNav = () => {
       { href: "human-condition.html", label: "The Human Condition" },
       { href: "why-humans-build-systems.html", label: "Why Humans Build Systems" },
       { href: "from-human-regulation-to-alignment-theory.html", label: "From Human Regulation to Alignment Theory" },
-      { href: "contact-before-interpretation.html", label: "Contact Before Interpretation" },
-      { href: "the-fall-as-self-authorizing-interpretation.html", label: "The Fall as Self-Authorizing Interpretation" },
-      { href: "integrative-tolerance.html", label: "Integrative Tolerance" },
       { href: "core-laws.html", label: "Core Laws" },
       { href: "scaffolding-and-counterfeit-order.html", label: "Scaffolding and Counterfeit Order" },
       { href: "coherence-markers.html", label: "Coherence Markers" },
@@ -474,35 +471,20 @@ const initNav = () => {
       { href: "emergency-order-and-triage.html", label: "Emergency Order and Triage" },
       { href: "when-scaffolding-hardens.html", label: "When Scaffolding Hardens" },
       { href: "auditing-counterfeit-order.html", label: "Auditing Counterfeit Order" },
-      { href: "limits-of-diagnostic-application.html", label: "Limits of Diagnostic Application" },
-      { href: "stress-tests-and-limits.html", label: "Stress Tests and Limits" },
       { href: "the-formation-mechanism.html", label: "The Formation Mechanism" },
-      { href: "three-forms-of-order.html", label: "Three Forms of Order" },
-      { href: "how-formation-fails.html", label: "How Formation Fails" },
-      { href: "enforcement-coherence-and-hard-cases.html", label: "Enforcement and Hard Cases" },
-      { href: "toward-a-formation-index.html", label: "Toward a Formation Index" },
-      { href: "from-markers-to-indices.html", label: "From Markers to Indices" },
-      { href: "metabolizing-truth.html", label: "Metabolizing Truth" },
-      { href: "what-inward-coherence-is.html", label: "What Inward Coherence Is" },
+      { href: "contact-before-interpretation.html", label: "Contact Before Interpretation" },
+      { href: "the-fall-as-self-authorizing-interpretation.html", label: "The Fall as Self-Authorizing Interpretation" },
+      { href: "integrative-tolerance.html", label: "Integrative Tolerance" },
       { href: "the-transition-trigger.html", label: "The Transition Trigger" },
-      { href: "worked-case-study.html", label: "Worked Case Study" },
-      { href: "formation-case-study.html", label: "Formation Case Study" },
-      { href: "one-pattern-across-scales.html", label: "One Pattern Across Scales" },
-      { href: "research-backbone.html#what-alignment-theory-adds", label: "Distinct Contribution" },
-      { href: "research-backbone.html", label: "Research Backbone" },
-      { href: "alignment-theory-sdt-virtue-ethics.html", label: "SDT and Virtue Ethics" },
-      { href: "on-the-inner-outer-distinction.html", label: "Inner / Outer Distinction" },
       { href: "biblical-grammar.html", label: "Biblical Grammar" },
-      { href: "scripture-regulation-and-inner-transformation.html", label: "Scripture and Regulation" },
-      { href: "scripture-explorer.html", label: "Scripture Explorer" },
-      { href: "lexicon.html", label: "Lexicon" },
       { href: "why-christ-is-structurally-central.html", label: "Why Christ Is Structurally Central" },
-      { href: "metaphysical-claims.html", label: "Metaphysical Claims" },
-      { href: "framework.html", label: "Framework Center" },
+      { href: "grace-as-structural-enabling-condition.html", label: "Grace as Structural Enabling Condition" },
+      { href: "new-creation-as-restored-order.html", label: "New Creation as Restored Order" },
     ];
 
     const currentPath = window.location.pathname.split("/").pop() || "index.html";
     const pageRoot = currentPath === "index.html" ? "pages/" : "";
+    const frameworkLink = nav.querySelector('a[href$="framework.html"]');
     const section = document.createElement("details");
     section.className = "site-nav-section";
     if (document.body.dataset.page === "framework") {
@@ -533,6 +515,44 @@ const initNav = () => {
 
     section.append(summary, group);
     nav.appendChild(section);
+
+    if (frameworkLink) {
+      const wrapper = document.createElement("div");
+      wrapper.className = "site-nav-item site-nav-item--has-dropdown";
+      frameworkLink.parentNode.insertBefore(wrapper, frameworkLink);
+      wrapper.appendChild(frameworkLink);
+
+      const dropdown = document.createElement("div");
+      dropdown.className = "site-nav-dropdown";
+
+      const dropdownLabel = document.createElement("p");
+      dropdownLabel.className = "site-nav-dropdown-label";
+      dropdownLabel.textContent = "Follow the path →";
+      dropdown.appendChild(dropdownLabel);
+
+      const dropdownList = document.createElement("div");
+      dropdownList.className = "site-nav-dropdown-list";
+
+      frameworkLinks.forEach(({ href, label }, index) => {
+        const link = document.createElement("a");
+        link.className = "site-nav-dropdown-link";
+        link.href = `${pageRoot}${href}`;
+        link.textContent = `${index + 1}. ${label}`;
+        if (currentPath === href) {
+          link.setAttribute("aria-current", "page");
+        }
+        dropdownList.appendChild(link);
+      });
+
+      const dropdownFooter = document.createElement("a");
+      dropdownFooter.className = "site-nav-dropdown-footer";
+      dropdownFooter.href = `${pageRoot}framework.html`;
+      dropdownFooter.textContent = "Open Framework Center →";
+
+      dropdown.append(dropdownList, dropdownFooter);
+      wrapper.appendChild(dropdown);
+    }
+
     nav.dataset.enhanced = "true";
   }
 
