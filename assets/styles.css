@@ -98,17 +98,24 @@ a:focus-visible,
 }
 
 .site-header {
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 35;
   padding: clamp(2rem, 4vw, 3rem) clamp(1.5rem, 4vw, 3.75rem) 1.25rem;
   border-bottom: 1px solid var(--rule);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.12) 100%), var(--paper);
   backdrop-filter: blur(10px);
+  transition:
+    padding 300ms ease-in-out,
+    background-color 300ms ease-in-out,
+    box-shadow 300ms ease-in-out,
+    border-color 300ms ease-in-out;
 }
 
 .site-title {
   margin-bottom: 1rem;
   max-width: 48rem;
+  transition: margin-bottom 300ms ease-in-out;
 }
 
 .nav-toggle {
@@ -139,6 +146,15 @@ a:focus-visible,
   letter-spacing: 0.22em;
   font-size: 0.74rem;
   color: var(--muted);
+  max-height: 1.5rem;
+  overflow: hidden;
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 300ms ease-in-out,
+    max-height 300ms ease-in-out,
+    margin 300ms ease-in-out,
+    transform 300ms ease-in-out;
 }
 
 .site-title h1 {
@@ -148,6 +164,10 @@ a:focus-visible,
   font-weight: 500;
   color: var(--ink-strong);
   text-wrap: balance;
+  transition:
+    font-size 300ms ease-in-out,
+    margin 300ms ease-in-out,
+    letter-spacing 300ms ease-in-out;
 }
 
 .subtitle {
@@ -155,6 +175,38 @@ a:focus-visible,
   color: var(--muted);
   max-width: 48rem;
   line-height: 1.65;
+  max-height: 8rem;
+  overflow: hidden;
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 300ms ease-in-out,
+    max-height 300ms ease-in-out,
+    margin 300ms ease-in-out,
+    transform 300ms ease-in-out;
+}
+
+.site-header.scrolled {
+  padding: 0.95rem clamp(1.5rem, 4vw, 3.75rem) 0.8rem;
+  box-shadow: 0 8px 22px rgba(40, 33, 27, 0.08);
+}
+
+.site-header.scrolled .site-title {
+  margin-bottom: 0.2rem;
+}
+
+.site-header.scrolled .eyebrow,
+.site-header.scrolled .subtitle {
+  opacity: 0;
+  max-height: 0;
+  margin: 0;
+  transform: translateY(-6px);
+}
+
+.site-header.scrolled .site-title h1 {
+  margin: 0;
+  font-size: clamp(1.1rem, 1.7vw, 1.45rem);
+  letter-spacing: 0.01em;
 }
 
 .site-nav {

@@ -698,12 +698,25 @@ const initCopyTools = () => {
   });
 };
 
+const initStickyHeader = () => {
+  const header = qs(".site-header");
+  if (!header) return;
+
+  const syncHeaderState = () => {
+    header.classList.toggle("scrolled", window.scrollY > 60);
+  };
+
+  syncHeaderState();
+  window.addEventListener("scroll", syncHeaderState, { passive: true });
+};
+
 const init = () => {
   loadMarkdown();
   initStaticToc();
   loadLibrary();
   initMobileBottomNav();
   initNav();
+  initStickyHeader();
   initRevealMotion();
   initSwipeHints();
   initCopyTools();
