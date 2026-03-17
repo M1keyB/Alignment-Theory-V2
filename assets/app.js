@@ -701,9 +701,18 @@ const initCopyTools = () => {
 const initStickyHeader = () => {
   const header = qs(".site-header");
   if (!header) return;
+  const title = qs(".site-title h1", header);
+  const eyebrow = qs(".eyebrow", header);
+  const fullTitle = title ? title.textContent : "";
+  const compactTitle = eyebrow?.textContent?.trim() || "Alignment Theory";
 
   const syncHeaderState = () => {
-    header.classList.toggle("scrolled", window.scrollY > 60);
+    const isScrolled = window.scrollY > 60;
+    header.classList.toggle("scrolled", isScrolled);
+
+    if (title) {
+      title.textContent = isScrolled ? compactTitle : fullTitle;
+    }
   };
 
   syncHeaderState();
