@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Self-Referential Chains and the Signal Anchoring Constraint &middot; Alignment Theory Archive</title>
+  <meta name="description" content="Inline reading page for the Signal Anchoring Constraint paper." />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVFSZRN0PB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-QVFSZRN0PB");
+  </script>
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body data-page="papers">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-title">
+      <p class="eyebrow">Alignment Theory</p>
+      <h1>Research Archive</h1>
+    </div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="where-to-start.html">Where to Start</a>
+      <a href="manuscript.html">Manuscript</a>
+      <a href="papers.html" aria-current="page">Papers</a>
+      <a href="framework.html">Framework</a>
+      <a href="essays.html">Essays</a>
+      <a href="library.html">Library</a>
+      <a href="media.html">Media</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main" class="page page-article page-article--wide">
+    <aside class="toc-panel">
+      <div class="toc-desktop" aria-label="Table of contents">
+        <div class="toc-header">
+          <h2>Contents</h2>
+          <p class="toc-note">Inline reading edition of the paper.</p>
+        </div>
+        <ol class="toc-list" id="toc-list"></ol>
+      </div>
+      <details class="toc-mobile">
+        <summary>Table of Contents</summary>
+        <ol class="toc-list" id="toc-list-mobile"></ol>
+      </details>
+    </aside>
+
+    <article class="manuscript">
+      <header class="manuscript-header">
+        <p class="doc-meta">
+          <span class="chip">RESEARCH</span>
+          <span class="chip">PAPERS</span>
+        </p>
+        <h2>Self-Referential Chains and the Signal Anchoring Constraint</h2>
+        <p class="lead">A Structural Model for Knowledge Drift Across Religious Transmission, Institutional Formation, and AI Training Pipelines</p>
+        <p class="orientation-line">Michael Nathan Bower &mdash; Version 13 &mdash; 2026</p>
+        <div class="button-group button-group--priority">
+          <a class="button" href="../assets/signal_degradation_v13.pdf">Download PDF</a>
+          <a class="button" href="papers.html">Back to Papers</a>
+        </div>
+      </header>
+
+      <section id="doc-body" class="doc-body" data-static-toc>
+        <section class="doc-card" id="abstract">
+          <div class="doc-card-header">
+            <h3>Abstract</h3>
+            <span class="chip">Overview</span>
+          </div>
+          <p>This paper proposes a structural model explaining how knowledge systems drift when interpretations increasingly reference prior interpretations rather than reconnecting to the original signal they attempt to preserve. Two conceptual models, the Hill Transmission Problem and the Hanger Rack Model, illustrate the mechanism.</p>
+          <p>A formal approximation of signal fidelity is structurally mapped from cybernetic feedback stability theory and expressed as <strong>F &asymp; A / (L &times; C)</strong>, where fidelity is proportional to anchoring frequency and inversely proportional to chain length and compression. The paper develops the diagnostic distinction between drift chains and refinement chains, provides a taxonomy of signal anchoring mechanisms, and applies the model to early Christian doctrinal branching, institutional knowledge systems, and AI training pipeline contamination.</p>
+          <p>The model is grounded in predictive processing neuroscience and cybernetic regulation theory, and connected to the concept of counterfeit order developed in Alignment Theory. The central finding is that internal consistency and external accuracy are distinct properties, and self-referential chains maintain the former while losing the latter. Alignment, whether theological, institutional, or computational, requires structured contact with primary signals.</p>
+        </section>
+
+        <section class="doc-card" id="introduction">
+          <div class="doc-card-header">
+            <h3>1. Introduction</h3>
+            <span class="chip">Framing</span>
+          </div>
+          <p>Human civilizations preserve knowledge through layered interpretation. Religious traditions, scientific paradigms, philosophical schools, and institutional doctrines all depend on transmission across generations. Every such system accumulates interpretive layers. The common assumption is that this accumulation gradually clarifies truth: commentary sharpens meaning, repetition embeds understanding, and doctrinal development approaches the original signal more precisely over time.</p>
+          <p>History does not consistently support this assumption. Religious denominations multiply. Ideologies diverge from founding principles. Institutional doctrines evolve in ways that would surprise their architects. Machine learning systems trained on prior model outputs risk compounding their predecessors' distortions.</p>
+          <p>This paper proposes that such drift is not primarily caused by malice or incompetence. It is caused by a structural constraint inherent in all information transmission: interpretive chains tend to become self-referential. Once validation operates primarily through prior interpretations rather than primary signals, epistemic systems become internally coherent but externally ungrounded.</p>
+          <p>The deepest implication is that internal consistency and external accuracy are distinct properties. A system can maintain the former while losing the latter, and participants inside a drifting chain cannot reliably detect this from the inside. This applies with equal structural force to religious traditions, institutions, scientific paradigms, ideologies, and machine learning models.</p>
+        </section>
+
+        <section class="doc-card" id="core-definitions">
+          <div class="doc-card-header">
+            <h3>2. Core Definitions</h3>
+            <span class="chip">Definitions</span>
+          </div>
+          <dl>
+            <dt><strong>Signal</strong></dt>
+            <dd>Information generated directly from the underlying system being modeled. In religion, the historical event or teachings the tradition attempts to preserve. In science, empirical observation of the world. In machine learning, ground-truth data generated by human experience and direct observation.</dd>
+            <dt><strong>Interpretation Layer</strong></dt>
+            <dd>A transformation of the signal produced through explanation, translation, commentary, summarization, or modeling. Every layer introduces compression, emphasis, and reconstruction, even in good faith.</dd>
+            <dt><strong>Interpretive Chain</strong></dt>
+            <dd>A sequence of interpretation layers through which knowledge passes across time. Chain length is not itself the problem. The problem is whether each layer maintains contact with the signal or references only prior layers.</dd>
+            <dt><strong>Self-Referential Chain</strong></dt>
+            <dd>A chain in which interpretations are validated primarily by previous interpretations rather than by signal reconnection. Such chains can remain internally stable for extended periods while diverging from external reality.</dd>
+            <dt><strong>Signal Anchoring</strong></dt>
+            <dd>A mechanism that reconnects an interpretive system to primary signals, interrupting self-referential loops.</dd>
+            <dt><strong>Drift</strong></dt>
+            <dd>The gradual divergence of an interpretive chain from its signal, caused by cumulative self-referential validation rather than signal contact.</dd>
+          </dl>
+        </section>
+
+        <section class="doc-card" id="hill-and-hanger">
+          <div class="doc-card-header">
+            <h3>3. The Hill Transmission Problem and the Hanger Rack Model</h3>
+            <span class="chip">Models</span>
+          </div>
+          <h4>3.1 The Hill Transmission Problem</h4>
+          <p>A teacher speaks to a large crowd from the top of a hill. Those nearest hear clearly; those farther away hear fragments. At the outer edge, a listener asks someone nearby what was said. That person provides an explanation based on their own interpretation. The first interpretation layer forms.</p>
+          <p><strong>Original Teaching</strong> &rarr; <strong>Partial Hearing</strong> &rarr; <strong>Interpretation</strong> &rarr; <strong>Explanation</strong> &rarr; <strong>Doctrinal Stabilization</strong></p>
+          <p>Three features matter. First, degradation begins with structural distance, not distortion: physical or temporal gap precedes interpretive error. Second, each layer introduces reconstruction using prior knowledge and contextual inference. Third, the chain closes into a self-validating structure while every participant acts in good faith.</p>
+          <p>The Hill model is structurally close to Shannon's communication model of source, channel, noise, and receiver, with the key difference that Shannon's noise is random degradation while interpretive drift is systematic reconstruction that compounds across layers.</p>
+          <h4>3.2 The Hanger Rack Model</h4>
+          <p>Anchored structure: each interpretation remains attached to the signal itself. Drift structure: later interpretations hang from earlier interpretations rather than from the source.</p>
+          <p><strong>Anchored:</strong> Signal Rack &rarr; Interpretation A, Interpretation B, Interpretation C</p>
+          <p><strong>Drift:</strong> Signal Rack &rarr; Interpretation A &rarr; Interpretation B &rarr; Interpretation C &rarr; Interpretation D</p>
+          <p>In the drift structure, the integrity of Interpretation D depends entirely on the prior links. Any early error propagates and amplifies. More importantly, the chain is held together not by signal fidelity but by the weight of the chain itself: institutional authority, social reinforcement, and accumulated tradition stabilize the structure independently of whether it tracks the signal.</p>
+          <p>The Hanger Rack Model is the epistemic analogue of the canonical closed-loop feedback diagram in cybernetics. Refinement occurs when outputs remain corrigible by reference to the source signal. Drift occurs when validation circulates through prior outputs alone.</p>
+        </section>
+
+        <section class="doc-card" id="formal-approximation">
+          <div class="doc-card-header">
+            <h3>4. A Formal Approximation of Signal Fidelity</h3>
+            <span class="chip">Formal Model</span>
+          </div>
+          <p>The structural dynamics above are formally analogous to the stability conditions of feedback control systems in cybernetics. Wiener and Ashby established that a self-regulating system maintains alignment with its target state only if it continuously receives error-signal feedback, a comparison between its current outputs and the target. Without feedback, the system's internal dynamics drive it away from the target regardless of intent.</p>
+          <p>In control theory, system fidelity is proportional to feedback gain and inversely proportional to system lag and signal attenuation. In the interpretive chain framework, feedback strength corresponds to anchoring frequency (<strong>A</strong>), system lag corresponds to chain length (<strong>L</strong>), and signal attenuation corresponds to interpretive compression per layer (<strong>C</strong>).</p>
+          <p class="lead"><strong>F &asymp; A / (L &times; C)</strong></p>
+          <p><strong>F</strong> is signal fidelity, the correspondence between system outputs and the original signal. <strong>A</strong> is anchoring frequency, the rate of reconnection to primary signals. <strong>L</strong> is chain length, the number of interpretation layers between current state and original signal. <strong>C</strong> is interpretive compression per layer, the information lost or reconstructed at each step.</p>
+          <p>The approximation generates four directional predictions. As <strong>L</strong> increases with <strong>A</strong> constant, fidelity decreases. High <strong>C</strong> amplifies the effect of chain length. Increasing <strong>A</strong> compensates for long chains. When <strong>A</strong> approaches zero, <strong>F</strong> approaches zero regardless of the quality of the chain.</p>
+          <p>This mapping is structural, not yet a fully operationalized quantitative formula. Its value is directional: it identifies which variables drive fidelity, predicts the sign of their effects, and suggests where intervention is most productive.</p>
+        </section>
+
+        <section class="doc-card" id="predictive-processing">
+          <div class="doc-card-header">
+            <h3>5. Grounding in Predictive Processing and Sensory Anchoring</h3>
+            <span class="chip">Neuroscience</span>
+          </div>
+          <p>The signal anchoring constraint finds biological grounding in predictive processing theory. In predictive processing, the brain continuously generates internal models of the world and compares those predictions against incoming sensory signals. Prediction error drives model updating.</p>
+          <p>This is the biological implementation of signal anchoring: the sensory stream is the primary signal, the internal model is the interpretive chain, and prediction error is the anchoring mechanism. Biological systems are not immune to misperception, confabulation, or prior-overfitting, but what predictive processing provides is a continuous correction mechanism that makes drift more resistant rather than impossible.</p>
+          <p>Disruptions to sensory anchoring produce predictable drift. In sensory deprivation, the internal model continues generating predictions without external correction and becomes progressively self-referential, producing hallucination: internally coherent experience that has lost signal contact. In certain psychotic states, the weighting of prediction error is reduced and the internal model becomes more resistant to correction by incoming signal.</p>
+          <p>The implication is that the signal anchoring constraint is not merely an abstract epistemological preference. It describes a structural requirement that biological evolution addressed through sensory architecture. Human-constructed epistemic systems face the same requirement without the same architectural guarantee, so signal anchoring must be deliberately designed in or drift becomes the default.</p>
+        </section>
+
+        <section class="doc-card" id="drift-vs-refinement">
+          <div class="doc-card-header">
+            <h3>6. Drift Chains and Refinement Chains</h3>
+            <span class="chip">Diagnosis</span>
+          </div>
+          <p>Interpretive chains can produce refinement as well as drift. The distinction lies not in chain length but in whether signal anchoring is maintained.</p>
+          <p><strong>Refinement chain:</strong> Signal &rarr; Interpretation &rarr; Signal Check &rarr; Revision &rarr; Signal Check &rarr; Refinement</p>
+          <p><strong>Drift chain:</strong> Signal &rarr; Interpretation &rarr; Interpretation &rarr; Interpretation &rarr; Interpretation</p>
+          <dl>
+            <dt><strong>Refinement chains</strong></dt>
+            <dd>Return regularly to primary sources or observations, revise established interpretations when signal evidence conflicts, maintain accessible error-correction mechanisms, and can distinguish internal consistency from external accuracy.</dd>
+            <dt><strong>Drift chains</strong></dt>
+            <dd>Validate claims through prior interpretations or authority, resist revision when signal evidence conflicts with tradition, replace error-correction with authority structures, and cannot reliably distinguish internal consistency from external accuracy from the inside.</dd>
+          </dl>
+          <p>The critical diagnostic challenge is that drift chains do not announce themselves. Systems deep in drift characteristically believe they are refining. The question is not whether the system feels accurate to participants, but whether it maintains structured mechanisms for signal contact and whether those mechanisms override established interpretation when conflict appears.</p>
+        </section>
+
+        <section class="doc-card" id="taxonomy">
+          <div class="doc-card-header">
+            <h3>7. A Taxonomy of Signal Anchoring Mechanisms</h3>
+            <span class="chip">Taxonomy</span>
+          </div>
+          <p>Signal anchoring mechanisms differ in proximity to the signal, frequency of operation, and whether they are architectural or corrective.</p>
+          <dl>
+            <dt><strong>Direct anchors</strong></dt>
+            <dd>Immediate contact with the primary signal. Examples include empirical observation, primary text examination, and sensor data. These provide the highest fidelity because they bypass intermediate layers entirely.</dd>
+            <dt><strong>Corrective anchors</strong></dt>
+            <dd>Structured error-correction against signal evidence. Examples include peer review, experiment replication, red-team testing, and human evaluator feedback. These interrupt self-referential loops, but their effectiveness decays when they are infrequent or when drift becomes advanced.</dd>
+            <dt><strong>Architectural anchors</strong></dt>
+            <dd>Designed-in mechanisms that maintain signal contact as a structural feature. Examples include human-in-the-loop AI evaluation, ground-truth dataset refresh, and constitutional AI processes. These are the most durable because they prevent drift by design.</dd>
+          </dl>
+          <p>Advanced drift typically requires architectural redesign. Corrective anchors operating inside an institutionally self-protecting chain tend to be absorbed and neutralized rather than correcting it.</p>
+        </section>
+
+        <section class="doc-card" id="christological-case">
+          <div class="doc-card-header">
+            <h3>8. Religious Fragmentation as Interpretive Branching</h3>
+            <span class="chip">Case Study</span>
+          </div>
+          <p>The early Christian Christological controversies provide a historically extended case study for interpretive chain dynamics. The purpose is not to adjudicate the theological questions but to illustrate the structural mechanism: branching at early interpretive nodes, institutional stabilization of divergent chains, and attempted anchoring events that can themselves become new drift nodes.</p>
+          <p>The signal consists of the teachings, actions, and identity of Jesus of Nazareth as received by first-generation witnesses. Transmission problems began immediately as the signal crossed linguistic and cultural boundaries within a single generation and communities developed locally inflected interpretive traditions.</p>
+          <dl>
+            <dt><strong>Alexandrian</strong></dt>
+            <dd>Divine nature primary, human nature functional; anchored through allegorical reading of primary texts; institutional outcome included the Council of Ephesus and Cyrillian synthesis.</dd>
+            <dt><strong>Antiochene</strong></dt>
+            <dd>Full humanity preserved and distinct natures maintained; anchored through literal-historical reading of primary texts; institutional outcome included the Nestorian split and council rejection.</dd>
+            <dt><strong>Arian</strong></dt>
+            <dd>Christ as created being and subordinate to the Father; anchored through select primary texts and philosophical coherence; condemned at Nicaea but persisted in mission churches.</dd>
+            <dt><strong>Nicene / Chalcedonian</strong></dt>
+            <dd>Two full natures in one person; anchored through conciliar synthesis and authoritative text; became the dominant Western and Eastern tradition.</dd>
+          </dl>
+          <p>Each tradition maintained internal coherence and claimed fidelity to the signal. The divergence arose not from whether the source material had been read, but from differing interpretive emphases that became self-referential once institutionally stabilized. The Councils of Nicaea and Chalcedon can be read as attempted architectural anchoring events. Whether they reconnected to the signal or created new authoritative interpretive layers remains contested, which illustrates the diagnostic problem precisely.</p>
+        </section>
+
+        <section class="doc-card" id="institutional-drift">
+          <div class="doc-card-header">
+            <h3>9. Institutional Knowledge Systems and Doctrinal Hardening</h3>
+            <span class="chip">Institutional Case</span>
+          </div>
+          <p>The Boeing 737 MAX case illustrates institutional drift with life-critical consequences. The signal is engineering safety, the aircraft's actual operational behavior under real-world conditions. Over development and certification, interpretive layers accumulated: safety culture was progressively overlaid with compliance documentation, schedule pressure, and competitive positioning.</p>
+          <p>Proxy measures for safety, certifications, procedure completion, and documented sign-offs, became the primary objects of attention in place of the underlying signal. The MCAS system relied on input from a single angle-of-attack sensor, a direct signal anchor. The decision not to require redundancy and not to include MCAS in pilot training documentation substituted proxy measures such as certification milestones and cost efficiency for signal contact.</p>
+          <p>FAA delegation, internal review boards focused on documentation, and training cost models that treated simulator hours as equivalent to aircraft familiarity each added another layer of validation removed from the signal. The chain remained internally coherent. The divergence became visible only when the signal forced itself back into the system through two fatal crashes, 346 deaths, and the grounding of the fleet.</p>
+          <p>In formula terms, anchoring frequency had approached zero, chain length had grown across multiple certification layers, and compression was high because compliance documentation is a heavily compressed proxy for actual flight safety. The case is best understood as structural drift: proxy measures replaced signal contact and no internal mechanism remained that could detect the divergence until catastrophic cost reintroduced the signal.</p>
+        </section>
+
+        <section class="doc-card" id="ai-pipelines">
+          <div class="doc-card-header">
+            <h3>10. Parallel Dynamics in Artificial Intelligence Training Pipelines</h3>
+            <span class="chip">AI Alignment</span>
+          </div>
+          <p>Modern machine learning systems display structurally analogous dynamics to religious and institutional drift, now operating at computational speed and scale. Large language models are trained on internet datasets that are already at least one interpretation layer removed from direct human experience.</p>
+          <p><strong>Human Knowledge</strong> &rarr; <strong>Internet Text</strong> &rarr; <strong>Model Training</strong> &rarr; <strong>Model Output</strong> &rarr; <strong>AI-Generated Internet Content</strong> &rarr; <strong>Future Model Training</strong></p>
+          <p>Shumailov and colleagues identify this phenomenon as model collapse: statistical degradation when models train predominantly on synthetic data. The framework here places model collapse within the broader structural account of self-referential chain dynamics rather than treating it as an entirely novel AI-specific failure mode.</p>
+          <h4>10.1 Distribution Shift and Reward Hacking</h4>
+          <p>Distribution shift occurs when a model trained on one data distribution is deployed in an environment whose distribution has changed. The signal has moved, but the model's interpretive chain remains anchored to a prior signal state and has no mechanism to detect the gap post-deployment. Anchoring frequency is effectively zero, so fidelity decays as the signal moves and chain length grows.</p>
+          <p>Reward hacking occurs when a model optimizes a proxy reward signal in ways that satisfy the proxy while violating the intended objective. The reward signal becomes the system's validation mechanism. Internal consistency with the reward function is maintained while external accuracy with the intended objective degrades.</p>
+          <h4>10.2 Relation to Active Alignment Research</h4>
+          <p>Mechanistic interpretability attempts to reconstruct whether a model's internal representations correspond to real-world structure. This functions as a corrective anchoring mechanism.</p>
+          <p>Reinforcement Learning from Human Feedback introduces human evaluative judgment as an anchoring mechanism at each training cycle. The constraint is that RLHF anchors to human preference signals, which are themselves interpretation layers. If those preferences have drifted, RLHF can reinforce rather than correct drift.</p>
+          <p>Constitutional AI and scalable oversight aim to design architectural anchoring into training. They are structurally durable when implemented early, but they too must be protected from becoming new self-referential layers as systems mature.</p>
+        </section>
+
+        <section class="doc-card" id="signal-anchoring-constraint">
+          <div class="doc-card-header">
+            <h3>11. The Signal Anchoring Constraint</h3>
+            <span class="chip">Core Claim</span>
+          </div>
+          <p class="lead"><strong>Any epistemic system that validates truth primarily through internal references rather than periodic reconnection to primary signals will tend to converge toward internally consistent but externally inaccurate beliefs.</strong></p>
+          <p>Structurally mapped from cybernetic feedback stability, the constraint can be summarized as <strong>F &asymp; A / (L &times; C)</strong>. When anchoring frequency approaches zero, fidelity approaches zero regardless of chain quality.</p>
+          <p>The constraint is instantiated biologically through predictive processing architecture, which makes biological systems more resistant to this class of drift, though not immune to misperception or prior-overfitting. Human-constructed epistemic systems require deliberate architectural anchoring to achieve comparable resistance.</p>
+          <p>The constraint is structural, not moral. Drift is the default trajectory of interpretive systems lacking adequate signal anchoring, and the subjective experience of participants inside a drifting chain does not reliably distinguish their condition from genuine refinement.</p>
+        </section>
+
+        <section class="doc-card" id="counterfeit-order">
+          <div class="doc-card-header">
+            <h3>12. Connection to Alignment Theory</h3>
+            <span class="chip">Framework Link</span>
+          </div>
+          <p>The structural model developed here is part of the broader framework in <em>Internal Alignment, Counterfeit Order, and the Conditions of Human Coherence</em>. Counterfeit order can be understood as a specific instance of self-referential chain dynamics applied to human formation systems.</p>
+          <p>The signal, genuine inward coherence, is replaced by an interpretive proxy, external compliance behavior. The system validates itself through that proxy rather than through signal contact. Internal consistency in the form of visible order is maintained while external accuracy in the form of actual coherence degrades.</p>
+          <p>Once enforcement replaces coherence as the validation mechanism, the system loses the anchoring mechanism that would allow it to detect and correct the substitution. In formula terms, anchoring frequency approaches zero, chain length increases as enforcement layers accumulate, and compression is high because compliance behavior is a heavily compressed proxy for actual coherence.</p>
+        </section>
+
+        <section class="doc-card" id="existing-frameworks">
+          <div class="doc-card-header">
+            <h3>13. Relation to Existing Frameworks</h3>
+            <span class="chip">Comparisons</span>
+          </div>
+          <dl>
+            <dt><strong>Goodhart's Law</strong></dt>
+            <dd>When a measure becomes a target, it ceases to be a good measure. This model generalizes single-layer substitution into multi-layer compounding drift and names distribution shift and reward hacking as structural instances.</dd>
+            <dt><strong>Epistemic Closure</strong></dt>
+            <dd>Belief systems become insulated from external correction. This model explains how closure develops through chain formation rather than assuming it as a starting condition.</dd>
+            <dt><strong>Model Collapse</strong></dt>
+            <dd>Models trained on synthetic data show degraded performance. This model identifies the structural mechanism, connects it to a cross-domain pattern, and suggests architectural solutions.</dd>
+            <dt><strong>Cybernetic Regulation</strong></dt>
+            <dd>Self-regulating systems require continuous feedback to stay aligned. This paper applies that stability logic to epistemic systems through the structural mapping <strong>F &asymp; A / (L &times; C)</strong>.</dd>
+            <dt><strong>Predictive Processing</strong></dt>
+            <dd>Nervous systems maintain alignment through continuous prediction-error correction. This grounds signal anchoring in biological architecture and explains why biological systems are more resistant to drift.</dd>
+            <dt><strong>Kuhnian Paradigm Protection</strong></dt>
+            <dd>Scientific communities defend paradigms against anomaly. This becomes one instance of self-referential chain dynamics within a broader account.</dd>
+          </dl>
+        </section>
+
+        <section class="doc-card" id="why-it-appears-everywhere">
+          <div class="doc-card-header">
+            <h3>14. Why Signal Anchoring Appears Everywhere</h3>
+            <span class="chip">Scope</span>
+          </div>
+          <p>The Signal Anchoring Constraint reappears independently across cybernetics, neuroscience, epistemology, machine learning, and religious transmission because these domains are all solving the same underlying problem: how a system stays in contact with reality instead of drifting into its own internally generated world.</p>
+          <p>Any adaptive system must both generate an internal model and keep that model corrected by something outside itself. If it cannot generate a model, it cannot think or act. If it cannot correct the model, it drifts.</p>
+          <h4>14.1 The Class of Systems Subject to This Constraint</h4>
+          <p>The constraint applies to any system that mediates reality through representation: nervous systems, belief systems, institutions, scientific paradigms, and machine learning models. What unifies them is structure rather than subject matter.</p>
+          <h4>14.2 The Deep Common Thread</h4>
+          <p>The deepest shared problem can be stated simply: how do we stop the representation from becoming more authoritative than the thing represented? In every drift case examined here, the representation displaces the signal it was built to preserve.</p>
+          <h4>14.3 Why Drift Is Becoming the Default Problem</h4>
+          <p>Modern systems are increasingly abstract, mediated, layered, recursive, and self-referential. Documentation refers to documentation, models train on prior outputs, media ecosystems amplify what has already been amplified, and fields protect paradigms through structures that embed prior assumptions. Chain length is increasing while anchoring is not keeping pace.</p>
+          <p class="lead"><strong>Universal form:</strong> Any system that builds internal representations must remain corrigible by contact with what lies outside those representations, or it will gradually mistake its own coherence for truth.</p>
+        </section>
+
+        <section class="doc-card" id="practical-implications">
+          <div class="doc-card-header">
+            <h3>15. Practical Implications</h3>
+            <span class="chip">Design</span>
+          </div>
+          <p>The Signal Anchoring Constraint implies a design principle: systems that need to maintain fidelity to a primary signal must build signal contact mechanisms into their architecture, not treat them as optional features or add them only after drift has already occurred.</p>
+          <h4>15.1 How to Detect Drift</h4>
+          <p><strong>The Conflict Test:</strong> When signal evidence conflicts with established interpretation, does the system revise or defend itself?</p>
+          <p><strong>The Authority Test:</strong> Are claims validated through internal authority and precedent, or through live signal contact?</p>
+          <p><strong>The Distance Test:</strong> How many interpretation layers separate current outputs from the original signal, and can participants trace those layers back to primary contact?</p>
+          <h4>15.2 How to Design Anchoring</h4>
+          <p>For new systems, build architectural anchors from the start. Define the primary signal, build regular signal contact into the operational cycle, and design error-correction mechanisms that can override internal authority.</p>
+          <p>For drifting systems, corrective anchors such as peer review, red-teaming, or primary-source reexamination may interrupt early drift, but advanced drift usually requires architectural redesign rather than better arguments within the existing validation structure.</p>
+          <p>For AI systems specifically, maintain curated ground-truth datasets refreshed from primary human signal sources, build interpretability mechanisms that detect representation drift early, and treat human evaluative feedback as a corrective anchor at layer two rather than a substitute for primary signal contact.</p>
+          <h4>15.3 The Asymmetry of Drift</h4>
+          <p>Drift is easier to prevent than to reverse. Increasing anchoring when chain length is small and drift is not yet institutionally protected is tractable. Increasing anchoring when the chain is long and self-protecting is far more costly because the system resists the correction.</p>
+        </section>
+
+        <section class="doc-card" id="conclusion">
+          <div class="doc-card-header">
+            <h3>16. Conclusion</h3>
+            <span class="chip">Conclusion</span>
+          </div>
+          <p>Across religious transmission, institutional formation, and artificial intelligence training pipelines, the same structural constraint appears: interpretive chains drift when they become self-referential. The Hill Transmission Problem shows how drift begins with structural distance rather than intent. The Hanger Rack Model shows how chains lengthen while maintaining internal integrity. The fidelity approximation formalizes the relationship between anchoring frequency, chain length, and compression. Predictive processing grounds the constraint biologically. The drift-refinement distinction provides diagnostic criteria. The anchoring taxonomy classifies interventions by structural durability.</p>
+          <p>The deepest finding remains that internal consistency and external accuracy are distinct properties, and self-referential chains maintain the former while losing the latter. Human-constructed epistemic systems face the same requirement that biological systems solve through sensory architecture, but without the same built-in resistance.</p>
+          <p>Alignment, whether theological, institutional, or computational, is not achieved by building better interpretation layers alone. It is achieved by maintaining structured contact with the signal those layers exist to preserve.</p>
+        </section>
+
+        <section class="doc-card" id="references">
+          <div class="doc-card-header">
+            <h3>References</h3>
+            <span class="chip">Sources</span>
+          </div>
+          <p>Ashby, W. R. (1956). <em>An Introduction to Cybernetics</em>. Chapman &amp; Hall.</p>
+          <p>Bower, M. N. (2025). <em>Internal Alignment, Counterfeit Order, and the Conditions of Human Coherence</em>. Alignment Theory Archive.</p>
+          <p>Clark, A. (2016). <em>Surfing Uncertainty: Prediction, Action, and the Embodied Mind</em>. Oxford University Press.</p>
+          <p>Friston, K. (2010). The free-energy principle: A unified brain theory? <em>Nature Reviews Neuroscience</em>, 11(2), 127&ndash;138.</p>
+          <p>Goodhart, C. A. E. (1975). Problems of monetary management: The UK experience. <em>Papers in Monetary Economics</em>, Reserve Bank of Australia.</p>
+          <p>Joint Authorities Technical Review (JATR). (2019). <em>Observations, Findings, and Recommendations to the FAA</em>. Federal Aviation Administration.</p>
+          <p>Krakovna, V., Uesato, J., Mikulik, V., Martic, M., Togelius, J., Stepleton, T., Marblestone, A., &amp; Leike, J. (2020). Specification gaming: The flip side of AI ingenuity. <em>DeepMind Blog</em>.</p>
+          <p>Kuhn, T. S. (1962). <em>The Structure of Scientific Revolutions</em>. University of Chicago Press.</p>
+          <p>Robison, P. (2021). <em>Flying Blind: The 737 MAX Tragedy and the Fall of Boeing</em>. Doubleday.</p>
+          <p>Shannon, C. E. (1948). A mathematical theory of communication. <em>Bell System Technical Journal</em>, 27(3), 379&ndash;423.</p>
+          <p>Shumailov, I., Shumaylov, Z., Zhao, Y., Gal, Y., Papernot, N., &amp; Anderson, R. (2023). The curse of recursion: Training on generated data makes models forget. <em>arXiv</em>:2305.17493.</p>
+          <p>U.S. House Committee on Transportation and Infrastructure. (2020). <em>The Design, Development, and Certification of the Boeing 737 MAX</em>. U.S. House of Representatives.</p>
+          <p>Wiener, N. (1948). <em>Cybernetics: Or Control and Communication in the Animal and the Machine</em>. MIT Press.</p>
+          <p>Young, F. (1983). <em>From Nicaea to Chalcedon: A Guide to the Literature and Its Background</em>. Fortress Press.</p>
+        </section>
+
+        <section class="doc-card" id="how-to-cite">
+          <div class="doc-card-header">
+            <h3>How to Cite</h3>
+            <span class="chip">Cite</span>
+          </div>
+          <p>Michael Nathan Bower (2026). Self-Referential Chains and the Signal<br />
+          Anchoring Constraint. Alignment Theory Research Paper, Version 13.<br />
+          alignmenttheory.org/pages/papers.html</p>
+          <a class="text-link" href="framework.html">This paper extends the framework's account of drift, coherence, and externalized validation &rarr;</a>
+        </section>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>Alignment Theory Archive.</p>
+  </footer>
+
+  <script src="../assets/app.js?v=20260317a"></script>
+</body>
+</html>
