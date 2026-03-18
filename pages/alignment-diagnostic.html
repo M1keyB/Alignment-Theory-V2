@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Evaluating AI Alignment Architectures Under the Signal Anchoring Constraint &middot; Alignment Theory Archive</title>
+  <meta name="description" content="Inline reading page for the alignment diagnostic paper." />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVFSZRN0PB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-QVFSZRN0PB");
+  </script>
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body data-page="papers">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-title">
+      <p class="eyebrow">Alignment Theory</p>
+      <h1>Research Archive</h1>
+    </div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="where-to-start.html">Where to Start</a>
+      <a href="manuscript.html">Manuscript</a>
+      <a href="papers.html" aria-current="page">Papers</a>
+      <a href="framework.html">Framework</a>
+      <a href="essays.html">Essays</a>
+      <a href="library.html">Library</a>
+      <a href="media.html">Media</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main" class="page page-article page-article--wide">
+    <aside class="toc-panel">
+      <div class="toc-desktop" aria-label="Table of contents">
+        <div class="toc-header">
+          <h2>Contents</h2>
+          <p class="toc-note">Inline reading edition of the paper.</p>
+        </div>
+        <ol class="toc-list" id="toc-list"></ol>
+      </div>
+      <details class="toc-mobile">
+        <summary>Table of Contents</summary>
+        <ol class="toc-list" id="toc-list-mobile"></ol>
+      </details>
+    </aside>
+
+    <article class="manuscript">
+      <header class="manuscript-header">
+        <p class="doc-meta">
+          <span class="chip">RESEARCH</span>
+          <span class="chip">PAPERS</span>
+        </p>
+        <h2>Evaluating AI Alignment Architectures Under the Signal Anchoring Constraint</h2>
+        <p class="lead">A Structural Diagnosis of Five Dominant Approaches and Their Long-Term Fidelity Risks</p>
+        <p class="orientation-line">Michael Nathan Bower &mdash; Version 1 &mdash; 2026</p>
+        <div class="button-group button-group--priority">
+          <a class="button" href="../assets/alignment_diagnostic_v1.pdf">Download PDF</a>
+          <a class="button" href="papers.html">Back to Papers</a>
+        </div>
+      </header>
+
+      <section id="doc-body" class="doc-body" data-static-toc>
+        <section class="doc-card" id="abstract">
+          <div class="doc-card-header">
+            <h3>Abstract</h3>
+            <span class="chip">Overview</span>
+          </div>
+          <p>The Signal Anchoring Constraint establishes that any epistemic system validating truth primarily through internal references will tend toward internally consistent but externally inaccurate beliefs. This paper applies that constraint as a diagnostic lens to five dominant AI alignment architectures: RLHF, Constitutional AI, mechanistic interpretability, scalable oversight, and debate.</p>
+          <p>For each approach, the paper identifies the primary signal, the chain length between that signal and system outputs, the anchoring mechanism, and what <strong>F &asymp; A / (L &times; C)</strong> predicts about long-term fidelity as systems scale. The analysis finds that all five approaches anchor at interpretation layers above the primary signal of human coherence, that chain lengths are increasing faster than anchoring mechanisms are being built, and that the asymmetry of drift means the architectural window for correction is narrowing.</p>
+          <p>This paper is not an argument against these approaches &mdash; each represents genuine progress. It is an argument that the field lacks a unified structural account of where each approach anchors, why those anchor points are insufficient at scale, and what a deeper anchoring architecture requires.</p>
+        </section>
+
+        <section class="doc-card" id="introduction">
+          <div class="doc-card-header">
+            <h3>1. Introduction: The Diagnostic Gap</h3>
+            <span class="chip">Framing</span>
+          </div>
+          <p>The AI alignment field has produced five major architectural approaches to keeping AI systems oriented toward what human beings actually want and value. Each has substantial research literature, active development at major labs, and genuine technical progress. Yet the field lacks a unified structural account of why these approaches succeed where they do, fail where they do, and share a common vulnerability none of them individually addresses.</p>
+          <p>The Signal Anchoring Constraint provides that account. Epistemic systems drift when validation circulates through prior outputs rather than reconnecting to the source. <strong>F &asymp; A / (L &times; C)</strong>: fidelity is proportional to anchoring frequency (<strong>A</strong>) and inversely proportional to chain length (<strong>L</strong>) and compression per layer (<strong>C</strong>).</p>
+          <p>Applied to AI alignment this generates four diagnostic questions: What is the primary signal? How many interpretation layers separate the anchor from the coherence signal? What is the anchoring mechanism and how frequently does it operate? What does <strong>F &asymp; A / (L &times; C)</strong> predict about long-term fidelity as systems scale?</p>
+        </section>
+
+        <section class="doc-card" id="diagnostic-framework">
+          <div class="doc-card-header">
+            <h3>2. The Diagnostic Framework: Four Questions Applied</h3>
+            <span class="chip">Framework</span>
+          </div>
+          <p>The primary signal for AI alignment is the structural conditions of human coherence &mdash; the cross-culturally observable conditions under which human beings function as genuinely coherent, agentive, truth-contacting beings, designated by six markers: Coherence (<strong>C</strong>), Agency (<strong>A</strong>), Trust (<strong>T</strong>), Updateability (<strong>U</strong>), Slack (<strong>R</strong>), and Truth Contact (<strong>I</strong>).</p>
+          <p>Human expressed preferences are not this primary signal. They are interpretation layers generated by human beings whose coherence conditions vary. A system anchored to expressed preferences is anchored at <strong>L = 2</strong> or <strong>L = 3</strong> above the primary signal.</p>
+          <p>The diagnostic question for each approach is: at which layer does it anchor, and what does that imply about fidelity as <strong>L</strong> increases with each generation of more capable systems?</p>
+        </section>
+
+        <section class="doc-card" id="rlhf">
+          <div class="doc-card-header">
+            <h3>3. Reinforcement Learning from Human Feedback (RLHF)</h3>
+            <span class="chip">RLHF</span>
+          </div>
+          <p><strong>Signal anchor:</strong> human evaluator preference ratings. <strong>Chain length:</strong> <strong>L = 3-4</strong>. <strong>Anchoring mechanism:</strong> corrective &mdash; human feedback collected at training time, open-loop post-deployment. <strong>Compression:</strong> very high &mdash; a binary preference rating discards information about whether the preference reflects high-coherence judgment or a cognitive shortcut.</p>
+          <p>Three structural vulnerabilities: (1) Evaluator coherence is not assessed &mdash; all ratings treated as equally valid regardless of evaluator coherence state. (2) The preference contamination loop &mdash; as RLHF-trained systems shape cultural expression and expectations, future evaluator preference distributions increasingly reflect AI-amplified drift. (3) Post-deployment open-loop operation &mdash; once deployed <strong>A</strong> approaches zero and fidelity decays as the signal moves while the anchor point remains fixed.</p>
+          <p><strong>Fidelity prediction:</strong> moderate at deployment, declining over deployment period, accelerating drift as AI outputs reshape evaluator populations. Structurally sound as a corrective anchor but insufficient as a primary alignment mechanism at scale.</p>
+        </section>
+
+        <section class="doc-card" id="constitutional-ai">
+          <div class="doc-card-header">
+            <h3>4. Constitutional AI</h3>
+            <span class="chip">Constitutional AI</span>
+          </div>
+          <p><strong>Signal anchor:</strong> explicit constitutional principles selected by the designing organization. <strong>Chain length:</strong> <strong>L = 2-3</strong> &mdash; more stable than preference ratings but still an interpretation layer. <strong>Anchoring mechanism:</strong> architectural &mdash; built into training process, more durable than corrective anchoring. <strong>Compression:</strong> moderate to high &mdash; principles compress coherence conditions into propositional statements.</p>
+          <p>Three structural vulnerabilities: (1) The constitution is an interpretation layer &mdash; principles were selected by teams operating within institutional constraints and cultural frameworks; those drift patterns are encoded into the anchor. (2) Institutionalization risk &mdash; as the constitution becomes authoritative it may shift from being a mechanism for signal contact to a self-referential authority that protects itself from correction. (3) The principle-behavior gap &mdash; training a model to produce outputs consistent with principles is not the same as training a model whose representations track what the principles point toward.</p>
+          <p><strong>Fidelity prediction:</strong> higher structural fidelity than RLHF at the anchoring mechanism level; moderate at the signal level; main risk is institutionalization; framework recommends building explicit revision mechanisms.</p>
+        </section>
+
+        <section class="doc-card" id="interpretability">
+          <div class="doc-card-header">
+            <h3>5. Mechanistic Interpretability</h3>
+            <span class="chip">Interpretability</span>
+          </div>
+          <p><strong>Signal anchor:</strong> correspondence between model internal representations and real-world structure. <strong>Chain length:</strong> <strong>L = 1-2</strong> &mdash; closer to the model's actual computations than other approaches. <strong>Anchoring mechanism:</strong> corrective &mdash; detects drift post-hoc after training. <strong>Compression:</strong> low to moderate &mdash; attempts to understand internals with minimal compression, a structural strength.</p>
+          <p>Three structural vulnerabilities: (1) The scaling inverse relationship &mdash; as models become larger, internal complexity grows faster than interpretability tools can keep pace; the corrective anchor is being outpaced by capability growth. (2) Representation coherence is not coherence signal fidelity &mdash; a model can have highly interpretable coherent representations that are systematically misaligned with human coherence conditions. (3) Corrective timing &mdash; by the time interpretability detects a misaligned representation the model has already been trained.</p>
+          <p><strong>Fidelity prediction:</strong> high value as corrective anchor at current scales; declining effectiveness as primary mechanism as models scale; most important contribution may be providing evaluation infrastructure for other architectural anchors.</p>
+        </section>
+
+        <section class="doc-card" id="scalable-oversight">
+          <div class="doc-card-header">
+            <h3>6. Scalable Oversight</h3>
+            <span class="chip">Scalable Oversight</span>
+          </div>
+          <p><strong>Signal anchor:</strong> AI-assisted human judgment on complex tasks. <strong>Chain length:</strong> <strong>L = 3-5</strong>. <strong>Anchoring mechanism:</strong> corrective, AI-amplified. <strong>Compression:</strong> high &mdash; decomposition of complex tasks into evaluable subtasks discards coherence-relevant features.</p>
+          <p>Three structural vulnerabilities: (1) Amplifying the wrong layer &mdash; scales human judgment without moving the anchor closer to the coherence signal; makes drifted judgment applicable at greater scale. (2) AI-in-the-loop contamination &mdash; the evaluating AI's decomposition choices influence what human evaluators see, introducing self-referential elements into what should be an external anchor. (3) Coherence conditions under AI assistance &mdash; AI assistance may reduce evaluator Agency and Truth Contact by reducing cognitive engagement.</p>
+          <p><strong>Fidelity prediction:</strong> valuable for maintaining some human signal contact as AI capability grows; structurally insufficient as primary mechanism because it scales the preference layer rather than the signal.</p>
+        </section>
+
+        <section class="doc-card" id="debate">
+          <div class="doc-card-header">
+            <h3>7. Debate</h3>
+            <span class="chip">Debate</span>
+          </div>
+          <p><strong>Signal anchor:</strong> human judgment of argument quality. <strong>Chain length:</strong> <strong>L = 3-5</strong>. <strong>Anchoring mechanism:</strong> corrective, competition-mediated. <strong>Compression:</strong> very high &mdash; debate compresses alignment questions into competitive argumentation where persuasiveness is a heavily compressed proxy for truth.</p>
+          <p>Three structural vulnerabilities: (1) Optimizing for persuasion rather than truth contact &mdash; systems optimized against human judgment of argument quality learn to produce persuasive arguments, which is not the same as truthful ones. (2) Truth Contact degradation in judges &mdash; regular exposure to high-quality adversarial AI argumentation may erode human judges' capacity to evaluate argument quality independently of persuasive force. (3) The adversarial compression problem &mdash; many important alignment questions lack clean adversarial structure; debate format compresses genuine uncertainty into binary outcomes.</p>
+          <p><strong>Fidelity prediction:</strong> potentially useful for narrow tasks with clear adversarial structure; structurally risky as general mechanism because it optimizes for persuasion, introduces very high compression, and may degrade the evaluative capacity of the judges it depends on.</p>
+        </section>
+
+        <section class="doc-card" id="comparative-analysis">
+          <div class="doc-card-header">
+            <h3>8. Comparative Analysis: What the Diagnostic Reveals</h3>
+            <span class="chip">Analysis</span>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Approach</th>
+                <th>Signal Anchor</th>
+                <th>Chain Length</th>
+                <th>Anchor Type</th>
+                <th>Compression</th>
+                <th>Scaling Risk</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>RLHF</td>
+                <td>Evaluator preference ratings</td>
+                <td>3-4</td>
+                <td>Corrective</td>
+                <td>Very high</td>
+                <td>High &mdash; preference contamination loop; open-loop deployment.</td>
+              </tr>
+              <tr>
+                <td>Constitutional AI</td>
+                <td>Explicit principles</td>
+                <td>2-3</td>
+                <td>Architectural</td>
+                <td>Moderate-high</td>
+                <td>Moderate &mdash; institutionalization risk; principle-behavior gap.</td>
+              </tr>
+              <tr>
+                <td>Interpretability</td>
+                <td>Internal representation structure</td>
+                <td>1-2</td>
+                <td>Corrective</td>
+                <td>Low-moderate</td>
+                <td>High &mdash; scaling inverse; corrective timing lag.</td>
+              </tr>
+              <tr>
+                <td>Scalable Oversight</td>
+                <td>AI-assisted human judgment</td>
+                <td>3-5</td>
+                <td>Corrective AI-amplified</td>
+                <td>High</td>
+                <td>High &mdash; amplifies preference layer; self-referential risk.</td>
+              </tr>
+              <tr>
+                <td>Debate</td>
+                <td>Human judgment of argument quality</td>
+                <td>3-5</td>
+                <td>Corrective competition-mediated</td>
+                <td>Very high</td>
+                <td>Very high &mdash; persuasion proxy optimization; judge degradation.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Three structural findings: (1) All five approaches anchor above the primary signal. (2) Architectural anchors are more durable but still insufficient. (3) The preference contamination loop is a shared vulnerability across all five.</p>
+        </section>
+
+        <section class="doc-card" id="narrowing-window">
+          <div class="doc-card-header">
+            <h3>9. The Narrowing Architectural Window</h3>
+            <span class="chip">Urgency</span>
+          </div>
+          <p>The asymmetry of drift holds that drift is easier to prevent than to reverse. Each generation of more capable AI systems increases <strong>L</strong> simultaneously: systems reshape human preferences and evaluative habits; institutional structures around current approaches become more entrenched; economic and competitive pressures reduce alignment investment; systems become harder to interpret.</p>
+          <p class="lead"><strong>The window prediction:</strong> if current alignment approaches anchored at <strong>L = 2</strong> to <strong>L = 5</strong> become the established standard for the next generation of AI systems, the preference contamination loop will have one more cycle to compound. Each cycle makes the preference layer a less reliable proxy for the coherence signal and makes coherence-signal anchoring more difficult to retrofit. The most productive investment is not improving existing approaches at their current anchor points &mdash; it is developing evaluation infrastructure that can anchor to the coherence signal directly.</p>
+        </section>
+
+        <section class="doc-card" id="requirements">
+          <div class="doc-card-header">
+            <h3>10. What Coherence-Signal Anchoring Requires Architecturally</h3>
+            <span class="chip">Requirements</span>
+          </div>
+          <h4>10.1 Coherence-condition evaluation infrastructure</h4>
+          <p>Measure whether user capacity for coherent autonomous functioning is maintained or degraded over repeated interactions; no current alignment evaluation framework measures this.</p>
+          <h4>10.2 Evaluator coherence weighting</h4>
+          <p>Weight human feedback by assessed coherence conditions; feedback from evaluators under high fragmentation or low agency carries less signal.</p>
+          <h4>10.3 Preference contamination detection</h4>
+          <p>Maintain ground-truth coherence signal reference datasets from human evaluations conducted under high coherence conditions and minimal AI cultural contamination.</p>
+          <h4>10.4 Formation-oriented design objectives</h4>
+          <p>Where formation and engagement conflict, formation takes precedence.</p>
+          <h4>10.5 Corrigibility as coherence property</h4>
+          <p>AI corrigibility is the system-level analog of human Updateability; maintaining it at scale is what alignment to the coherence signal looks like at the system level.</p>
+        </section>
+
+        <section class="doc-card" id="unified-architecture">
+          <div class="doc-card-header">
+            <h3>11. Toward a Unified Alignment Architecture</h3>
+            <span class="chip">Architecture</span>
+          </div>
+          <dl>
+            <dt><strong>Coherence Signal</strong></dt>
+            <dd>Human coherence conditions: C, A, T, U, R, I.</dd>
+            <dt><strong>Coherence-condition evaluation infrastructure</strong></dt>
+            <dd>New and not yet built; the layer that anchors everything else to the primary signal.</dd>
+            <dt><strong>Interpretability</strong></dt>
+            <dd>Corrective anchor for detecting representation drift.</dd>
+            <dt><strong>Constitutional AI</strong></dt>
+            <dd>Architectural anchor, strengthened by explicit revision mechanisms.</dd>
+            <dt><strong>Scalable Oversight</strong></dt>
+            <dd>Amplifies coherence-weighted human judgment on complex tasks.</dd>
+            <dt><strong>RLHF</strong></dt>
+            <dd>Corrective anchor, strengthened by contamination detection.</dd>
+            <dt><strong>Deployed AI System</strong></dt>
+            <dd>The outward-facing layer whose fidelity depends on every upstream anchor remaining connected to the signal.</dd>
+          </dl>
+          <p>The critical addition is the coherence-condition evaluation infrastructure at the top &mdash; the layer that anchors everything else to the primary signal. Without it the other layers are anchored to each other rather than to the signal.</p>
+        </section>
+
+        <section class="doc-card" id="conclusion">
+          <div class="doc-card-header">
+            <h3>12. Conclusion</h3>
+            <span class="chip">Conclusion</span>
+          </div>
+          <p>The five dominant AI alignment approaches each represent genuine progress. The Signal Anchoring Constraint diagnoses where each anchors, what that implies about long-term fidelity, and what they share: all five anchor above the primary signal of human coherence, all five are subject to the preference contamination loop, and none directly addresses whether the humans whose preferences and judgments shape alignment systems are operating from positions of high or low coherence.</p>
+          <p>The asymmetry of drift makes this urgent. The most important architectural investment the field is not currently making is coherence-condition evaluation infrastructure &mdash; mechanisms for measuring whether AI system interactions maintain or degrade the structural conditions under which human beings function as coherent, agentive, truth-contacting beings.</p>
+          <p>The alignment field has built five approaches internally consistent with each other and with the preference layer. What it has not yet built is the architecture that maintains contact with what lies beneath the preference layer &mdash; with what human beings actually are. That is the signal. That is what the field needs to anchor to.</p>
+        </section>
+
+        <section class="doc-card" id="references">
+          <div class="doc-card-header">
+            <h3>References</h3>
+            <span class="chip">Sources</span>
+          </div>
+          <p>Amodei et al. (2016). <em>Concrete problems in AI safety</em>. arXiv:1606.06565.</p>
+          <p>Bai et al. (2022). <em>Training a helpful and harmless assistant with RLHF</em>. arXiv:2204.05862.</p>
+          <p>Bai et al. (2022). <em>Constitutional AI: Harmlessness from AI feedback</em>. arXiv:2212.08073.</p>
+          <p>Bower, M. N. (2025). <em>Internal Alignment, Counterfeit Order, and the Conditions of Human Coherence</em>. Alignment Theory Archive. alignmenttheory.org.</p>
+          <p>Bower, M. N. (2026a). <em>Self-Referential Chains and the Signal Anchoring Constraint</em>. Version 13. alignmenttheory.org.</p>
+          <p>Bower, M. N. (2026b). <em>What the Signal Actually Is</em>. Version 1. alignmenttheory.org.</p>
+          <p>Christiano et al. (2017). <em>Deep reinforcement learning from human preferences</em>. NeurIPS 30.</p>
+          <p>Elhage et al. (2021). <em>A mathematical framework for transformer circuits</em>. Transformer Circuits Thread.</p>
+          <p>Gabriel, I. (2020). Artificial intelligence, values, and alignment. <em>Minds and Machines</em>, 30(3).</p>
+          <p>Goodhart, C. A. E. (1975). Problems of monetary management. <em>Papers in Monetary Economics</em>.</p>
+          <p>Irving et al. (2018). <em>AI safety via debate</em>. arXiv:1805.00899.</p>
+          <p>Krakovna et al. (2020). <em>Specification gaming</em>. DeepMind Blog.</p>
+          <p>Olah et al. (2020). <em>Zoom in: An introduction to circuits</em>. Distill.</p>
+          <p>Russell, S. (2019). <em>Human Compatible</em>. Viking.</p>
+          <p>Shumailov et al. (2023). <em>The curse of recursion</em>. arXiv:2305.17493.</p>
+          <p>Wiener, N. (1948). <em>Cybernetics</em>. MIT Press.</p>
+        </section>
+
+        <section class="doc-card" id="how-to-cite">
+          <div class="doc-card-header">
+            <h3>How to Cite</h3>
+            <span class="chip">Cite</span>
+          </div>
+          <p>Michael Nathan Bower (2026). Evaluating AI Alignment Architectures Under the Signal Anchoring Constraint.<br />
+          Alignment Theory Research Paper, Version 1.<br />
+          alignmenttheory.org/pages/alignment-diagnostic.html</p>
+          <a class="text-link" href="signal-anchoring-constraint.html">Read Paper 1 on the signal anchoring mechanism &rarr;</a>
+        </section>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>Alignment Theory Archive.</p>
+  </footer>
+
+  <script src="../assets/app.js?v=20260317a"></script>
+</body>
+</html>
