@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Papers &middot; Alignment Theory Archive</title>
-  <meta name="description" content="Formal research outputs from the Alignment Theory project." />
+  <meta name="description" content="Current papers and framework notes from the Alignment Theory archive." />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVFSZRN0PB"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -16,101 +16,85 @@
 </head>
 <body data-page="papers">
   <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header">
     <div class="site-title">
-      <p class="eyebrow">Alignment Theory</p>
-      <h1>Research Archive</h1>
+      <h1>Alignment Theory</h1>
+      <p class="site-subtitle">Research Archive</p>
     </div>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">Menu</button>
     <nav class="site-nav" id="site-nav" aria-label="Primary">
       <a href="../index.html">Home</a>
       <a href="where-to-start.html">Where to Start</a>
-      <a href="manuscript.html">Manuscript</a>
-      <a href="papers.html" aria-current="page">Papers</a>
       <a href="framework.html">Framework</a>
+      <a href="stress-tests.html">Stress Tests</a>
+      <a href="papers.html" aria-current="page">Papers</a>
       <a href="essays.html">Essays</a>
       <a href="library.html">Library</a>
-      <a href="media.html">Media</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-
   <main id="main" class="page">
     <section class="library-header">
-      <p class="doc-meta">
-        <span class="chip">RESEARCH</span>
-        <span class="chip">PAPERS</span>
-      </p>
       <h2>Papers</h2>
-      <p>Formal research outputs from the Alignment Theory project.</p>
+      <p>Current serious writing grouped by role: the core framework notes, the stress test series, the AI branch, and the earlier archive.</p>
+      <div class="button-group">
+        <a class="button" href="revised-framework-center.html">Revised Framework Center</a>
+        <a class="button" href="stress-tests.html">Stress Tests</a>
+        <a class="button" href="library.html">Library</a>
+        <a class="button" href="shared-core-structure-across-domains.html">Shared Core Structure</a>
+      </div>
     </section>
-
+    <section class="doc-card"><div class="doc-card-header"><h3>Core Framework Notes</h3><span class="chip">Current</span></div></section>
     <section class="grid-two">
-      <article class="doc-card">
-        <div class="doc-card-header">
-          <h3>Self-Referential Chains and the Signal Anchoring Constraint</h3>
-          <span class="chip">Research Paper</span>
-        </div>
-        <p class="doc-meta">
-          <span class="chip">Version 13 &mdash; 2026</span>
-        </p>
-        <p class="lead">This paper proposes that knowledge systems drift when interpretations increasingly reference prior interpretations rather than reconnecting to the original signal they attempt to preserve. The Signal Anchoring Constraint &mdash; F &asymp; A / (L &times; C) &mdash; formalizes this structural dynamic and connects it to cybernetics, predictive processing neuroscience, institutional failure, and AI alignment.</p>
-        <p><strong>Why this paper matters:</strong> This paper introduces a structural explanation for why knowledge systems drift over time. By connecting cybernetics, predictive processing neuroscience, institutional failures, and AI model collapse, it shows that many modern alignment problems share the same underlying mechanism: interpretive systems losing contact with the signals they were designed to preserve.</p>
-        <div class="button-group">
-          <a class="button" href="signal-anchoring-constraint.html">Read Online</a>
-          <a class="button" href="framework.html">View Framework</a>
-        </div>
-        <a class="text-link" href="../assets/signal_degradation_v13.pdf">Download PDF</a>
-      </article>
-      <article class="doc-card">
-        <div class="doc-card-header">
-          <h3>Evaluating AI Alignment Architectures Under the Signal Anchoring Constraint</h3>
-          <span class="chip">Research Paper</span>
-        </div>
-        <p class="doc-meta">
-          <span class="chip">Version 1 &mdash; 2026</span>
-        </p>
-        <p class="lead">Applies the Signal Anchoring Constraint as a diagnostic lens to five dominant AI alignment approaches: RLHF, Constitutional AI, mechanistic interpretability, scalable oversight, and debate. For each approach the paper identifies the primary signal, the chain length, the anchoring mechanism, and what F &asymp; A / (L &times; C) predicts about long-term fidelity as systems scale. All five anchor above the primary signal of human coherence. The architectural window for correction is narrowing.</p>
-        <div class="button-group">
-          <a class="button" href="alignment-diagnostic.html">Read Online</a>
-          <a class="button" href="papers.html">View Papers</a>
-        </div>
-        <a class="text-link" href="../assets/alignment_diagnostic_v1.pdf">Download PDF</a>
-      </article>
-      <article class="doc-card">
-        <div class="doc-card-header">
-          <h3>What the Signal Actually Is</h3>
-          <span class="chip">Research Paper</span>
-        </div>
-        <p class="doc-meta">
-          <span class="chip">Version 1 &mdash; 2026</span>
-        </p>
-        <p class="lead">If human preferences are interpretation layers, AI alignment requires a deeper anchor. This paper proposes that the primary signal is the structural conditions of human coherence &mdash; six cross-culturally observable markers under which human beings function as genuinely coherent, agentive, and truth-contacting beings. It connects this structural account to cybernetics, AI alignment architecture, and the theological claim that human beings have a created nature.</p>
-        <div class="button-group">
-          <a class="button" href="human-signal.html">Read Online</a>
-          <a class="button" href="papers.html">View Papers</a>
-        </div>
-        <a class="text-link" href="../assets/human_signal_v1.pdf">Download PDF</a>
-      </article>
-      <article class="doc-card">
-        <div class="doc-card-header">
-          <h3>How to Cite</h3>
-          <span class="chip">Cite</span>
-        </div>
-        <p>Michael Nathan Bower (2026). Self-Referential Chains and the Signal<br />
-        Anchoring Constraint. Alignment Theory Research Paper, Version 13.<br />
-        alignmenttheory.org/pages/papers.html</p>
-        <a class="text-link" href="framework.html">This paper extends the framework's account of drift, coherence, and externalized validation &rarr;</a>
-      </article>
+      <article class="doc-card"><div class="doc-card-header"><h3>How to Use Alignment Theory</h3><span class="chip">Guide</span></div><a class="text-link" href="how-to-use-alignment-theory.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Load-Bearing Function, Participatory Capacity, and the Four Modes of Support</h3><span class="chip">Define</span></div><a class="text-link" href="load-bearing-function-participatory-capacity-and-the-four-modes-of-support.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Boundary Conditions and Failure Cases of Alignment Theory</h3><span class="chip">Define</span></div><a class="text-link" href="boundary-conditions-and-failure-cases-of-alignment-theory.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>What the Framework Actually Claims</h3><span class="chip">Define</span></div><a class="text-link" href="what-the-framework-actually-claims.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Participation, Co-Regulation, and Substitution</h3><span class="chip">Define</span></div><a class="text-link" href="participation-co-regulation-and-substitution.html">Read online</a></article>
+    </section>
+    <section class="doc-card"><div class="doc-card-header"><h3>Stress Test Series — Canonical Core</h3><span class="chip">Test</span></div><p>Six papers that demonstrate the framework with the greatest clarity — where load-bearing functions are most identifiable, the perturbation test has observable consequences, and the domain's own literature already tracks a version of the distinction. Start here to understand what the stress test series is actually claiming.</p></section>
+    <section class="grid-two">
+      <article class="doc-card"><div class="doc-card-header"><h3>Shared Core Structure Across Domains</h3><span class="chip">Meta</span></div><a class="text-link" href="shared-core-structure-across-domains.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Biological Stress Test</h3><span class="chip">Core</span></div><div class="button-group"><a class="button" href="biological-stress-test.html">Read Online</a><a class="button" href="../assets/papers/biological-stress-test.pdf">Download PDF</a></div></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Addiction and Recovery Stress Test</h3><span class="chip">Core</span></div><a class="text-link" href="addiction-and-recovery-stress-test.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Education Stress Test</h3><span class="chip">Core</span></div><a class="text-link" href="education-stress-test.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Religion and Spiritual Formation Stress Test</h3><span class="chip">Core</span></div><a class="text-link" href="religion-and-spiritual-formation-stress-test.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Organizational Systems Stress Test</h3><span class="chip">Core</span></div><a class="text-link" href="organizational-systems-stress-test.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Community and High-Control Groups Stress Test</h3><span class="chip">Core</span></div><a class="text-link" href="community-and-high-control-group-stress-test.html">Read online</a></article>
+    </section>
+    <section class="doc-card"><div class="doc-card-header"><h3>Stress Test Series — Full Set</h3><span class="chip">Test</span></div></section>
+    <section class="grid-two">
+      <article class="doc-card"><div class="doc-card-header"><h3>Economic Stress Test</h3><span class="chip">Paper</span></div><a class="text-link" href="economic-stress-test.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Parenting and Development Stress Test</h3><span class="chip">Paper</span></div><a class="text-link" href="parenting-and-development-stress-test.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Health Behavior and Lifestyle Change Stress Test</h3><span class="chip">Paper</span></div><a class="text-link" href="health-behavior-and-lifestyle-change-stress-test.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Political Systems and Control Stress Test</h3><span class="chip">Paper</span></div><a class="text-link" href="political-systems-and-control-stress-test.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Leadership and Authority Stress Test</h3><span class="chip">Paper</span></div><a class="text-link" href="leadership-and-authority-stress-test.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Social Media and Information Stress Test</h3><span class="chip">Paper</span></div><a class="text-link" href="social-media-and-information-stress-test.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Conflict and Polarization Stress Test</h3><span class="chip">Paper</span></div><a class="text-link" href="conflict-and-polarization-stress-test.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Technology Adoption Stress Test</h3><span class="chip">Paper</span></div><a class="text-link" href="technology-adoption-stress-test.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Thermodynamic Stress Test</h3><span class="chip">Paper</span></div><a class="text-link" href="thermodynamic-stress-test.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Suffering and Hidden Structure Stress Test</h3><span class="chip">Paper</span></div><a class="text-link" href="suffering-and-hidden-structure-stress-test.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Meaning Formation and Suffering Stress Test</h3><span class="chip">Paper</span></div><a class="text-link" href="meaning-formation-and-suffering-stress-test.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Self-Help and Human Formation Stress Test</h3><span class="chip">Paper</span></div><a class="text-link" href="self-help-and-human-formation-stress-test.html">Read online</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Why Structural Dependence Hides Behind Functional Success</h3><span class="chip">Paper</span></div><div class="button-group"><a class="button" href="why-structural-dependence-hides-behind-functional-success.html">Read Online</a><a class="button" href="../assets/papers/why-structural-dependence-hides-behind-functional-success.pdf">Download PDF</a></div></article>
+    </section>
+    <section class="doc-card"><div class="doc-card-header"><h3>AI and Human Participation</h3><span class="chip">Apply</span></div></section>
+    <section class="grid-two">
+      <article class="doc-card"><div class="doc-card-header"><h3>AI Civilization and Human Formation</h3><span class="chip">Branch</span></div><a class="text-link" href="ai-civilization-and-human-formation.html">Open branch</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Why Multiple Fields Are Converging on the Same AI Question</h3><span class="chip">Paper</span></div><div class="button-group"><a class="button" href="why-multiple-fields-are-converging-on-the-same-ai-question.html">Read Online</a><a class="button" href="../assets/why-multiple-fields-are-converging-on-the-same-ai-question.pdf">Download PDF</a></div></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Why the Present May Be Safer Than Success</h3><span class="chip">Paper</span></div><div class="button-group"><a class="button" href="why-the-present-may-be-safer-than-success.html">Read Online</a><a class="button" href="../assets/why-the-present-may-be-safer-than-success.pdf">Download PDF</a></div></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>Load-Bearing Human Capacities in the AI Age</h3><span class="chip">Paper</span></div><div class="button-group"><a class="button" href="load-bearing-human-capacities-in-the-ai-age.html">Read Online</a><a class="button" href="../assets/load-bearing-human-capacities-in-the-ai-age.pdf">Download PDF</a></div></article>
+    </section>
+    <section class="doc-card"><div class="doc-card-header"><h3>Earlier Framing / Archive</h3><span class="chip">Archive</span></div><p>These pages represent an earlier stage of the project organized around an internal/external alignment distinction. That framing remains conceptually useful in places, but the framework is now better stated through the revised participatory-capacity model. They are preserved here as archival record, not as the current framework entry points.</p></section>
+    <section class="grid-two">
+      <article class="doc-card"><div class="doc-card-header"><h3>AI Alignment and Alignment Theory</h3><span class="chip">Earlier Framing</span></div><a class="text-link" href="ai-alignment-and-alignment-theory.html">Open earlier framing</a></article>
+      <article class="doc-card"><div class="doc-card-header"><h3>On the Inner / Outer Distinction</h3><span class="chip">Earlier Framing</span></div><a class="text-link" href="on-the-inner-outer-distinction.html">Open earlier framing</a></article>
     </section>
   </main>
-
   <footer class="site-footer">
     <p>Alignment Theory Archive.</p>
   </footer>
-
-  <script src="../assets/app.js?v=20260317a"></script>
+  <script src="../assets/app.js?v=20260321a"></script>
 </body>
 </html>

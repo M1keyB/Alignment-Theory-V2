@@ -5,7 +5,7 @@
   "description": "Static site for the Alignment Theory Research Archive",
   "scripts": {
     "start": "py -m http.server 8000",
-    "dev": "py -m http.server 8000",
+    "dev": "py scripts/dev_server.py",
     "build": "powershell -Command \"Write-Output 'Static site only: no build step required.'\""
   }
 }

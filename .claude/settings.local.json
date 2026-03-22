@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -l 'Michael Nathan Bower \\\\?' c:/Users/micha/Desktop/AlignmentTheory-CODEX/pages/*.html)",
+      "Bash(node -e \":*)"
+    ]
+  }
+}
