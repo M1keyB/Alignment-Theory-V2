@@ -573,6 +573,7 @@ const normalizePrimaryNav = (nav) => {
     { href: `${base}papers.html`, label: "Papers", match: () => currentPath === "papers.html" || bodyPage === "papers" },
     { href: `${base}essays.html`, label: "Essays", match: () => currentPath === "essays.html" || currentPath.startsWith("essay-") || bodyPage === "essays" },
     { href: `${base}library.html`, label: "Library", match: () => currentPath === "library.html" || bodyPage === "library" },
+    { href: `${base}glossary.html`, label: "Glossary", match: () => currentPath === "glossary.html" },
     { href: `${base}about.html`, label: "About", match: () => currentPath === "about.html" || bodyPage === "about" },
     { href: `${base}contact.html`, label: "Contact", match: () => currentPath === "contact.html" || bodyPage === "contact" },
   ];
