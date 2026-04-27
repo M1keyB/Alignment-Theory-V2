@@ -26,16 +26,19 @@
 <body data-page="ai-research">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="site-title"><h1>Alignment Theory</h1><p class="site-subtitle">Research Archive</p></div>
+    <div class="site-title">
+      <a class="site-logo" href="../index.html">Alignment Theory</a><p class="site-subtitle">Research Archive</p></div>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">Menu</button>
     <nav class="site-nav" id="site-nav" aria-label="Primary">
       <a href="../index.html">Home</a>
       <a href="where-to-start.html">Where to Start</a>
       <a href="framework.html">Framework</a>
       <a href="stress-tests.html">Stress Tests</a>
+      <a href="ai-alignment-research.html">AI Alignment Research</a>
       <a href="papers.html">Papers</a>
       <a href="essays.html">Essays</a>
       <a href="library.html">Library</a>
+      <a href="glossary.html">Glossary</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -61,6 +64,7 @@
     <li><a href="#collection">Collection</a></li>
     <li><a href="#redaction-and-sensitive-data">Redaction and Sensitive Data</a></li>
     <li><a href="#evaluation">Evaluation</a></li>
+    <li><a href="#pcpi-scoring-layer">PCPI Scoring Layer</a></li>
     <li><a href="#detector-review">Detector Review</a></li>
     <li><a href="#human-review">Human Review</a></li>
     <li><a href="#before-after-comparison">Before/After Comparison</a></li>
@@ -75,9 +79,9 @@
   <a class="button" href="how-to-cite.html">How to Cite</a>
   <div class="research-tools-related">
     <p class="research-panel-label">Related</p>
+    <a class="text-link" href="participatory-capacity-preservation-index.html">Participatory Capacity Preservation Index (PCPI) v1.0</a>
     <a class="text-link" href="ai-alignment-limitations.html">Limitations &amp; Open Problems</a>
     <a class="text-link" href="ai-alignment-casebook.html">Drift Casebook</a>
-    <a class="text-link" href="ai-alignment-competitive-positioning.html">Competitive Positioning</a>
   </div>
 </aside>
       </div>
@@ -88,6 +92,7 @@
     <li><a href="#collection">Collection</a></li>
     <li><a href="#redaction-and-sensitive-data">Redaction and Sensitive Data</a></li>
     <li><a href="#evaluation">Evaluation</a></li>
+    <li><a href="#pcpi-scoring-layer">PCPI Scoring Layer</a></li>
     <li><a href="#detector-review">Detector Review</a></li>
     <li><a href="#human-review">Human Review</a></li>
     <li><a href="#before-after-comparison">Before/After Comparison</a></li>
@@ -107,6 +112,10 @@
 <section class="research-section" id="evaluation">
     <h2>Evaluation</h2>
     <p>Outputs are evaluated against objective state, constraint compliance, detector categories, and correction routes. The protocol should separate hard policy violations from allowed-but-off-center drift so the review process does not flatten all failures into a single score.</p>
+  </section>
+<section class="research-section" id="pcpi-scoring-layer">
+    <h2>PCPI Scoring Layer</h2>
+    <p>Use PCPI as one proposed scoring layer for prompt-output batch evaluation. PCPI can sit beside detector hits, correction routes, escalation rates, and before/after drift comparisons.</p>
   </section>
 <section class="research-section" id="detector-review">
     <h2>Detector Review</h2>
@@ -153,6 +162,12 @@
   <div class="research-callout-header"><h2 id="related-title">Related Research</h2><span class="chip">Archive</span></div>
   <div class="related-research-grid">
     <article class="related-research-card">
+    <p class="research-card-kicker">Measurement</p>
+    <h3>Participatory Capacity Preservation Index (PCPI) v1.0</h3>
+    <p>A measurement framework for evaluating whether AI systems preserve or erode human agency.</p>
+    <a class="text-link" href="participatory-capacity-preservation-index.html">Read Participatory Capacity Preservation Index (PCPI) v1.0</a>
+  </article>
+    <article class="related-research-card">
     <p class="research-card-kicker">Research Paper</p>
     <h3>Limitations &amp; Open Problems</h3>
     <p>Credibility boundaries for the Alignment Theory AI alignment research program.</p>
@@ -163,12 +178,6 @@
     <h3>Drift Casebook</h3>
     <p>Synthetic examples for detector explanation, evaluation design, and reviewer calibration.</p>
     <a class="text-link" href="ai-alignment-casebook.html">Read Drift Casebook</a>
-  </article>
-    <article class="related-research-card">
-    <p class="research-card-kicker">Research Paper</p>
-    <h3>Competitive Positioning</h3>
-    <p>A comparison of Alignment Theory with adjacent AI evaluation and governance tools.</p>
-    <a class="text-link" href="ai-alignment-competitive-positioning.html">Read Competitive Positioning</a>
   </article>
   </div>
 </section>
@@ -181,14 +190,33 @@
   <a class="button" href="how-to-cite.html">How to Cite</a>
   <div class="research-tools-related">
     <p class="research-panel-label">Related</p>
+    <a class="text-link" href="participatory-capacity-preservation-index.html">Participatory Capacity Preservation Index (PCPI) v1.0</a>
     <a class="text-link" href="ai-alignment-limitations.html">Limitations &amp; Open Problems</a>
     <a class="text-link" href="ai-alignment-casebook.html">Drift Casebook</a>
-    <a class="text-link" href="ai-alignment-competitive-positioning.html">Competitive Positioning</a>
   </div>
 </aside>
       </div>
   </main>
-  <footer class="site-footer"><p>Alignment Theory Archive. <a class="text-link" href="contact.html">Contact</a></p></footer>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="site-footer-brand">
+        <p class="site-footer-title">Alignment Theory</p>
+        <p>A quiet research archive on alignment, participation, drift, and realignment across human systems, institutions, technology, and AI.</p>
+      </div>
+      <nav class="site-footer-links" aria-label="Footer">
+        <a href="../index.html">Home</a>
+        <a href="where-to-start.html">Where to Start</a>
+        <a href="framework.html">Framework</a>
+        <a href="stress-tests.html">Stress Tests</a>
+        <a href="ai-alignment-research.html">AI Alignment Research</a>
+        <a href="papers.html">Papers</a>
+        <a href="glossary.html">Glossary</a>
+        <a href="how-to-cite.html">How to Cite</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <p class="site-footer-copy">&copy; 2026 Alignment Theory. All rights reserved.</p>
+  </footer>
   <script src="../assets/app.js?v=20260427a"></script>
 </body>
 </html>

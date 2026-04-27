@@ -27,16 +27,19 @@
 <body data-page="ai-research">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="site-title"><h1>Alignment Theory</h1><p class="site-subtitle">Research Archive</p></div>
+    <div class="site-title">
+      <a class="site-logo" href="../index.html">Alignment Theory</a><p class="site-subtitle">Research Archive</p></div>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">Menu</button>
     <nav class="site-nav" id="site-nav" aria-label="Primary">
       <a href="../index.html">Home</a>
       <a href="where-to-start.html">Where to Start</a>
       <a href="framework.html">Framework</a>
       <a href="stress-tests.html">Stress Tests</a>
+      <a href="ai-alignment-research.html" aria-current="page">AI Alignment Research</a>
       <a href="papers.html">Papers</a>
       <a href="essays.html">Essays</a>
       <a href="library.html">Library</a>
+      <a href="glossary.html">Glossary</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -44,12 +47,13 @@
   <main id="main" class="page research-page">
 
     <section class="research-hero research-hub-hero">
-      <p class="research-meta"><span class="chip">Active Research Corpus - Version 1, 2026</span></p>
+      <p class="research-meta"><span class="chip">ACTIVE RESEARCH CORPUS &mdash; v1.1 | Updated April 27, 2026</span></p>
       <h1>AI Alignment Research</h1>
       <p class="lead">A research program for behavioral drift detection, objective anchoring, runtime realignment, and production AI governance.</p>
       <p>Alignment Theory treats AI alignment as an ongoing control-loop problem: define the objective, enforce constraints, monitor behavior, detect drift, route meaningful deviations to review, and re-anchor the system over time.</p>
       <p class="orientation-line">Alignment is not only whether an output is acceptable; alignment is whether the system remains ordered toward its intended objective over time.</p>
       <div class="research-callout research-callout-compact">This research does not claim to solve all AI alignment. It proposes a structural and operational framework for detecting, classifying, and correcting behavioral drift in deployed AI systems.</div>
+      <div class="research-callout research-callout-compact"><strong>New Measurement Layer:</strong> PCPI turns participatory capacity from a concept into a scoreable evaluation target.</div>
       <div class="research-downloads">
         <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Download Full Combined Corpus PDF</a>
         <a class="button" href="../assets/research/AT_Research_v5.zip">Download Full Research ZIP</a>
@@ -59,8 +63,9 @@
     <section class="doc-card research-hub-section">
       <div class="doc-card-header"><h2>Reading Order</h2><span class="chip">Start</span></div>
       <ol class="research-timeline">
-        <li><span class="timeline-number">01</span><div><strong>Executive Summary</strong><p>This executive summary introduces Alignment Theory as a practical research program for detecting whether AI systems remain ordered toward their intended objective over time. It frames AI drift as an operational problem for deployed systems, not only a training-time or policy-compliance question.</p><p><a class="text-link" href="ai-alignment-executive-summary.html">Read online</a> | <a class="text-link" href="../assets/research/00_Executive_Summary_AT_AI_Alignment_Research_v5.pdf">Download PDF</a></p></div></li>
-        <li><span class="timeline-number">02</span><div><strong>Three-Layer Blueprint</strong><p>The blueprint defines a runtime architecture for objective anchoring, constraint compliance, and realignment of behavior that remains formally allowed but substantively off-center.</p><p><a class="text-link" href="ai-alignment-three-layer-blueprint.html">Read online</a> | <a class="text-link" href="../assets/research/01_Three_Layer_Blueprint_AT_AI_Alignment_v5.pdf">Download PDF</a></p></div></li>
+        <li><span class="timeline-number">00</span><div><strong>Executive Summary</strong><p>This executive summary introduces Alignment Theory as a practical research program for detecting whether AI systems remain ordered toward their intended objective over time. It frames AI drift as an operational problem for deployed systems, not only a training-time or policy-compliance question.</p><p><a class="text-link" href="ai-alignment-executive-summary.html">Read online</a> | <a class="text-link" href="../assets/research/00_Executive_Summary_AT_AI_Alignment_Research_v5.pdf">Download PDF</a></p></div></li>
+        <li><span class="timeline-number">01</span><div><strong>Three-Layer Blueprint</strong><p>The blueprint defines a runtime architecture for objective anchoring, constraint compliance, and realignment of behavior that remains formally allowed but substantively off-center.</p><p><a class="text-link" href="ai-alignment-three-layer-blueprint.html">Read online</a> | <a class="text-link" href="../assets/research/01_Three_Layer_Blueprint_AT_AI_Alignment_v5.pdf">Download PDF</a></p></div></li>
+        <li><span class="timeline-number">02</span><div><strong>Participatory Capacity Preservation Index (PCPI)</strong><p>A measurement layer for detecting whether AI assistance preserves human agency or quietly becomes substitution. Includes a scoring formula, feature rubric, substitution boundary test, batch-level drift metric, and starter dataset template.</p><p><a class="text-link" href="participatory-capacity-preservation-index.html">Read online</a> | <a class="text-link" href="../assets/research/Participatory_Capacity_Preservation_Index_PCPI_v1.pdf">Download PDF</a> | <a class="text-link" href="../assets/research/PCPI_Rubric_v1.pdf">Download Rubric</a> | <a class="text-link" href="../assets/research/PCPI_Dataset_Template_v1_with_24_Starter_Examples.csv">Dataset Template</a></p></div></li>
         <li><span class="timeline-number">03</span><div><strong>Literature Review</strong><p>This review places Alignment Theory beside major AI alignment approaches and identifies a practical gap: runtime detection of behavioral drift in deployed AI systems.</p><p><a class="text-link" href="ai-alignment-literature-review.html">Read online</a> | <a class="text-link" href="../assets/research/02_Literature_Review_and_Drift_Detection_Gap_v5.pdf">Download PDF</a></p></div></li>
         <li><span class="timeline-number">04</span><div><strong>Competitive Positioning</strong><p>This paper distinguishes Alignment Theory from generic observability, prompt evals, moderation, safety monitors, red teaming, benchmark suites, and QA systems.</p><p><a class="text-link" href="ai-alignment-competitive-positioning.html">Read online</a> | <a class="text-link" href="../assets/research/03_Competitive_Positioning_AT_vs_Observability_Evals_v5.pdf">Download PDF</a></p></div></li>
         <li><span class="timeline-number">05</span><div><strong>Who This Is For</strong><p>This role map translates the research corpus into the questions different teams need answered when they deploy, buy, evaluate, or govern AI systems.</p><p><a class="text-link" href="ai-alignment-who-this-is-for.html">Read online</a> | <a class="text-link" href="../assets/research/04_Who_This_Is_For_Role_Map_v5.pdf">Download PDF</a></p></div></li>
@@ -69,6 +74,7 @@
         <li><span class="timeline-number">08</span><div><strong>Research Lineage</strong><p>This lineage page tracks the development of the AI alignment research line from earlier alignment distinctions into a runtime architecture for behavioral QA.</p><p><a class="text-link" href="ai-alignment-lineage.html">Read online</a> | <a class="text-link" href="../assets/research/07_Framework_Evolution_and_Research_Lineage_v5.pdf">Download PDF</a></p></div></li>
         <li><span class="timeline-number">09</span><div><strong>Limitations &amp; Open Problems</strong><p>This page states what the research does not solve, where it can fail, and what must be validated before strong deployment claims are made.</p><p><a class="text-link" href="ai-alignment-limitations.html">Read online</a> | <a class="text-link" href="../assets/research/08_Limitations_Critiques_and_Open_Problems_v5.pdf">Download PDF</a></p></div></li>
         <li><span class="timeline-number">10</span><div><strong>Drift Casebook</strong><p>The casebook provides synthetic prompt-output examples for behavioral drift categories. These examples are not private user data and should be treated as evaluation patterns, not empirical validation.</p><p><a class="text-link" href="ai-alignment-casebook.html">Read online</a> | <a class="text-link" href="../assets/research/09_Empirical_Drift_Casebook_and_Eval_Cases_v5.pdf">Download PDF</a></p></div></li>
+        <li><span class="timeline-number">11</span><div><strong>How to Cite</strong><p>Citation formats for the full corpus, the Three-Layer Blueprint, PCPI, and related AI alignment research pages.</p><p><a class="text-link" href="how-to-cite.html">Read online</a></p></div></li>
       </ol>
     </section>
     <section class="research-map-section">
@@ -87,6 +93,20 @@
   <div class="button-group">
     <a class="button" href="ai-alignment-three-layer-blueprint.html">Read online</a>
     <a class="button" href="../assets/research/01_Three_Layer_Blueprint_AT_AI_Alignment_v5.pdf">Download PDF</a>
+  </div>
+</article></div>
+    </section>
+<section class="research-map-section">
+      <div class="research-section-header"><h2>Measurement Layer</h2><span class="chip">Map</span></div>
+      <div class="grid-two"><article class="doc-card research-card">
+  <div class="doc-card-header"><h3>Participatory Capacity Preservation Index (PCPI) v1.0</h3><span class="chip">Measurement Layer</span></div>
+  <p>A proposed 0-100 measurement framework for evaluating whether AI responses preserve, build, or erode the user's ability to understand, judge, choose, verify, learn, and act.</p>
+  <p>PCPI extends the Realignment Layer by turning participation collapse into a measurable evaluation target. It scores positive participation features such as final judgment retention, reasoning scaffolding, verification path, skill transfer, and appropriate automation, then subtracts penalties for over-decision, substitute tone, premature closure, hidden black-box reasoning, dependency reinforcement, and unsupported normative pressure.</p>
+  <div class="button-group">
+    <a class="button" href="participatory-capacity-preservation-index.html">Read online</a>
+    <a class="button" href="../assets/research/Participatory_Capacity_Preservation_Index_PCPI_v1.pdf">Download PDF</a>
+    <a class="button" href="../assets/research/PCPI_Rubric_v1.pdf">Download Rubric</a>
+    <a class="button" href="../assets/research/PCPI_Dataset_Template_v1_with_24_Starter_Examples.csv">Dataset Template</a>
   </div>
 </article></div>
     </section>
@@ -176,6 +196,7 @@
       <p><strong>Objective Layer:</strong> Defines what the system is actually for, including objective center, non-negotiables, success criteria, and anti-goals.</p>
       <p><strong>Constraint Layer:</strong> Defines what the system may or may not do, including policies, boundaries, refusals, and safety limits.</p>
       <p><strong>Realignment Layer:</strong> Detects allowed-but-off-center behavior and routes correction through rewrite, reroute, restart, confidence downgrade, or clarification.</p>
+      <p><strong>Measurement Layer:</strong> PCPI scores whether AI assistance preserves or erodes human understanding, judgment, choice, verification, learning, and agency.</p>
       <p>The Realignment Layer evaluates the allowed-but-off-center layer: outputs that pass ordinary rules but still drift from the intended objective.</p>
     </section>
     <section class="doc-card research-hub-section">
@@ -198,7 +219,7 @@
     </section>
     <section class="research-callout research-cite-callout">
       <div class="research-callout-header"><h2>How to Cite This Corpus</h2><span class="chip">Citation</span></div>
-      <p>Use the citation page for APA, MLA, Chicago, and BibTeX formats for the full corpus, the hub, and the Three-Layer Blueprint.</p>
+      <p>Use the citation page for APA, MLA, Chicago, and BibTeX formats for the full corpus, the hub, the Three-Layer Blueprint, and PCPI.</p>
       <div class="research-downloads"><a class="button" href="how-to-cite.html">Open How to Cite</a><a class="button" href="contact.html">Contact for Collaboration</a></div>
     </section>
     <section class="research-callout references" id="references" aria-labelledby="references-title">
@@ -215,7 +236,26 @@
   </section>
   
   </main>
-  <footer class="site-footer"><p>Alignment Theory Archive. <a class="text-link" href="contact.html">Contact</a></p></footer>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="site-footer-brand">
+        <p class="site-footer-title">Alignment Theory</p>
+        <p>A quiet research archive on alignment, participation, drift, and realignment across human systems, institutions, technology, and AI.</p>
+      </div>
+      <nav class="site-footer-links" aria-label="Footer">
+        <a href="../index.html">Home</a>
+        <a href="where-to-start.html">Where to Start</a>
+        <a href="framework.html">Framework</a>
+        <a href="stress-tests.html">Stress Tests</a>
+        <a href="ai-alignment-research.html">AI Alignment Research</a>
+        <a href="papers.html">Papers</a>
+        <a href="glossary.html">Glossary</a>
+        <a href="how-to-cite.html">How to Cite</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <p class="site-footer-copy">&copy; 2026 Alignment Theory. All rights reserved.</p>
+  </footer>
   <script src="../assets/app.js?v=20260427a"></script>
 </body>
 </html>

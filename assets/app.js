@@ -320,6 +320,114 @@ const showMissing = (target, message) => {
 
 const getCurrentPath = () => window.location.pathname.split("/").pop() || "index.html";
 
+const getPageRoot = () => (window.location.pathname.includes("/pages/") ? "" : "pages/");
+
+const getHomeHref = () => (window.location.pathname.includes("/pages/") ? "../index.html" : "index.html");
+
+const ARCHIVE_HERO_DETAILS = {
+  "index.html": {
+    chip: "Alignment Theory",
+    subtitle: "A framework for understanding how systems stay aligned, drift, collapse, or realign across human life, institutions, technology, and AI.",
+  },
+  "where-to-start.html": {
+    chip: "Guide",
+    subtitle: "A guided entry point into the framework, core terms, reading order, and major research branches.",
+  },
+  "framework.html": {
+    chip: "Core Framework",
+    subtitle: "The central structure of Alignment Theory: internal alignment, external support, participation, drift, and realignment.",
+  },
+  "stress-tests.html": {
+    chip: "Stress Test Series",
+    subtitle: "Applied case studies that test whether the framework holds across domains.",
+  },
+  "papers.html": {
+    chip: "Research Papers",
+    subtitle: "Formal papers, PDFs, and long-form research artifacts from the Alignment Theory corpus.",
+  },
+  "essays.html": {
+    chip: "Essays",
+    subtitle: "Long-form interpretive essays from the Alignment Theory archive.",
+  },
+  "library.html": {
+    chip: "Library",
+    subtitle: "An organized archive of current framework notes, stress tests, branch papers, and earlier formulations.",
+  },
+  "glossary.html": {
+    chip: "Reference",
+    subtitle: "Key terms and definitions used across Alignment Theory.",
+  },
+  "about.html": {
+    chip: "About",
+    subtitle: "Project background, research posture, and the purpose of the Alignment Theory archive.",
+  },
+  "contact.html": {
+    chip: "Contact",
+    subtitle: "Citation, collaboration, curriculum use, and research inquiries.",
+  },
+};
+
+const initArchiveVisualSystem = () => {
+  const currentPath = getCurrentPath();
+  const details = ARCHIVE_HERO_DETAILS[currentPath];
+  const hero = qs(".research-hero, .library-header, .hero-intro, main > .placeholder:first-child, .manuscript-header");
+
+  if (hero) {
+    hero.classList.add("page-hero", "archive-hero");
+
+    if (details && !qs(".research-meta, .doc-meta", hero)) {
+      const meta = document.createElement("p");
+      meta.className = "research-meta";
+      meta.innerHTML = `<span class="chip">${escapeHtml(details.chip)}</span>`;
+      hero.insertBefore(meta, hero.firstElementChild);
+    }
+
+    if (details && !qs(".lead", hero)) {
+      const heading = qs("h1, h2", hero);
+      const lead = document.createElement("p");
+      lead.className = "lead";
+      lead.textContent = details.subtitle;
+      if (heading?.nextSibling) {
+        heading.parentNode.insertBefore(lead, heading.nextSibling);
+      } else {
+        hero.appendChild(lead);
+      }
+    }
+  }
+
+  qsa(".page > .doc-card, .page > .grid-two > .doc-card, .page > .library-grid > .doc-card").forEach((card) => {
+    card.classList.add("archive-card");
+  });
+};
+
+const initArchiveFooter = () => {
+  const footer = qs(".site-footer");
+  if (!footer) return;
+
+  const base = getPageRoot();
+  const homeHref = getHomeHref();
+  footer.innerHTML = `
+    <div class="site-footer-inner">
+      <div class="site-footer-brand">
+        <p class="site-footer-title">Alignment Theory</p>
+        <p>A quiet research archive on alignment, participation, drift, and realignment across human systems, institutions, technology, and AI.</p>
+      </div>
+      <nav class="site-footer-links" aria-label="Footer">
+        <a href="${homeHref}">Home</a>
+        <a href="${base}where-to-start.html">Where to Start</a>
+        <a href="${base}framework.html">Framework</a>
+        <a href="${base}stress-tests.html">Stress Tests</a>
+        <a href="${base}ai-alignment-research.html">AI Alignment Research</a>
+        <a href="${base}papers.html">Papers</a>
+        <a href="${base}glossary.html">Glossary</a>
+        <a href="${base}how-to-cite.html">How to Cite</a>
+        <a href="${base}contact.html">Contact</a>
+      </nav>
+    </div>
+    <p class="site-footer-copy">&copy; ${new Date().getFullYear()} Alignment Theory. All rights reserved.</p>
+  `;
+};
+
 const buildNavIcon = (name) => {
   const paths = {
     home: '<path d="M3.5 8.5 12 2l8.5 6.5"></path><path d="M5.5 7.5V20h13V7.5"></path>',
@@ -689,6 +797,7 @@ const AI_RESEARCH_GROUPS = [
       { href: "ai-alignment-research.html", label: "Research Hub" },
       { href: "ai-alignment-executive-summary.html", label: "Executive Summary" },
       { href: "ai-alignment-three-layer-blueprint.html", label: "Three-Layer Blueprint" },
+      { href: "participatory-capacity-preservation-index.html", label: "Participatory Capacity Index" },
       { href: "ai-alignment-literature-review.html", label: "Literature Review" },
       { href: "ai-alignment-competitive-positioning.html", label: "Competitive Positioning" },
       { href: "ai-alignment-who-this-is-for.html", label: "Who This Is For" },
@@ -1355,6 +1464,7 @@ const SEARCH_DATA = [
   { title: "AI Alignment Research", url: "ai-alignment-research.html", section: "AI Alignment Research", desc: "Research hub for behavioral drift detection, realignment architecture, and production AI governance.", tags: ["AI alignment research", "behavioral drift detection", "realignment layer", "AI governance", "behavioral QA"] },
   { title: "Executive Summary: Alignment Theory AI Alignment Research", url: "ai-alignment-executive-summary.html", section: "AI Alignment Research", desc: "Five-minute introduction to Alignment Theory AI alignment research.", tags: ["executive summary", "AI drift detection", "AI governance", "Michael Bower"] },
   { title: "The Three-Layer Blueprint for AI Alignment", url: "ai-alignment-three-layer-blueprint.html", section: "AI Alignment Research", desc: "Objective, Constraint, and Realignment layers for detecting allowed-but-off-center AI behavior.", tags: ["three-layer blueprint", "objective layer", "constraint layer", "realignment layer", "allowed-but-off-center"] },
+  { title: "Participatory Capacity Preservation Index (PCPI)", url: "participatory-capacity-preservation-index.html", section: "AI Alignment Research", desc: "Measurement framework for whether AI assistance preserves or erodes understanding, judgment, choice, verification, learning, and agency.", tags: ["PCPI", "participatory capacity", "AI alignment metrics", "human agency", "substitution risk", "behavioral QA", "AI evaluation"] },
   { title: "Literature Review: AI Alignment Approaches and the Drift Detection Gap", url: "ai-alignment-literature-review.html", section: "AI Alignment Research", desc: "RLHF, Constitutional AI, scalable oversight, interpretability, and the runtime drift detection gap.", tags: ["literature review", "RLHF", "Constitutional AI", "interpretability", "scalable oversight"] },
   { title: "Competitive Positioning: Alignment Theory vs Observability, Evals, and Safety Monitors", url: "ai-alignment-competitive-positioning.html", section: "AI Alignment Research", desc: "How Alignment Theory differs from observability tools, prompt evals, moderation, and safety monitors.", tags: ["AI observability", "AI evaluation", "prompt evals", "safety monitors", "moderation"] },
   { title: "Who This Is For: Role Map for AI Alignment Research", url: "ai-alignment-who-this-is-for.html", section: "AI Alignment Research", desc: "Role map for product teams, prompt engineers, compliance officers, buyers, executives, and researchers.", tags: ["role map", "product teams", "prompt engineers", "compliance", "enterprise AI buyers"] },
@@ -1548,11 +1658,13 @@ const initSearch = () => {
 };
 
 const init = () => {
+  initArchiveVisualSystem();
   loadMarkdown();
   initStaticToc();
   loadLibrary();
   initMobileBottomNav();
   initNav();
+  initArchiveFooter();
   initStickyHeader();
   initSearch();
   initRevealMotion();
