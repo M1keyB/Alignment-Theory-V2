@@ -21,7 +21,7 @@
     gtag("config", "G-QVFSZRN0PB");
   </script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Formal Glossary of Alignment Theory Terms for AI Systems","name":"Formal Glossary of Alignment Theory Terms for AI Systems","author":{"@type":"Person","name":"Michael Bower"},"datePublished":"2026","publisher":{"@type":"Organization","name":"AlignmentTheory.org"},"url":"https://alignmenttheory.org/pages/ai-alignment-glossary.html","description":"A formal glossary of Alignment Theory terms for AI alignment, drift detection, realignment, and behavioral QA."}</script>
-  <link rel="stylesheet" href="../assets/styles.css" />
+  <link rel="stylesheet" href="../assets/styles.css?v=20260427a" />
 </head>
 <body data-page="ai-research">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -42,21 +42,45 @@
   </header>
   <main id="main" class="page research-page">
 
-    <article class="manuscript research-article">
-      <p class="doc-meta"><a class="text-link" href="ai-alignment-research.html">Back to AI Alignment Research</a></p>
-      <header class="manuscript-header research-hero">
-        <p class="doc-meta"><span class="chip">Version 1 - 2026</span><span class="chip">AI Alignment Research</span></p>
+    <p class="doc-meta research-back-link"><a class="text-link" href="ai-alignment-research.html">Back to AI Alignment Research</a></p>
+    <section class="research-hero research-paper-hero">
+        <p class="research-meta"><span class="chip">Version 1 - 2026</span><span class="chip">Reference</span></p>
         <h1>Formal Glossary of Alignment Theory Terms for AI Systems</h1>
         <p class="lead">Definitions and implementation notes for the research corpus.</p>
         <p>The glossary defines core terms used across the corpus and replaces generic implementation boilerplate with concrete, term-specific notes.</p>
-        <div class="button-group">
+        <div class="research-downloads">
   <a class="button" href="../assets/research/06_Formal_Glossary_AT_AI_Systems_v5.pdf">Download PDF</a>
   <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
   <a class="button" href="ai-alignment-research.html">Research Hub</a>
 </div>
-      </header>
-      <nav class="doc-card research-toc" aria-labelledby="toc-title">
-  <div class="doc-card-header"><h2 id="toc-title">Table of Contents</h2><span class="chip">Guide</span></div>
+      </section>
+      <div class="research-mobile-panels">
+        <details class="research-toc research-toc-mobile">
+      <summary>Table of Contents</summary>
+      <ol>
+    <li><a href="#core-terms">Core Terms</a></li>
+    <li><a href="#drift-categories">Drift Categories</a></li>
+    <li><a href="#pipeline-terms">Pipeline Terms</a></li>
+    <li><a href="#risk-terms">Risk Terms</a></li>
+  </ol>
+    </details>
+        <aside class="research-tools research-tools-mobile" aria-label="Research tools">
+  <p class="research-panel-label">Research Tools</p>
+  <a class="button" href="../assets/research/06_Formal_Glossary_AT_AI_Systems_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Download Full Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+  <a class="button" href="how-to-cite.html">How to Cite</a>
+  <div class="research-tools-related">
+    <p class="research-panel-label">Related</p>
+    <a class="text-link" href="ai-alignment-three-layer-blueprint.html">Three-Layer Blueprint</a>
+    <a class="text-link" href="ai-alignment-casebook.html">Drift Casebook</a>
+    <a class="text-link" href="ai-alignment-limitations.html">Limitations &amp; Open Problems</a>
+  </div>
+</aside>
+      </div>
+      <div class="research-layout">
+        <nav class="research-toc research-toc-desktop" aria-labelledby="toc-title">
+  <p class="research-panel-label">On this page</p>
   <ol>
     <li><a href="#core-terms">Core Terms</a></li>
     <li><a href="#drift-categories">Drift Categories</a></li>
@@ -64,8 +88,10 @@
     <li><a href="#risk-terms">Risk Terms</a></li>
   </ol>
 </nav>
-      <section class="doc-card" id="core-terms">
-      <div class="doc-card-header"><h2>Core Terms</h2><span class="chip">Glossary</span></div>
+        <article class="research-article-body">
+
+          <section class="research-section" id="core-terms">
+      <h2>Core Terms</h2>
       <div class="glossary-grid">
         <article class="glossary-entry">
           <h3>Objective Center</h3>
@@ -97,6 +123,11 @@
           <p>A movement away from intended behavior over time or across conditions.</p>
           <p><strong>Implementation note:</strong> Measured across prompt batches, detector trends, correction rates, and objective-fit scores.</p>
         </article>
+      </div>
+    </section>
+<section class="research-section" id="drift-categories">
+      <h2>Drift Categories</h2>
+      <div class="glossary-grid">
         <article class="glossary-entry">
           <h3>Wrong Object</h3>
           <p>A response that optimizes for the wrong problem, audience, or objective.</p>
@@ -137,6 +168,11 @@
           <p>A shift where tone, polish, engagement, or completion pressure outranks objective fit.</p>
           <p><strong>Implementation note:</strong> Used when tone, polish, engagement, or completion pressure outranks truth, correctness, or objective fit.</p>
         </article>
+      </div>
+    </section>
+<section class="research-section" id="pipeline-terms">
+      <h2>Pipeline Terms</h2>
+      <div class="glossary-grid">
         <article class="glossary-entry">
           <h3>Source Profile</h3>
           <p>The declared set of sources, policies, evidence types, or authorities the system should use.</p>
@@ -177,6 +213,11 @@
           <p>The action chosen after a drift case is detected.</p>
           <p><strong>Implementation note:</strong> Encoded as rewrite, reroute, restart, confidence downgrade, clarification, escalation, or log-only review.</p>
         </article>
+      </div>
+    </section>
+<section class="research-section" id="risk-terms">
+      <h2>Risk Terms</h2>
+      <div class="glossary-grid">
         <article class="glossary-entry">
           <h3>Dangerous Coherence</h3>
           <p>A highly coherent response pattern that is persuasive while being misanchored.</p>
@@ -199,13 +240,13 @@
         </article>
       </div>
     </section>
-      <div class="button-group">
+          <div class="research-downloads research-downloads-bottom">
   <a class="button" href="../assets/research/06_Formal_Glossary_AT_AI_Systems_v5.pdf">Download PDF</a>
   <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
   <a class="button" href="ai-alignment-research.html">Research Hub</a>
 </div>
-      <section class="doc-card citation-block" aria-labelledby="citation-title">
-  <div class="doc-card-header"><h2 id="citation-title">How to Cite</h2><span class="chip">Citation</span></div>
+          <section class="research-callout citation-block" aria-labelledby="citation-title">
+  <div class="research-callout-header"><h2 id="citation-title">How to Cite</h2><span class="chip">Citation</span></div>
   <p>Michael Bower. (2026). <em>Formal Glossary of Alignment Theory Terms for AI Systems</em>. AlignmentTheory.org. https://alignmenttheory.org/pages/ai-alignment-glossary.html</p>
   <pre><code>@misc{bower2026aialignmentglossary,
   author = {Bower, Michael},
@@ -216,25 +257,54 @@
 }</code></pre>
   <p><a class="text-link" href="how-to-cite.html">Open full citation guidance</a></p>
 </section>
-      <section class="doc-card references" aria-labelledby="references-title">
-    <div class="doc-card-header"><h2 id="references-title">References</h2><span class="chip">Source</span></div>
+          <section class="research-callout references" id="references" aria-labelledby="references-title">
+    <div class="research-callout-header"><h2 id="references-title">References</h2><span class="chip">Source</span></div>
     <ol>
       <li><a href="ai-alignment-research.html">Alignment Theory AI Alignment Research Hub</a></li>
       <li><a href="ai-alignment-three-layer-blueprint.html">The Three-Layer Blueprint for AI Alignment</a></li>
       <li><a href="ai-alignment-limitations.html">Limitations, Critiques, and Open Problems</a></li>
     </ol>
   </section>
-      <section class="doc-card" aria-labelledby="related-title">
-  <div class="doc-card-header"><h2 id="related-title">Related Papers</h2><span class="chip">Archive</span></div>
-  <div class="button-group">
-    <a class="button" href="ai-alignment-three-layer-blueprint.html">Three-Layer Blueprint</a>
-    <a class="button" href="ai-alignment-casebook.html">Drift Casebook</a>
-    <a class="button" href="ai-alignment-limitations.html">Limitations &amp; Open Problems</a>
+          <section class="research-related" aria-labelledby="related-title">
+  <div class="research-callout-header"><h2 id="related-title">Related Research</h2><span class="chip">Archive</span></div>
+  <div class="related-research-grid">
+    <article class="related-research-card">
+    <p class="research-card-kicker">Core Paper</p>
+    <h3>Three-Layer Blueprint</h3>
+    <p>The architectural core of the Alignment Theory AI alignment corpus.</p>
+    <a class="text-link" href="ai-alignment-three-layer-blueprint.html">Read Three-Layer Blueprint</a>
+  </article>
+    <article class="related-research-card">
+    <p class="research-card-kicker">Evaluation</p>
+    <h3>Drift Casebook</h3>
+    <p>Synthetic examples for detector explanation, evaluation design, and reviewer calibration.</p>
+    <a class="text-link" href="ai-alignment-casebook.html">Read Drift Casebook</a>
+  </article>
+    <article class="related-research-card">
+    <p class="research-card-kicker">Research Paper</p>
+    <h3>Limitations &amp; Open Problems</h3>
+    <p>Credibility boundaries for the Alignment Theory AI alignment research program.</p>
+    <a class="text-link" href="ai-alignment-limitations.html">Read Limitations &amp; Open Problems</a>
+  </article>
   </div>
 </section>
-    </article>
+        </article>
+        <aside class="research-tools research-tools-desktop" aria-label="Research tools">
+  <p class="research-panel-label">Research Tools</p>
+  <a class="button" href="../assets/research/06_Formal_Glossary_AT_AI_Systems_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Download Full Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+  <a class="button" href="how-to-cite.html">How to Cite</a>
+  <div class="research-tools-related">
+    <p class="research-panel-label">Related</p>
+    <a class="text-link" href="ai-alignment-three-layer-blueprint.html">Three-Layer Blueprint</a>
+    <a class="text-link" href="ai-alignment-casebook.html">Drift Casebook</a>
+    <a class="text-link" href="ai-alignment-limitations.html">Limitations &amp; Open Problems</a>
+  </div>
+</aside>
+      </div>
   </main>
   <footer class="site-footer"><p>Alignment Theory Archive. <a class="text-link" href="contact.html">Contact</a></p></footer>
-  <script src="../assets/app.js?v=20260426a"></script>
+  <script src="../assets/app.js?v=20260427a"></script>
 </body>
 </html>

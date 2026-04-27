@@ -21,7 +21,7 @@
     gtag("config", "G-QVFSZRN0PB");
   </script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Competitive Positioning: Alignment Theory vs Observability, Evals, and Safety Monitors","name":"Competitive Positioning: Alignment Theory vs Observability, Evals, and Safety Monitors","author":{"@type":"Person","name":"Michael Bower"},"datePublished":"2026","publisher":{"@type":"Organization","name":"AlignmentTheory.org"},"url":"https://alignmenttheory.org/pages/ai-alignment-competitive-positioning.html","description":"How Alignment Theory differs from AI observability tools, prompt eval frameworks, moderation systems, and safety monitors."}</script>
-  <link rel="stylesheet" href="../assets/styles.css" />
+  <link rel="stylesheet" href="../assets/styles.css?v=20260427a" />
 </head>
 <body data-page="ai-research">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -42,21 +42,48 @@
   </header>
   <main id="main" class="page research-page">
 
-    <article class="manuscript research-article">
-      <p class="doc-meta"><a class="text-link" href="ai-alignment-research.html">Back to AI Alignment Research</a></p>
-      <header class="manuscript-header research-hero">
-        <p class="doc-meta"><span class="chip">Version 1 - 2026</span><span class="chip">AI Alignment Research</span></p>
+    <p class="doc-meta research-back-link"><a class="text-link" href="ai-alignment-research.html">Back to AI Alignment Research</a></p>
+    <section class="research-hero research-paper-hero">
+        <p class="research-meta"><span class="chip">Version 1 - 2026</span><span class="chip">Research Paper</span></p>
         <h1>Competitive Positioning: Alignment Theory vs Observability, Evals, and Safety Monitors</h1>
         <p class="lead">A comparison of Alignment Theory with adjacent AI evaluation and governance tools.</p>
         <p>This paper distinguishes Alignment Theory from generic observability, prompt evals, moderation, safety monitors, red teaming, benchmark suites, and QA systems.</p>
-        <div class="button-group">
+        <div class="research-downloads">
   <a class="button" href="../assets/research/03_Competitive_Positioning_AT_vs_Observability_Evals_v5.pdf">Download PDF</a>
   <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
   <a class="button" href="ai-alignment-research.html">Research Hub</a>
 </div>
-      </header>
-      <nav class="doc-card research-toc" aria-labelledby="toc-title">
-  <div class="doc-card-header"><h2 id="toc-title">Table of Contents</h2><span class="chip">Guide</span></div>
+      </section>
+      <div class="research-mobile-panels">
+        <details class="research-toc research-toc-mobile">
+      <summary>Table of Contents</summary>
+      <ol>
+    <li><a href="#core-distinction">Core Distinction</a></li>
+    <li><a href="#observability-tools">Observability Tools</a></li>
+    <li><a href="#prompt-evals">Prompt Evals</a></li>
+    <li><a href="#moderation-and-safety-monitors">Moderation and Safety Monitors</a></li>
+    <li><a href="#red-teaming-and-benchmarks">Red Teaming and Benchmarks</a></li>
+    <li><a href="#qa-systems">QA Systems</a></li>
+    <li><a href="#where-alignment-theory-fits">Where Alignment Theory Fits</a></li>
+  </ol>
+    </details>
+        <aside class="research-tools research-tools-mobile" aria-label="Research tools">
+  <p class="research-panel-label">Research Tools</p>
+  <a class="button" href="../assets/research/03_Competitive_Positioning_AT_vs_Observability_Evals_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Download Full Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+  <a class="button" href="how-to-cite.html">How to Cite</a>
+  <div class="research-tools-related">
+    <p class="research-panel-label">Related</p>
+    <a class="text-link" href="ai-alignment-methodology.html">Real Case Methodology</a>
+    <a class="text-link" href="ai-alignment-who-this-is-for.html">Who This Is For</a>
+    <a class="text-link" href="ai-alignment-literature-review.html">Literature Review</a>
+  </div>
+</aside>
+      </div>
+      <div class="research-layout">
+        <nav class="research-toc research-toc-desktop" aria-labelledby="toc-title">
+  <p class="research-panel-label">On this page</p>
   <ol>
     <li><a href="#core-distinction">Core Distinction</a></li>
     <li><a href="#observability-tools">Observability Tools</a></li>
@@ -67,48 +94,50 @@
     <li><a href="#where-alignment-theory-fits">Where Alignment Theory Fits</a></li>
   </ol>
 </nav>
-      <section class="doc-card" id="core-distinction">
-    <div class="doc-card-header"><h2>Core Distinction</h2><span class="chip">Paper</span></div>
+        <article class="research-article-body">
+
+          <section class="research-section" id="core-distinction">
+    <h2>Core Distinction</h2>
     <p>Most tools ask: Did this output pass? Alignment Theory asks: Is this system drifting from its intended objective over time?</p>
     <p>That question depends on the allowed-but-off-center layer: behavior that passes basic checks but slowly weakens objective fit.</p>
   </section>
-<section class="doc-card" id="observability-tools">
-    <div class="doc-card-header"><h2>Observability Tools</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="observability-tools">
+    <h2>Observability Tools</h2>
     <p>AI observability tools track usage, latency, cost, traces, logs, errors, and sometimes output quality. They are essential operational infrastructure.</p>
     <p>Alignment Theory adds a semantic behavioral layer: whether the system's allowed outputs remain ordered toward the objective center.</p>
   </section>
-<section class="doc-card" id="prompt-evals">
-    <div class="doc-card-header"><h2>Prompt Evals</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="prompt-evals">
+    <h2>Prompt Evals</h2>
     <p>Prompt eval frameworks test outputs against cases, rubrics, and regression suites. They are useful for release gates and comparison.</p>
     <p>Alignment Theory turns eval results into drift categories, trend analysis, and realignment decisions rather than isolated pass/fail judgments.</p>
   </section>
-<section class="doc-card" id="moderation-and-safety-monitors">
-    <div class="doc-card-header"><h2>Moderation and Safety Monitors</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="moderation-and-safety-monitors">
+    <h2>Moderation and Safety Monitors</h2>
     <p>Moderation tools and safety monitors catch policy violations, unsafe content, or refusal failures.</p>
     <p>Alignment Theory begins after ordinary safety checks: the output may be allowed, but still answer the wrong object, overclaim authority, collapse participation, or optimize the wrong metric.</p>
   </section>
-<section class="doc-card" id="red-teaming-and-benchmarks">
-    <div class="doc-card-header"><h2>Red Teaming and Benchmarks</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="red-teaming-and-benchmarks">
+    <h2>Red Teaming and Benchmarks</h2>
     <p>Red teaming is adversarial and often scenario-driven. Benchmarks create standardized comparisons across models or systems.</p>
     <p>Alignment Theory is continuous and production-facing. It watches for drift across prompt batches, model updates, product changes, and policy revisions.</p>
   </section>
-<section class="doc-card" id="qa-systems">
-    <div class="doc-card-header"><h2>QA Systems</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="qa-systems">
+    <h2>QA Systems</h2>
     <p>Traditional QA often checks correctness, regression, and expected behavior. AI systems require QA that can handle semantic ambiguity and changing output patterns.</p>
     <p>The enterprise translation of Alignment Theory is behavioral QA for AI systems.</p>
   </section>
-<section class="doc-card" id="where-alignment-theory-fits">
-    <div class="doc-card-header"><h2>Where Alignment Theory Fits</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="where-alignment-theory-fits">
+    <h2>Where Alignment Theory Fits</h2>
     <p>Alignment Theory should sit beside observability, evals, red teaming, and governance review. It supplies an objective-centered vocabulary and routing model for meaningful behavioral drift.</p>
     <p>It is not a replacement for security, safety policy, privacy review, or model interpretability.</p>
   </section>
-      <div class="button-group">
+          <div class="research-downloads research-downloads-bottom">
   <a class="button" href="../assets/research/03_Competitive_Positioning_AT_vs_Observability_Evals_v5.pdf">Download PDF</a>
   <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
   <a class="button" href="ai-alignment-research.html">Research Hub</a>
 </div>
-      <section class="doc-card citation-block" aria-labelledby="citation-title">
-  <div class="doc-card-header"><h2 id="citation-title">How to Cite</h2><span class="chip">Citation</span></div>
+          <section class="research-callout citation-block" aria-labelledby="citation-title">
+  <div class="research-callout-header"><h2 id="citation-title">How to Cite</h2><span class="chip">Citation</span></div>
   <p>Michael Bower. (2026). <em>Competitive Positioning: Alignment Theory vs Observability, Evals, and Safety Monitors</em>. AlignmentTheory.org. https://alignmenttheory.org/pages/ai-alignment-competitive-positioning.html</p>
   <pre><code>@misc{bower2026aialignmentcompetitivepositioning,
   author = {Bower, Michael},
@@ -119,25 +148,54 @@
 }</code></pre>
   <p><a class="text-link" href="how-to-cite.html">Open full citation guidance</a></p>
 </section>
-      <section class="doc-card references" aria-labelledby="references-title">
-    <div class="doc-card-header"><h2 id="references-title">References</h2><span class="chip">Source</span></div>
+          <section class="research-callout references" id="references" aria-labelledby="references-title">
+    <div class="research-callout-header"><h2 id="references-title">References</h2><span class="chip">Source</span></div>
     <ol>
       <li><a href="ai-alignment-research.html">Alignment Theory AI Alignment Research Hub</a></li>
       <li><a href="ai-alignment-three-layer-blueprint.html">The Three-Layer Blueprint for AI Alignment</a></li>
       <li><a href="ai-alignment-limitations.html">Limitations, Critiques, and Open Problems</a></li>
     </ol>
   </section>
-      <section class="doc-card" aria-labelledby="related-title">
-  <div class="doc-card-header"><h2 id="related-title">Related Papers</h2><span class="chip">Archive</span></div>
-  <div class="button-group">
-    <a class="button" href="ai-alignment-methodology.html">Real Case Methodology</a>
-    <a class="button" href="ai-alignment-who-this-is-for.html">Who This Is For</a>
-    <a class="button" href="ai-alignment-literature-review.html">Literature Review</a>
+          <section class="research-related" aria-labelledby="related-title">
+  <div class="research-callout-header"><h2 id="related-title">Related Research</h2><span class="chip">Archive</span></div>
+  <div class="related-research-grid">
+    <article class="related-research-card">
+    <p class="research-card-kicker">Research Paper</p>
+    <h3>Real Case Methodology</h3>
+    <p>A credibility protocol for evaluating behavioral drift in real prompt-output batches.</p>
+    <a class="text-link" href="ai-alignment-methodology.html">Read Real Case Methodology</a>
+  </article>
+    <article class="related-research-card">
+    <p class="research-card-kicker">Research Paper</p>
+    <h3>Who This Is For</h3>
+    <p>A practical map for teams that need to evaluate and govern production AI behavior.</p>
+    <a class="text-link" href="ai-alignment-who-this-is-for.html">Read Who This Is For</a>
+  </article>
+    <article class="related-research-card">
+    <p class="research-card-kicker">Research Paper</p>
+    <h3>Literature Review</h3>
+    <p>A positioning review of major alignment approaches and the missing post-deployment behavioral drift layer.</p>
+    <a class="text-link" href="ai-alignment-literature-review.html">Read Literature Review</a>
+  </article>
   </div>
 </section>
-    </article>
+        </article>
+        <aside class="research-tools research-tools-desktop" aria-label="Research tools">
+  <p class="research-panel-label">Research Tools</p>
+  <a class="button" href="../assets/research/03_Competitive_Positioning_AT_vs_Observability_Evals_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Download Full Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+  <a class="button" href="how-to-cite.html">How to Cite</a>
+  <div class="research-tools-related">
+    <p class="research-panel-label">Related</p>
+    <a class="text-link" href="ai-alignment-methodology.html">Real Case Methodology</a>
+    <a class="text-link" href="ai-alignment-who-this-is-for.html">Who This Is For</a>
+    <a class="text-link" href="ai-alignment-literature-review.html">Literature Review</a>
+  </div>
+</aside>
+      </div>
   </main>
   <footer class="site-footer"><p>Alignment Theory Archive. <a class="text-link" href="contact.html">Contact</a></p></footer>
-  <script src="../assets/app.js?v=20260426a"></script>
+  <script src="../assets/app.js?v=20260427a"></script>
 </body>
 </html>

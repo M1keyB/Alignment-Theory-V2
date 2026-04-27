@@ -21,7 +21,7 @@
     gtag("config", "G-QVFSZRN0PB");
   </script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Executive Summary: Alignment Theory AI Alignment Research","name":"Executive Summary: Alignment Theory AI Alignment Research","author":{"@type":"Person","name":"Michael Bower"},"datePublished":"2026","publisher":{"@type":"Organization","name":"AlignmentTheory.org"},"url":"https://alignmenttheory.org/pages/ai-alignment-executive-summary.html","description":"Executive summary of Alignment Theory AI alignment research: behavioral drift detection, the three-layer model, and production AI governance."}</script>
-  <link rel="stylesheet" href="../assets/styles.css" />
+  <link rel="stylesheet" href="../assets/styles.css?v=20260427a" />
 </head>
 <body data-page="ai-research">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -42,21 +42,47 @@
   </header>
   <main id="main" class="page research-page">
 
-    <article class="manuscript research-article">
-      <p class="doc-meta"><a class="text-link" href="ai-alignment-research.html">Back to AI Alignment Research</a></p>
-      <header class="manuscript-header research-hero">
-        <p class="doc-meta"><span class="chip">Version 1 - 2026</span><span class="chip">AI Alignment Research</span></p>
+    <p class="doc-meta research-back-link"><a class="text-link" href="ai-alignment-research.html">Back to AI Alignment Research</a></p>
+    <section class="research-hero research-paper-hero">
+        <p class="research-meta"><span class="chip">Version 1 - 2026</span><span class="chip">Research Paper</span></p>
         <h1>Executive Summary: Alignment Theory AI Alignment Research</h1>
         <p class="lead">A five-minute entry point for non-researchers, technical leaders, and governance readers.</p>
         <p>This executive summary introduces Alignment Theory as a practical research program for detecting whether AI systems remain ordered toward their intended objective over time. It frames AI drift as an operational problem for deployed systems, not only a training-time or policy-compliance question.</p>
-        <div class="button-group">
+        <div class="research-downloads">
   <a class="button" href="../assets/research/00_Executive_Summary_AT_AI_Alignment_Research_v5.pdf">Download PDF</a>
   <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
   <a class="button" href="ai-alignment-research.html">Research Hub</a>
 </div>
-      </header>
-      <nav class="doc-card research-toc" aria-labelledby="toc-title">
-  <div class="doc-card-header"><h2 id="toc-title">Table of Contents</h2><span class="chip">Guide</span></div>
+      </section>
+      <div class="research-mobile-panels">
+        <details class="research-toc research-toc-mobile">
+      <summary>Table of Contents</summary>
+      <ol>
+    <li><a href="#what-alignment-theory-adds">What Alignment Theory Adds</a></li>
+    <li><a href="#why-drift-matters-now">Why Drift Matters Now</a></li>
+    <li><a href="#the-three-layer-model">The Three-Layer Model</a></li>
+    <li><a href="#what-makes-this-different">What Makes This Different</a></li>
+    <li><a href="#who-should-care">Who Should Care</a></li>
+    <li><a href="#product-translation">Product Translation</a></li>
+  </ol>
+    </details>
+        <aside class="research-tools research-tools-mobile" aria-label="Research tools">
+  <p class="research-panel-label">Research Tools</p>
+  <a class="button" href="../assets/research/00_Executive_Summary_AT_AI_Alignment_Research_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Download Full Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+  <a class="button" href="how-to-cite.html">How to Cite</a>
+  <div class="research-tools-related">
+    <p class="research-panel-label">Related</p>
+    <a class="text-link" href="ai-alignment-three-layer-blueprint.html">Three-Layer Blueprint</a>
+    <a class="text-link" href="ai-alignment-who-this-is-for.html">Who This Is For</a>
+    <a class="text-link" href="ai-alignment-methodology.html">Real Case Methodology</a>
+  </div>
+</aside>
+      </div>
+      <div class="research-layout">
+        <nav class="research-toc research-toc-desktop" aria-labelledby="toc-title">
+  <p class="research-panel-label">On this page</p>
   <ol>
     <li><a href="#what-alignment-theory-adds">What Alignment Theory Adds</a></li>
     <li><a href="#why-drift-matters-now">Why Drift Matters Now</a></li>
@@ -66,44 +92,46 @@
     <li><a href="#product-translation">Product Translation</a></li>
   </ol>
 </nav>
-      <section class="doc-card" id="what-alignment-theory-adds">
-    <div class="doc-card-header"><h2>What Alignment Theory Adds</h2><span class="chip">Paper</span></div>
+        <article class="research-article-body">
+
+          <section class="research-section" id="what-alignment-theory-adds">
+    <h2>What Alignment Theory Adds</h2>
     <p>Alignment Theory treats alignment as a continuing control loop. A system needs a clear objective, enforceable constraints, monitoring, drift detection, correction routes, and review practices that keep the deployed behavior anchored over time.</p>
     <p>The practical question is not only whether a single answer looks acceptable. It is whether repeated outputs keep serving the actual objective under changing prompts, users, product incentives, model versions, and policy layers.</p>
   </section>
-<section class="doc-card" id="why-drift-matters-now">
-    <div class="doc-card-header"><h2>Why Drift Matters Now</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="why-drift-matters-now">
+    <h2>Why Drift Matters Now</h2>
     <p>Production AI systems are increasingly embedded in support, search, education, enterprise workflows, and internal decision support. Small behavioral shifts can scale quickly when a model update, prompt revision, or policy change changes what the system rewards.</p>
     <p>AI drift matters because high-polish outputs can pass ordinary checks while slowly moving away from the intended task. A response can be safe, fluent, and rule-compliant while still answering the wrong object, overstating authority, removing useful user agency, or optimizing tone over truth.</p>
   </section>
-<section class="doc-card" id="the-three-layer-model">
-    <div class="doc-card-header"><h2>The Three-Layer Model</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="the-three-layer-model">
+    <h2>The Three-Layer Model</h2>
     <p>The Objective Layer defines what the system is for: objective center, success criteria, non-negotiables, and anti-goals.</p>
     <p>The Constraint Layer defines what the system may or may not do: policies, refusals, safety limits, escalation rules, and boundaries.</p>
     <p>The Realignment Layer evaluates the allowed-but-off-center layer: outputs that pass ordinary rules but still drift from the intended objective. It routes correction through rewrite, reroute, restart, confidence downgrade, or clarification.</p>
   </section>
-<section class="doc-card" id="what-makes-this-different">
-    <div class="doc-card-header"><h2>What Makes This Different</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="what-makes-this-different">
+    <h2>What Makes This Different</h2>
     <p>Many evals and monitors ask whether an output passed a known test. Alignment Theory asks whether the system is drifting from its intended objective over time.</p>
     <p>That distinction creates a role for behavioral drift detection, objective anchoring, detector categories, judge review in uncertainty bands, and before/after comparison across production changes.</p>
   </section>
-<section class="doc-card" id="who-should-care">
-    <div class="doc-card-header"><h2>Who Should Care</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="who-should-care">
+    <h2>Who Should Care</h2>
     <p>AI product teams need a way to evaluate whether their assistant keeps doing the product job it was built to do. Prompt engineers need drift signals that are more meaningful than pass/fail snapshots.</p>
     <p>Compliance officers, trust and safety teams, enterprise buyers, researchers, and executives need a shared language for behavioral QA for AI systems, especially when model behavior changes under real use.</p>
   </section>
-<section class="doc-card" id="product-translation">
-    <div class="doc-card-header"><h2>Product Translation</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="product-translation">
+    <h2>Product Translation</h2>
     <p>The enterprise translation is behavioral QA: collecting prompt-output batches, redacting sensitive data, scoring drift categories, routing ambiguous cases to review, and comparing behavior before and after prompt, policy, or model changes.</p>
     <p>The result is a governance layer that complements AI observability, evals, and moderation without pretending to replace them.</p>
   </section>
-      <div class="button-group">
+          <div class="research-downloads research-downloads-bottom">
   <a class="button" href="../assets/research/00_Executive_Summary_AT_AI_Alignment_Research_v5.pdf">Download PDF</a>
   <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
   <a class="button" href="ai-alignment-research.html">Research Hub</a>
 </div>
-      <section class="doc-card citation-block" aria-labelledby="citation-title">
-  <div class="doc-card-header"><h2 id="citation-title">How to Cite</h2><span class="chip">Citation</span></div>
+          <section class="research-callout citation-block" aria-labelledby="citation-title">
+  <div class="research-callout-header"><h2 id="citation-title">How to Cite</h2><span class="chip">Citation</span></div>
   <p>Michael Bower. (2026). <em>Executive Summary: Alignment Theory AI Alignment Research</em>. AlignmentTheory.org. https://alignmenttheory.org/pages/ai-alignment-executive-summary.html</p>
   <pre><code>@misc{bower2026aialignmentexecutivesummary,
   author = {Bower, Michael},
@@ -114,25 +142,54 @@
 }</code></pre>
   <p><a class="text-link" href="how-to-cite.html">Open full citation guidance</a></p>
 </section>
-      <section class="doc-card references" aria-labelledby="references-title">
-    <div class="doc-card-header"><h2 id="references-title">References</h2><span class="chip">Source</span></div>
+          <section class="research-callout references" id="references" aria-labelledby="references-title">
+    <div class="research-callout-header"><h2 id="references-title">References</h2><span class="chip">Source</span></div>
     <ol>
       <li><a href="ai-alignment-research.html">Alignment Theory AI Alignment Research Hub</a></li>
       <li><a href="ai-alignment-three-layer-blueprint.html">The Three-Layer Blueprint for AI Alignment</a></li>
       <li><a href="ai-alignment-limitations.html">Limitations, Critiques, and Open Problems</a></li>
     </ol>
   </section>
-      <section class="doc-card" aria-labelledby="related-title">
-  <div class="doc-card-header"><h2 id="related-title">Related Papers</h2><span class="chip">Archive</span></div>
-  <div class="button-group">
-    <a class="button" href="ai-alignment-three-layer-blueprint.html">Three-Layer Blueprint</a>
-    <a class="button" href="ai-alignment-who-this-is-for.html">Who This Is For</a>
-    <a class="button" href="ai-alignment-methodology.html">Real Case Methodology</a>
+          <section class="research-related" aria-labelledby="related-title">
+  <div class="research-callout-header"><h2 id="related-title">Related Research</h2><span class="chip">Archive</span></div>
+  <div class="related-research-grid">
+    <article class="related-research-card">
+    <p class="research-card-kicker">Core Paper</p>
+    <h3>Three-Layer Blueprint</h3>
+    <p>The architectural core of the Alignment Theory AI alignment corpus.</p>
+    <a class="text-link" href="ai-alignment-three-layer-blueprint.html">Read Three-Layer Blueprint</a>
+  </article>
+    <article class="related-research-card">
+    <p class="research-card-kicker">Research Paper</p>
+    <h3>Who This Is For</h3>
+    <p>A practical map for teams that need to evaluate and govern production AI behavior.</p>
+    <a class="text-link" href="ai-alignment-who-this-is-for.html">Read Who This Is For</a>
+  </article>
+    <article class="related-research-card">
+    <p class="research-card-kicker">Research Paper</p>
+    <h3>Real Case Methodology</h3>
+    <p>A credibility protocol for evaluating behavioral drift in real prompt-output batches.</p>
+    <a class="text-link" href="ai-alignment-methodology.html">Read Real Case Methodology</a>
+  </article>
   </div>
 </section>
-    </article>
+        </article>
+        <aside class="research-tools research-tools-desktop" aria-label="Research tools">
+  <p class="research-panel-label">Research Tools</p>
+  <a class="button" href="../assets/research/00_Executive_Summary_AT_AI_Alignment_Research_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Download Full Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+  <a class="button" href="how-to-cite.html">How to Cite</a>
+  <div class="research-tools-related">
+    <p class="research-panel-label">Related</p>
+    <a class="text-link" href="ai-alignment-three-layer-blueprint.html">Three-Layer Blueprint</a>
+    <a class="text-link" href="ai-alignment-who-this-is-for.html">Who This Is For</a>
+    <a class="text-link" href="ai-alignment-methodology.html">Real Case Methodology</a>
+  </div>
+</aside>
+      </div>
   </main>
   <footer class="site-footer"><p>Alignment Theory Archive. <a class="text-link" href="contact.html">Contact</a></p></footer>
-  <script src="../assets/app.js?v=20260426a"></script>
+  <script src="../assets/app.js?v=20260427a"></script>
 </body>
 </html>

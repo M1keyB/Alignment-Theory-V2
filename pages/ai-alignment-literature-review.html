@@ -21,7 +21,7 @@
     gtag("config", "G-QVFSZRN0PB");
   </script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Literature Review: AI Alignment Approaches and the Drift Detection Gap","name":"Literature Review: AI Alignment Approaches and the Drift Detection Gap","author":{"@type":"Person","name":"Michael Bower"},"datePublished":"2026","publisher":{"@type":"Organization","name":"AlignmentTheory.org"},"url":"https://alignmenttheory.org/pages/ai-alignment-literature-review.html","description":"A literature review comparing RLHF, Constitutional AI, interpretability, scalable oversight, and Alignment Theory's behavioral drift detection layer."}</script>
-  <link rel="stylesheet" href="../assets/styles.css" />
+  <link rel="stylesheet" href="../assets/styles.css?v=20260427a" />
 </head>
 <body data-page="ai-research">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -42,21 +42,49 @@
   </header>
   <main id="main" class="page research-page">
 
-    <article class="manuscript research-article">
-      <p class="doc-meta"><a class="text-link" href="ai-alignment-research.html">Back to AI Alignment Research</a></p>
-      <header class="manuscript-header research-hero">
-        <p class="doc-meta"><span class="chip">Version 1 - 2026</span><span class="chip">AI Alignment Research</span></p>
+    <p class="doc-meta research-back-link"><a class="text-link" href="ai-alignment-research.html">Back to AI Alignment Research</a></p>
+    <section class="research-hero research-paper-hero">
+        <p class="research-meta"><span class="chip">Version 1 - 2026</span><span class="chip">Research Paper</span></p>
         <h1>Literature Review: AI Alignment Approaches and the Drift Detection Gap</h1>
         <p class="lead">A positioning review of major alignment approaches and the missing post-deployment behavioral drift layer.</p>
         <p>This review places Alignment Theory beside major AI alignment approaches and identifies a practical gap: runtime detection of behavioral drift in deployed AI systems.</p>
-        <div class="button-group">
+        <div class="research-downloads">
   <a class="button" href="../assets/research/02_Literature_Review_and_Drift_Detection_Gap_v5.pdf">Download PDF</a>
   <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
   <a class="button" href="ai-alignment-research.html">Research Hub</a>
 </div>
-      </header>
-      <nav class="doc-card research-toc" aria-labelledby="toc-title">
-  <div class="doc-card-header"><h2 id="toc-title">Table of Contents</h2><span class="chip">Guide</span></div>
+      </section>
+      <div class="research-mobile-panels">
+        <details class="research-toc research-toc-mobile">
+      <summary>Table of Contents</summary>
+      <ol>
+    <li><a href="#rlhf-and-human-preference">RLHF and Human Preference</a></li>
+    <li><a href="#constitutional-ai">Constitutional AI</a></li>
+    <li><a href="#scalable-oversight">Scalable Oversight</a></li>
+    <li><a href="#interpretability">Interpretability</a></li>
+    <li><a href="#model-behavior-specifications">Model Behavior Specifications</a></li>
+    <li><a href="#runtime-monitoring">Runtime Monitoring</a></li>
+    <li><a href="#the-drift-detection-gap">The Drift Detection Gap</a></li>
+    <li><a href="#references">References</a></li>
+  </ol>
+    </details>
+        <aside class="research-tools research-tools-mobile" aria-label="Research tools">
+  <p class="research-panel-label">Research Tools</p>
+  <a class="button" href="../assets/research/02_Literature_Review_and_Drift_Detection_Gap_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Download Full Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+  <a class="button" href="how-to-cite.html">How to Cite</a>
+  <div class="research-tools-related">
+    <p class="research-panel-label">Related</p>
+    <a class="text-link" href="ai-alignment-competitive-positioning.html">Competitive Positioning</a>
+    <a class="text-link" href="ai-alignment-three-layer-blueprint.html">Three-Layer Blueprint</a>
+    <a class="text-link" href="ai-alignment-limitations.html">Limitations &amp; Open Problems</a>
+  </div>
+</aside>
+      </div>
+      <div class="research-layout">
+        <nav class="research-toc research-toc-desktop" aria-labelledby="toc-title">
+  <p class="research-panel-label">On this page</p>
   <ol>
     <li><a href="#rlhf-and-human-preference">RLHF and Human Preference</a></li>
     <li><a href="#constitutional-ai">Constitutional AI</a></li>
@@ -68,48 +96,50 @@
     <li><a href="#references">References</a></li>
   </ol>
 </nav>
-      <section class="doc-card" id="rlhf-and-human-preference">
-    <div class="doc-card-header"><h2>RLHF and Human Preference</h2><span class="chip">Paper</span></div>
+        <article class="research-article-body">
+
+          <section class="research-section" id="rlhf-and-human-preference">
+    <h2>RLHF and Human Preference</h2>
     <p>RLHF helps models better follow human preferences and instructions, but preference optimization does not automatically provide an operational test for whether deployed behavior remains centered on a product or governance objective over time.</p>
     <p>Alignment Theory treats RLHF as part of the broader landscape while focusing on post-deployment behavioral QA.</p>
   </section>
-<section class="doc-card" id="constitutional-ai">
-    <div class="doc-card-header"><h2>Constitutional AI</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="constitutional-ai">
+    <h2>Constitutional AI</h2>
     <p>Anthropic's Constitutional AI work helps frame principle-based alignment: model behavior can be shaped by explicit rules and critiques rather than only direct preference labels.</p>
     <p>Alignment Theory is compatible with principle-based systems, but asks a different operational question: after principles and constraints are in place, does the system drift within the allowed zone?</p>
   </section>
-<section class="doc-card" id="scalable-oversight">
-    <div class="doc-card-header"><h2>Scalable Oversight</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="scalable-oversight">
+    <h2>Scalable Oversight</h2>
     <p>Scalable oversight addresses the problem of evaluating model behavior when direct human supervision is expensive, slow, or insufficiently expert.</p>
     <p>The Alignment Theory contribution is to define drift categories and correction routes that can focus oversight on meaningful deviations rather than raw output volume.</p>
   </section>
-<section class="doc-card" id="interpretability">
-    <div class="doc-card-header"><h2>Interpretability</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="interpretability">
+    <h2>Interpretability</h2>
     <p>Interpretability research examines internal model mechanisms and representations. Anthropic's interpretability program is especially important for understanding how model internals may support or undermine safe behavior.</p>
     <p>Alignment Theory is behavior-first. It does not replace mechanistic interpretability; it supplies a production-facing layer for detecting drift in observable prompt-output behavior.</p>
   </section>
-<section class="doc-card" id="model-behavior-specifications">
-    <div class="doc-card-header"><h2>Model Behavior Specifications</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="model-behavior-specifications">
+    <h2>Model Behavior Specifications</h2>
     <p>OpenAI's Model Spec helps define desired assistant behavior, including how a system should respond under competing instructions, policies, and user goals.</p>
     <p>Alignment Theory uses the same broad need for behavioral specification, but emphasizes objective state, detector categories, and correction after allowed-but-off-center behavior appears.</p>
   </section>
-<section class="doc-card" id="runtime-monitoring">
-    <div class="doc-card-header"><h2>Runtime Monitoring</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="runtime-monitoring">
+    <h2>Runtime Monitoring</h2>
     <p>Runtime monitoring, logging, observability, and eval frameworks are necessary for deployed AI systems. They show what happened and can detect many known failure modes.</p>
     <p>The drift detection gap is the missing layer between ordinary pass/fail compliance and long-term objective fidelity.</p>
   </section>
-<section class="doc-card" id="the-drift-detection-gap">
-    <div class="doc-card-header"><h2>The Drift Detection Gap</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="the-drift-detection-gap">
+    <h2>The Drift Detection Gap</h2>
     <p>OpenAI alignment work helps frame the problem of aligning models to human intent and studying where methods scale or break. Anthropic's Constitutional AI and interpretability work help frame principle-based and mechanistic approaches.</p>
     <p>Alignment Theory contributes a runtime behavioral drift detection and realignment layer for deployed systems.</p>
   </section>
-      <div class="button-group">
+          <div class="research-downloads research-downloads-bottom">
   <a class="button" href="../assets/research/02_Literature_Review_and_Drift_Detection_Gap_v5.pdf">Download PDF</a>
   <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
   <a class="button" href="ai-alignment-research.html">Research Hub</a>
 </div>
-      <section class="doc-card citation-block" aria-labelledby="citation-title">
-  <div class="doc-card-header"><h2 id="citation-title">How to Cite</h2><span class="chip">Citation</span></div>
+          <section class="research-callout citation-block" aria-labelledby="citation-title">
+  <div class="research-callout-header"><h2 id="citation-title">How to Cite</h2><span class="chip">Citation</span></div>
   <p>Michael Bower. (2026). <em>Literature Review: AI Alignment Approaches and the Drift Detection Gap</em>. AlignmentTheory.org. https://alignmenttheory.org/pages/ai-alignment-literature-review.html</p>
   <pre><code>@misc{bower2026aialignmentliteraturereview,
   author = {Bower, Michael},
@@ -120,8 +150,8 @@
 }</code></pre>
   <p><a class="text-link" href="how-to-cite.html">Open full citation guidance</a></p>
 </section>
-      <section class="doc-card references" aria-labelledby="references-title">
-    <div class="doc-card-header"><h2 id="references-title">References</h2><span class="chip">Source</span></div>
+          <section class="research-callout references" id="references" aria-labelledby="references-title">
+    <div class="research-callout-header"><h2 id="references-title">References</h2><span class="chip">Source</span></div>
     <ol>
       <li><a href="https://openai.com/index/our-approach-to-alignment-research/">OpenAI - Our approach to alignment research</a></li>
       <li><a href="https://model-spec.openai.com/">OpenAI - Model Spec</a></li>
@@ -132,17 +162,46 @@
       <li><a href="https://www.anthropic.com/research/tracing-thoughts-language-model">Anthropic - Tracing the Thoughts of a Large Language Model</a></li>
     </ol>
   </section>
-      <section class="doc-card" aria-labelledby="related-title">
-  <div class="doc-card-header"><h2 id="related-title">Related Papers</h2><span class="chip">Archive</span></div>
-  <div class="button-group">
-    <a class="button" href="ai-alignment-competitive-positioning.html">Competitive Positioning</a>
-    <a class="button" href="ai-alignment-three-layer-blueprint.html">Three-Layer Blueprint</a>
-    <a class="button" href="ai-alignment-limitations.html">Limitations &amp; Open Problems</a>
+          <section class="research-related" aria-labelledby="related-title">
+  <div class="research-callout-header"><h2 id="related-title">Related Research</h2><span class="chip">Archive</span></div>
+  <div class="related-research-grid">
+    <article class="related-research-card">
+    <p class="research-card-kicker">Research Paper</p>
+    <h3>Competitive Positioning</h3>
+    <p>A comparison of Alignment Theory with adjacent AI evaluation and governance tools.</p>
+    <a class="text-link" href="ai-alignment-competitive-positioning.html">Read Competitive Positioning</a>
+  </article>
+    <article class="related-research-card">
+    <p class="research-card-kicker">Core Paper</p>
+    <h3>Three-Layer Blueprint</h3>
+    <p>The architectural core of the Alignment Theory AI alignment corpus.</p>
+    <a class="text-link" href="ai-alignment-three-layer-blueprint.html">Read Three-Layer Blueprint</a>
+  </article>
+    <article class="related-research-card">
+    <p class="research-card-kicker">Research Paper</p>
+    <h3>Limitations &amp; Open Problems</h3>
+    <p>Credibility boundaries for the Alignment Theory AI alignment research program.</p>
+    <a class="text-link" href="ai-alignment-limitations.html">Read Limitations &amp; Open Problems</a>
+  </article>
   </div>
 </section>
-    </article>
+        </article>
+        <aside class="research-tools research-tools-desktop" aria-label="Research tools">
+  <p class="research-panel-label">Research Tools</p>
+  <a class="button" href="../assets/research/02_Literature_Review_and_Drift_Detection_Gap_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Download Full Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+  <a class="button" href="how-to-cite.html">How to Cite</a>
+  <div class="research-tools-related">
+    <p class="research-panel-label">Related</p>
+    <a class="text-link" href="ai-alignment-competitive-positioning.html">Competitive Positioning</a>
+    <a class="text-link" href="ai-alignment-three-layer-blueprint.html">Three-Layer Blueprint</a>
+    <a class="text-link" href="ai-alignment-limitations.html">Limitations &amp; Open Problems</a>
+  </div>
+</aside>
+      </div>
   </main>
   <footer class="site-footer"><p>Alignment Theory Archive. <a class="text-link" href="contact.html">Contact</a></p></footer>
-  <script src="../assets/app.js?v=20260426a"></script>
+  <script src="../assets/app.js?v=20260427a"></script>
 </body>
 </html>

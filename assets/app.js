@@ -1116,8 +1116,12 @@ const initCopyTools = () => {
 
   const copyValue = async (value) => {
     if (navigator.clipboard?.writeText) {
-      await navigator.clipboard.writeText(value);
-      return;
+      try {
+        await navigator.clipboard.writeText(value);
+        return;
+      } catch (error) {
+        // Fall through to the textarea fallback when browser permissions block clipboard writes.
+      }
     }
 
     const helper = document.createElement("textarea");

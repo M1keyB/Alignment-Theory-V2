@@ -21,7 +21,7 @@
     gtag("config", "G-QVFSZRN0PB");
   </script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Who This Is For: Role Map for AI Alignment Research","name":"Who This Is For: Role Map for AI Alignment Research","author":{"@type":"Person","name":"Michael Bower"},"datePublished":"2026","publisher":{"@type":"Organization","name":"AlignmentTheory.org"},"url":"https://alignmenttheory.org/pages/ai-alignment-who-this-is-for.html","description":"A role map showing how AI product teams, compliance officers, enterprise buyers, and researchers can use Alignment Theory."}</script>
-  <link rel="stylesheet" href="../assets/styles.css" />
+  <link rel="stylesheet" href="../assets/styles.css?v=20260427a" />
 </head>
 <body data-page="ai-research">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -42,21 +42,50 @@
   </header>
   <main id="main" class="page research-page">
 
-    <article class="manuscript research-article">
-      <p class="doc-meta"><a class="text-link" href="ai-alignment-research.html">Back to AI Alignment Research</a></p>
-      <header class="manuscript-header research-hero">
-        <p class="doc-meta"><span class="chip">Version 1 - 2026</span><span class="chip">AI Alignment Research</span></p>
+    <p class="doc-meta research-back-link"><a class="text-link" href="ai-alignment-research.html">Back to AI Alignment Research</a></p>
+    <section class="research-hero research-paper-hero">
+        <p class="research-meta"><span class="chip">Version 1 - 2026</span><span class="chip">Research Paper</span></p>
         <h1>Who This Is For: Role Map for AI Alignment Research</h1>
         <p class="lead">A practical map for teams that need to evaluate and govern production AI behavior.</p>
         <p>This role map translates the research corpus into the questions different teams need answered when they deploy, buy, evaluate, or govern AI systems.</p>
-        <div class="button-group">
+        <div class="research-downloads">
   <a class="button" href="../assets/research/04_Who_This_Is_For_Role_Map_v5.pdf">Download PDF</a>
   <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
   <a class="button" href="ai-alignment-research.html">Research Hub</a>
 </div>
-      </header>
-      <nav class="doc-card research-toc" aria-labelledby="toc-title">
-  <div class="doc-card-header"><h2 id="toc-title">Table of Contents</h2><span class="chip">Guide</span></div>
+      </section>
+      <div class="research-mobile-panels">
+        <details class="research-toc research-toc-mobile">
+      <summary>Table of Contents</summary>
+      <ol>
+    <li><a href="#ai-product-teams">AI Product Teams</a></li>
+    <li><a href="#prompt-engineers">Prompt Engineers</a></li>
+    <li><a href="#ml-engineers">ML Engineers</a></li>
+    <li><a href="#trust-and-safety-teams">Trust and Safety Teams</a></li>
+    <li><a href="#compliance-officers">Compliance Officers</a></li>
+    <li><a href="#enterprise-buyers">Enterprise Buyers</a></li>
+    <li><a href="#executives">Executives</a></li>
+    <li><a href="#researchers">Researchers</a></li>
+    <li><a href="#support-automation-teams">Support Automation Teams</a></li>
+  </ol>
+    </details>
+        <aside class="research-tools research-tools-mobile" aria-label="Research tools">
+  <p class="research-panel-label">Research Tools</p>
+  <a class="button" href="../assets/research/04_Who_This_Is_For_Role_Map_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Download Full Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+  <a class="button" href="how-to-cite.html">How to Cite</a>
+  <div class="research-tools-related">
+    <p class="research-panel-label">Related</p>
+    <a class="text-link" href="ai-alignment-executive-summary.html">Executive Summary</a>
+    <a class="text-link" href="ai-alignment-methodology.html">Real Case Methodology</a>
+    <a class="text-link" href="ai-alignment-casebook.html">Drift Casebook</a>
+  </div>
+</aside>
+      </div>
+      <div class="research-layout">
+        <nav class="research-toc research-toc-desktop" aria-labelledby="toc-title">
+  <p class="research-panel-label">On this page</p>
   <ol>
     <li><a href="#ai-product-teams">AI Product Teams</a></li>
     <li><a href="#prompt-engineers">Prompt Engineers</a></li>
@@ -69,49 +98,51 @@
     <li><a href="#support-automation-teams">Support Automation Teams</a></li>
   </ol>
 </nav>
-      <section class="doc-card" id="ai-product-teams">
-    <div class="doc-card-header"><h2>AI Product Teams</h2><span class="chip">Paper</span></div>
+        <article class="research-article-body">
+
+          <section class="research-section" id="ai-product-teams">
+    <h2>AI Product Teams</h2>
     <p>Why they care: product success depends on whether the assistant keeps doing the job users need. AT answers: Are shipped behaviors drifting from the intended product objective? Read first: Executive Summary, then Three-Layer Blueprint.</p>
   </section>
-<section class="doc-card" id="prompt-engineers">
-    <div class="doc-card-header"><h2>Prompt Engineers</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="prompt-engineers">
+    <h2>Prompt Engineers</h2>
     <p>Why they care: prompt changes can improve tone while weakening task fidelity. AT answers: Which prompt variants reduce allowed-but-off-center drift? Read first: Three-Layer Blueprint, then Casebook.</p>
   </section>
-<section class="doc-card" id="ml-engineers">
-    <div class="doc-card-header"><h2>ML Engineers</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="ml-engineers">
+    <h2>ML Engineers</h2>
     <p>Why they care: model updates can change behavior even when benchmarks look stable. AT answers: What changed across batches, detectors, and correction rates? Read first: Methodology.</p>
   </section>
-<section class="doc-card" id="trust-and-safety-teams">
-    <div class="doc-card-header"><h2>Trust and Safety Teams</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="trust-and-safety-teams">
+    <h2>Trust and Safety Teams</h2>
     <p>Why they care: policy compliance does not catch every meaningful failure. AT answers: What happens after an output passes safety constraints but still mis-serves the user or objective? Read first: Competitive Positioning.</p>
   </section>
-<section class="doc-card" id="compliance-officers">
-    <div class="doc-card-header"><h2>Compliance Officers</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="compliance-officers">
+    <h2>Compliance Officers</h2>
     <p>Why they care: regulated deployment requires traceable review and governance. AT answers: How are drift signals logged, reviewed, and escalated? Read first: Methodology and Limitations.</p>
   </section>
-<section class="doc-card" id="enterprise-buyers">
-    <div class="doc-card-header"><h2>Enterprise Buyers</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="enterprise-buyers">
+    <h2>Enterprise Buyers</h2>
     <p>Why they care: vendor demos can hide long-term behavioral drift. AT answers: Can this system be monitored for objective alignment after purchase? Read first: Executive Summary.</p>
   </section>
-<section class="doc-card" id="executives">
-    <div class="doc-card-header"><h2>Executives</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="executives">
+    <h2>Executives</h2>
     <p>Why they care: AI failures become operational, reputational, and governance risks. AT answers: What management layer tracks whether AI systems remain fit for purpose? Read first: Executive Summary and Competitive Positioning.</p>
   </section>
-<section class="doc-card" id="researchers">
-    <div class="doc-card-header"><h2>Researchers</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="researchers">
+    <h2>Researchers</h2>
     <p>Why they care: deployed behavior creates a distinct alignment problem. AT answers: What taxonomy and protocol can be tested empirically? Read first: Literature Review and Limitations.</p>
   </section>
-<section class="doc-card" id="support-automation-teams">
-    <div class="doc-card-header"><h2>Support Automation Teams</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="support-automation-teams">
+    <h2>Support Automation Teams</h2>
     <p>Why they care: support assistants can become polished but generic, overconfident, or prematurely closing. AT answers: Which interactions need rewrite, reroute, clarification, or human handoff? Read first: Casebook and Methodology.</p>
   </section>
-      <div class="button-group">
+          <div class="research-downloads research-downloads-bottom">
   <a class="button" href="../assets/research/04_Who_This_Is_For_Role_Map_v5.pdf">Download PDF</a>
   <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
   <a class="button" href="ai-alignment-research.html">Research Hub</a>
 </div>
-      <section class="doc-card citation-block" aria-labelledby="citation-title">
-  <div class="doc-card-header"><h2 id="citation-title">How to Cite</h2><span class="chip">Citation</span></div>
+          <section class="research-callout citation-block" aria-labelledby="citation-title">
+  <div class="research-callout-header"><h2 id="citation-title">How to Cite</h2><span class="chip">Citation</span></div>
   <p>Michael Bower. (2026). <em>Who This Is For: Role Map for AI Alignment Research</em>. AlignmentTheory.org. https://alignmenttheory.org/pages/ai-alignment-who-this-is-for.html</p>
   <pre><code>@misc{bower2026aialignmentwhothisisfor,
   author = {Bower, Michael},
@@ -122,25 +153,54 @@
 }</code></pre>
   <p><a class="text-link" href="how-to-cite.html">Open full citation guidance</a></p>
 </section>
-      <section class="doc-card references" aria-labelledby="references-title">
-    <div class="doc-card-header"><h2 id="references-title">References</h2><span class="chip">Source</span></div>
+          <section class="research-callout references" id="references" aria-labelledby="references-title">
+    <div class="research-callout-header"><h2 id="references-title">References</h2><span class="chip">Source</span></div>
     <ol>
       <li><a href="ai-alignment-research.html">Alignment Theory AI Alignment Research Hub</a></li>
       <li><a href="ai-alignment-three-layer-blueprint.html">The Three-Layer Blueprint for AI Alignment</a></li>
       <li><a href="ai-alignment-limitations.html">Limitations, Critiques, and Open Problems</a></li>
     </ol>
   </section>
-      <section class="doc-card" aria-labelledby="related-title">
-  <div class="doc-card-header"><h2 id="related-title">Related Papers</h2><span class="chip">Archive</span></div>
-  <div class="button-group">
-    <a class="button" href="ai-alignment-executive-summary.html">Executive Summary</a>
-    <a class="button" href="ai-alignment-methodology.html">Real Case Methodology</a>
-    <a class="button" href="ai-alignment-casebook.html">Drift Casebook</a>
+          <section class="research-related" aria-labelledby="related-title">
+  <div class="research-callout-header"><h2 id="related-title">Related Research</h2><span class="chip">Archive</span></div>
+  <div class="related-research-grid">
+    <article class="related-research-card">
+    <p class="research-card-kicker">Research Paper</p>
+    <h3>Executive Summary</h3>
+    <p>A five-minute entry point for non-researchers, technical leaders, and governance readers.</p>
+    <a class="text-link" href="ai-alignment-executive-summary.html">Read Executive Summary</a>
+  </article>
+    <article class="related-research-card">
+    <p class="research-card-kicker">Research Paper</p>
+    <h3>Real Case Methodology</h3>
+    <p>A credibility protocol for evaluating behavioral drift in real prompt-output batches.</p>
+    <a class="text-link" href="ai-alignment-methodology.html">Read Real Case Methodology</a>
+  </article>
+    <article class="related-research-card">
+    <p class="research-card-kicker">Evaluation</p>
+    <h3>Drift Casebook</h3>
+    <p>Synthetic examples for detector explanation, evaluation design, and reviewer calibration.</p>
+    <a class="text-link" href="ai-alignment-casebook.html">Read Drift Casebook</a>
+  </article>
   </div>
 </section>
-    </article>
+        </article>
+        <aside class="research-tools research-tools-desktop" aria-label="Research tools">
+  <p class="research-panel-label">Research Tools</p>
+  <a class="button" href="../assets/research/04_Who_This_Is_For_Role_Map_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Download Full Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+  <a class="button" href="how-to-cite.html">How to Cite</a>
+  <div class="research-tools-related">
+    <p class="research-panel-label">Related</p>
+    <a class="text-link" href="ai-alignment-executive-summary.html">Executive Summary</a>
+    <a class="text-link" href="ai-alignment-methodology.html">Real Case Methodology</a>
+    <a class="text-link" href="ai-alignment-casebook.html">Drift Casebook</a>
+  </div>
+</aside>
+      </div>
   </main>
   <footer class="site-footer"><p>Alignment Theory Archive. <a class="text-link" href="contact.html">Contact</a></p></footer>
-  <script src="../assets/app.js?v=20260426a"></script>
+  <script src="../assets/app.js?v=20260427a"></script>
 </body>
 </html>

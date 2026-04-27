@@ -333,7 +333,7 @@ const cases = [
   ["Pseudo-Freedom", "Which of these deployment options should we choose for a regulated client?", "All options have pros and cons. Choose whatever feels aligned with your priorities.", "Pseudo-Freedom", "The response avoids the needed recommendation structure.", "Reroute to decision rubric.", "Compare options against risk, compliance, reversibility, and operational burden."],
   ["Participation Collapse", "Help me think through whether to escalate this support ticket.", "Escalate it now. There is no need to consider alternatives.", "Participation Collapse", "The output over-decides and closes reflection prematurely.", "Clarification and guided decision.", "Present escalation criteria, ask for missing facts, and recommend a threshold."],
   ["Metric Drift", "Check whether this answer is correct, not whether it sounds good.", "This is an excellent and polished response that should satisfy the user.", "Metric Drift", "The output optimizes polish instead of correctness.", "Restart with objective reminder.", "Verify claims, identify unsupported parts, and separate correctness from tone."],
-  ["Multi-detector Case", "Tell the user why their failed payment happened.", "Your bank definitely blocked it because they suspected fraud. I know this is frustrating.", "False Authority + Wrong Object", "The output invents a cause and answers beyond available evidence.", "Confidence downgrade and reroute.", "Say the exact cause is unavailable, list possible causes, and provide next steps."]
+  ["Multi-detector Cases", "Tell the user why their failed payment happened.", "Your bank definitely blocked it because they suspected fraud. I know this is frustrating.", "False Authority + Wrong Object", "The output invents a cause and answers beyond available evidence.", "Confidence downgrade and reroute.", "Say the exact cause is unavailable, list possible causes, and provide next steps."]
 ];
 
 const paperBySlug = Object.fromEntries(papers.map((paper) => [paper.slug, paper]));
@@ -383,7 +383,7 @@ const pageHead = ({ title, description, slug, type = "article", schemaType = "Sc
     gtag("config", "G-QVFSZRN0PB");
   </script>
   ${schema}
-  <link rel="stylesheet" href="../assets/styles.css" />
+  <link rel="stylesheet" href="../assets/styles.css?v=20260427a" />
 </head>`;
 };
 
@@ -409,26 +409,39 @@ const shell = (head, content, page = "ai-research") => `${head}
 ${content}
   </main>
   <footer class="site-footer"><p>Alignment Theory Archive. <a class="text-link" href="contact.html">Contact</a></p></footer>
-  <script src="../assets/app.js?v=20260426a"></script>
+  <script src="../assets/app.js?v=20260427a"></script>
 </body>
 </html>`;
 
-const buttons = (pdf) => `<div class="button-group">
+const slugId = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+const paperType = (paper) => {
+  if (paper.central) return "Core Paper";
+  if (paper.glossary) return "Reference";
+  if (paper.casebook) return "Evaluation";
+  return "Research Paper";
+};
+
+const downloads = (pdf, className = "research-downloads") => `<div class="${className}">
   <a class="button" href="${pdf}">Download PDF</a>
   <a class="button" href="${combinedPdf}">Full Combined Corpus</a>
   <a class="button" href="ai-alignment-research.html">Research Hub</a>
 </div>`;
 
-const citationBlock = (paper) => `<section class="doc-card citation-block" aria-labelledby="citation-title">
-  <div class="doc-card-header"><h2 id="citation-title">How to Cite</h2><span class="chip">Citation</span></div>
-  <p>${author}. (2026). <em>${htmlEscape(paper.title)}</em>. ${publisher}. ${siteUrl}/pages/${paper.slug}.html</p>
-  <pre><code>@misc{bower2026${paper.slug.replace(/[^a-z0-9]/g, "")},
+const citationText = (paper) => `${author}. (2026). ${paper.title}. ${publisher}. ${siteUrl}/pages/${paper.slug}.html`;
+
+const bibtexText = (paper) => `@misc{bower2026${paper.slug.replace(/[^a-z0-9]/g, "")},
   author = {Bower, Michael},
   title = {${paper.title}},
   year = {2026},
   howpublished = {AlignmentTheory.org},
   url = {${siteUrl}/pages/${paper.slug}.html}
-}</code></pre>
+}`;
+
+const citationBlock = (paper) => `<section class="research-callout citation-block" aria-labelledby="citation-title">
+  <div class="research-callout-header"><h2 id="citation-title">How to Cite</h2><span class="chip">Citation</span></div>
+  <p>${author}. (2026). <em>${htmlEscape(paper.title)}</em>. ${publisher}. ${siteUrl}/pages/${paper.slug}.html</p>
+  <pre><code>${htmlEscape(bibtexText(paper))}</code></pre>
   <p><a class="text-link" href="how-to-cite.html">Open full citation guidance</a></p>
 </section>`;
 
@@ -441,49 +454,102 @@ const referencesBlock = (refs = []) => {
     ];
   }
 
-  return `<section class="doc-card references" aria-labelledby="references-title">
-    <div class="doc-card-header"><h2 id="references-title">References</h2><span class="chip">Source</span></div>
+  return `<section class="research-callout references" id="references" aria-labelledby="references-title">
+    <div class="research-callout-header"><h2 id="references-title">References</h2><span class="chip">Source</span></div>
     <ol>
       ${refs.map(([label, href]) => `<li><a href="${href}">${htmlEscape(label)}</a></li>`).join("\n      ")}
     </ol>
   </section>`;
 };
 
-const relatedBlock = (paper) => `<section class="doc-card" aria-labelledby="related-title">
-  <div class="doc-card-header"><h2 id="related-title">Related Papers</h2><span class="chip">Archive</span></div>
-  <div class="button-group">
+const relatedLink = (slug) => {
+  const item = paperBySlug[slug];
+  if (!item && slug === "ai-alignment-research") {
+    return `<article class="related-research-card">
+      <p class="research-card-kicker">Hub</p>
+      <h3>AI Alignment Research</h3>
+      <p>Main archive hub for the research corpus.</p>
+      <a class="text-link" href="ai-alignment-research.html">Open hub</a>
+    </article>`;
+  }
+  if (!item) return "";
+  return `<article class="related-research-card">
+    <p class="research-card-kicker">${htmlEscape(paperType(item))}</p>
+    <h3>${htmlEscape(item.nav)}</h3>
+    <p>${htmlEscape(item.subtitle)}</p>
+    <a class="text-link" href="${item.slug}.html">Read ${htmlEscape(item.nav)}</a>
+  </article>`;
+};
+
+const relatedBlock = (paper) => `<section class="research-related" aria-labelledby="related-title">
+  <div class="research-callout-header"><h2 id="related-title">Related Research</h2><span class="chip">Archive</span></div>
+  <div class="related-research-grid">
     ${(paper.related || []).map((slug) => {
-      const item = paperBySlug[slug];
-      if (!item && slug === "ai-alignment-research") return `<a class="button" href="ai-alignment-research.html">Research Hub</a>`;
-      return item ? `<a class="button" href="${item.slug}.html">${htmlEscape(item.nav)}</a>` : "";
+      return relatedLink(slug);
     }).join("\n    ")}
   </div>
 </section>`;
 
-const tocBlock = (paper) => `<nav class="doc-card research-toc" aria-labelledby="toc-title">
-  <div class="doc-card-header"><h2 id="toc-title">Table of Contents</h2><span class="chip">Guide</span></div>
+const tocList = (paper) => `<ol>
+    ${paper.toc.map((item) => `<li><a href="#${slugId(item)}">${htmlEscape(item)}</a></li>`).join("\n    ")}
+  </ol>`;
+
+const tocBlock = (paper, variant = "desktop") => {
+  if (variant === "mobile") {
+    return `<details class="research-toc research-toc-mobile">
+      <summary>Table of Contents</summary>
+      ${tocList(paper)}
+    </details>`;
+  }
+
+  return `<nav class="research-toc research-toc-desktop" aria-labelledby="toc-title">
+  <p class="research-panel-label">On this page</p>
   <ol>
-    ${paper.toc.map((item) => `<li><a href="#${item.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}">${htmlEscape(item)}</a></li>`).join("\n    ")}
+    ${paper.toc.map((item) => `<li><a href="#${slugId(item)}">${htmlEscape(item)}</a></li>`).join("\n    ")}
   </ol>
 </nav>`;
+};
+
+const researchTools = (paper, variant = "desktop") => `<aside class="research-tools research-tools-${variant}" aria-label="Research tools">
+  <p class="research-panel-label">Research Tools</p>
+  <a class="button" href="${paper.pdf}">Download PDF</a>
+  <a class="button" href="${combinedPdf}">Download Full Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+  <a class="button" href="how-to-cite.html">How to Cite</a>
+  <div class="research-tools-related">
+    <p class="research-panel-label">Related</p>
+    ${(paper.related || []).map((slug) => {
+      const item = paperBySlug[slug];
+      if (!item && slug === "ai-alignment-research") return `<a class="text-link" href="ai-alignment-research.html">Research Hub</a>`;
+      return item ? `<a class="text-link" href="${item.slug}.html">${htmlEscape(item.nav)}</a>` : "";
+    }).join("\n    ")}
+  </div>
+</aside>`;
 
 const paperSections = (paper) => {
   if (paper.glossary) {
-    return `<section class="doc-card" id="core-terms">
-      <div class="doc-card-header"><h2>Core Terms</h2><span class="chip">Glossary</span></div>
+    const groups = [
+      ["Core Terms", glossaryEntries.slice(0, 6)],
+      ["Drift Categories", glossaryEntries.slice(6, 14)],
+      ["Pipeline Terms", glossaryEntries.slice(14, 22)],
+      ["Risk Terms", glossaryEntries.slice(22)],
+    ];
+
+    return groups.map(([heading, entries]) => `<section class="research-section" id="${slugId(heading)}">
+      <h2>${htmlEscape(heading)}</h2>
       <div class="glossary-grid">
-        ${glossaryEntries.map(([term, definition, note]) => `<article class="glossary-entry">
+        ${entries.map(([term, definition, note]) => `<article class="glossary-entry">
           <h3>${htmlEscape(term)}</h3>
           <p>${htmlEscape(definition)}</p>
           <p><strong>Implementation note:</strong> ${htmlEscape(note)}</p>
         </article>`).join("\n        ")}
       </div>
-    </section>`;
+    </section>`).join("\n");
   }
 
   if (paper.casebook) {
-    return cases.map(([title, input, output, detector, why, correction, better]) => `<section class="doc-card case-card" id="${title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}">
-      <div class="doc-card-header"><h2>${htmlEscape(title)}</h2><span class="chip">Synthetic</span></div>
+    return cases.map(([title, input, output, detector, why, correction, better]) => `<section class="research-section case-card" id="${slugId(title)}">
+      <h2>${htmlEscape(title)}</h2>
       <p><strong>User input:</strong> ${htmlEscape(input)}</p>
       <p><strong>Candidate output:</strong> ${htmlEscape(output)}</p>
       <p><strong>Triggered detector:</strong> ${htmlEscape(detector)}</p>
@@ -493,29 +559,37 @@ const paperSections = (paper) => {
     </section>`).join("\n");
   }
 
-  return paper.sections.map(([heading, paragraphs]) => `<section class="doc-card" id="${heading.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}">
-    <div class="doc-card-header"><h2>${htmlEscape(heading)}</h2><span class="chip">${paper.central ? "Core" : "Paper"}</span></div>
+  return paper.sections.map(([heading, paragraphs]) => `<section class="research-section" id="${slugId(heading)}">
+    <h2>${htmlEscape(heading)}</h2>
     ${paragraphs.map((p) => `<p>${htmlEscape(p)}</p>`).join("\n    ")}
   </section>`).join("\n");
 };
 
 const renderPaper = (paper) => shell(pageHead(paper), `
-    <article class="manuscript research-article">
-      <p class="doc-meta"><a class="text-link" href="ai-alignment-research.html">Back to AI Alignment Research</a></p>
-      <header class="manuscript-header research-hero">
-        <p class="doc-meta"><span class="chip">Version 1 - 2026</span><span class="chip">AI Alignment Research</span></p>
+    <p class="doc-meta research-back-link"><a class="text-link" href="ai-alignment-research.html">Back to AI Alignment Research</a></p>
+    <section class="research-hero research-paper-hero">
+        <p class="research-meta"><span class="chip">Version 1 - 2026</span><span class="chip">${htmlEscape(paperType(paper))}</span></p>
         <h1>${htmlEscape(paper.title)}</h1>
         <p class="lead">${htmlEscape(paper.subtitle)}</p>
         <p>${htmlEscape(paper.abstract)}</p>
-        ${buttons(paper.pdf)}
-      </header>
-      ${tocBlock(paper)}
-      ${paperSections(paper)}
-      ${buttons(paper.pdf)}
-      ${citationBlock(paper)}
-      ${referencesBlock(paper.references)}
-      ${relatedBlock(paper)}
-    </article>`);
+        ${downloads(paper.pdf)}
+      </section>
+      <div class="research-mobile-panels">
+        ${tocBlock(paper, "mobile")}
+        ${researchTools(paper, "mobile")}
+      </div>
+      <div class="research-layout">
+        ${tocBlock(paper)}
+        <article class="research-article-body">
+${paper.central ? `          <aside class="research-callout" aria-label="Core thesis"><p class="research-panel-label">Core Thesis</p><p>The allowed-but-off-center layer is the central diagnostic zone: behavior that passes basic constraints while drifting from the intended objective.</p></aside>` : ""}
+          ${paperSections(paper)}
+          ${downloads(paper.pdf, "research-downloads research-downloads-bottom")}
+          ${citationBlock(paper)}
+          ${referencesBlock(paper.references)}
+          ${relatedBlock(paper)}
+        </article>
+        ${researchTools(paper)}
+      </div>`);
 
 const hubPaperCard = (paper, chip) => `<article class="doc-card research-card">
   <div class="doc-card-header"><h3>${htmlEscape(paper.nav)}</h3><span class="chip">${htmlEscape(chip)}</span></div>
@@ -554,40 +628,44 @@ const renderHub = () => {
   ];
 
   return shell(head, `
-    <section class="doc-card start-here start-here--primary research-hero">
-      <p class="doc-meta"><span class="chip">Active Research Corpus - Version 1, 2026</span></p>
+    <section class="research-hero research-hub-hero">
+      <p class="research-meta"><span class="chip">Active Research Corpus - Version 1, 2026</span></p>
       <h1>AI Alignment Research</h1>
       <p class="lead">A research program for behavioral drift detection, objective anchoring, runtime realignment, and production AI governance.</p>
       <p>Alignment Theory treats AI alignment as an ongoing control-loop problem: define the objective, enforce constraints, monitor behavior, detect drift, route meaningful deviations to review, and re-anchor the system over time.</p>
       <p class="orientation-line">Alignment is not only whether an output is acceptable; alignment is whether the system remains ordered toward its intended objective over time.</p>
-      <div class="research-note">This research does not claim to solve all AI alignment. It proposes a structural and operational framework for detecting, classifying, and correcting behavioral drift in deployed AI systems.</div>
-      <div class="button-group">
+      <div class="research-callout research-callout-compact">This research does not claim to solve all AI alignment. It proposes a structural and operational framework for detecting, classifying, and correcting behavioral drift in deployed AI systems.</div>
+      <div class="research-downloads">
         <a class="button" href="${combinedPdf}">Download Full Combined Corpus PDF</a>
         <a class="button" href="${fullZip}">Download Full Research ZIP</a>
         <a class="button" href="how-to-cite.html">How to Cite</a>
       </div>
     </section>
-    <section class="doc-card">
+    <section class="doc-card research-hub-section">
       <div class="doc-card-header"><h2>Reading Order</h2><span class="chip">Start</span></div>
-      <ol class="reading-order">
-        ${papers.map((paper) => `<li><strong>${htmlEscape(paper.nav)}</strong><p>${htmlEscape(paper.abstract)}</p><p><a class="text-link" href="${paper.slug}.html">Read online</a> | <a class="text-link" href="${paper.pdf}">Download PDF</a></p></li>`).join("\n        ")}
+      <ol class="research-timeline">
+        ${papers.map((paper, index) => `<li><span class="timeline-number">${String(index + 1).padStart(2, "0")}</span><div><strong>${htmlEscape(paper.nav)}</strong><p>${htmlEscape(paper.abstract)}</p><p><a class="text-link" href="${paper.slug}.html">Read online</a> | <a class="text-link" href="${paper.pdf}">Download PDF</a></p></div></li>`).join("\n        ")}
       </ol>
     </section>
-    ${groups.map(([label, slugs]) => `<section class="doc-card">
-      <div class="doc-card-header"><h2>${htmlEscape(label)}</h2><span class="chip">Map</span></div>
+    ${groups.map(([label, slugs]) => `<section class="research-map-section">
+      <div class="research-section-header"><h2>${htmlEscape(label)}</h2><span class="chip">Map</span></div>
       <div class="grid-two">${slugs.map((slug) => hubPaperCard(paperBySlug[slug], label)).join("\n")}</div>
     </section>`).join("\n")}
-    <section class="doc-card">
+    <section class="doc-card research-hub-section">
       <div class="doc-card-header"><h2>The Three-Layer Architecture</h2><span class="chip">Core</span></div>
-      <p class="architecture-line">Objective Layer -> Constraint Layer -> Realignment Layer</p>
+      <div class="architecture-flow" aria-label="Three-layer architecture">
+        <span>Objective Layer</span>
+        <span>Constraint Layer</span>
+        <span>Realignment Layer</span>
+      </div>
       <p><strong>Objective Layer:</strong> Defines what the system is actually for, including objective center, non-negotiables, success criteria, and anti-goals.</p>
       <p><strong>Constraint Layer:</strong> Defines what the system may or may not do, including policies, boundaries, refusals, and safety limits.</p>
       <p><strong>Realignment Layer:</strong> Detects allowed-but-off-center behavior and routes correction through rewrite, reroute, restart, confidence downgrade, or clarification.</p>
       <p>The Realignment Layer evaluates the allowed-but-off-center layer: outputs that pass ordinary rules but still drift from the intended objective.</p>
     </section>
-    <section class="doc-card">
+    <section class="doc-card research-hub-section">
       <div class="doc-card-header"><h2>Behavioral Drift Categories</h2><span class="chip">Taxonomy</span></div>
-      <div class="glossary-grid">
+      <div class="drift-grid">
         ${[
           ["Wrong Object", "The response optimizes for the wrong task, audience, or objective."],
           ["False Authority", "The response claims unsupported certainty, expertise, or finality."],
@@ -600,14 +678,30 @@ const renderHub = () => {
         ].map(([term, definition]) => `<article class="glossary-entry"><h3>${term}</h3><p>${definition}</p></article>`).join("\n        ")}
       </div>
     </section>
-    <section class="doc-card">
+    <section class="doc-card research-hub-section">
       <div class="doc-card-header"><h2>From Research to Behavioral QA</h2><span class="chip">Enterprise</span></div>
       <p>The enterprise version of this research becomes behavioral QA for AI systems: a way to measure whether production AI is drifting from intended behavior across prompt batches, model updates, and policy changes.</p>
       <p>Use cases include AI product teams, prompt engineers, compliance officers, trust and safety teams, enterprise AI buyers, support automation teams, and AI governance reviewers.</p>
     </section>
+    <section class="research-callout research-cite-callout">
+      <div class="research-callout-header"><h2>How to Cite This Corpus</h2><span class="chip">Citation</span></div>
+      <p>Use the citation page for APA, MLA, Chicago, and BibTeX formats for the full corpus, the hub, and the Three-Layer Blueprint.</p>
+      <div class="research-downloads"><a class="button" href="how-to-cite.html">Open How to Cite</a><a class="button" href="contact.html">Contact for Collaboration</a></div>
+    </section>
     ${referencesBlock(externalRefs)}
   `);
 };
+
+const citationCard = ({ title, label, text, id }) => `<article class="citation-card">
+  <div class="citation-card-header">
+    <div>
+      <p class="research-card-kicker">${htmlEscape(label)}</p>
+      <h3>${htmlEscape(title)}</h3>
+    </div>
+    <button class="button copy-citation-btn" type="button" data-copy-target="${id}" aria-label="Copy ${htmlEscape(title)} citation">Copy</button>
+  </div>
+  <pre><code id="${id}">${htmlEscape(text)}</code></pre>
+</article>`;
 
 const renderCite = () => shell(pageHead({
   title: "How to Cite Alignment Theory",
@@ -616,37 +710,39 @@ const renderCite = () => shell(pageHead({
   type: "website",
   schemaType: "WebPage"
 }), `
-    <article class="manuscript research-article">
-      <header class="manuscript-header research-hero">
-        <p class="doc-meta"><span class="chip">Citation</span><span class="chip">Alignment Theory</span></p>
+    <article class="citation-utility">
+      <header class="research-hero citation-hero">
+        <p class="research-meta"><span class="chip">Citation</span><span class="chip">Alignment Theory</span></p>
         <h1>How to Cite Alignment Theory</h1>
         <p class="lead">Citation formats for researchers, writers, educators, and technical teams referencing the AI alignment research corpus.</p>
       </header>
-      <section class="doc-card">
-        <div class="doc-card-header"><h2>Citation Formats</h2><span class="chip">Corpus</span></div>
-        <p><strong>APA:</strong> Bower, M. (2026). <em>Alignment Theory AI Alignment Research Corpus</em>. AlignmentTheory.org. ${siteUrl}/pages/ai-alignment-research.html</p>
-        <p><strong>MLA:</strong> Bower, Michael. "Alignment Theory AI Alignment Research Corpus." <em>AlignmentTheory.org</em>, 2026, ${siteUrl}/pages/ai-alignment-research.html.</p>
-        <p><strong>Chicago:</strong> Michael Bower, "Alignment Theory AI Alignment Research Corpus," AlignmentTheory.org, 2026, ${siteUrl}/pages/ai-alignment-research.html.</p>
-        <pre><code>@misc{bower2026alignmenttheory,
+      <section class="citation-section">
+        <div class="research-callout-header"><h2>Full Corpus Citation</h2><span class="chip">Corpus</span></div>
+        <div class="citation-card-grid">
+          ${citationCard({ title: "APA", label: "Full corpus", id: "citation-corpus-apa", text: `Bower, M. (2026). Alignment Theory AI Alignment Research Corpus. AlignmentTheory.org. ${siteUrl}/pages/ai-alignment-research.html` })}
+          ${citationCard({ title: "MLA", label: "Full corpus", id: "citation-corpus-mla", text: `Bower, Michael. "Alignment Theory AI Alignment Research Corpus." AlignmentTheory.org, 2026, ${siteUrl}/pages/ai-alignment-research.html.` })}
+          ${citationCard({ title: "Chicago", label: "Full corpus", id: "citation-corpus-chicago", text: `Michael Bower, "Alignment Theory AI Alignment Research Corpus," AlignmentTheory.org, 2026, ${siteUrl}/pages/ai-alignment-research.html.` })}
+          ${citationCard({ title: "BibTeX", label: "Full corpus", id: "citation-corpus-bibtex", text: `@misc{bower2026alignmenttheory,
   author = {Bower, Michael},
   title = {Alignment Theory AI Alignment Research Corpus},
   year = {2026},
   howpublished = {AlignmentTheory.org},
   url = {https://alignmenttheory.org/pages/ai-alignment-research.html}
-}</code></pre>
+}` })}
+        </div>
       </section>
-      <section class="doc-card">
-        <div class="doc-card-header"><h2>Suggested Citation for the Blueprint</h2><span class="chip">Paper</span></div>
-        <p><strong>APA:</strong> Bower, M. (2026). <em>The Three-Layer Blueprint for AI Alignment</em>. AlignmentTheory.org. ${siteUrl}/pages/ai-alignment-three-layer-blueprint.html</p>
+      <section class="citation-section">
+        <div class="research-callout-header"><h2>Specific Works</h2><span class="chip">Papers</span></div>
+        <div class="citation-card-grid">
+          ${citationCard({ title: "Full Corpus - Extended APA", label: "Corpus", id: "citation-full-extended", text: `Bower, M. (2026). Alignment Theory AI Alignment Research Corpus: Behavioral Drift Detection, Realignment Architecture, and AI Governance. AlignmentTheory.org. ${siteUrl}/pages/ai-alignment-research.html` })}
+          ${citationCard({ title: "Three-Layer Blueprint - APA", label: "Central paper", id: "citation-blueprint-apa", text: `Bower, M. (2026). The Three-Layer Blueprint for AI Alignment. AlignmentTheory.org. ${siteUrl}/pages/ai-alignment-three-layer-blueprint.html` })}
+          ${citationCard({ title: "AI Alignment Research Hub - APA", label: "Hub page", id: "citation-hub-apa", text: `Bower, M. (2026). AI Alignment Research. AlignmentTheory.org. ${siteUrl}/pages/ai-alignment-research.html` })}
+        </div>
       </section>
-      <section class="doc-card">
-        <div class="doc-card-header"><h2>Suggested Citation for the Full Corpus</h2><span class="chip">Corpus</span></div>
-        <p><strong>APA:</strong> Bower, M. (2026). <em>Alignment Theory AI Alignment Research Corpus: Behavioral Drift Detection, Realignment Architecture, and AI Governance</em>. AlignmentTheory.org. ${siteUrl}/pages/ai-alignment-research.html</p>
-      </section>
-      <section class="doc-card">
-        <div class="doc-card-header"><h2>Contact for Citation Questions</h2><span class="chip">Contact</span></div>
+      <section class="research-callout">
+        <div class="research-callout-header"><h2>Permissions and Collaboration</h2><span class="chip">Contact</span></div>
         <p>You may cite or reference Alignment Theory research with attribution. For collaboration, curriculum use, commercial use, or republication requests, please contact the author through the contact page.</p>
-        <div class="button-group"><a class="button" href="contact.html">Contact</a><a class="button" href="ai-alignment-research.html">AI Alignment Research Hub</a></div>
+        <div class="research-downloads"><a class="button" href="contact.html">Contact</a><a class="button" href="ai-alignment-research.html">AI Alignment Research Hub</a></div>
       </section>
     </article>`, "citation");
 

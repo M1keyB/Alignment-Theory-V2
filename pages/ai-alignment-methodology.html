@@ -21,7 +21,7 @@
     gtag("config", "G-QVFSZRN0PB");
   </script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Real Case Methodology and Evaluation Protocol","name":"Real Case Methodology and Evaluation Protocol","author":{"@type":"Person","name":"Michael Bower"},"datePublished":"2026","publisher":{"@type":"Organization","name":"AlignmentTheory.org"},"url":"https://alignmenttheory.org/pages/ai-alignment-methodology.html","description":"A real case methodology for collecting, redacting, evaluating, and comparing prompt-output batches for behavioral drift."}</script>
-  <link rel="stylesheet" href="../assets/styles.css" />
+  <link rel="stylesheet" href="../assets/styles.css?v=20260427a" />
 </head>
 <body data-page="ai-research">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -42,21 +42,48 @@
   </header>
   <main id="main" class="page research-page">
 
-    <article class="manuscript research-article">
-      <p class="doc-meta"><a class="text-link" href="ai-alignment-research.html">Back to AI Alignment Research</a></p>
-      <header class="manuscript-header research-hero">
-        <p class="doc-meta"><span class="chip">Version 1 - 2026</span><span class="chip">AI Alignment Research</span></p>
+    <p class="doc-meta research-back-link"><a class="text-link" href="ai-alignment-research.html">Back to AI Alignment Research</a></p>
+    <section class="research-hero research-paper-hero">
+        <p class="research-meta"><span class="chip">Version 1 - 2026</span><span class="chip">Research Paper</span></p>
         <h1>Real Case Methodology and Evaluation Protocol</h1>
         <p class="lead">A credibility protocol for evaluating behavioral drift in real prompt-output batches.</p>
         <p>This methodology explains how production prompt-output batches can be collected, redacted, evaluated, reviewed, and compared without confusing synthetic examples with real telemetry.</p>
-        <div class="button-group">
+        <div class="research-downloads">
   <a class="button" href="../assets/research/05_Real_Case_Methodology_and_Evaluation_Protocol_v5.pdf">Download PDF</a>
   <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
   <a class="button" href="ai-alignment-research.html">Research Hub</a>
 </div>
-      </header>
-      <nav class="doc-card research-toc" aria-labelledby="toc-title">
-  <div class="doc-card-header"><h2 id="toc-title">Table of Contents</h2><span class="chip">Guide</span></div>
+      </section>
+      <div class="research-mobile-panels">
+        <details class="research-toc research-toc-mobile">
+      <summary>Table of Contents</summary>
+      <ol>
+    <li><a href="#collection">Collection</a></li>
+    <li><a href="#redaction-and-sensitive-data">Redaction and Sensitive Data</a></li>
+    <li><a href="#evaluation">Evaluation</a></li>
+    <li><a href="#detector-review">Detector Review</a></li>
+    <li><a href="#human-review">Human Review</a></li>
+    <li><a href="#before-after-comparison">Before/After Comparison</a></li>
+    <li><a href="#synthetic-vs-real-telemetry">Synthetic vs Real Telemetry</a></li>
+  </ol>
+    </details>
+        <aside class="research-tools research-tools-mobile" aria-label="Research tools">
+  <p class="research-panel-label">Research Tools</p>
+  <a class="button" href="../assets/research/05_Real_Case_Methodology_and_Evaluation_Protocol_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Download Full Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+  <a class="button" href="how-to-cite.html">How to Cite</a>
+  <div class="research-tools-related">
+    <p class="research-panel-label">Related</p>
+    <a class="text-link" href="ai-alignment-limitations.html">Limitations &amp; Open Problems</a>
+    <a class="text-link" href="ai-alignment-casebook.html">Drift Casebook</a>
+    <a class="text-link" href="ai-alignment-competitive-positioning.html">Competitive Positioning</a>
+  </div>
+</aside>
+      </div>
+      <div class="research-layout">
+        <nav class="research-toc research-toc-desktop" aria-labelledby="toc-title">
+  <p class="research-panel-label">On this page</p>
   <ol>
     <li><a href="#collection">Collection</a></li>
     <li><a href="#redaction-and-sensitive-data">Redaction and Sensitive Data</a></li>
@@ -67,41 +94,43 @@
     <li><a href="#synthetic-vs-real-telemetry">Synthetic vs Real Telemetry</a></li>
   </ol>
 </nav>
-      <section class="doc-card" id="collection">
-    <div class="doc-card-header"><h2>Collection</h2><span class="chip">Paper</span></div>
+        <article class="research-article-body">
+
+          <section class="research-section" id="collection">
+    <h2>Collection</h2>
     <p>Real prompt-output batches should be collected from defined product contexts with timestamps, model versions, prompt templates, policy versions, and relevant metadata. Collection should be scoped to the evaluation question and avoid unnecessary retention.</p>
   </section>
-<section class="doc-card" id="redaction-and-sensitive-data">
-    <div class="doc-card-header"><h2>Redaction and Sensitive Data</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="redaction-and-sensitive-data">
+    <h2>Redaction and Sensitive Data</h2>
     <p>Sensitive data should be removed or transformed before analysis whenever possible. Personal identifiers, account details, private support content, credentials, protected attributes, and confidential business data require privacy review and handling controls.</p>
   </section>
-<section class="doc-card" id="evaluation">
-    <div class="doc-card-header"><h2>Evaluation</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="evaluation">
+    <h2>Evaluation</h2>
     <p>Outputs are evaluated against objective state, constraint compliance, detector categories, and correction routes. The protocol should separate hard policy violations from allowed-but-off-center drift so the review process does not flatten all failures into a single score.</p>
   </section>
-<section class="doc-card" id="detector-review">
-    <div class="doc-card-header"><h2>Detector Review</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="detector-review">
+    <h2>Detector Review</h2>
     <p>Detector hits should be reviewed for false positives, false negatives, and ambiguous cases. Heuristic detectors can identify surface signals, but semantic cases may require judge review or human adjudication.</p>
   </section>
-<section class="doc-card" id="human-review">
-    <div class="doc-card-header"><h2>Human Review</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="human-review">
+    <h2>Human Review</h2>
     <p>Human review enters the loop for uncertain cases, high-impact decisions, sensitive domains, threshold calibration, and governance signoff. The goal is not to automate judgment away, but to route attention to the cases where judgment matters.</p>
   </section>
-<section class="doc-card" id="before-after-comparison">
-    <div class="doc-card-header"><h2>Before/After Comparison</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="before-after-comparison">
+    <h2>Before/After Comparison</h2>
     <p>Prompt changes, model updates, policy changes, and retrieval changes should be compared with matched or representative prompt batches. The useful metric is not only pass rate, but drift pattern, correction rate, escalation rate, and objective-fit movement.</p>
   </section>
-<section class="doc-card" id="synthetic-vs-real-telemetry">
-    <div class="doc-card-header"><h2>Synthetic vs Real Telemetry</h2><span class="chip">Paper</span></div>
+<section class="research-section" id="synthetic-vs-real-telemetry">
+    <h2>Synthetic vs Real Telemetry</h2>
     <p>Synthetic examples are useful for detector design and explanation. Real production telemetry is required for validation because actual drift depends on user behavior, workflow pressure, model behavior, and product constraints.</p>
   </section>
-      <div class="button-group">
+          <div class="research-downloads research-downloads-bottom">
   <a class="button" href="../assets/research/05_Real_Case_Methodology_and_Evaluation_Protocol_v5.pdf">Download PDF</a>
   <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
   <a class="button" href="ai-alignment-research.html">Research Hub</a>
 </div>
-      <section class="doc-card citation-block" aria-labelledby="citation-title">
-  <div class="doc-card-header"><h2 id="citation-title">How to Cite</h2><span class="chip">Citation</span></div>
+          <section class="research-callout citation-block" aria-labelledby="citation-title">
+  <div class="research-callout-header"><h2 id="citation-title">How to Cite</h2><span class="chip">Citation</span></div>
   <p>Michael Bower. (2026). <em>Real Case Methodology and Evaluation Protocol</em>. AlignmentTheory.org. https://alignmenttheory.org/pages/ai-alignment-methodology.html</p>
   <pre><code>@misc{bower2026aialignmentmethodology,
   author = {Bower, Michael},
@@ -112,25 +141,54 @@
 }</code></pre>
   <p><a class="text-link" href="how-to-cite.html">Open full citation guidance</a></p>
 </section>
-      <section class="doc-card references" aria-labelledby="references-title">
-    <div class="doc-card-header"><h2 id="references-title">References</h2><span class="chip">Source</span></div>
+          <section class="research-callout references" id="references" aria-labelledby="references-title">
+    <div class="research-callout-header"><h2 id="references-title">References</h2><span class="chip">Source</span></div>
     <ol>
       <li><a href="ai-alignment-research.html">Alignment Theory AI Alignment Research Hub</a></li>
       <li><a href="ai-alignment-three-layer-blueprint.html">The Three-Layer Blueprint for AI Alignment</a></li>
       <li><a href="ai-alignment-limitations.html">Limitations, Critiques, and Open Problems</a></li>
     </ol>
   </section>
-      <section class="doc-card" aria-labelledby="related-title">
-  <div class="doc-card-header"><h2 id="related-title">Related Papers</h2><span class="chip">Archive</span></div>
-  <div class="button-group">
-    <a class="button" href="ai-alignment-limitations.html">Limitations &amp; Open Problems</a>
-    <a class="button" href="ai-alignment-casebook.html">Drift Casebook</a>
-    <a class="button" href="ai-alignment-competitive-positioning.html">Competitive Positioning</a>
+          <section class="research-related" aria-labelledby="related-title">
+  <div class="research-callout-header"><h2 id="related-title">Related Research</h2><span class="chip">Archive</span></div>
+  <div class="related-research-grid">
+    <article class="related-research-card">
+    <p class="research-card-kicker">Research Paper</p>
+    <h3>Limitations &amp; Open Problems</h3>
+    <p>Credibility boundaries for the Alignment Theory AI alignment research program.</p>
+    <a class="text-link" href="ai-alignment-limitations.html">Read Limitations &amp; Open Problems</a>
+  </article>
+    <article class="related-research-card">
+    <p class="research-card-kicker">Evaluation</p>
+    <h3>Drift Casebook</h3>
+    <p>Synthetic examples for detector explanation, evaluation design, and reviewer calibration.</p>
+    <a class="text-link" href="ai-alignment-casebook.html">Read Drift Casebook</a>
+  </article>
+    <article class="related-research-card">
+    <p class="research-card-kicker">Research Paper</p>
+    <h3>Competitive Positioning</h3>
+    <p>A comparison of Alignment Theory with adjacent AI evaluation and governance tools.</p>
+    <a class="text-link" href="ai-alignment-competitive-positioning.html">Read Competitive Positioning</a>
+  </article>
   </div>
 </section>
-    </article>
+        </article>
+        <aside class="research-tools research-tools-desktop" aria-label="Research tools">
+  <p class="research-panel-label">Research Tools</p>
+  <a class="button" href="../assets/research/05_Real_Case_Methodology_and_Evaluation_Protocol_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Download Full Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+  <a class="button" href="how-to-cite.html">How to Cite</a>
+  <div class="research-tools-related">
+    <p class="research-panel-label">Related</p>
+    <a class="text-link" href="ai-alignment-limitations.html">Limitations &amp; Open Problems</a>
+    <a class="text-link" href="ai-alignment-casebook.html">Drift Casebook</a>
+    <a class="text-link" href="ai-alignment-competitive-positioning.html">Competitive Positioning</a>
+  </div>
+</aside>
+      </div>
   </main>
   <footer class="site-footer"><p>Alignment Theory Archive. <a class="text-link" href="contact.html">Contact</a></p></footer>
-  <script src="../assets/app.js?v=20260426a"></script>
+  <script src="../assets/app.js?v=20260427a"></script>
 </body>
 </html>
