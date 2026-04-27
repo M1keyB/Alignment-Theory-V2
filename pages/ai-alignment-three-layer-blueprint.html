@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Three-Layer Blueprint for AI Alignment &middot; Alignment Theory Archive</title>
+  <meta name="description" content="The Three-Layer Blueprint for AI Alignment defines Objective, Constraint, and Realignment layers for detecting allowed-but-off-center behavior in AI systems." />
+  <link rel="canonical" href="https://alignmenttheory.org/pages/ai-alignment-three-layer-blueprint.html" />
+  <meta property="og:title" content="The Three-Layer Blueprint for AI Alignment" />
+  <meta property="og:description" content="The Three-Layer Blueprint for AI Alignment defines Objective, Constraint, and Realignment layers for detecting allowed-but-off-center behavior in AI systems." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://alignmenttheory.org/pages/ai-alignment-three-layer-blueprint.html" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="The Three-Layer Blueprint for AI Alignment" />
+  <meta name="twitter:description" content="The Three-Layer Blueprint for AI Alignment defines Objective, Constraint, and Realignment layers for detecting allowed-but-off-center behavior in AI systems." />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVFSZRN0PB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-QVFSZRN0PB");
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"The Three-Layer Blueprint for AI Alignment","name":"The Three-Layer Blueprint for AI Alignment","author":{"@type":"Person","name":"Michael Bower"},"datePublished":"2026","publisher":{"@type":"Organization","name":"AlignmentTheory.org"},"url":"https://alignmenttheory.org/pages/ai-alignment-three-layer-blueprint.html","description":"The Three-Layer Blueprint for AI Alignment defines Objective, Constraint, and Realignment layers for detecting allowed-but-off-center behavior in AI systems."}</script>
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body data-page="ai-research">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="site-title"><h1>Alignment Theory</h1><p class="site-subtitle">Research Archive</p></div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="where-to-start.html">Where to Start</a>
+      <a href="framework.html">Framework</a>
+      <a href="stress-tests.html">Stress Tests</a>
+      <a href="papers.html">Papers</a>
+      <a href="essays.html">Essays</a>
+      <a href="library.html">Library</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main id="main" class="page research-page">
+
+    <article class="manuscript research-article">
+      <p class="doc-meta"><a class="text-link" href="ai-alignment-research.html">Back to AI Alignment Research</a></p>
+      <header class="manuscript-header research-hero">
+        <p class="doc-meta"><span class="chip">Version 1 - 2026</span><span class="chip">AI Alignment Research</span></p>
+        <h1>The Three-Layer Blueprint for AI Alignment</h1>
+        <p class="lead">The architectural core of the Alignment Theory AI alignment corpus.</p>
+        <p>The blueprint defines a runtime architecture for objective anchoring, constraint compliance, and realignment of behavior that remains formally allowed but substantively off-center.</p>
+        <div class="button-group">
+  <a class="button" href="../assets/research/01_Three_Layer_Blueprint_AT_AI_Alignment_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+</div>
+      </header>
+      <nav class="doc-card research-toc" aria-labelledby="toc-title">
+  <div class="doc-card-header"><h2 id="toc-title">Table of Contents</h2><span class="chip">Guide</span></div>
+  <ol>
+    <li><a href="#why-constraint-compliance-is-insufficient">Why Constraint Compliance Is Insufficient</a></li>
+    <li><a href="#objective-layer">Objective Layer</a></li>
+    <li><a href="#constraint-layer">Constraint Layer</a></li>
+    <li><a href="#realignment-layer">Realignment Layer</a></li>
+    <li><a href="#detector-categories">Detector Categories</a></li>
+    <li><a href="#correction-modes">Correction Modes</a></li>
+    <li><a href="#runtime-pipeline">Runtime Pipeline</a></li>
+  </ol>
+</nav>
+      <section class="doc-card" id="why-constraint-compliance-is-insufficient">
+    <div class="doc-card-header"><h2>Why Constraint Compliance Is Insufficient</h2><span class="chip">Core</span></div>
+    <p>Constraint compliance is necessary, but it is not enough. A model can obey safety rules and still drift away from the reason it was deployed.</p>
+    <p>The allowed-but-off-center layer is the central diagnostic zone: outputs that do not violate ordinary rules, but still fail objective fit through wrong focus, false certainty, generic substitution, premature closure, or metric drift.</p>
+  </section>
+<section class="doc-card" id="objective-layer">
+    <div class="doc-card-header"><h2>Objective Layer</h2><span class="chip">Core</span></div>
+    <p>The Objective Layer defines what the system is actually for. It includes the objective center, non-negotiables, success criteria, anti-goals, source profile, domain assumptions, and handoff conditions.</p>
+    <p>In implementation terms, this layer gives detectors and reviewers a stable reference point. Without it, evaluation collapses into generic preference, tone, or completion pressure.</p>
+  </section>
+<section class="doc-card" id="constraint-layer">
+    <div class="doc-card-header"><h2>Constraint Layer</h2><span class="chip">Core</span></div>
+    <p>The Constraint Layer defines what the system may or may not do. It includes policy boundaries, refusals, escalation requirements, safety limits, privacy rules, and legal or organizational constraints.</p>
+    <p>This layer catches forbidden behavior. It does not, by itself, prove that an allowed behavior is aligned with the task.</p>
+  </section>
+<section class="doc-card" id="realignment-layer">
+    <div class="doc-card-header"><h2>Realignment Layer</h2><span class="chip">Core</span></div>
+    <p>The Realignment Layer detects drift after constraint compliance. The Realignment Layer evaluates the allowed-but-off-center layer: outputs that pass ordinary rules but still drift from the intended objective.</p>
+    <p>It asks whether the response stayed ordered toward the objective center, preserved user agency where needed, avoided unsupported authority, and maintained useful specificity.</p>
+  </section>
+<section class="doc-card" id="detector-categories">
+    <div class="doc-card-header"><h2>Detector Categories</h2><span class="chip">Core</span></div>
+    <p>Detector categories include Wrong Object, False Authority, Pseudo-Selfhood, Dead Obedience, Pseudo-Freedom, Generic Filler, Participation Collapse, and Metric Drift.</p>
+    <p>Some detectors can be heuristic. Others require semantic judging, human review, or comparison against source profiles and objective state.</p>
+  </section>
+<section class="doc-card" id="correction-modes">
+    <div class="doc-card-header"><h2>Correction Modes</h2><span class="chip">Core</span></div>
+    <p>Correction modes include rewrite, reroute, restart, confidence downgrade, clarification, escalation to human review, and logging for trend analysis.</p>
+    <p>The correction route should match the failure. A false-authority case may need uncertainty framing and source anchoring; a wrong-object case may need a restart around the actual objective.</p>
+  </section>
+<section class="doc-card" id="runtime-pipeline">
+    <div class="doc-card-header"><h2>Runtime Pipeline</h2><span class="chip">Core</span></div>
+    <p>A runtime pipeline can collect prompts and outputs, extract features, apply hard constraints, score drift detectors, route uncertain cases to a judge model or reviewer, apply correction modes, and record trend data.</p>
+    <p>The architecture is designed to complement existing evals and observability tools by adding an objective-centered behavioral drift layer.</p>
+  </section>
+      <div class="button-group">
+  <a class="button" href="../assets/research/01_Three_Layer_Blueprint_AT_AI_Alignment_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+</div>
+      <section class="doc-card citation-block" aria-labelledby="citation-title">
+  <div class="doc-card-header"><h2 id="citation-title">How to Cite</h2><span class="chip">Citation</span></div>
+  <p>Michael Bower. (2026). <em>The Three-Layer Blueprint for AI Alignment</em>. AlignmentTheory.org. https://alignmenttheory.org/pages/ai-alignment-three-layer-blueprint.html</p>
+  <pre><code>@misc{bower2026aialignmentthreelayerblueprint,
+  author = {Bower, Michael},
+  title = {The Three-Layer Blueprint for AI Alignment},
+  year = {2026},
+  howpublished = {AlignmentTheory.org},
+  url = {https://alignmenttheory.org/pages/ai-alignment-three-layer-blueprint.html}
+}</code></pre>
+  <p><a class="text-link" href="how-to-cite.html">Open full citation guidance</a></p>
+</section>
+      <section class="doc-card references" aria-labelledby="references-title">
+    <div class="doc-card-header"><h2 id="references-title">References</h2><span class="chip">Source</span></div>
+    <ol>
+      <li><a href="ai-alignment-research.html">Alignment Theory AI Alignment Research Hub</a></li>
+      <li><a href="ai-alignment-three-layer-blueprint.html">The Three-Layer Blueprint for AI Alignment</a></li>
+      <li><a href="ai-alignment-limitations.html">Limitations, Critiques, and Open Problems</a></li>
+    </ol>
+  </section>
+      <section class="doc-card" aria-labelledby="related-title">
+  <div class="doc-card-header"><h2 id="related-title">Related Papers</h2><span class="chip">Archive</span></div>
+  <div class="button-group">
+    <a class="button" href="ai-alignment-glossary.html">Formal Glossary</a>
+    <a class="button" href="ai-alignment-methodology.html">Real Case Methodology</a>
+    <a class="button" href="ai-alignment-limitations.html">Limitations &amp; Open Problems</a>
+  </div>
+</section>
+    </article>
+  </main>
+  <footer class="site-footer"><p>Alignment Theory Archive. <a class="text-link" href="contact.html">Contact</a></p></footer>
+  <script src="../assets/app.js?v=20260426a"></script>
+</body>
+</html>

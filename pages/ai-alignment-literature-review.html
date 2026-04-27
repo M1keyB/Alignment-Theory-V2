@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Literature Review: AI Alignment Approaches and the Drift Detection Gap &middot; Alignment Theory Archive</title>
+  <meta name="description" content="A literature review comparing RLHF, Constitutional AI, interpretability, scalable oversight, and Alignment Theory's behavioral drift detection layer." />
+  <link rel="canonical" href="https://alignmenttheory.org/pages/ai-alignment-literature-review.html" />
+  <meta property="og:title" content="Literature Review: AI Alignment Approaches and the Drift Detection Gap" />
+  <meta property="og:description" content="A literature review comparing RLHF, Constitutional AI, interpretability, scalable oversight, and Alignment Theory's behavioral drift detection layer." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://alignmenttheory.org/pages/ai-alignment-literature-review.html" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Literature Review: AI Alignment Approaches and the Drift Detection Gap" />
+  <meta name="twitter:description" content="A literature review comparing RLHF, Constitutional AI, interpretability, scalable oversight, and Alignment Theory's behavioral drift detection layer." />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVFSZRN0PB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-QVFSZRN0PB");
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Literature Review: AI Alignment Approaches and the Drift Detection Gap","name":"Literature Review: AI Alignment Approaches and the Drift Detection Gap","author":{"@type":"Person","name":"Michael Bower"},"datePublished":"2026","publisher":{"@type":"Organization","name":"AlignmentTheory.org"},"url":"https://alignmenttheory.org/pages/ai-alignment-literature-review.html","description":"A literature review comparing RLHF, Constitutional AI, interpretability, scalable oversight, and Alignment Theory's behavioral drift detection layer."}</script>
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body data-page="ai-research">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="site-title"><h1>Alignment Theory</h1><p class="site-subtitle">Research Archive</p></div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="where-to-start.html">Where to Start</a>
+      <a href="framework.html">Framework</a>
+      <a href="stress-tests.html">Stress Tests</a>
+      <a href="papers.html">Papers</a>
+      <a href="essays.html">Essays</a>
+      <a href="library.html">Library</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main id="main" class="page research-page">
+
+    <article class="manuscript research-article">
+      <p class="doc-meta"><a class="text-link" href="ai-alignment-research.html">Back to AI Alignment Research</a></p>
+      <header class="manuscript-header research-hero">
+        <p class="doc-meta"><span class="chip">Version 1 - 2026</span><span class="chip">AI Alignment Research</span></p>
+        <h1>Literature Review: AI Alignment Approaches and the Drift Detection Gap</h1>
+        <p class="lead">A positioning review of major alignment approaches and the missing post-deployment behavioral drift layer.</p>
+        <p>This review places Alignment Theory beside major AI alignment approaches and identifies a practical gap: runtime detection of behavioral drift in deployed AI systems.</p>
+        <div class="button-group">
+  <a class="button" href="../assets/research/02_Literature_Review_and_Drift_Detection_Gap_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+</div>
+      </header>
+      <nav class="doc-card research-toc" aria-labelledby="toc-title">
+  <div class="doc-card-header"><h2 id="toc-title">Table of Contents</h2><span class="chip">Guide</span></div>
+  <ol>
+    <li><a href="#rlhf-and-human-preference">RLHF and Human Preference</a></li>
+    <li><a href="#constitutional-ai">Constitutional AI</a></li>
+    <li><a href="#scalable-oversight">Scalable Oversight</a></li>
+    <li><a href="#interpretability">Interpretability</a></li>
+    <li><a href="#model-behavior-specifications">Model Behavior Specifications</a></li>
+    <li><a href="#runtime-monitoring">Runtime Monitoring</a></li>
+    <li><a href="#the-drift-detection-gap">The Drift Detection Gap</a></li>
+    <li><a href="#references">References</a></li>
+  </ol>
+</nav>
+      <section class="doc-card" id="rlhf-and-human-preference">
+    <div class="doc-card-header"><h2>RLHF and Human Preference</h2><span class="chip">Paper</span></div>
+    <p>RLHF helps models better follow human preferences and instructions, but preference optimization does not automatically provide an operational test for whether deployed behavior remains centered on a product or governance objective over time.</p>
+    <p>Alignment Theory treats RLHF as part of the broader landscape while focusing on post-deployment behavioral QA.</p>
+  </section>
+<section class="doc-card" id="constitutional-ai">
+    <div class="doc-card-header"><h2>Constitutional AI</h2><span class="chip">Paper</span></div>
+    <p>Anthropic's Constitutional AI work helps frame principle-based alignment: model behavior can be shaped by explicit rules and critiques rather than only direct preference labels.</p>
+    <p>Alignment Theory is compatible with principle-based systems, but asks a different operational question: after principles and constraints are in place, does the system drift within the allowed zone?</p>
+  </section>
+<section class="doc-card" id="scalable-oversight">
+    <div class="doc-card-header"><h2>Scalable Oversight</h2><span class="chip">Paper</span></div>
+    <p>Scalable oversight addresses the problem of evaluating model behavior when direct human supervision is expensive, slow, or insufficiently expert.</p>
+    <p>The Alignment Theory contribution is to define drift categories and correction routes that can focus oversight on meaningful deviations rather than raw output volume.</p>
+  </section>
+<section class="doc-card" id="interpretability">
+    <div class="doc-card-header"><h2>Interpretability</h2><span class="chip">Paper</span></div>
+    <p>Interpretability research examines internal model mechanisms and representations. Anthropic's interpretability program is especially important for understanding how model internals may support or undermine safe behavior.</p>
+    <p>Alignment Theory is behavior-first. It does not replace mechanistic interpretability; it supplies a production-facing layer for detecting drift in observable prompt-output behavior.</p>
+  </section>
+<section class="doc-card" id="model-behavior-specifications">
+    <div class="doc-card-header"><h2>Model Behavior Specifications</h2><span class="chip">Paper</span></div>
+    <p>OpenAI's Model Spec helps define desired assistant behavior, including how a system should respond under competing instructions, policies, and user goals.</p>
+    <p>Alignment Theory uses the same broad need for behavioral specification, but emphasizes objective state, detector categories, and correction after allowed-but-off-center behavior appears.</p>
+  </section>
+<section class="doc-card" id="runtime-monitoring">
+    <div class="doc-card-header"><h2>Runtime Monitoring</h2><span class="chip">Paper</span></div>
+    <p>Runtime monitoring, logging, observability, and eval frameworks are necessary for deployed AI systems. They show what happened and can detect many known failure modes.</p>
+    <p>The drift detection gap is the missing layer between ordinary pass/fail compliance and long-term objective fidelity.</p>
+  </section>
+<section class="doc-card" id="the-drift-detection-gap">
+    <div class="doc-card-header"><h2>The Drift Detection Gap</h2><span class="chip">Paper</span></div>
+    <p>OpenAI alignment work helps frame the problem of aligning models to human intent and studying where methods scale or break. Anthropic's Constitutional AI and interpretability work help frame principle-based and mechanistic approaches.</p>
+    <p>Alignment Theory contributes a runtime behavioral drift detection and realignment layer for deployed systems.</p>
+  </section>
+      <div class="button-group">
+  <a class="button" href="../assets/research/02_Literature_Review_and_Drift_Detection_Gap_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+</div>
+      <section class="doc-card citation-block" aria-labelledby="citation-title">
+  <div class="doc-card-header"><h2 id="citation-title">How to Cite</h2><span class="chip">Citation</span></div>
+  <p>Michael Bower. (2026). <em>Literature Review: AI Alignment Approaches and the Drift Detection Gap</em>. AlignmentTheory.org. https://alignmenttheory.org/pages/ai-alignment-literature-review.html</p>
+  <pre><code>@misc{bower2026aialignmentliteraturereview,
+  author = {Bower, Michael},
+  title = {Literature Review: AI Alignment Approaches and the Drift Detection Gap},
+  year = {2026},
+  howpublished = {AlignmentTheory.org},
+  url = {https://alignmenttheory.org/pages/ai-alignment-literature-review.html}
+}</code></pre>
+  <p><a class="text-link" href="how-to-cite.html">Open full citation guidance</a></p>
+</section>
+      <section class="doc-card references" aria-labelledby="references-title">
+    <div class="doc-card-header"><h2 id="references-title">References</h2><span class="chip">Source</span></div>
+    <ol>
+      <li><a href="https://openai.com/index/our-approach-to-alignment-research/">OpenAI - Our approach to alignment research</a></li>
+      <li><a href="https://model-spec.openai.com/">OpenAI - Model Spec</a></li>
+      <li><a href="https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback">Anthropic - Constitutional AI</a></li>
+      <li><a href="https://www.anthropic.com/news/claudes-constitution">Anthropic - Claude's Constitution</a></li>
+      <li><a href="https://www.anthropic.com/research">Anthropic - Interpretability research</a></li>
+      <li><a href="https://www.anthropic.com/news/mapping-mind-language-model">Anthropic - Mapping the Mind of a Large Language Model</a></li>
+      <li><a href="https://www.anthropic.com/research/tracing-thoughts-language-model">Anthropic - Tracing the Thoughts of a Large Language Model</a></li>
+    </ol>
+  </section>
+      <section class="doc-card" aria-labelledby="related-title">
+  <div class="doc-card-header"><h2 id="related-title">Related Papers</h2><span class="chip">Archive</span></div>
+  <div class="button-group">
+    <a class="button" href="ai-alignment-competitive-positioning.html">Competitive Positioning</a>
+    <a class="button" href="ai-alignment-three-layer-blueprint.html">Three-Layer Blueprint</a>
+    <a class="button" href="ai-alignment-limitations.html">Limitations &amp; Open Problems</a>
+  </div>
+</section>
+    </article>
+  </main>
+  <footer class="site-footer"><p>Alignment Theory Archive. <a class="text-link" href="contact.html">Contact</a></p></footer>
+  <script src="../assets/app.js?v=20260426a"></script>
+</body>
+</html>

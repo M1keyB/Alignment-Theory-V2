@@ -344,6 +344,10 @@ a:focus-visible,
   opacity: 1;
 }
 
+.site-nav-dropdown--research {
+  width: min(24rem, calc(100vw - 3rem));
+}
+
 .site-nav-dropdown::before {
   content: "";
   position: absolute;
@@ -580,6 +584,92 @@ body.nav-open::before {
   align-items: flex-start;
   gap: var(--space-2);
   margin-top: var(--space-4);
+}
+
+.research-page {
+  gap: var(--space-4);
+}
+
+.research-article {
+  max-width: 860px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.research-hero h1 {
+  margin: 0;
+  font-size: clamp(1.7rem, 3vw, 2.55rem);
+  line-height: 1.18;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--ink-strong);
+  text-wrap: balance;
+}
+
+.research-note {
+  margin-top: var(--space-3);
+  padding: 0.9rem 1rem;
+  border-left: 3px solid rgba(59, 52, 47, 0.32);
+  background: rgba(255, 255, 255, 0.16);
+  color: var(--ink);
+}
+
+.research-toc ol,
+.reading-order {
+  margin: 0;
+  padding-left: 1.4rem;
+}
+
+.reading-order li + li,
+.research-toc li + li {
+  margin-top: 0.7rem;
+}
+
+.reading-order p {
+  margin: 0.2rem 0 0;
+}
+
+.research-card p {
+  margin-bottom: 0;
+}
+
+.architecture-line {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 0.86rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-strong);
+}
+
+.glossary-grid {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.glossary-entry,
+.case-card {
+  min-width: 0;
+}
+
+.glossary-entry {
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(59, 52, 47, 0.08);
+  border-radius: var(--radius-tight);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.glossary-entry h3 {
+  margin-top: 0;
+}
+
+.citation-block pre {
+  overflow-x: auto;
+  padding: 0.9rem;
+  border: 1px solid rgba(59, 52, 47, 0.08);
+  border-radius: var(--radius-tight);
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 0.78rem;
+  line-height: 1.5;
 }
 
 .framework-hub-groups {
@@ -3899,6 +3989,7 @@ body.nav-open::before {
 
 @media (min-width: 720px) {
   .grid-two,
+  .glossary-grid,
   .library-grid,
   .media-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

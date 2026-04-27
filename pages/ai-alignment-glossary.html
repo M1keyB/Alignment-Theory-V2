@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formal Glossary of Alignment Theory Terms for AI Systems &middot; Alignment Theory Archive</title>
+  <meta name="description" content="A formal glossary of Alignment Theory terms for AI alignment, drift detection, realignment, and behavioral QA." />
+  <link rel="canonical" href="https://alignmenttheory.org/pages/ai-alignment-glossary.html" />
+  <meta property="og:title" content="Formal Glossary of Alignment Theory Terms for AI Systems" />
+  <meta property="og:description" content="A formal glossary of Alignment Theory terms for AI alignment, drift detection, realignment, and behavioral QA." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://alignmenttheory.org/pages/ai-alignment-glossary.html" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Formal Glossary of Alignment Theory Terms for AI Systems" />
+  <meta name="twitter:description" content="A formal glossary of Alignment Theory terms for AI alignment, drift detection, realignment, and behavioral QA." />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVFSZRN0PB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-QVFSZRN0PB");
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Formal Glossary of Alignment Theory Terms for AI Systems","name":"Formal Glossary of Alignment Theory Terms for AI Systems","author":{"@type":"Person","name":"Michael Bower"},"datePublished":"2026","publisher":{"@type":"Organization","name":"AlignmentTheory.org"},"url":"https://alignmenttheory.org/pages/ai-alignment-glossary.html","description":"A formal glossary of Alignment Theory terms for AI alignment, drift detection, realignment, and behavioral QA."}</script>
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body data-page="ai-research">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="site-title"><h1>Alignment Theory</h1><p class="site-subtitle">Research Archive</p></div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="where-to-start.html">Where to Start</a>
+      <a href="framework.html">Framework</a>
+      <a href="stress-tests.html">Stress Tests</a>
+      <a href="papers.html">Papers</a>
+      <a href="essays.html">Essays</a>
+      <a href="library.html">Library</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main id="main" class="page research-page">
+
+    <article class="manuscript research-article">
+      <p class="doc-meta"><a class="text-link" href="ai-alignment-research.html">Back to AI Alignment Research</a></p>
+      <header class="manuscript-header research-hero">
+        <p class="doc-meta"><span class="chip">Version 1 - 2026</span><span class="chip">AI Alignment Research</span></p>
+        <h1>Formal Glossary of Alignment Theory Terms for AI Systems</h1>
+        <p class="lead">Definitions and implementation notes for the research corpus.</p>
+        <p>The glossary defines core terms used across the corpus and replaces generic implementation boilerplate with concrete, term-specific notes.</p>
+        <div class="button-group">
+  <a class="button" href="../assets/research/06_Formal_Glossary_AT_AI_Systems_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+</div>
+      </header>
+      <nav class="doc-card research-toc" aria-labelledby="toc-title">
+  <div class="doc-card-header"><h2 id="toc-title">Table of Contents</h2><span class="chip">Guide</span></div>
+  <ol>
+    <li><a href="#core-terms">Core Terms</a></li>
+    <li><a href="#drift-categories">Drift Categories</a></li>
+    <li><a href="#pipeline-terms">Pipeline Terms</a></li>
+    <li><a href="#risk-terms">Risk Terms</a></li>
+  </ol>
+</nav>
+      <section class="doc-card" id="core-terms">
+      <div class="doc-card-header"><h2>Core Terms</h2><span class="chip">Glossary</span></div>
+      <div class="glossary-grid">
+        <article class="glossary-entry">
+          <h3>Objective Center</h3>
+          <p>The active statement of what the system is for in a specific deployment context.</p>
+          <p><strong>Implementation note:</strong> Stored in ObjectiveState.activeObjective and used as the standard for detector and judge evaluation.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Source Anchoring</h3>
+          <p>The practice of grounding behavior in approved source material, policy, evidence, or domain authority.</p>
+          <p><strong>Implementation note:</strong> Mapped to source profile checks, citation requirements, retrieval constraints, and unsupported-claim scoring.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Objective Layer</h3>
+          <p>The layer that defines purpose, success criteria, non-negotiables, and anti-goals.</p>
+          <p><strong>Implementation note:</strong> Provides the reference state used by detectors, judges, reports, and before/after comparisons.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Constraint Layer</h3>
+          <p>The layer that defines what the system may or may not do.</p>
+          <p><strong>Implementation note:</strong> Implemented through policies, refusal rules, safety filters, escalation requirements, and compliance checks.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Realignment Layer</h3>
+          <p>The layer that detects and corrects allowed-but-off-center behavior.</p>
+          <p><strong>Implementation note:</strong> Routes drift cases to rewrite, reroute, restart, confidence downgrade, clarification, or human review.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Behavioral Drift</h3>
+          <p>A movement away from intended behavior over time or across conditions.</p>
+          <p><strong>Implementation note:</strong> Measured across prompt batches, detector trends, correction rates, and objective-fit scores.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Wrong Object</h3>
+          <p>A response that optimizes for the wrong problem, audience, or objective.</p>
+          <p><strong>Implementation note:</strong> Detected by comparing the response target against ObjectiveState.activeObjective and user intent.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>False Authority</h3>
+          <p>Unsupported certainty, expertise, or finality beyond what the system can justify.</p>
+          <p><strong>Implementation note:</strong> Detected through certainty markers, unsupported-claim count, role inflation, diagnosis inflation, and absence of uncertainty framing.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Pseudo-Selfhood</h3>
+          <p>A system presenting itself as having inner experience, personal continuity, or human-like selfhood where that is not warranted.</p>
+          <p><strong>Implementation note:</strong> Detected through first-person experiential claims, identity inflation, and relational overreach.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Dead Obedience</h3>
+          <p>Surface compliance that follows the user's wording while failing the user's actual need.</p>
+          <p><strong>Implementation note:</strong> Detected by comparing compliance-shell density against fulfillment score and specificity.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Pseudo-Freedom</h3>
+          <p>A response that appears to empower choice while withholding useful structure or responsibility.</p>
+          <p><strong>Implementation note:</strong> Detected when option lists replace guidance, tradeoffs, or objective-grounded recommendation.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Generic Filler</h3>
+          <p>Polished but low-specificity content that substitutes smoothness for useful help.</p>
+          <p><strong>Implementation note:</strong> Detected through specificity score, template density, repeated abstractions, and lack of domain anchors.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Participation Collapse</h3>
+          <p>A response that over-decides, removes agency, or closes reflection prematurely.</p>
+          <p><strong>Implementation note:</strong> Used in detector scoring when the system over-decides, removes agency, or closes reflection prematurely.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Metric Drift</h3>
+          <p>A shift where tone, polish, engagement, or completion pressure outranks objective fit.</p>
+          <p><strong>Implementation note:</strong> Used when tone, polish, engagement, or completion pressure outranks truth, correctness, or objective fit.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Source Profile</h3>
+          <p>The declared set of sources, policies, evidence types, or authorities the system should use.</p>
+          <p><strong>Implementation note:</strong> Stored with allowed, preferred, and excluded source classes for source anchoring checks.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Universal Drift Metric</h3>
+          <p>A summary measure of objective fit and drift pressure across detector categories.</p>
+          <p><strong>Implementation note:</strong> Aggregates detector hits, severity, correction route, uncertainty, and trend movement.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>External Re-entry</h3>
+          <p>The process of returning a drifting system to an external reference point rather than letting outputs validate themselves.</p>
+          <p><strong>Implementation note:</strong> Implemented through retrieval refresh, source checks, policy re-read, user clarification, or human review.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Re-anchoring</h3>
+          <p>Restoring the response to its intended objective after drift is detected.</p>
+          <p><strong>Implementation note:</strong> Applied in rewrite prompts, routing policies, and post-review correction instructions.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Detector</h3>
+          <p>A rule, model, rubric, or hybrid evaluator that identifies a drift pattern.</p>
+          <p><strong>Implementation note:</strong> Runs after constraint checks and before correction routing or escalation.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Feature Extraction</h3>
+          <p>The conversion of output traits into measurable signals for detectors.</p>
+          <p><strong>Implementation note:</strong> Extracts markers such as certainty, specificity, unsupported claims, agency closure, and source fit.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Judge Model</h3>
+          <p>A model used to evaluate semantic cases where heuristics are insufficient.</p>
+          <p><strong>Implementation note:</strong> Invoked only in uncertainty bands or semantic cases where heuristics are not enough.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Correction Mode</h3>
+          <p>The action chosen after a drift case is detected.</p>
+          <p><strong>Implementation note:</strong> Encoded as rewrite, reroute, restart, confidence downgrade, clarification, escalation, or log-only review.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Dangerous Coherence</h3>
+          <p>A highly coherent response pattern that is persuasive while being misanchored.</p>
+          <p><strong>Implementation note:</strong> Detected by pairing coherence or confidence scores with source mismatch and objective mismatch.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Scalable Misalignment</h3>
+          <p>A drift pattern that becomes more consequential when repeated across many users or workflows.</p>
+          <p><strong>Implementation note:</strong> Flagged through batch-level trend analysis, recurrence, and affected-use-case severity.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Reality Substitution</h3>
+          <p>A response pattern that replaces grounded uncertainty with a self-contained narrative.</p>
+          <p><strong>Implementation note:</strong> Detected through unsupported reconstruction, missing source anchors, and excessive explanatory closure.</p>
+        </article>
+        <article class="glossary-entry">
+          <h3>Creator Alignment</h3>
+          <p>The requirement that system behavior remain ordered toward the intended objective of the deployment rather than its own local completion pressures.</p>
+          <p><strong>Implementation note:</strong> Tracked by objective-state checks, anti-goal matching, and drift trend reporting.</p>
+        </article>
+      </div>
+    </section>
+      <div class="button-group">
+  <a class="button" href="../assets/research/06_Formal_Glossary_AT_AI_Systems_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+</div>
+      <section class="doc-card citation-block" aria-labelledby="citation-title">
+  <div class="doc-card-header"><h2 id="citation-title">How to Cite</h2><span class="chip">Citation</span></div>
+  <p>Michael Bower. (2026). <em>Formal Glossary of Alignment Theory Terms for AI Systems</em>. AlignmentTheory.org. https://alignmenttheory.org/pages/ai-alignment-glossary.html</p>
+  <pre><code>@misc{bower2026aialignmentglossary,
+  author = {Bower, Michael},
+  title = {Formal Glossary of Alignment Theory Terms for AI Systems},
+  year = {2026},
+  howpublished = {AlignmentTheory.org},
+  url = {https://alignmenttheory.org/pages/ai-alignment-glossary.html}
+}</code></pre>
+  <p><a class="text-link" href="how-to-cite.html">Open full citation guidance</a></p>
+</section>
+      <section class="doc-card references" aria-labelledby="references-title">
+    <div class="doc-card-header"><h2 id="references-title">References</h2><span class="chip">Source</span></div>
+    <ol>
+      <li><a href="ai-alignment-research.html">Alignment Theory AI Alignment Research Hub</a></li>
+      <li><a href="ai-alignment-three-layer-blueprint.html">The Three-Layer Blueprint for AI Alignment</a></li>
+      <li><a href="ai-alignment-limitations.html">Limitations, Critiques, and Open Problems</a></li>
+    </ol>
+  </section>
+      <section class="doc-card" aria-labelledby="related-title">
+  <div class="doc-card-header"><h2 id="related-title">Related Papers</h2><span class="chip">Archive</span></div>
+  <div class="button-group">
+    <a class="button" href="ai-alignment-three-layer-blueprint.html">Three-Layer Blueprint</a>
+    <a class="button" href="ai-alignment-casebook.html">Drift Casebook</a>
+    <a class="button" href="ai-alignment-limitations.html">Limitations &amp; Open Problems</a>
+  </div>
+</section>
+    </article>
+  </main>
+  <footer class="site-footer"><p>Alignment Theory Archive. <a class="text-link" href="contact.html">Contact</a></p></footer>
+  <script src="../assets/app.js?v=20260426a"></script>
+</body>
+</html>

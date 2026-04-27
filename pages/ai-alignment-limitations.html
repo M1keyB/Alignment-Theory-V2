@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Limitations, Critiques, and Open Problems &middot; Alignment Theory Archive</title>
+  <meta name="description" content="Limitations, critiques, and open problems in Alignment Theory's AI alignment research program." />
+  <link rel="canonical" href="https://alignmenttheory.org/pages/ai-alignment-limitations.html" />
+  <meta property="og:title" content="Limitations, Critiques, and Open Problems" />
+  <meta property="og:description" content="Limitations, critiques, and open problems in Alignment Theory's AI alignment research program." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://alignmenttheory.org/pages/ai-alignment-limitations.html" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Limitations, Critiques, and Open Problems" />
+  <meta name="twitter:description" content="Limitations, critiques, and open problems in Alignment Theory's AI alignment research program." />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVFSZRN0PB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-QVFSZRN0PB");
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Limitations, Critiques, and Open Problems","name":"Limitations, Critiques, and Open Problems","author":{"@type":"Person","name":"Michael Bower"},"datePublished":"2026","publisher":{"@type":"Organization","name":"AlignmentTheory.org"},"url":"https://alignmenttheory.org/pages/ai-alignment-limitations.html","description":"Limitations, critiques, and open problems in Alignment Theory's AI alignment research program."}</script>
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body data-page="ai-research">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="site-title"><h1>Alignment Theory</h1><p class="site-subtitle">Research Archive</p></div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="where-to-start.html">Where to Start</a>
+      <a href="framework.html">Framework</a>
+      <a href="stress-tests.html">Stress Tests</a>
+      <a href="papers.html">Papers</a>
+      <a href="essays.html">Essays</a>
+      <a href="library.html">Library</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main id="main" class="page research-page">
+
+    <article class="manuscript research-article">
+      <p class="doc-meta"><a class="text-link" href="ai-alignment-research.html">Back to AI Alignment Research</a></p>
+      <header class="manuscript-header research-hero">
+        <p class="doc-meta"><span class="chip">Version 1 - 2026</span><span class="chip">AI Alignment Research</span></p>
+        <h1>Limitations, Critiques, and Open Problems</h1>
+        <p class="lead">Credibility boundaries for the Alignment Theory AI alignment research program.</p>
+        <p>This page states what the research does not solve, where it can fail, and what must be validated before strong deployment claims are made.</p>
+        <div class="button-group">
+  <a class="button" href="../assets/research/08_Limitations_Critiques_and_Open_Problems_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+</div>
+      </header>
+      <nav class="doc-card research-toc" aria-labelledby="toc-title">
+  <div class="doc-card-header"><h2 id="toc-title">Table of Contents</h2><span class="chip">Guide</span></div>
+  <ol>
+    <li><a href="#what-this-does-not-solve">What This Does Not Solve</a></li>
+    <li><a href="#objective-setting">Objective-Setting</a></li>
+    <li><a href="#detector-error">Detector Error</a></li>
+    <li><a href="#judge-model-circularity">Judge Model Circularity</a></li>
+    <li><a href="#calibration">Calibration</a></li>
+    <li><a href="#human-review">Human Review</a></li>
+    <li><a href="#governance-risks">Governance Risks</a></li>
+    <li><a href="#validation-needs">Validation Needs</a></li>
+  </ol>
+</nav>
+      <section class="doc-card" id="what-this-does-not-solve">
+    <div class="doc-card-header"><h2>What This Does Not Solve</h2><span class="chip">Paper</span></div>
+    <p>This does not solve all AI alignment. It proposes a structural and operational framework for detecting, classifying, and correcting behavioral drift in deployed AI systems.</p>
+  </section>
+<section class="doc-card" id="objective-setting">
+    <div class="doc-card-header"><h2>Objective-Setting</h2><span class="chip">Paper</span></div>
+    <p>Objective-setting is still hard. If the objective center is vague, contested, ideological, or poorly governed, drift detection can become arbitrary or misleading.</p>
+  </section>
+<section class="doc-card" id="detector-error">
+    <div class="doc-card-header"><h2>Detector Error</h2><span class="chip">Paper</span></div>
+    <p>Detectors can produce false positives and false negatives. A polished output can hide drift, and a flagged output can sometimes be appropriate in context.</p>
+  </section>
+<section class="doc-card" id="judge-model-circularity">
+    <div class="doc-card-header"><h2>Judge Model Circularity</h2><span class="chip">Paper</span></div>
+    <p>Judge models can inherit generator drift. A judge should not be treated as an oracle; it needs calibration, review, and auditability.</p>
+  </section>
+<section class="doc-card" id="calibration">
+    <div class="doc-card-header"><h2>Calibration</h2><span class="chip">Paper</span></div>
+    <p>Thresholds require calibration across domain, risk level, user population, product context, and harm profile. A support bot and a medical triage assistant should not share naive thresholds.</p>
+  </section>
+<section class="doc-card" id="human-review">
+    <div class="doc-card-header"><h2>Human Review</h2><span class="chip">Paper</span></div>
+    <p>Human review remains necessary, especially for high-stakes cases, sensitive domains, ambiguous detector hits, and governance decisions.</p>
+  </section>
+<section class="doc-card" id="governance-risks">
+    <div class="doc-card-header"><h2>Governance Risks</h2><span class="chip">Paper</span></div>
+    <p>Domain-specific tuning is required. There is risk of ideology injection if source anchoring is poorly governed. Enterprise deployment requires privacy, governance, logging, and legal review.</p>
+  </section>
+<section class="doc-card" id="validation-needs">
+    <div class="doc-card-header"><h2>Validation Needs</h2><span class="chip">Paper</span></div>
+    <p>The work needs real-world validation. Synthetic casebooks can explain detector logic, but production telemetry and controlled comparisons are required to establish reliability.</p>
+  </section>
+      <div class="button-group">
+  <a class="button" href="../assets/research/08_Limitations_Critiques_and_Open_Problems_v5.pdf">Download PDF</a>
+  <a class="button" href="../assets/research/AT_Research_v5_Combined.pdf">Full Combined Corpus</a>
+  <a class="button" href="ai-alignment-research.html">Research Hub</a>
+</div>
+      <section class="doc-card citation-block" aria-labelledby="citation-title">
+  <div class="doc-card-header"><h2 id="citation-title">How to Cite</h2><span class="chip">Citation</span></div>
+  <p>Michael Bower. (2026). <em>Limitations, Critiques, and Open Problems</em>. AlignmentTheory.org. https://alignmenttheory.org/pages/ai-alignment-limitations.html</p>
+  <pre><code>@misc{bower2026aialignmentlimitations,
+  author = {Bower, Michael},
+  title = {Limitations, Critiques, and Open Problems},
+  year = {2026},
+  howpublished = {AlignmentTheory.org},
+  url = {https://alignmenttheory.org/pages/ai-alignment-limitations.html}
+}</code></pre>
+  <p><a class="text-link" href="how-to-cite.html">Open full citation guidance</a></p>
+</section>
+      <section class="doc-card references" aria-labelledby="references-title">
+    <div class="doc-card-header"><h2 id="references-title">References</h2><span class="chip">Source</span></div>
+    <ol>
+      <li><a href="ai-alignment-research.html">Alignment Theory AI Alignment Research Hub</a></li>
+      <li><a href="ai-alignment-three-layer-blueprint.html">The Three-Layer Blueprint for AI Alignment</a></li>
+      <li><a href="ai-alignment-limitations.html">Limitations, Critiques, and Open Problems</a></li>
+    </ol>
+  </section>
+      <section class="doc-card" aria-labelledby="related-title">
+  <div class="doc-card-header"><h2 id="related-title">Related Papers</h2><span class="chip">Archive</span></div>
+  <div class="button-group">
+    <a class="button" href="ai-alignment-methodology.html">Real Case Methodology</a>
+    <a class="button" href="ai-alignment-literature-review.html">Literature Review</a>
+    <a class="button" href="ai-alignment-glossary.html">Formal Glossary</a>
+  </div>
+</section>
+    </article>
+  </main>
+  <footer class="site-footer"><p>Alignment Theory Archive. <a class="text-link" href="contact.html">Contact</a></p></footer>
+  <script src="../assets/app.js?v=20260426a"></script>
+</body>
+</html>

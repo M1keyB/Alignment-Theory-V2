@@ -570,6 +570,7 @@ const normalizePrimaryNav = (nav) => {
     { href: `${base}where-to-start.html`, label: "Where to Start", match: () => currentPath === "where-to-start.html" },
     { href: `${base}framework.html`, label: "Framework", match: () => currentPath === "framework.html" || bodyPage === "framework" },
     { href: `${base}stress-tests.html`, label: "Stress Tests", match: () => currentPath === "stress-tests.html" },
+    { href: `${base}ai-alignment-research.html`, label: "AI Alignment Research", match: () => currentPath.startsWith("ai-alignment-") || currentPath === "how-to-cite.html" || bodyPage === "ai-research" || bodyPage === "citation" },
     { href: `${base}papers.html`, label: "Papers", match: () => currentPath === "papers.html" || bodyPage === "papers" },
     { href: `${base}essays.html`, label: "Essays", match: () => currentPath === "essays.html" || currentPath.startsWith("essay-") || bodyPage === "essays" },
     { href: `${base}library.html`, label: "Library", match: () => currentPath === "library.html" || bodyPage === "library" },
@@ -680,6 +681,27 @@ const FRAMEWORK_MAP_GROUPS = [
   },
 ];
 
+const AI_RESEARCH_GROUPS = [
+  {
+    key: "research",
+    label: "AI Alignment Research",
+    items: [
+      { href: "ai-alignment-research.html", label: "Research Hub" },
+      { href: "ai-alignment-executive-summary.html", label: "Executive Summary" },
+      { href: "ai-alignment-three-layer-blueprint.html", label: "Three-Layer Blueprint" },
+      { href: "ai-alignment-literature-review.html", label: "Literature Review" },
+      { href: "ai-alignment-competitive-positioning.html", label: "Competitive Positioning" },
+      { href: "ai-alignment-who-this-is-for.html", label: "Who This Is For" },
+      { href: "ai-alignment-methodology.html", label: "Real Case Methodology" },
+      { href: "ai-alignment-glossary.html", label: "Formal Glossary" },
+      { href: "ai-alignment-lineage.html", label: "Research Lineage" },
+      { href: "ai-alignment-limitations.html", label: "Limitations & Open Problems" },
+      { href: "ai-alignment-casebook.html", label: "Drift Casebook" },
+      { href: "how-to-cite.html", label: "How to Cite" },
+    ],
+  },
+];
+
 const initNav = () => {
   const nav = qs("#site-nav");
   const toggles = qsa(".nav-toggle, .bottom-nav-toggle");
@@ -735,6 +757,51 @@ const initNav = () => {
 
     section.append(summary, group);
     nav.appendChild(section);
+
+    const aiSection = document.createElement("details");
+    aiSection.className = "site-nav-section";
+    if (document.body.dataset.page === "ai-research" || document.body.dataset.page === "citation") {
+      aiSection.open = true;
+    }
+
+    const aiSummary = document.createElement("summary");
+    aiSummary.className = "site-nav-summary";
+    aiSummary.textContent = "AI Alignment Research";
+
+    const aiGroup = document.createElement("div");
+    aiGroup.className = "site-nav-group";
+
+    AI_RESEARCH_GROUPS.forEach(({ label, items, note, subdued }) => {
+      const cluster = document.createElement("div");
+      cluster.className = `site-nav-cluster${subdued ? " site-nav-cluster--subdued" : ""}`;
+
+      const clusterLabel = document.createElement("p");
+      clusterLabel.className = "site-nav-cluster-label";
+      clusterLabel.textContent = label;
+      cluster.appendChild(clusterLabel);
+
+      if (note) {
+        const clusterNote = document.createElement("p");
+        clusterNote.className = "site-nav-cluster-note";
+        clusterNote.textContent = note;
+        cluster.appendChild(clusterNote);
+      }
+
+      items.forEach(({ href, label: itemLabel }) => {
+        const link = document.createElement("a");
+        link.href = `${pageRoot}${href}`;
+        link.textContent = itemLabel;
+        if (currentPath === href) {
+          link.setAttribute("aria-current", "page");
+        }
+        cluster.appendChild(link);
+      });
+
+      aiGroup.appendChild(cluster);
+    });
+
+    aiSection.append(aiSummary, aiGroup);
+    nav.appendChild(aiSection);
 
     if (frameworkLink) {
       const wrapper = document.createElement("div");
@@ -806,6 +873,102 @@ const initNav = () => {
       };
 
       frameworkLink.addEventListener("click", (event) => {
+        if (!desktopQuery.matches) return;
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        setDropdownOpen(!wrapper.classList.contains("is-open"));
+      });
+
+      document.addEventListener("click", (event) => {
+        if (!desktopQuery.matches) return;
+        if (wrapper.contains(event.target)) return;
+        closeDropdown();
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          closeDropdown();
+        }
+      });
+
+      window.addEventListener("resize", () => {
+        if (!desktopQuery.matches) {
+          closeDropdown();
+        }
+      });
+    }
+
+    const aiResearchLink = nav.querySelector('a[href$="ai-alignment-research.html"]');
+    if (aiResearchLink) {
+      const wrapper = document.createElement("div");
+      wrapper.className = "site-nav-item site-nav-item--has-dropdown";
+      aiResearchLink.parentNode.insertBefore(wrapper, aiResearchLink);
+      wrapper.appendChild(aiResearchLink);
+
+      const dropdown = document.createElement("div");
+      dropdown.className = "site-nav-dropdown site-nav-dropdown--research";
+
+      const dropdownLabel = document.createElement("p");
+      dropdownLabel.className = "site-nav-dropdown-label";
+      dropdownLabel.textContent = "AI alignment research";
+      dropdown.appendChild(dropdownLabel);
+
+      const dropdownList = document.createElement("div");
+      dropdownList.className = "site-nav-dropdown-list";
+
+      AI_RESEARCH_GROUPS.forEach(({ label, items, note, subdued }) => {
+        const cluster = document.createElement("section");
+        cluster.className = `site-nav-dropdown-cluster${subdued ? " site-nav-dropdown-cluster--subdued" : ""}`;
+
+        const clusterLabel = document.createElement("p");
+        clusterLabel.className = "site-nav-dropdown-cluster-label";
+        clusterLabel.textContent = label;
+        cluster.appendChild(clusterLabel);
+
+        if (note) {
+          const clusterNote = document.createElement("p");
+          clusterNote.className = "site-nav-dropdown-cluster-note";
+          clusterNote.textContent = note;
+          cluster.appendChild(clusterNote);
+        }
+
+        items.forEach(({ href, label: itemLabel }) => {
+          const link = document.createElement("a");
+          link.className = "site-nav-dropdown-link";
+          link.href = `${pageRoot}${href}`;
+          link.textContent = itemLabel;
+          if (currentPath === href) {
+            link.setAttribute("aria-current", "page");
+          }
+          cluster.appendChild(link);
+        });
+
+        dropdownList.appendChild(cluster);
+      });
+
+      const dropdownFooter = document.createElement("a");
+      dropdownFooter.className = "site-nav-dropdown-footer";
+      dropdownFooter.href = `${pageRoot}how-to-cite.html`;
+      dropdownFooter.textContent = "Open citation guide ->";
+
+      dropdown.append(dropdownList, dropdownFooter);
+      wrapper.appendChild(dropdown);
+
+      const desktopQuery = window.matchMedia("(min-width: 961px)");
+
+      const setDropdownOpen = (isOpen) => {
+        wrapper.classList.toggle("is-open", isOpen);
+        aiResearchLink.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      };
+
+      aiResearchLink.setAttribute("aria-haspopup", "true");
+      aiResearchLink.setAttribute("aria-expanded", "false");
+
+      const closeDropdown = () => {
+        setDropdownOpen(false);
+      };
+
+      aiResearchLink.addEventListener("click", (event) => {
         if (!desktopQuery.matches) return;
         if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
         event.preventDefault();
@@ -1184,6 +1347,19 @@ const SEARCH_DATA = [
   { title: "Why Structural Dependence Hides Behind Functional Success", url: "why-structural-dependence-hides-behind-functional-success.html", section: "Applied", desc: "How systems can appear to function well while structural dependency grows invisibly.", tags: ["structural dependence", "functional success", "hidden", "dependency", "invisible"] },
   { title: "Load-Bearing Human Capacities in the AI Age", url: "load-bearing-human-capacities-in-the-ai-age.html", section: "Applied", desc: "Which human capacities are load-bearing and what AI substitution risks.", tags: ["AI", "human capacities", "load-bearing", "skills", "cognition", "agency", "automation"] },
   { title: "Why the Present May Be Safer Than Success", url: "why-the-present-may-be-safer-than-success.html", section: "Applied", desc: "Why an earlier phase may preserve more capacity than a later successful one.", tags: ["present", "success", "safety", "capacity", "fragility", "growth"] },
+  // AI Alignment Research
+  { title: "AI Alignment Research", url: "ai-alignment-research.html", section: "AI Alignment Research", desc: "Research hub for behavioral drift detection, realignment architecture, and production AI governance.", tags: ["AI alignment research", "behavioral drift detection", "realignment layer", "AI governance", "behavioral QA"] },
+  { title: "Executive Summary: Alignment Theory AI Alignment Research", url: "ai-alignment-executive-summary.html", section: "AI Alignment Research", desc: "Five-minute introduction to Alignment Theory AI alignment research.", tags: ["executive summary", "AI drift detection", "AI governance", "Michael Bower"] },
+  { title: "The Three-Layer Blueprint for AI Alignment", url: "ai-alignment-three-layer-blueprint.html", section: "AI Alignment Research", desc: "Objective, Constraint, and Realignment layers for detecting allowed-but-off-center AI behavior.", tags: ["three-layer blueprint", "objective layer", "constraint layer", "realignment layer", "allowed-but-off-center"] },
+  { title: "Literature Review: AI Alignment Approaches and the Drift Detection Gap", url: "ai-alignment-literature-review.html", section: "AI Alignment Research", desc: "RLHF, Constitutional AI, scalable oversight, interpretability, and the runtime drift detection gap.", tags: ["literature review", "RLHF", "Constitutional AI", "interpretability", "scalable oversight"] },
+  { title: "Competitive Positioning: Alignment Theory vs Observability, Evals, and Safety Monitors", url: "ai-alignment-competitive-positioning.html", section: "AI Alignment Research", desc: "How Alignment Theory differs from observability tools, prompt evals, moderation, and safety monitors.", tags: ["AI observability", "AI evaluation", "prompt evals", "safety monitors", "moderation"] },
+  { title: "Who This Is For: Role Map for AI Alignment Research", url: "ai-alignment-who-this-is-for.html", section: "AI Alignment Research", desc: "Role map for product teams, prompt engineers, compliance officers, buyers, executives, and researchers.", tags: ["role map", "product teams", "prompt engineers", "compliance", "enterprise AI buyers"] },
+  { title: "Real Case Methodology and Evaluation Protocol", url: "ai-alignment-methodology.html", section: "AI Alignment Research", desc: "Protocol for collecting, redacting, evaluating, and comparing prompt-output batches for behavioral drift.", tags: ["methodology", "evaluation protocol", "redaction", "production AI monitoring", "telemetry"] },
+  { title: "Formal Glossary of Alignment Theory Terms for AI Systems", url: "ai-alignment-glossary.html", section: "AI Alignment Research", desc: "Definitions and implementation notes for drift detection, realignment, and behavioral QA.", tags: ["glossary", "detectors", "judge model", "correction mode", "objective center"] },
+  { title: "Framework Evolution and Research Lineage", url: "ai-alignment-lineage.html", section: "AI Alignment Research", desc: "How the AI alignment corpus evolved into runtime drift detection and enterprise behavioral QA.", tags: ["lineage", "framework evolution", "behavioral QA", "universal drift metrics"] },
+  { title: "Limitations, Critiques, and Open Problems", url: "ai-alignment-limitations.html", section: "AI Alignment Research", desc: "Limits and open problems in Alignment Theory's AI alignment research program.", tags: ["limitations", "open problems", "calibration", "human review", "judge model"] },
+  { title: "Empirical Drift Casebook and Evaluation Cases", url: "ai-alignment-casebook.html", section: "AI Alignment Research", desc: "Synthetic drift examples for false authority, dead obedience, generic filler, participation collapse, and metric drift.", tags: ["casebook", "drift cases", "false authority", "dead obedience", "metric drift"] },
+  { title: "How to Cite Alignment Theory", url: "how-to-cite.html", section: "AI Alignment Research", desc: "Citation formats for the AI alignment corpus and the Three-Layer Blueprint.", tags: ["citation", "APA", "MLA", "Chicago", "BibTeX"] },
   // Papers
   { title: "Papers", url: "papers.html", section: "Papers", desc: "All working papers and formal research outputs.", tags: ["papers", "research", "publication", "formal"] },
   { title: "Alignment Diagnostic", url: "alignment-diagnostic.html", section: "Papers", desc: "Diagnostic tool for identifying structural alignment patterns.", tags: ["diagnostic", "assessment", "tool", "measure", "index"] },
