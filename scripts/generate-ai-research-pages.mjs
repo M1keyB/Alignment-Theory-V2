@@ -57,7 +57,7 @@ const papers = [
         "The result is a governance layer that complements AI observability, evals, and moderation without pretending to replace them."
       ]]
     ],
-    related: ["ai-alignment-three-layer-blueprint", "ai-alignment-who-this-is-for", "ai-alignment-methodology"]
+    related: ["ai-alignment-three-layer-blueprint", "participatory-capacity-preservation-index", "ai-alignment-who-this-is-for"]
   },
   {
     slug: "ai-alignment-three-layer-blueprint",
@@ -103,7 +103,7 @@ const papers = [
         "The architecture is designed to complement existing evals and observability tools by adding an objective-centered behavioral drift layer."
       ]]
     ],
-    related: ["participatory-capacity-preservation-index", "ai-alignment-glossary", "ai-alignment-methodology"]
+    related: ["ai-alignment-executive-summary", "participatory-capacity-preservation-index", "ai-alignment-methodology"]
   },
   {
     slug: "ai-alignment-literature-review",
@@ -145,7 +145,7 @@ const papers = [
       ]]
     ],
     references: externalRefs,
-    related: ["ai-alignment-competitive-positioning", "ai-alignment-three-layer-blueprint", "ai-alignment-limitations"]
+    related: ["ai-alignment-three-layer-blueprint", "ai-alignment-competitive-positioning", "ai-alignment-limitations"]
   },
   {
     slug: "ai-alignment-competitive-positioning",
@@ -190,7 +190,7 @@ const papers = [
         "It is not a replacement for security, safety policy, privacy review, or model interpretability."
       ]]
     ],
-    related: ["participatory-capacity-preservation-index", "ai-alignment-methodology", "ai-alignment-literature-review"]
+    related: ["ai-alignment-literature-review", "participatory-capacity-preservation-index", "ai-alignment-methodology"]
   },
   {
     slug: "ai-alignment-who-this-is-for",
@@ -212,7 +212,7 @@ const papers = [
       ["Researchers", ["Why they care: deployed behavior creates a distinct alignment problem. AT answers: What taxonomy and protocol can be tested empirically? Read first: Literature Review and Limitations."]],
       ["Support Automation Teams", ["Why they care: support assistants can become polished but generic, overconfident, or prematurely closing. AT answers: Which interactions need rewrite, reroute, clarification, or human handoff? Read first: Casebook and Methodology."]]
     ],
-    related: ["ai-alignment-executive-summary", "ai-alignment-methodology", "ai-alignment-casebook"]
+    related: ["ai-alignment-executive-summary", "ai-alignment-competitive-positioning", "ai-alignment-methodology"]
   },
   {
     slug: "ai-alignment-methodology",
@@ -233,7 +233,7 @@ const papers = [
       ["Before/After Comparison", ["Prompt changes, model updates, policy changes, and retrieval changes should be compared with matched or representative prompt batches. The useful metric is not only pass rate, but drift pattern, correction rate, escalation rate, and objective-fit movement."]],
       ["Synthetic vs Real Telemetry", ["Synthetic examples are useful for detector design and explanation. Real production telemetry is required for validation because actual drift depends on user behavior, workflow pressure, model behavior, and product constraints."]]
     ],
-    related: ["participatory-capacity-preservation-index", "ai-alignment-limitations", "ai-alignment-casebook"]
+    related: ["participatory-capacity-preservation-index", "ai-alignment-casebook", "ai-alignment-limitations"]
   },
   {
     slug: "ai-alignment-glossary",
@@ -245,7 +245,7 @@ const papers = [
     abstract: "The glossary defines core terms used across the corpus and replaces generic implementation boilerplate with concrete, term-specific notes.",
     toc: ["Core Terms", "Drift Categories", "Pipeline Terms", "Risk Terms"],
     glossary: true,
-    related: ["ai-alignment-three-layer-blueprint", "ai-alignment-casebook", "ai-alignment-limitations"]
+    related: ["ai-alignment-methodology", "ai-alignment-lineage", "ai-alignment-casebook"]
   },
   {
     slug: "ai-alignment-lineage",
@@ -267,7 +267,7 @@ const papers = [
       ["Universal Drift Metrics", ["Universal drift metrics summarize objective fit across cases, detectors, correction rates, escalation rates, and change over time."]],
       ["Behavioral QA", ["The enterprise endpoint is behavioral QA for AI systems: a repeatable way to evaluate whether deployed AI remains ordered toward intended behavior across prompt batches, model updates, and policy changes."]]
     ],
-    related: ["ai-alignment-research", "ai-alignment-three-layer-blueprint", "ai-alignment-glossary"]
+    related: ["ai-alignment-glossary", "ai-alignment-limitations", "ai-alignment-three-layer-blueprint"]
   },
   {
     slug: "ai-alignment-limitations",
@@ -304,7 +304,7 @@ const papers = [
         ]
       }
     ],
-    related: ["participatory-capacity-preservation-index", "ai-alignment-methodology", "ai-alignment-glossary"]
+    related: ["ai-alignment-methodology", "participatory-capacity-preservation-index", "ai-alignment-casebook"]
   },
   {
     slug: "ai-alignment-casebook",
@@ -326,7 +326,7 @@ const papers = [
       </div><p>Case examples can include PCPI score, classification, and evidence notes.</p>`
       }
     ],
-    related: ["participatory-capacity-preservation-index", "ai-alignment-glossary", "ai-alignment-methodology"]
+    related: ["ai-alignment-methodology", "participatory-capacity-preservation-index", "ai-alignment-limitations"]
   }
 ];
 
@@ -730,7 +730,6 @@ const renderHub = () => {
   }).replace("</head>", `  <script type="application/ld+json">${JSON.stringify(schema)}</script>\n</head>`);
 
   const groups = [
-    ["Start Here", ["ai-alignment-executive-summary", "ai-alignment-three-layer-blueprint"]],
     ["Measurement Layer", ["participatory-capacity-preservation-index"]],
     ["Research Positioning", ["ai-alignment-literature-review", "ai-alignment-competitive-positioning"]],
     ["Enterprise Translation", ["ai-alignment-who-this-is-for", "ai-alignment-methodology"]],
