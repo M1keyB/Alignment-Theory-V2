@@ -416,6 +416,7 @@ const initArchiveFooter = () => {
         <a href="${homeHref}">Home</a>
         <a href="${base}where-to-start.html">Where to Start</a>
         <a href="${base}framework.html">Framework</a>
+        <a href="${base}map.html">Map</a>
         <a href="${base}stress-tests.html">Stress Tests</a>
         <a href="${base}ai-alignment-research.html">AI Alignment Research</a>
         <a href="${base}papers.html">Papers</a>
@@ -677,6 +678,7 @@ const normalizePrimaryNav = (nav) => {
     { href: homeHref, label: "Home", match: () => currentPath === "index.html" || bodyPage === "home" },
     { href: `${base}where-to-start.html`, label: "Where to Start", match: () => currentPath === "where-to-start.html" },
     { href: `${base}framework.html`, label: "Framework", match: () => currentPath === "framework.html" || bodyPage === "framework" },
+    { href: `${base}map.html`, label: "Map", match: () => currentPath === "map.html" || bodyPage === "map" },
     { href: `${base}stress-tests.html`, label: "Stress Tests", match: () => currentPath === "stress-tests.html" },
     { href: `${base}ai-alignment-research.html`, label: "AI Alignment Research", match: () => currentPath.startsWith("ai-alignment-") || currentPath === "how-to-cite.html" || bodyPage === "ai-research" || bodyPage === "citation" },
     { href: `${base}papers.html`, label: "Papers", match: () => currentPath === "papers.html" || bodyPage === "papers" },
@@ -1435,6 +1437,7 @@ const SEARCH_DATA = [
   { title: "The Formation Mechanism", url: "the-formation-mechanism.html", section: "Framework", desc: "How structural formation works across domains.", tags: ["formation", "mechanism", "structure", "how"] },
   { title: "How to Use Alignment Theory", url: "how-to-use-alignment-theory.html", section: "Framework", desc: "A practical guide to applying the framework.", tags: ["guide", "apply", "how to", "practical", "use"] },
   { title: "Framework", url: "framework.html", section: "Framework", desc: "The main framework hub page.", tags: ["framework", "hub", "overview", "map"] },
+  { title: "The Complete Map", url: "map.html", section: "Framework", desc: "Single-page visual summary of Alignment Theory from Creator Alignment through AI inheritance and realignment.", tags: ["complete map", "creator alignment", "AI inheritance", "realignment", "diagram", "framework"] },
   // Stress Tests — Core
   { title: "Biological Stress Test", url: "biological-stress-test.html", section: "Stress Tests", desc: "Framework applied to biological systems, evolutionary pressure, and adaptive capacity.", tags: ["biology", "evolution", "adaptive systems", "homeostasis", "organism", "physical", "cells", "embodied"] },
   { title: "Addiction and Recovery Stress Test", url: "addiction-and-recovery-stress-test.html", section: "Stress Tests", desc: "How substitutive dependence and participatory capacity appear in addiction and recovery.", tags: ["addiction", "recovery", "dependence", "substance", "relapse", "sobriety", "drugs", "alcohol"] },
