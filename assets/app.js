@@ -425,6 +425,10 @@ const initArchiveFooter = () => {
         <a href="${base}contact.html">Contact</a>
       </nav>
     </div>
+    <div class="provenance">
+      <p><strong>Provenance:</strong> The Complete Map and PCPI framework were first published by Michael Bower on AlignmentTheory.org, 2026.</p>
+      <p><strong>License:</strong> Research content CC BY-NC 4.0. PCPI methodology, MAI dataset, and certification for commercial use require license. <a href="/pages/license.html">Full terms →</a></p>
+    </div>
     <p class="site-footer-copy">&copy; ${new Date().getFullYear()} Alignment Theory. All rights reserved.</p>
   `;
 };
