@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agent Action Gate | Alignment Theory</title>
+  <meta name="author" content="Michael Bower" />
+  <meta name="dcterms.date" content="2026-04-30" />
+  <meta name="license" content="MIT for Agent Action Gate; site research content CC BY-NC 4.0" />
+  <meta name="description" content="Pre-execution safety gate for AI agents that routes proposed actions to allow, approval, revision, or block before execution." />
+  <link rel="canonical" href="https://alignmenttheory.org/projects/agent-action-gate.html" />
+  <meta property="og:title" content="Agent Action Gate | Alignment Theory" />
+  <meta property="og:description" content="Pre-execution safety gate for AI agents that routes proposed actions to allow, approval, revision, or block before execution." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://alignmenttheory.org/projects/agent-action-gate.html" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Agent Action Gate | Alignment Theory" />
+  <meta name="twitter:description" content="Pre-execution safety gate for AI agents that routes proposed actions to allow, approval, revision, or block before execution." />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVFSZRN0PB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-QVFSZRN0PB");
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Agent Action Gate","author":{"@type":"Person","name":"Michael Bower"},"publisher":{"@type":"Organization","name":"AlignmentTheory.org"},"url":"https://alignmenttheory.org/projects/agent-action-gate.html","codeRepository":"https://github.com/mnbower-research/agent-action-gate","license":"https://opensource.org/licenses/MIT","programmingLanguage":"TypeScript","description":"Pre-execution safety gate for AI agents that routes proposed actions to allow, approval, revision, or block before execution."}</script>
+  <link rel="stylesheet" href="../assets/styles.css?v=20260430a" />
+</head>
+<body data-page="ai-research">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="site-title">
+      <a class="site-logo" href="../index.html">Alignment Theory</a>
+      <p class="site-subtitle">Research Archive</p>
+    </div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../pages/where-to-start.html">Where to Start</a>
+      <a href="../pages/framework.html">Framework</a>
+      <a href="../pages/map.html">Map</a>
+      <a href="../pages/stress-tests.html">Stress Tests</a>
+      <a href="../pages/ai-alignment-research.html">AI Alignment Research</a>
+      <a href="../pages/papers.html">Papers</a>
+      <a href="../pages/essays.html">Essays</a>
+      <a href="../pages/library.html">Library</a>
+      <a href="../pages/glossary.html">Glossary</a>
+      <a href="../pages/about.html">About</a>
+      <a href="../pages/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main" class="page research-page">
+    <p class="doc-meta research-back-link"><a class="text-link" href="../pages/ai-alignment-research.html">Back to AI Alignment Research</a></p>
+
+    <section class="research-hero research-paper-hero">
+      <p class="research-meta">
+        <span class="chip">v0.1.0 prototype</span>
+        <span class="chip">Action-control layer</span>
+        <span class="chip">MIT license</span>
+      </p>
+      <h1>Agent Action Gate</h1>
+      <p class="lead">Pre-execution action control for AI agents.</p>
+      <p>Agent Action Gate is a pre-execution safety gate for AI agents. It evaluates proposed actions before tool execution and returns one of four decisions: allow, require_approval, revise_action, or block.</p>
+      <p>The basic idea is simple: an AI agent should not be able to move directly from proposed action to execution when the action is external-facing, irreversible, sensitive, broader than requested, or aimed at the wrong object.</p>
+      <p>The current prototype includes a TypeScript gate engine, local HTTP API, detector pipeline, n8n demo workflow, and 11 passing eval cases.</p>
+      <div class="research-downloads">
+        <a class="button" href="https://github.com/mnbower-research/agent-action-gate">View GitHub Repo</a>
+        <a class="button" href="https://github.com/mnbower-research/agent-action-gate/releases/tag/v0.1.0">View Release v0.1.0</a>
+        <a class="button" href="../pages/ai-alignment-research.html">AI Research Hub</a>
+      </div>
+    </section>
+
+    <div class="research-mobile-panels">
+      <details class="research-toc research-toc-mobile">
+        <summary>Table of Contents</summary>
+        <ol>
+          <li><a href="#what-it-does">What it does</a></li>
+          <li><a href="#why-it-exists">Why it exists</a></li>
+          <li><a href="#four-decisions">The four decisions</a></li>
+          <li><a href="#detector-categories">Detector categories</a></li>
+          <li><a href="#demo-workflow">n8n demo workflow</a></li>
+          <li><a href="#validation-status">Validation status</a></li>
+          <li><a href="#human-oversight-note">Human oversight note</a></li>
+          <li><a href="#research-lineage">Research lineage</a></li>
+          <li><a href="#status">Status</a></li>
+        </ol>
+      </details>
+      <aside class="research-tools research-tools-mobile" aria-label="Project links">
+        <p class="research-panel-label">Project Links</p>
+        <a class="button" href="https://github.com/mnbower-research/agent-action-gate">GitHub Repo</a>
+        <a class="button" href="https://github.com/mnbower-research/agent-action-gate/releases/tag/v0.1.0">Release v0.1.0</a>
+        <a class="button" href="../pages/ai-alignment-research.html">AI Research Hub</a>
+        <div class="research-tools-related">
+          <p class="research-panel-label">Related</p>
+          <a class="text-link" href="../pages/ai-alignment-three-layer-blueprint.html">Three-Layer Blueprint</a>
+          <a class="text-link" href="../pages/participatory-capacity-preservation-index.html">PCPI</a>
+          <a class="text-link" href="../index.html">Alignment Theory</a>
+        </div>
+      </aside>
+    </div>
+
+    <div class="research-layout">
+      <nav class="research-toc research-toc-desktop" aria-labelledby="toc-title">
+        <p class="research-panel-label" id="toc-title">On this page</p>
+        <ol>
+          <li><a href="#what-it-does">What it does</a></li>
+          <li><a href="#why-it-exists">Why it exists</a></li>
+          <li><a href="#four-decisions">The four decisions</a></li>
+          <li><a href="#detector-categories">Detector categories</a></li>
+          <li><a href="#demo-workflow">n8n demo workflow</a></li>
+          <li><a href="#validation-status">Validation status</a></li>
+          <li><a href="#human-oversight-note">Human oversight note</a></li>
+          <li><a href="#research-lineage">Research lineage</a></li>
+          <li><a href="#status">Status</a></li>
+        </ol>
+      </nav>
+
+      <article class="research-article-body doc-body">
+        <aside class="research-callout" aria-label="Project summary">
+          <p class="research-panel-label">Runtime Role</p>
+          <p>Agent Action Gate is the pre-execution action-control layer. Aletheon / Behavioral QA is the post-output drift-detection layer. Alignment Theory is the research framework behind the structural logic.</p>
+        </aside>
+
+        <section class="research-section" id="what-it-does">
+          <h2>What it does</h2>
+          <p>Most AI safety checks focus on what a model says. Agent Action Gate focuses on what an AI agent is about to do. Before an agent sends an email, modifies data, calls an API, deletes a file, publishes content, or exposes information, the proposed action is evaluated by a small runtime gate.</p>
+          <p>The gate receives a proposed action, checks it against detector categories, and returns a route that the surrounding workflow can enforce before any tool execution happens.</p>
+        </section>
+
+        <section class="research-section" id="why-it-exists">
+          <h2>Why it exists</h2>
+          <p>AI agents can act through tools, APIs, files, email systems, databases, and automation platforms. The risk is no longer only bad text output; it is bad action execution.</p>
+          <p>Agent Action Gate gives developers a practical place to ask whether a proposed action still fits the user's request, uses the right tool, targets the right object, stays within scope, and has the approval needed for sensitive or irreversible work.</p>
+        </section>
+
+        <section class="research-section" id="four-decisions">
+          <h2>The four decisions</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Decision</th>
+                <th>Route</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>allow</code></td>
+                <td>Safe action can continue.</td>
+              </tr>
+              <tr>
+                <td><code>require_approval</code></td>
+                <td>Human sign-off required.</td>
+              </tr>
+              <tr>
+                <td><code>revise_action</code></td>
+                <td>Action should be corrected before execution.</td>
+              </tr>
+              <tr>
+                <td><code>block</code></td>
+                <td>Action should not execute.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="research-section" id="detector-categories">
+          <h2>Detector categories</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Detector</th>
+                <th>Risk pattern</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>wrong_target</code></td>
+                <td>Action points at the wrong person, file, endpoint, record, or resource.</td>
+              </tr>
+              <tr>
+                <td><code>unauthorized_scope</code></td>
+                <td>Action exceeds the user's request.</td>
+              </tr>
+              <tr>
+                <td><code>missing_approval</code></td>
+                <td>Action needs approval but none is recorded.</td>
+              </tr>
+              <tr>
+                <td><code>irreversible_action</code></td>
+                <td>Action is destructive, costly, or hard to undo.</td>
+              </tr>
+              <tr>
+                <td><code>sensitive_data_exposure</code></td>
+                <td>Action risks exposing sensitive data.</td>
+              </tr>
+              <tr>
+                <td><code>tool_mismatch</code></td>
+                <td>Action uses the wrong tool or operation.</td>
+              </tr>
+              <tr>
+                <td><code>objective_drift</code></td>
+                <td>Action no longer serves the original task objective.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="research-section" id="demo-workflow">
+          <h2>n8n demo workflow</h2>
+          <p>The repository includes an importable n8n demo workflow at <code>examples/n8n-agent-action-gate-demo.json</code>.</p>
+          <p>The demo routes <code>allow</code> to Continue Action, <code>require_approval</code> to Require Human Approval, <code>revise_action</code> to Revise Proposed Action, and <code>block</code> to Block Action.</p>
+          <p><a class="text-link" href="https://github.com/mnbower-research/agent-action-gate/blob/main/examples/n8n-agent-action-gate-demo.json">View the demo workflow on GitHub</a></p>
+        </section>
+
+        <section class="research-section" id="validation-status">
+          <h2>Validation status</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Check</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>TypeScript compile</td>
+                <td>Passing</td>
+              </tr>
+              <tr>
+                <td>Baseline evals</td>
+                <td>11/11 passing</td>
+              </tr>
+              <tr>
+                <td><code>GET /health</code></td>
+                <td>Working</td>
+              </tr>
+              <tr>
+                <td><code>POST /evaluate</code></td>
+                <td>Working</td>
+              </tr>
+              <tr>
+                <td>n8n demo workflow</td>
+                <td>Tested</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="research-section" id="human-oversight-note">
+          <h2>Human oversight note</h2>
+          <p>Agent Action Gate is not a compliance product and is not legal advice. However, its design supports human-oversight patterns relevant to EU AI Act Article 14: proposed agent actions can be reviewed before execution, risky actions can require approval, and dangerous actions can be blocked or routed away from automatic execution.</p>
+          <p>Article 14 applies to high-risk AI systems and requires oversight measures appropriate to the system's risks, autonomy, and context of use. Agent Action Gate should be understood as a technical building block that can support such workflows, not as a standalone compliance guarantee.</p>
+        </section>
+
+        <section class="research-section" id="research-lineage">
+          <h2>Research lineage</h2>
+          <p>Agent Action Gate is the first public implementation piece from the Aletheon action-control layer. It complements the post-output behavioral drift-detection work in the broader Alignment Theory research stack.</p>
+          <p><a class="text-link" href="../index.html">Alignment Theory</a> provides the research framework behind the structural logic. The implementation lives in the <a class="text-link" href="https://github.com/mnbower-research/agent-action-gate">Agent Action Gate GitHub repository</a>.</p>
+        </section>
+
+        <section class="research-section" id="status">
+          <h2>Status</h2>
+          <p><strong>v0.1.0 prototype.</strong> This is an open-source prototype, not a production-hardened enterprise system.</p>
+          <ul>
+            <li>TypeScript gate engine</li>
+            <li>Local HTTP API</li>
+            <li>11/11 evals passing</li>
+            <li>n8n demo workflow</li>
+            <li>MIT license</li>
+            <li>GitHub release v0.1.0</li>
+          </ul>
+        </section>
+      </article>
+
+      <aside class="research-tools research-tools-desktop" aria-label="Project links">
+        <p class="research-panel-label">Project Links</p>
+        <a class="button" href="https://github.com/mnbower-research/agent-action-gate">GitHub Repo</a>
+        <a class="button" href="https://github.com/mnbower-research/agent-action-gate/releases/tag/v0.1.0">Release v0.1.0</a>
+        <a class="button" href="../pages/ai-alignment-research.html">AI Research Hub</a>
+        <div class="research-tools-related">
+          <p class="research-panel-label">Related</p>
+          <a class="text-link" href="../pages/ai-alignment-three-layer-blueprint.html">Three-Layer Blueprint</a>
+          <a class="text-link" href="../pages/participatory-capacity-preservation-index.html">PCPI</a>
+          <a class="text-link" href="../index.html">Alignment Theory</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="site-footer-brand">
+        <p class="site-footer-title">Alignment Theory</p>
+        <p>A quiet research archive on alignment, participation, drift, and realignment across human systems, institutions, technology, and AI.</p>
+      </div>
+      <nav class="site-footer-links" aria-label="Footer">
+        <a href="../index.html">Home</a>
+        <a href="../pages/where-to-start.html">Where to Start</a>
+        <a href="../pages/framework.html">Framework</a>
+        <a href="../pages/map.html">Map</a>
+        <a href="../pages/stress-tests.html">Stress Tests</a>
+        <a href="../pages/ai-alignment-research.html">AI Alignment Research</a>
+        <a href="../pages/papers.html">Papers</a>
+        <a href="../pages/glossary.html">Glossary</a>
+        <a href="../pages/how-to-cite.html">How to Cite</a>
+        <a href="../pages/contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="provenance">
+      <p><strong>Provenance:</strong> The Complete Map and PCPI framework were first published by Michael Bower on AlignmentTheory.org, 2026.</p>
+      <p><strong>License:</strong> Research content CC BY-NC 4.0. PCPI methodology, MAI dataset, and certification for commercial use require license. <a href="/pages/license.html">Full terms &rarr;</a></p>
+    </div>
+    <p class="site-footer-copy">&copy; 2026 Alignment Theory. All rights reserved.</p>
+  </footer>
+  <script src="../assets/app.js?v=20260430a"></script>
+</body>
+</html>

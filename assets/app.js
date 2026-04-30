@@ -320,9 +320,28 @@ const showMissing = (target, message) => {
 
 const getCurrentPath = () => window.location.pathname.split("/").pop() || "index.html";
 
-const getPageRoot = () => (window.location.pathname.includes("/pages/") ? "" : "pages/");
+const getRootHref = () => {
+  const path = window.location.pathname;
+  return path.includes("/pages/") || path.includes("/projects/") ? "../" : "";
+};
 
-const getHomeHref = () => (window.location.pathname.includes("/pages/") ? "../index.html" : "index.html");
+const getPageRoot = () => (window.location.pathname.includes("/pages/") ? "" : `${getRootHref()}pages/`);
+
+const getHomeHref = () => `${getRootHref()}index.html`;
+
+const resolveArchiveHref = (href) => {
+  if (/^(https?:|mailto:|#)/.test(href) || href.startsWith("/") || href.startsWith("../")) {
+    return href;
+  }
+
+  if (href.startsWith("projects/")) {
+    return `${getRootHref()}${href}`;
+  }
+
+  return `${getPageRoot()}${href}`;
+};
+
+const getHrefFileName = (href) => href.split("/").pop().split("#")[0];
 
 const ARCHIVE_HERO_DETAILS = {
   "index.html": {
@@ -453,7 +472,6 @@ const initMobileBottomNav = () => {
   if (qs(".mobile-bottom-nav")) return;
 
   const currentPath = getCurrentPath();
-  const inPagesDir = window.location.pathname.includes("/pages/");
   const bodyPage = document.body.dataset.page || "";
   const primaryKey = currentPath === "index.html" || bodyPage === "home"
     ? "home"
@@ -466,10 +484,10 @@ const initMobileBottomNav = () => {
           : "more";
 
   const links = [
-    { key: "home", label: "Home", href: inPagesDir ? "../index.html" : "index.html" },
-    { key: "framework", label: "Framework", href: inPagesDir ? "framework.html" : "pages/framework.html" },
-    { key: "essays", label: "Essays", href: inPagesDir ? "essays.html" : "pages/essays.html" },
-    { key: "library", label: "Library", href: inPagesDir ? "library.html" : "pages/library.html" },
+    { key: "home", label: "Home", href: getHomeHref() },
+    { key: "framework", label: "Framework", href: `${getPageRoot()}framework.html` },
+    { key: "essays", label: "Essays", href: `${getPageRoot()}essays.html` },
+    { key: "library", label: "Library", href: `${getPageRoot()}library.html` },
   ];
 
   const nav = document.createElement("nav");
@@ -673,24 +691,22 @@ const normalizePrimaryNav = (nav) => {
   if (!nav) return;
 
   const currentPath = getCurrentPath();
-  const inPagesDir = window.location.pathname.includes("/pages/");
   const bodyPage = document.body.dataset.page || "";
-  const base = inPagesDir ? "" : "pages/";
-  const homeHref = inPagesDir ? "../index.html" : "index.html";
+  const homeHref = getHomeHref();
 
   const links = [
     { href: homeHref, label: "Home", match: () => currentPath === "index.html" || bodyPage === "home" },
-    { href: `${base}where-to-start.html`, label: "Where to Start", match: () => currentPath === "where-to-start.html" },
-    { href: `${base}framework.html`, label: "Framework", match: () => currentPath === "framework.html" || bodyPage === "framework" },
-    { href: `${base}map.html`, label: "Map", match: () => currentPath === "map.html" || bodyPage === "map" },
-    { href: `${base}stress-tests.html`, label: "Stress Tests", match: () => currentPath === "stress-tests.html" },
-    { href: `${base}ai-alignment-research.html`, label: "AI Alignment Research", match: () => currentPath.startsWith("ai-alignment-") || currentPath === "how-to-cite.html" || bodyPage === "ai-research" || bodyPage === "citation" },
-    { href: `${base}papers.html`, label: "Papers", match: () => currentPath === "papers.html" || bodyPage === "papers" },
-    { href: `${base}essays.html`, label: "Essays", match: () => currentPath === "essays.html" || currentPath.startsWith("essay-") || bodyPage === "essays" },
-    { href: `${base}library.html`, label: "Library", match: () => currentPath === "library.html" || bodyPage === "library" },
-    { href: `${base}glossary.html`, label: "Glossary", match: () => currentPath === "glossary.html" },
-    { href: `${base}about.html`, label: "About", match: () => currentPath === "about.html" || bodyPage === "about" },
-    { href: `${base}contact.html`, label: "Contact", match: () => currentPath === "contact.html" || bodyPage === "contact" },
+    { href: resolveArchiveHref("where-to-start.html"), label: "Where to Start", match: () => currentPath === "where-to-start.html" },
+    { href: resolveArchiveHref("framework.html"), label: "Framework", match: () => currentPath === "framework.html" || bodyPage === "framework" },
+    { href: resolveArchiveHref("map.html"), label: "Map", match: () => currentPath === "map.html" || bodyPage === "map" },
+    { href: resolveArchiveHref("stress-tests.html"), label: "Stress Tests", match: () => currentPath === "stress-tests.html" },
+    { href: resolveArchiveHref("ai-alignment-research.html"), label: "AI Alignment Research", match: () => currentPath.startsWith("ai-alignment-") || currentPath === "agent-action-gate.html" || currentPath === "how-to-cite.html" || bodyPage === "ai-research" || bodyPage === "citation" },
+    { href: resolveArchiveHref("papers.html"), label: "Papers", match: () => currentPath === "papers.html" || bodyPage === "papers" },
+    { href: resolveArchiveHref("essays.html"), label: "Essays", match: () => currentPath === "essays.html" || currentPath.startsWith("essay-") || bodyPage === "essays" },
+    { href: resolveArchiveHref("library.html"), label: "Library", match: () => currentPath === "library.html" || bodyPage === "library" },
+    { href: resolveArchiveHref("glossary.html"), label: "Glossary", match: () => currentPath === "glossary.html" },
+    { href: resolveArchiveHref("about.html"), label: "About", match: () => currentPath === "about.html" || bodyPage === "about" },
+    { href: resolveArchiveHref("contact.html"), label: "Contact", match: () => currentPath === "contact.html" || bodyPage === "contact" },
   ];
 
   nav.innerHTML = links.map(({ href, label, match }) => {
@@ -815,6 +831,13 @@ const AI_RESEARCH_GROUPS = [
       { href: "how-to-cite.html", label: "How to Cite" },
     ],
   },
+  {
+    key: "implementation-projects",
+    label: "Implementation Projects",
+    items: [
+      { href: "projects/agent-action-gate.html", label: "Agent Action Gate" },
+    ],
+  },
 ];
 
 const initNav = () => {
@@ -826,7 +849,7 @@ const initNav = () => {
 
   if (!nav.dataset.enhanced) {
     const currentPath = window.location.pathname.split("/").pop() || "index.html";
-    const pageRoot = currentPath === "index.html" ? "pages/" : "";
+    const pageRoot = getPageRoot();
     const frameworkLink = nav.querySelector('a[href$="framework.html"]');
     const section = document.createElement("details");
     section.className = "site-nav-section";
@@ -859,9 +882,9 @@ const initNav = () => {
 
       items.forEach(({ href, label: itemLabel }) => {
         const link = document.createElement("a");
-        link.href = `${pageRoot}${href}`;
+        link.href = resolveArchiveHref(href);
         link.textContent = itemLabel;
-        if (currentPath === href) {
+        if (currentPath === getHrefFileName(href)) {
           link.setAttribute("aria-current", "page");
         }
         cluster.appendChild(link);
@@ -904,9 +927,9 @@ const initNav = () => {
 
       items.forEach(({ href, label: itemLabel }) => {
         const link = document.createElement("a");
-        link.href = `${pageRoot}${href}`;
+        link.href = resolveArchiveHref(href);
         link.textContent = itemLabel;
-        if (currentPath === href) {
+        if (currentPath === getHrefFileName(href)) {
           link.setAttribute("aria-current", "page");
         }
         cluster.appendChild(link);
@@ -954,9 +977,9 @@ const initNav = () => {
         items.forEach(({ href, label: itemLabel }) => {
           const link = document.createElement("a");
           link.className = "site-nav-dropdown-link";
-          link.href = `${pageRoot}${href}`;
+          link.href = resolveArchiveHref(href);
           link.textContent = itemLabel;
-          if (currentPath === href) {
+          if (currentPath === getHrefFileName(href)) {
             link.setAttribute("aria-current", "page");
           }
           cluster.appendChild(link);
@@ -1050,9 +1073,9 @@ const initNav = () => {
         items.forEach(({ href, label: itemLabel }) => {
           const link = document.createElement("a");
           link.className = "site-nav-dropdown-link";
-          link.href = `${pageRoot}${href}`;
+          link.href = resolveArchiveHref(href);
           link.textContent = itemLabel;
-          if (currentPath === href) {
+          if (currentPath === getHrefFileName(href)) {
             link.setAttribute("aria-current", "page");
           }
           cluster.appendChild(link);
@@ -1285,8 +1308,7 @@ const initGlossaryNotes = () => {
   const notes = qsa("[data-term]");
   if (!notes.length) return;
 
-  const currentPath = window.location.pathname.split("/").pop() || "index.html";
-  const pageRoot = currentPath === "index.html" ? "pages/" : "";
+  const pageRoot = getPageRoot();
 
   const closeAll = () => {
     notes.forEach((note) => note.classList.remove("is-open"));
@@ -1469,6 +1491,7 @@ const SEARCH_DATA = [
   { title: "Why the Present May Be Safer Than Success", url: "why-the-present-may-be-safer-than-success.html", section: "Applied", desc: "Why an earlier phase may preserve more capacity than a later successful one.", tags: ["present", "success", "safety", "capacity", "fragility", "growth"] },
   // AI Alignment Research
   { title: "AI Alignment Research", url: "ai-alignment-research.html", section: "AI Alignment Research", desc: "Research hub for behavioral drift detection, realignment architecture, and production AI governance.", tags: ["AI alignment research", "behavioral drift detection", "realignment layer", "AI governance", "behavioral QA"] },
+  { title: "Agent Action Gate", url: "projects/agent-action-gate.html", section: "AI Alignment Research", desc: "Pre-execution safety gate for AI agents that routes proposed actions to allow, approval, revision, or block before execution.", tags: ["Agent Action Gate", "AI agents", "pre-execution", "action gate", "human oversight", "EU AI Act Article 14", "n8n"] },
   { title: "Executive Summary: Alignment Theory AI Alignment Research", url: "ai-alignment-executive-summary.html", section: "AI Alignment Research", desc: "Five-minute introduction to Alignment Theory AI alignment research.", tags: ["executive summary", "AI drift detection", "AI governance", "Michael Bower"] },
   { title: "The Three-Layer Blueprint for AI Alignment", url: "ai-alignment-three-layer-blueprint.html", section: "AI Alignment Research", desc: "Objective, Constraint, and Realignment layers for detecting allowed-but-off-center AI behavior.", tags: ["three-layer blueprint", "objective layer", "constraint layer", "realignment layer", "allowed-but-off-center"] },
   { title: "Participatory Capacity Preservation Index (PCPI)", url: "participatory-capacity-preservation-index.html", section: "AI Alignment Research", desc: "Measurement framework for whether AI assistance preserves or erodes understanding, judgment, choice, verification, learning, and agency.", tags: ["PCPI", "participatory capacity", "AI alignment metrics", "human agency", "substitution risk", "behavioral QA", "AI evaluation"] },
@@ -1517,9 +1540,6 @@ const SEARCH_DATA = [
 ];
 
 const initSearch = () => {
-  const currentPath = window.location.pathname.split("/").pop() || "index.html";
-  const pageRoot = currentPath === "index.html" ? "pages/" : "";
-
   const header = qs(".site-header");
   if (!header) return;
 
@@ -1608,7 +1628,7 @@ const initSearch = () => {
     }
     empty.hidden = true;
     results.innerHTML = scored.map(({ item }) => {
-      const url = `${pageRoot}${item.url}`;
+      const url = resolveArchiveHref(item.url);
       return `<li role="option" class="search-result-item" data-url="${escapeHtml(url)}" aria-selected="false">
         <a href="${escapeHtml(url)}" class="search-result-link" tabindex="-1">
           <span class="search-result-title">${escapeHtml(item.title)}</span>

@@ -11,6 +11,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://alignmenttheory.org/projects/agent-action-gate.html</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://alignmenttheory.org/pages/map.html</loc>
     <lastmod>2026-04-28</lastmod>
     <priority>0.95</priority>
