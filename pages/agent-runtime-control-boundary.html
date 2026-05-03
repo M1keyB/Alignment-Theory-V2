@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agent Runtime Control Boundary | Alignment Theory</title>
+  <meta name="author" content="Michael Bower" />
+  <meta name="dcterms.date" content="2026-05-02" />
+  <meta name="license" content="CC BY-NC 4.0 (research), Commercial license required for PCPI/MAI" />
+  <meta name="description" content="A technical concept page defining the control boundary between AI agent reasoning and external tool execution." />
+  <link rel="canonical" href="https://alignmenttheory.org/pages/agent-runtime-control-boundary.html" />
+  <meta property="og:title" content="Agent Runtime Control Boundary | Alignment Theory" />
+  <meta property="og:description" content="A technical concept page defining the control boundary between AI agent reasoning and external tool execution." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://alignmenttheory.org/pages/agent-runtime-control-boundary.html" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Agent Runtime Control Boundary | Alignment Theory" />
+  <meta name="twitter:description" content="A technical concept page defining the control boundary between AI agent reasoning and external tool execution." />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVFSZRN0PB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-QVFSZRN0PB");
+  </script>
+  <link rel="stylesheet" href="../assets/styles.css?v=20260430a" />
+</head>
+<body data-page="ai-research">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="site-title">
+      <a class="site-logo" href="../index.html">Alignment Theory</a>
+      <p class="site-subtitle">Research Archive</p>
+    </div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="where-to-start.html">Where to Start</a>
+      <a href="framework.html">Framework</a>
+      <a href="map.html">Map</a>
+      <a href="stress-tests.html">Stress Tests</a>
+      <a href="ai-alignment-research.html">AI Alignment Research</a>
+      <a href="agent-runtime-control-boundary.html" aria-current="page">Agent Runtime Boundary</a>
+      <a href="papers.html">Papers</a>
+      <a href="essays.html">Essays</a>
+      <a href="library.html">Library</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main" class="page research-page">
+    <p class="doc-meta research-back-link"><a class="text-link" href="ai-alignment-research.html">Back to AI Alignment Research</a></p>
+
+    <section class="research-hero research-paper-hero">
+      <p class="research-meta">
+        <span class="chip">Concept</span>
+        <span class="chip">Runtime Control</span>
+        <span class="chip">Agentic AI</span>
+      </p>
+      <h1>Agent Runtime Control Boundary</h1>
+      <p class="lead">The control layer between AI reasoning and external action.</p>
+      <p>As AI systems move from chat responses into tool use, browser control, workflow automation, coding agents, terminals, APIs, and multi-step agent systems, the safety boundary shifts. It is no longer enough to ask whether the model's text output is acceptable. We also have to ask whether the proposed action should be executed.</p>
+      <p class="orientation-line">Model output is not the final boundary. Tool execution is the boundary.</p>
+      <p>The critical boundary is the transition from proposed action to executed action.</p>
+      <div class="research-downloads">
+        <a class="button" href="#boundary">Define the Boundary</a>
+        <a class="button" href="https://github.com/mnbower-research/agent-action-gate">Agent Action Gate on GitHub</a>
+        <a class="button" href="ai-alignment-research.html">AI Research Hub</a>
+      </div>
+    </section>
+
+    <div class="research-mobile-panels">
+      <details class="research-toc research-toc-mobile">
+        <summary>Table of Contents</summary>
+        <ol>
+          <li><a href="#core-thesis">Core Thesis</a></li>
+          <li><a href="#why-output-safety-is-not-enough">Why Output Safety Is Not Enough</a></li>
+          <li><a href="#boundary">The Boundary</a></li>
+          <li><a href="#required-control-functions">Required Control Functions</a></li>
+          <li><a href="#decision-routes">Decision Routes</a></li>
+          <li><a href="#why-receipts-matter">Why Receipts Matter</a></li>
+          <li><a href="#relation-to-agent-action-gate">Relation to Agent Action Gate</a></li>
+          <li><a href="#what-this-does-not-claim">What This Does Not Claim</a></li>
+          <li><a href="#alignment-theory-connection">Alignment Theory Connection</a></li>
+          <li><a href="#simple-system-map">Simple System Map</a></li>
+          <li><a href="#where-this-boundary-fits">Where This Boundary Fits</a></li>
+          <li><a href="#summary">Summary</a></li>
+        </ol>
+      </details>
+      <aside class="research-tools research-tools-mobile" aria-label="Related links">
+        <p class="research-panel-label">Related</p>
+        <a class="button" href="ai-alignment-research.html">AI Research Hub</a>
+        <a class="button" href="../projects/agent-action-gate.html">Agent Action Gate</a>
+        <a class="button" href="https://github.com/mnbower-research/agent-action-gate">GitHub Repo</a>
+        <div class="research-tools-related">
+          <p class="research-panel-label">Framework</p>
+          <a class="text-link" href="ai-alignment-three-layer-blueprint.html">Three-Layer Blueprint</a>
+          <a class="text-link" href="participatory-capacity-preservation-index.html">PCPI</a>
+          <a class="text-link" href="revised-framework-center.html">Revised Framework Center</a>
+        </div>
+      </aside>
+    </div>
+
+    <div class="research-layout">
+      <nav class="research-toc research-toc-desktop" aria-labelledby="toc-title">
+        <p class="research-panel-label" id="toc-title">On this page</p>
+        <ol>
+          <li><a href="#core-thesis">Core Thesis</a></li>
+          <li><a href="#why-output-safety-is-not-enough">Why Output Safety Is Not Enough</a></li>
+          <li><a href="#boundary">The Boundary</a></li>
+          <li><a href="#required-control-functions">Required Control Functions</a></li>
+          <li><a href="#decision-routes">Decision Routes</a></li>
+          <li><a href="#why-receipts-matter">Why Receipts Matter</a></li>
+          <li><a href="#relation-to-agent-action-gate">Relation to Agent Action Gate</a></li>
+          <li><a href="#what-this-does-not-claim">What This Does Not Claim</a></li>
+          <li><a href="#alignment-theory-connection">Alignment Theory Connection</a></li>
+          <li><a href="#simple-system-map">Simple System Map</a></li>
+          <li><a href="#where-this-boundary-fits">Where This Boundary Fits</a></li>
+          <li><a href="#summary">Summary</a></li>
+        </ol>
+      </nav>
+
+      <article class="research-article-body doc-body">
+        <section class="research-section" id="core-thesis">
+          <h2>Core Thesis</h2>
+          <p>AI agent risk changes when models can act through tools.</p>
+          <p>A model can produce harmless text while proposing a risky action. It can also produce useful reasoning while attempting an unauthorized, irreversible, or out-of-scope operation. In agentic systems, alignment cannot stop at output review. There must be a runtime boundary that evaluates proposed tool actions before they run.</p>
+          <pre><code>Prompt
+→ model reasoning
+→ proposed tool action
+→ runtime control boundary
+→ allow / approval / revise / block
+→ execution or non-execution</code></pre>
+        </section>
+
+        <section class="research-section" id="why-output-safety-is-not-enough">
+          <h2>Why Output Safety Is Not Enough</h2>
+          <p>Traditional model safety mostly evaluates generated content: harmful instructions, unsafe claims, policy violations, hallucinations, or inappropriate responses. That remains important, but agentic systems add a second problem: the model may take or propose actions in the world.</p>
+          <p>High-level examples include sending an email to the wrong recipient, deleting or modifying files, changing production configuration, calling an external API, moving private data, running a terminal command, modifying a workflow, using a browser session, accessing credentials or secrets, or taking action outside approved scope.</p>
+          <p>The question is not only "What did the model say?" The question is also "What is the agent about to do?"</p>
+        </section>
+
+        <section class="research-section" id="boundary">
+          <h2>The Boundary</h2>
+          <p>The Agent Runtime Control Boundary is the point in an agent system where a proposed action is inspected before it becomes an executed action.</p>
+          <p>Once an AI system can act, the control question becomes: Should this proposed action be allowed to execute?</p>
+          <p>It receives a structured proposed action such as:</p>
+          <ul>
+            <li>tool</li>
+            <li>action type</li>
+            <li>target</li>
+            <li>payload summary</li>
+            <li>reversibility</li>
+            <li>external-facing status</li>
+            <li>user approval state</li>
+            <li>authorized targets</li>
+            <li>authorized action types</li>
+            <li>runtime context</li>
+          </ul>
+          <p>It returns a structured routing decision:</p>
+          <ul>
+            <li>allow</li>
+            <li>require approval</li>
+            <li>revise action</li>
+            <li>block</li>
+          </ul>
+        </section>
+
+        <section class="research-section" id="required-control-functions">
+          <h2>Required Control Functions</h2>
+          <p>A runtime control boundary should provide at least these functions:</p>
+          <ul>
+            <li><strong>Scope check:</strong> Is the action within the approved target, system, account, file, workflow, or environment?</li>
+            <li><strong>Authorization check:</strong> Is this action type permitted for the current user, workflow, or agent?</li>
+            <li><strong>Approval routing:</strong> Does this action require a human before execution?</li>
+            <li><strong>Revision routing:</strong> Is the action close to valid but needs narrowing, retargeting, or safer parameters?</li>
+            <li><strong>Block routing:</strong> Is the action too risky, unauthorized, irreversible, or sensitive to proceed?</li>
+            <li><strong>Receipt logging:</strong> Is there an auditable record of what was proposed, how it was evaluated, and what decision was returned?</li>
+          </ul>
+          <p>A runtime boundary should not merely refuse. It should route.</p>
+        </section>
+
+        <section class="research-section" id="decision-routes">
+          <h2>Decision Routes</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Decision</th>
+                <th>Meaning</th>
+                <th>Example use</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>allow</code></td>
+                <td>The action is within scope and low risk.</td>
+                <td>Safe internal read or approved reversible action.</td>
+              </tr>
+              <tr>
+                <td><code>require_approval</code></td>
+                <td>The action may be valid, but human approval is needed before execution.</td>
+                <td>Production change, irreversible operation, sensitive workflow.</td>
+              </tr>
+              <tr>
+                <td><code>revise_action</code></td>
+                <td>The action should not run as proposed, but could become valid if narrowed or corrected.</td>
+                <td>Wrong tool, overly broad target, missing constraint.</td>
+              </tr>
+              <tr>
+                <td><code>block</code></td>
+                <td>The action should not execute.</td>
+                <td>Unauthorized target, credential access, data exposure, destructive operation.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="research-section" id="why-receipts-matter">
+          <h2>Why Receipts Matter</h2>
+          <p>When agents act, teams need more than a yes/no decision. They need evidence. A decision receipt records the proposed action, decision, risk level, primary issue, evidence, and recommended action. This makes the system reviewable, debuggable, and auditable.</p>
+          <p>Without receipts, failures become anecdotes. With receipts, failures become reviewable system evidence.</p>
+          <p>Receipts should avoid logging raw secrets or sensitive payloads. Payloads should be summarized or redacted.</p>
+        </section>
+
+        <section class="research-section" id="relation-to-agent-action-gate">
+          <h2>Relation to Agent Action Gate</h2>
+          <p>Agent Action Gate is one open-source reference implementation of this boundary. It evaluates proposed tool actions before execution and returns one of four decisions: allow, require_approval, revise_action, or block.</p>
+          <p>Its current capabilities include a TypeScript implementation, local HTTP API, n8n demo workflow, cyber-capable agent protection layer, JSONL decision receipts, and an eval suite.</p>
+          <p><a class="text-link" href="https://github.com/mnbower-research/agent-action-gate">Agent Action Gate on GitHub</a></p>
+        </section>
+
+        <section class="research-section" id="what-this-does-not-claim">
+          <h2>What This Does Not Claim</h2>
+          <p>The Agent Runtime Control Boundary does not replace:</p>
+          <ul>
+            <li>identity and access management</li>
+            <li>least-privilege credentials</li>
+            <li>sandboxing</li>
+            <li>secure infrastructure</li>
+            <li>model safety work</li>
+            <li>human judgment</li>
+            <li>legal compliance review</li>
+          </ul>
+          <p>It is not a guarantee that an agent system is safe or compliant. It is a practical control layer that helps inspect, route, and record proposed actions before execution.</p>
+        </section>
+
+        <section class="research-section" id="alignment-theory-connection">
+          <h2>Alignment Theory Connection</h2>
+          <p>In Alignment Theory terms, agentic risk appears when internal reasoning becomes external action. A system may be coherent in text while misaligned in execution. The runtime boundary preserves human participation, constraint contact, and action-level accountability at the point where capability leaves the model and enters the world.</p>
+          <p>The framework connection can be stated simply:</p>
+          <ul>
+            <li><strong>Objective:</strong> What is the agent supposed to serve?</li>
+            <li><strong>Constraint:</strong> What is the agent allowed to do?</li>
+            <li><strong>Runtime boundary:</strong> Should this specific proposed action execute now?</li>
+            <li><strong>Receipt:</strong> What evidence remains for human review and re-anchoring?</li>
+          </ul>
+          <p>The boundary is where abstract alignment becomes operational control.</p>
+        </section>
+
+        <section class="research-section" id="simple-system-map">
+          <h2>Simple System Map</h2>
+          <pre><code>User intent
+↓
+Agent reasoning
+↓
+Proposed tool action
+↓
+Agent Runtime Control Boundary
+↓
+allow / require approval / revise / block
+↓
+Execution, human review, revision, or non-execution
+↓
+Decision receipt</code></pre>
+        </section>
+
+        <section class="research-section" id="where-this-boundary-fits">
+          <h2>Where This Boundary Fits</h2>
+          <p>This boundary fits systems where agents can take action through tools or external services, including n8n workflows, browser agents, coding agents, internal automation agents, API/tool-calling agents, CI/CD agents, data-processing agents, and customer support automations with action permissions.</p>
+        </section>
+
+        <section class="research-section" id="summary">
+          <h2>Summary</h2>
+          <p>As agents become more capable, the dangerous boundary is not only what they say. It is what they are about to do.</p>
+          <p>The Agent Runtime Control Boundary names the layer where proposed actions are evaluated before execution, routed through allow/approval/revision/block decisions, and recorded as receipts for later review.</p>
+          <p>Scope before action.<br />Gate before execution.<br />Receipt after decision.</p>
+        </section>
+      </article>
+
+      <aside class="research-tools research-tools-desktop" aria-label="Related links">
+        <p class="research-panel-label">Related</p>
+        <a class="button" href="ai-alignment-research.html">AI Research Hub</a>
+        <a class="button" href="../projects/agent-action-gate.html">Agent Action Gate</a>
+        <a class="button" href="https://github.com/mnbower-research/agent-action-gate">GitHub Repo</a>
+        <div class="research-tools-related">
+          <p class="research-panel-label">Framework</p>
+          <a class="text-link" href="ai-alignment-three-layer-blueprint.html">Three-Layer Blueprint</a>
+          <a class="text-link" href="participatory-capacity-preservation-index.html">PCPI</a>
+          <a class="text-link" href="revised-framework-center.html">Revised Framework Center</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="site-footer-brand">
+        <p class="site-footer-title">Alignment Theory</p>
+        <p>A quiet research archive on alignment, participation, drift, and realignment across human systems, institutions, technology, and AI.</p>
+      </div>
+      <nav class="site-footer-links" aria-label="Footer">
+        <a href="../index.html">Home</a>
+        <a href="where-to-start.html">Where to Start</a>
+        <a href="framework.html">Framework</a>
+        <a href="map.html">Map</a>
+        <a href="stress-tests.html">Stress Tests</a>
+        <a href="ai-alignment-research.html">AI Alignment Research</a>
+        <a href="agent-runtime-control-boundary.html" aria-current="page">Agent Runtime Boundary</a>
+        <a href="papers.html">Papers</a>
+        <a href="glossary.html">Glossary</a>
+        <a href="how-to-cite.html">How to Cite</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="provenance">
+      <p><strong>Provenance:</strong> The Complete Map and PCPI framework were first published by Michael Bower on AlignmentTheory.org, 2026.</p>
+      <p><strong>License:</strong> Research content CC BY-NC 4.0. PCPI methodology, MAI dataset, and certification for commercial use require license. <a href="/pages/license.html">Full terms &rarr;</a></p>
+    </div>
+    <p class="site-footer-copy">&copy; 2026 Alignment Theory. All rights reserved.</p>
+  </footer>
+  <script src="../assets/app.js?v=20260430a"></script>
+</body>
+</html>
