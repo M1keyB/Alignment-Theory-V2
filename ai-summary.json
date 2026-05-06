@@ -1,0 +1,47 @@
+{
+  "name": "Alignment Theory",
+  "author": "Michael Nathan Bower",
+  "site": "https://alignmenttheory.org",
+  "contact": "mnbower.researcher@gmail.com",
+  "type": "constraint-based framework",
+  "description": "Alignment Theory is a framework for understanding how human and artificial systems remain coherent, fragment, or collapse under pressure.",
+  "core_pattern": [
+    "pressure",
+    "signal override",
+    "compensation",
+    "fragmentation",
+    "collapse",
+    "recovery"
+  ],
+  "core_distinction": {
+    "internal_alignment": "regulation by integrated understanding, conscience, coherence, and agency",
+    "external_alignment": "regulation by pressure, fear, reward, surveillance, social approval, institutional demand, or forced compliance"
+  },
+  "domains": [
+    "burnout",
+    "trauma",
+    "nervous-system regulation",
+    "moral psychology",
+    "theology",
+    "religion",
+    "institutions",
+    "organizations",
+    "social media",
+    "AI alignment",
+    "agentic AI",
+    "addiction",
+    "spiritual transformation"
+  ],
+  "core_constraints": [
+    "Cognitive Load Collapse Threshold",
+    "Complexity Integration Limit",
+    "External Control Scaling Law",
+    "Internal Regulation Scaling Law",
+    "Forced Integration Collapse",
+    "Certainty Before Integration",
+    "Identity Hardening Under Overload",
+    "Recovery Suppression Collapse",
+    "Signal Authority Loss",
+    "Slack Requirement"
+  ]
+}
