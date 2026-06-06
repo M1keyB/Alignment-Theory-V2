@@ -1,0 +1,163 @@
+HAPI AI-LANGUAGE BLACKLIST v1
+Hard-ban these from public-facing prose unless quoting or using an unavoidable technical term.
+
+WORDS
+- delve
+- delve into
+- delves into
+- delving into
+- tapestry
+- rich tapestry
+- intricate tapestry
+- realm
+- in the realm of
+- landscape
+- navigate the landscape
+- navigating the landscape
+- navigate the complexities of
+- navigating the complexities of
+- ever-evolving landscape
+- embark
+- embark on a journey
+- unlock
+- unlock the potential
+- unlock the secrets
+- unleash
+- unleash the power of
+- harness
+- harness the power of
+- harness the potential of
+- elevate
+- elevate your
+- revolutionize
+- transformative
+- game-changer
+- groundbreaking
+- cutting-edge
+- seamless
+- robust
+- pivotal
+- paramount
+- multifaceted
+- nuanced
+- meticulous
+- meticulously
+- intricacies
+- interplay
+- resonate
+- resonates
+- resonance
+- a testament to
+- testament to
+- foster
+- foster a culture of
+- underscore
+- underscores
+- underscoring
+- shed light on
+- illuminate
+- elucidate
+- bolster
+- burgeoning
+- vibrant
+- bustling
+- nestled
+- whimsical
+- poignant
+- profound
+- timeless
+- relentless
+
+PHRASES AND TEMPLATES
+- It's important to note
+- It is important to note
+- It's worth noting
+- It is worth noting
+- It's essential to
+- It is essential to
+- It's crucial to
+- It is crucial to
+- Remember that
+- Keep in mind that
+- In today's fast-paced world
+- In today's digital age
+- As technology continues to evolve
+- At the end of the day
+- In a world where
+- In the world of
+- When it comes to
+- In conclusion
+- In summary
+- To summarize
+- To sum up
+- It's not just X, it's Y
+- This is not X; it is Y
+- This isn't X, it's Y
+- It's not about X, it's about Y
+- Not X. Not Y. But Z.
+- Not because X. Not because Y. But because Z.
+- not just ___ but ___
+- not only ___ but also ___
+- more than just
+- not merely
+- is not merely
+- Here's the thing
+- But here's the thing
+- The reality is
+- The truth is
+- The deeper issue is
+- This changes everything
+- Everything changed
+- Something shifted
+- Let that sink in
+- Sit with that
+- Read that again
+- Think about that
+- The solution?
+- The result?
+- The key?
+- Why? Because
+- And that matters
+- That's the point
+- This is the core
+- You just cracked the core
+- This right here
+- The bigger question
+- The uncomfortable question
+- The strongest takeaway
+- That is huge
+- This is huge
+- At its core
+- In essence
+- Fundamentally
+- Serves as
+- Paving the way
+- Signals a shift
+- Marks a shift
+- Highlights the importance of
+- Plays a crucial role
+- Meaningful impact
+- Valuable insights
+- Deeper understanding
+- A wide range of
+- There are a few considerations
+- Several factors, including
+- Can help to
+- I hope this email finds you well
+- Best regards
+- Picture this
+- Imagine a world where
+- Welcome to the world of
+
+STRUCTURE AND FORMATTING FLAGS
+- Excessive em dashes: Use commas, parentheses, periods, or colons unless an em dash is clearly needed.
+- Negation-first parallelism: Avoid repeated forms such as “not X, but Y” and “not this, not that, just Z.”
+- Three-beat slogan cadence: Avoid strings such as “fast, safe, and scalable” unless the three items are necessary.
+- Dramatic fragment followed by explanation: Avoid “The result? …”, “The problem? …”, and “Why? Because …”.
+- Unearned profundity: Remove phrases such as “something shifted,” “everything changed,” and “let that sink in.”
+- Uniform paragraph rhythm: Do not make every paragraph the same length or use a repeated claim-explanation-summary pattern.
+- Overformatted sections: Use fewer headings, fewer bold phrases, fewer colon-heavy labels, and fewer bullet lists.
+- Emoji bullets in professional writing: Avoid checkmarks, sparkles, arrows, fire icons, and decorative Unicode bullets.
+- Overbalanced hedging: Do not reflexively present both sides when the evidence supports a direct claim.
+- Repeated summary endings: Do not restate the same idea at the end of every section.
+- Generic inspirational close: End with a concrete implication, decision, test, or next action.
