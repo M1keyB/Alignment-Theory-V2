@@ -1,0 +1,203 @@
+# New Research Intake Map
+
+Date: 2026-06-06
+
+Status: planning only. Unknown source files are marked as unknown rather than inferred.
+
+## 1. Current Alignment Theory framework
+
+- Current public route: `pages/revised-framework-center.html`
+- Existing local source files: `pages/revised-framework-center.html`; related routes listed in `docs/site-audit.md`
+- New source files needed: Unknown
+- Current status: Current hub
+- Recommended destination: Theory
+- Evidence review needed: Yes
+- Editorial review needed: Yes
+- Archive relationship: Earlier framework pages remain in Archive
+
+## 2. Participatory capacity and substitution
+
+- Current public route: `pages/load-bearing-function-participatory-capacity-and-the-four-modes-of-support.html`
+- Existing local source files: `pages/participatory-capacity-preservation-index.html`; `assets/research/Participatory_Capacity_Preservation_Index_PCPI_v1.pdf`; `assets/research/PCPI_Rubric_v1.pdf`; `assets/research/pcpi_formula.md`
+- New source files needed: Unknown
+- Current status: Current concept with AI governance measurement material
+- Recommended destination: Theory and Research
+- Evidence review needed: Yes
+- Editorial review needed: Yes
+- Archive relationship: Older support/substitution pages remain live
+
+## 3. Human agency preservation
+
+- Current public route: `pages/ai-alignment-research.html`
+- Existing local source files: `pages/participatory-capacity-preservation-index.html`; `pages/load-bearing-human-capacities-in-the-ai-age.html`; `assets/load-bearing-human-capacities-in-the-ai-age.pdf`
+- New source files needed: Unknown
+- Current status: Active research area
+- Recommended destination: Research and AI Governance
+- Evidence review needed: Yes
+- Editorial review needed: Yes
+- Archive relationship: Related older pages should be linked from Archive
+
+## 4. Delegated agency
+
+- Current public route: Unknown
+- Existing local source files: Unknown
+- New source files needed: Unknown
+- Current status: Needs source identification
+- Recommended destination: AI Governance
+- Evidence review needed: Yes
+- Editorial review needed: Yes
+- Archive relationship: Unknown
+
+## 5. True gates and false gates
+
+- Current public route: Unknown
+- Existing local source files: Unknown
+- New source files needed: Unknown
+- Current status: Needs source identification
+- Recommended destination: AI Governance
+- Evidence review needed: Yes
+- Editorial review needed: Yes
+- Archive relationship: Unknown
+
+## 6. Agency theater
+
+- Current public route: Unknown
+- Existing local source files: Unknown
+- New source files needed: Unknown
+- Current status: Needs source identification
+- Recommended destination: AI Governance or Notes
+- Evidence review needed: Yes
+- Editorial review needed: Yes
+- Archive relationship: Unknown
+
+## 7. Human-in-the-loop versus live human authority
+
+- Current public route: Unknown
+- Existing local source files: Unknown
+- New source files needed: Unknown
+- Current status: Needs source identification
+- Recommended destination: AI Governance
+- Evidence review needed: Yes
+- Editorial review needed: Yes
+- Archive relationship: Unknown
+
+## 8. Pre-Gate Deliberation Layer
+
+- Current public route: `projects/agent-action-gate.html`
+- Existing local source files: `projects/agent-action-gate.html`
+- New source files needed: Unknown
+- Current status: Mentioned in applied governance material
+- Recommended destination: AI Governance
+- Evidence review needed: Yes
+- Editorial review needed: Yes
+- Archive relationship: Unknown
+
+## 9. Agent Action Gate
+
+- Current public route: `projects/agent-action-gate.html`
+- Existing local source files: `projects/agent-action-gate.html`
+- New source files needed: Unknown
+- Current status: Public project page
+- Recommended destination: AI Governance
+- Evidence review needed: Yes
+- Editorial review needed: Yes
+- Archive relationship: Version status requires author decision
+
+## 10. Runtime Binding
+
+- Current public route: Unknown
+- Existing local source files: Unknown
+- New source files needed: Unknown
+- Current status: Needs source identification
+- Recommended destination: AI Governance
+- Evidence review needed: Yes
+- Editorial review needed: Yes
+- Archive relationship: Unknown
+
+## 11. Receipts
+
+- Current public route: Unknown
+- Existing local source files: Unknown
+- New source files needed: Unknown
+- Current status: Needs source identification
+- Recommended destination: AI Governance
+- Evidence review needed: Yes
+- Editorial review needed: Yes
+- Archive relationship: Unknown
+
+## 12. Governance Memory
+
+- Current public route: Unknown
+- Existing local source files: Unknown
+- New source files needed: Unknown
+- Current status: Needs source identification
+- Recommended destination: AI Governance
+- Evidence review needed: Yes
+- Editorial review needed: Yes
+- Archive relationship: Unknown
+
+## 13. Governance profiles
+
+- Current public route: Unknown
+- Existing local source files: Unknown
+- New source files needed: Unknown
+- Current status: Needs source identification
+- Recommended destination: AI Governance
+- Evidence review needed: Yes
+- Editorial review needed: Yes
+- Archive relationship: Unknown
+
+## 14. Alignment Governance Stack
+
+- Current public route: Unknown
+- Existing local source files: Unknown
+- New source files needed: Unknown
+- Current status: Needs source identification
+- Recommended destination: AI Governance
+- Evidence review needed: Yes
+- Editorial review needed: Yes
+- Archive relationship: Unknown
+
+## 15. HAPI relationship
+
+- Current public route: Unknown
+- Existing local source files: Unknown
+- New source files needed: Unknown
+- Current status: Needs source identification
+- Recommended destination: AI Governance or external project link
+- Evidence review needed: Yes
+- Editorial review needed: Yes
+- Archive relationship: Unknown
+
+## 16. Theology and philosophical interpretation
+
+- Current public route: `pages/scripture-regulation-and-inner-transformation.html`
+- Existing local source files: Many theological and interpretation pages listed in `docs/site-audit.md`
+- New source files needed: Unknown
+- Current status: Mixed current and archival material
+- Recommended destination: Notes, Essays, or Archive after review
+- Evidence review needed: Yes
+- Editorial review needed: Yes
+- Archive relationship: Review separately before relabeling
+
+## 17. Neuroscience and default mode network material
+
+- Current public route: `pages/how-the-revised-model-maps-to-the-dmn.html`
+- Existing local source files: `pages/how-the-revised-model-maps-to-the-dmn.html`; related DMN essay pages listed in `docs/site-audit.md`
+- New source files needed: Unknown
+- Current status: Current supporting material with evidence review needed
+- Recommended destination: Theory or Research
+- Evidence review needed: Yes
+- Editorial review needed: Yes
+- Archive relationship: Older related essays remain available
+
+## 18. Archive-only or historical material
+
+- Current public route: `pages/library.html`
+- Existing local source files: Archive routes listed in `docs/site-audit.md`
+- New source files needed: Unknown
+- Current status: Preserved archive
+- Recommended destination: Archive
+- Evidence review needed: No unless the page is promoted
+- Editorial review needed: Yes before any public label is added
+- Archive relationship: Primary archive layer

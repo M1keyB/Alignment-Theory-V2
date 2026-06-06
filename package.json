@@ -6,6 +6,7 @@
   "scripts": {
     "start": "py -m http.server 8000",
     "dev": "py scripts/dev_server.py",
+    "apply:shell": "node scripts/apply-shared-shell.mjs",
     "build": "powershell -Command \"Write-Output 'Static site only: no build step required.'\""
   }
 }

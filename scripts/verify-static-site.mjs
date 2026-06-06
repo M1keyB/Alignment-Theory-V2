@@ -9,6 +9,8 @@ const walk = (dir) => {
     if (entry.name === ".git" || entry.name === "node_modules") continue;
     const rel = path.join(dir, entry.name);
     if (entry.isDirectory()) {
+      const normalizedDir = rel.replace(/\\/g, "/").replace(/^\.\//, "");
+      if (normalizedDir === "assets/fragments") continue;
       out.push(...walk(rel));
     } else if (entry.isFile() && entry.name.endsWith(".html")) {
       out.push(rel.replace(/\\/g, "/").replace(/^\.\//, ""));
