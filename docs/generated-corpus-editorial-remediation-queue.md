@@ -9,6 +9,7 @@ Status: Phase 9 audit-only. Proposed edits are not implemented.
 ### 1. Literature Review: RLHF And Human Preference
 
 - route: `pages/ai-alignment-literature-review.html`
+- status: implemented in Phase 10 Batch 4A
 - section heading: RLHF and Human Preference
 - line or nearby text anchor: `pages/ai-alignment-literature-review.html:127`
 - flagged term, phrase, or pattern: `landscape`
@@ -21,6 +22,7 @@ Status: Phase 9 audit-only. Proposed edits are not implemented.
 ### 2. AI Research Hub: Orientation Line
 
 - route: `pages/ai-alignment-research.html`
+- status: implemented in Phase 10 Batch 4A
 - section heading: AI Alignment Research
 - line or nearby text anchor: orientation sentence near line 89
 - flagged term, phrase, or pattern: `not only`
@@ -33,6 +35,7 @@ Status: Phase 9 audit-only. Proposed edits are not implemented.
 ### 3. Executive Summary: Opening Abstract
 
 - route: `pages/ai-alignment-executive-summary.html`
+- status: implemented in Phase 10 Batch 4A
 - section heading: Executive Summary
 - line or nearby text anchor: opening abstract near line 73
 - flagged term, phrase, or pattern: `not only`
@@ -45,6 +48,7 @@ Status: Phase 9 audit-only. Proposed edits are not implemented.
 ### 4. Executive Summary: What Alignment Theory Adds
 
 - route: `pages/ai-alignment-executive-summary.html`
+- status: implemented in Phase 10 Batch 4A
 - section heading: What Alignment Theory Adds
 - line or nearby text anchor: sentence near line 123
 - flagged term, phrase, or pattern: `not only`

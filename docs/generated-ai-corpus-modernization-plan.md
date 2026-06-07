@@ -172,7 +172,7 @@ Batch 2: Add status labels and canonical consistency. Complete in Phase 8.
 
 Batch 3: Review editorial source data and templates. Complete in Phase 9 as an audit-only source and technical-review pass.
 
-Batch 4A: First controlled editorial implementation batch.
+Batch 4A: First controlled editorial implementation batch. Implemented in Phase 10 and awaiting review.
 
 Limits:
 
@@ -201,6 +201,28 @@ Reason:
 - low technical risk if edits are limited to wording cleanup and do not change claims
 
 Batch 4: Regenerate outputs and inspect route-by-route diffs after approved editorial changes.
+
+Batch 4B: Second controlled editorial implementation batch.
+
+Limits:
+
+- no more than 3 additional routes
+- no more than 15 edits
+- source-level changes only
+- route-by-route diff review required
+- technical-review items deferred unless separately approved
+
+Recommended candidate routes:
+
+- `pages/ai-alignment-who-this-is-for.html`
+- `pages/ai-alignment-methodology.html`
+- `pages/ai-alignment-lineage.html`
+
+Reason:
+
+- each route has clear source locations in `scripts/generate-ai-research-pages.mjs`
+- likely edits are local sentence-shape cleanup rather than claim changes
+- methodology and lineage still require careful status review, so any Batch 4B edits should avoid technical claims
 
 Batch 5: Run hard-ban scanning and technical review.
 

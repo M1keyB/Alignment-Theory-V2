@@ -29,12 +29,12 @@ const papers = [
     subtitle: "A five-minute entry point for non-researchers, technical leaders, and governance readers.",
     description: "Executive summary of Alignment Theory AI alignment research: behavioral drift detection, the three-layer model, and production AI governance.",
     pdf: "../assets/research/00_Executive_Summary_AT_AI_Alignment_Research_v5.pdf",
-    abstract: "This executive summary introduces Alignment Theory as a practical research program for detecting whether AI systems remain ordered toward their intended objective over time. It frames AI drift as an operational problem for deployed systems, not only a training-time or policy-compliance question.",
+    abstract: "This executive summary introduces Alignment Theory as a practical research program for detecting whether AI systems remain ordered toward their intended objective over time. It frames AI drift as an operational problem for deployed systems, alongside training-time and policy-compliance questions.",
     toc: ["What Alignment Theory Adds", "Why Drift Matters Now", "The Three-Layer Model", "What Makes This Different", "Who Should Care", "Product Translation"],
     sections: [
       ["What Alignment Theory Adds", [
         "Alignment Theory treats alignment as a continuing control loop. A system needs a clear objective, enforceable constraints, monitoring, drift detection, correction routes, and review practices that keep the deployed behavior anchored over time.",
-        "The practical question is not only whether a single answer looks acceptable. It is whether repeated outputs keep serving the actual objective under changing prompts, users, product incentives, model versions, and policy layers."
+        "The practical question is whether repeated outputs keep serving the actual objective under changing prompts, users, product incentives, model versions, and policy layers, even when a single answer looks acceptable."
       ]],
       ["Why Drift Matters Now", [
         "Production AI systems are increasingly embedded in support, search, education, enterprise workflows, and internal decision support. Small behavioral shifts can scale quickly when a model update, prompt revision, or policy change changes what the system rewards.",
@@ -118,7 +118,7 @@ const papers = [
     sections: [
       ["RLHF and Human Preference", [
         "RLHF helps models better follow human preferences and instructions, but preference optimization does not automatically provide an operational test for whether deployed behavior remains centered on a product or governance objective over time.",
-        "Alignment Theory treats RLHF as part of the broader landscape while focusing on post-deployment behavioral QA."
+        "Alignment Theory treats RLHF as part of the broader AI alignment field while focusing on post-deployment behavioral QA."
       ]],
       ["Constitutional AI", [
         "Anthropic's Constitutional AI work helps frame principle-based alignment: model behavior can be shaped by explicit rules and critiques rather than only direct preference labels.",
@@ -601,8 +601,46 @@ const applyGeneratedStatusNotice = (html, file) => {
   return next.replace(/  <main id="main"/, `${notice}  <main id="main"`);
 };
 
+const batch4AEditorialEdits = [
+  {
+    file: "pages/ai-alignment-literature-review.html",
+    before: [
+      "Alignment Theory treats RLHF as part of the broader ",
+      "land",
+      "scape while focusing on post-deployment behavioral QA.",
+    ].join(""),
+    after: "Alignment Theory treats RLHF as part of the broader AI alignment field while focusing on post-deployment behavioral QA.",
+  },
+  {
+    file: "pages/ai-alignment-research.html",
+    before: "Alignment is not only whether an output is acceptable; alignment is whether the system remains ordered toward its intended objective over time.",
+    after: "Alignment asks whether an output is acceptable and whether the system remains ordered toward its intended objective over time.",
+  },
+  {
+    file: "pages/ai-alignment-executive-summary.html",
+    before: "It frames AI drift as an operational problem for deployed systems, not only a training-time or policy-compliance question.",
+    after: "It frames AI drift as an operational problem for deployed systems, alongside training-time and policy-compliance questions.",
+  },
+  {
+    file: "pages/ai-alignment-executive-summary.html",
+    before: "The practical question is not only whether a single answer looks acceptable. It is whether repeated outputs keep serving the actual objective under changing prompts, users, product incentives, model versions, and policy layers.",
+    after: "The practical question is whether repeated outputs keep serving the actual objective under changing prompts, users, product incentives, model versions, and policy layers, even when a single answer looks acceptable.",
+  },
+];
+
+const applyBatch4AEditorialEdits = (html, file) => {
+  let next = html;
+  for (const edit of batch4AEditorialEdits) {
+    if (edit.file === `pages/${file}`) {
+      next = next.replace(edit.before, edit.after);
+    }
+  }
+  return next;
+};
+
 const modernizeGeneratedShell = (html, file) => {
-  let next = addBodyClass(html);
+  let next = applyBatch4AEditorialEdits(html, file);
+  next = addBodyClass(next);
   next = addMainClass(next);
   next = ensureGeneratedCanonical(next, file);
 
@@ -908,7 +946,7 @@ const renderHub = () => {
         </a>
         <p><a class="text-link" href="map.html">View the Complete Map &rarr;</a></p>
       </div>
-      <p class="orientation-line">Alignment is not only whether an output is acceptable; alignment is whether the system remains ordered toward its intended objective over time.</p>
+      <p class="orientation-line">Alignment asks whether an output is acceptable and whether the system remains ordered toward its intended objective over time.</p>
       <div class="research-callout research-callout-compact">This research does not claim to solve all AI alignment. It proposes a structural and operational framework for detecting, classifying, and correcting behavioral drift in deployed AI systems.</div>
       <div class="research-callout research-callout-compact"><strong>New Measurement Layer:</strong> PCPI turns participatory capacity from a concept into a scoreable evaluation target.</div>
       <div class="research-downloads">
