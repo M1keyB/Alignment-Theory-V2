@@ -9,6 +9,8 @@ const walk = (dir) => {
     if (entry.name === ".git" || entry.name === "node_modules") continue;
     const rel = path.join(dir, entry.name);
     if (entry.isDirectory()) {
+      const normalizedDir = rel.replace(/\\/g, "/").replace(/^\.\//, "");
+      if (normalizedDir === "assets/fragments") continue;
       out.push(...walk(rel));
     } else if (entry.isFile() && entry.name.endsWith(".html")) {
       out.push(rel.replace(/\\/g, "/").replace(/^\.\//, ""));
@@ -23,7 +25,9 @@ const requiredTokens = [
   'name="description"',
   'rel="canonical"',
   'name="author"',
+  'name="dcterms.creator"',
   'name="dcterms.date"',
+  'name="dcterms.rights"',
   'name="license"',
   'property="og:title"',
   'property="og:site_name"',
@@ -60,8 +64,21 @@ for (const file of files) {
 }
 
 JSON.parse(fs.readFileSync(path.join(root, "ai-summary.json"), "utf8"));
+JSON.parse(fs.readFileSync(path.join(root, "attribution.json"), "utf8"));
 
-if (metadataIssues.length || linkIssues.length) {
+const jsonLdIssues = [];
+for (const file of files) {
+  const html = fs.readFileSync(path.join(root, file), "utf8");
+  for (const match of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+    try {
+      JSON.parse(match[1]);
+    } catch (error) {
+      jsonLdIssues.push(`${file}: ${error.message}`);
+    }
+  }
+}
+
+if (metadataIssues.length || linkIssues.length || jsonLdIssues.length) {
   if (metadataIssues.length) {
     console.error("Metadata issues:");
     console.error(metadataIssues.join("\n"));
@@ -70,10 +87,15 @@ if (metadataIssues.length || linkIssues.length) {
     console.error("Missing local link targets:");
     console.error(linkIssues.join("\n"));
   }
+  if (jsonLdIssues.length) {
+    console.error("JSON-LD issues:");
+    console.error(jsonLdIssues.join("\n"));
+  }
   process.exit(1);
 }
 
 console.log(`Verified ${files.length} HTML pages.`);
 console.log("Required metadata and JSON-LD are present.");
 console.log("Local href/src targets exist.");
-console.log("ai-summary.json is valid JSON.");
+console.log("ai-summary.json and attribution.json are valid JSON.");
+console.log("JSON-LD blocks are valid JSON.");

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alignment Governance Stack | Alignment Theory</title>
+  <meta name="description" content="A restrained overview of the Alignment Governance Stack, delegated agency, PGDL, AAG, Runtime Binding, Receipts, Governance Memory, governance profiles, and human agency audit." />
+  <meta name="author" content="Michael Nathan Bower" />
+  <meta name="dcterms.creator" content="Michael Nathan Bower" />
+  <meta name="dcterms.date" content="2026-06-06" />
+  <meta name="dcterms.rights" content="© 2026 Michael Nathan Bower. All rights reserved unless otherwise stated." />
+  <meta name="license" content="© 2026 Michael Nathan Bower. All rights reserved unless otherwise stated." />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://alignmenttheory.org/pages/alignment-governance-stack.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Alignment Governance Stack | Alignment Theory" />
+  <meta property="og:description" content="A restrained overview of the Alignment Governance Stack, delegated agency, PGDL, AAG, Runtime Binding, Receipts, Governance Memory, governance profiles, and human agency audit." />
+  <meta property="og:url" content="https://alignmenttheory.org/pages/alignment-governance-stack.html" />
+  <meta property="og:site_name" content="Alignment Theory" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alignment Governance Stack | Alignment Theory" />
+  <meta name="twitter:description" content="A restrained overview of the Alignment Governance Stack, delegated agency, PGDL, AAG, Runtime Binding, Receipts, Governance Memory, governance profiles, and human agency audit." />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVFSZRN0PB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-QVFSZRN0PB");
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Alignment Governance Stack","description":"A restrained overview of the Alignment Governance Stack, delegated agency, PGDL, AAG, Runtime Binding, Receipts, Governance Memory, governance profiles, and human agency audit.","author":{"@type":"Person","name":"Michael Nathan Bower","alternateName":"Michael Bower"},"publisher":{"@type":"Organization","name":"Alignment Theory"},"datePublished":"2026-06-06","dateModified":"2026-06-06","mainEntityOfPage":{"@type":"WebPage","@id":"https://alignmenttheory.org/pages/alignment-governance-stack.html"},"url":"https://alignmenttheory.org/pages/alignment-governance-stack.html"}</script>
+  <link rel="stylesheet" href="../assets/styles.css?v=20260506a" />
+</head>
+<body data-page="ai-research" class="phase1-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- SHARED-HEADER:START -->
+<header class="site-header">
+  <div class="site-title">
+    <a class="site-logo" href="../index.html">Alignment Theory</a>
+    <p class="site-subtitle">Independent Research Journal</p>
+    <p class="subtitle">Theory, research notes, and applied AI governance work on support, substitution, and participatory capacity.</p>
+  </div>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">Menu</button>
+  <nav class="site-nav" id="site-nav" aria-label="Primary">
+    <a href="../start-here.html">Start Here</a>
+    <a href="../pages/revised-framework-center.html">Theory</a>
+    <a href="../papers.html">Research</a>
+    <a href="../notes/">Notes</a>
+    <a href="../pages/ai-alignment-research.html" aria-current="page">AI Governance</a>
+    <a href="../pages/library.html">Archive</a>
+    <a href="../about.html">About</a>
+    <a href="../notes/#subscribe">Subscribe</a>
+  </nav>
+</header>
+
+<!-- SHARED-HEADER:END -->
+  <main id="main" class="page page-article page-article--wide">
+    <article class="manuscript">
+      <header class="manuscript-header">
+        <p class="doc-meta"><span class="chip">AI Governance</span><span class="chip">AGS</span><span class="chip">Overview</span></p>
+        <h1>Alignment Governance Stack</h1>
+        <p class="lead">The Alignment Governance Stack is the implementation-facing branch of this work: a local-first set of governance components for delegated AI actions.</p>
+      </header>
+
+      <section class="route-status-note" aria-label="Current status">
+        <p><strong>Current status:</strong> The external AGS repository contains implemented TypeScript packages, examples, documentation, evals, a CLI, and a local-first Continuity Console. Some areas, including runtime governance profile selection, are documented design work rather than completed runtime selection. This page does not claim production readiness or certification status.</p>
+      </section>
+
+      <section class="doc-body precision-shell" data-static-toc>
+        <section class="precision-section" id="why-agentic-ai-changes-governance">
+          <h2>Why Agentic AI Changes The Governance Problem</h2>
+          <p>Agentic AI can move beyond text generation into delegated action. It can call tools, execute workflows, update records, send messages, publish drafts, or act through organization-approved systems.</p>
+          <p>That changes the governance question. The question is no longer limited to whether a model produced acceptable text. A governed system must also ask why an action was proposed, who had authority, what boundary applied, whether the actual runtime action matched the permitted action, and what proof remains afterward.</p>
+        </section>
+
+        <section class="precision-section" id="delegated-agency">
+          <h2>Delegated Agency</h2>
+          <p>Delegated agency means a system acts under human or organizational authority. The delegation may be narrow, temporary, internal, reversible, and low risk. It may also become external, sensitive, irreversible, or consequential.</p>
+          <p>AGS treats delegated action as something that needs a path from authority to consequence. The stack asks whether delegation remains under policy, proposal review, execution gating, runtime permit checks, evidence, memory, and human audit.</p>
+        </section>
+
+        <section class="precision-section" id="governed-action-path">
+          <h2>The Governed Action Path</h2>
+          <p>The local AGS documentation describes a governed path from human and organizational authority through proposal formation, PGDL, AAG, Runtime Binding, receipts, Governance Memory, and Human Agency Audit.</p>
+          <div class="research-callout research-callout-compact">
+            <p>Human authority to policy boundary to agent proposal to PGDL to AAG to runtime permit to execution evidence to receipt to Governance Memory to human agency audit.</p>
+          </div>
+          <p>The point of the sequence is to keep proposal, authorization, execution, and memory from drifting apart. Each stage has a narrower job.</p>
+        </section>
+
+        <section class="precision-section" id="pgdl">
+          <h2>PGDL</h2>
+          <p>PGDL means Pre-Gate Deliberation Layer. In the AGS documentation, PGDL asks what kind of action should be proposed before an action reaches the hard gate.</p>
+          <p>PGDL is a proposal-maturation layer. It can analyze, object, revise, escalate, reject, or forward a proposal. The local v0.1 description says it uses deterministic rule-based logic, does not call LLMs, and does not execute or approve actions.</p>
+        </section>
+
+        <section class="precision-section" id="aag">
+          <h2>AAG</h2>
+          <p>AAG means Agent Action Gate. In AGS, AAG remains the hard pre-execution gate. It evaluates whether a proposed action should be allowed before execution.</p>
+          <p>The AGS docs state that AAG core is imported from the existing Agent Action Gate implementation and adapted into `@alignment-governance-stack/aag-core`. It returns `allow`, `require_approval`, `revise_action`, or `block`. It does not execute actions and does not perform PGDL's proposal-maturation role.</p>
+        </section>
+
+        <section class="precision-section" id="runtime-binding">
+          <h2>Runtime Binding</h2>
+          <p>Runtime Binding validates that the actual action being executed matches a valid permit. Its job is to prevent drift between the approved proposal and the runtime action.</p>
+          <p>The local Runtime Binding v0.1 documentation says it checks exact permitted execution and denies missing permits, expired permits, hash mismatches, tool substitution, target substitution, environment substitution, scope expansion, external-facing escalation, sensitive-data escalation, and approval-state changes.</p>
+        </section>
+
+        <section class="precision-section" id="receipts">
+          <h2>Receipts</h2>
+          <p>Receipts preserve proof after PGDL, AAG, Runtime Binding, and final governance decisions. They are audit evidence, not approval.</p>
+          <p>The current AGS receipt package creates tamper-evident governance receipts for the spine from original proposal through PGDL packet, AAG decision, runtime permit, Runtime Binding result when supplied, final decision, receipt hash, and hash verification. The v0.1 docs describe receipts as in-memory proof artifacts, with persistence and signing listed as future work.</p>
+        </section>
+
+        <section class="precision-section" id="governance-memory">
+          <h2>Governance Memory</h2>
+          <p>Governance Memory analyzes receipt history and produces recommendations for human review. It can identify repeated revision patterns, hard-boundary blocks, missing authority, likely rubber-stamp approvals, runtime substitutions, invalid policy profiles, and other governance patterns.</p>
+          <p>The documentation is explicit about the boundary: Governance Memory does not silently mutate policy profiles, hard boundaries, authority maps, or participation policies. Every recommendation requires human review.</p>
+        </section>
+
+        <section class="precision-section" id="governance-profiles">
+          <h2>Governance Profiles</h2>
+          <p>Governance profiles are currently documented design work. The external AGS profile design document says static governance-module manifests exist in Continuity Console sample data, but runtime profile selection is not implemented.</p>
+          <p>The planned role is to select which governance modules apply to a workflow or action context without allowing modules to silently grant themselves authority. The fixed AGS roles remain PGDL, AAG, Runtime Binding, and receipt continuity.</p>
+        </section>
+
+        <section class="precision-section" id="hapi">
+          <h2>Relationship To HAPI</h2>
+          <p>HAPI names the agency-preservation problem in public and institutional terms. It asks whether people retain understanding, refusal, revision, authority, and accountability.</p>
+          <p>AGS is the implementation-facing companion. It gives delegated AI actions a governed path that can produce evidence for later review. HAPI names the human condition the system should preserve; AGS supplies technical primitives for testing and documenting action governance.</p>
+        </section>
+
+        <section class="precision-section" id="original-aag">
+          <h2>Relationship To The Original AAG Prototype</h2>
+          <p>The existing public Agent Action Gate page documents the original AAG v0.3.0 prototype. That page should remain intact because it records a specific release and public implementation surface.</p>
+          <p>The AGS repository incorporates AAG as one stage inside a larger governed path. Later AGS work should not be described as part of the original v0.3.0 release unless release evidence supports that claim.</p>
+        </section>
+
+        <section class="precision-section" id="current-status">
+          <h2>Current Status</h2>
+          <p>Local evidence for AGS includes a TypeScript monorepo, implemented packages, examples, docs, evals, a developer CLI, receipt-history analysis, and a Continuity Console with read-only Local Evidence Mode. The changelog's latest observed heading is v1.12.0, while `package.json` still reports version 0.1.0, so public version wording should remain cautious until the author confirms the release reference.</p>
+          <p>AGS is not an AI model, hosted service, legal compliance certification, identity provider, or replacement for human judgment.</p>
+        </section>
+
+        <section class="precision-section" id="technical-source-material">
+          <h2>Technical Source Material</h2>
+          <div class="phase1-link-grid">
+            <article>
+              <h3>HAPI Overview</h3>
+              <p>The public agency-preservation branch connected to this work.</p>
+              <a class="text-link" href="human-agency-preservation-infrastructure.html">Open HAPI Overview</a>
+            </article>
+            <article>
+              <h3>Agent Action Gate</h3>
+              <p>The original public AAG v0.3.0 prototype page.</p>
+              <a class="text-link" href="../projects/agent-action-gate.html">Open AAG Prototype</a>
+            </article>
+            <article>
+              <h3>AI Governance Hub</h3>
+              <p>The current hub for AI alignment research and applied governance links.</p>
+              <a class="text-link" href="ai-alignment-research.html">Open AI Governance</a>
+            </article>
+            <article>
+              <h3>PCPI</h3>
+              <p>The measurement page for participatory capacity and substitution risk.</p>
+              <a class="text-link" href="participatory-capacity-preservation-index.html">Open PCPI</a>
+            </article>
+          </div>
+        </section>
+      </section>
+    </article>
+  </main>
+  <!-- SHARED-FOOTER:START -->
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="site-footer-brand">
+      <p class="site-footer-title">Alignment Theory</p>
+      <p>A quiet research journal on support, substitution, participatory capacity, and alignment across human systems and AI governance.</p>
+    </div>
+    <nav class="site-footer-links" aria-label="Footer">
+      <a href="../start-here.html">Start Here</a>
+      <a href="../pages/revised-framework-center.html">Theory</a>
+      <a href="../papers.html">Research</a>
+      <a href="../notes/">Notes</a>
+      <a href="../pages/ai-alignment-research.html">AI Governance</a>
+      <a href="../pages/library.html">Archive</a>
+      <a href="../about.html">About</a>
+      <a href="../notes/#subscribe">Subscribe</a>
+    </nav>
+  </div>
+  <div class="provenance">
+    <p><strong>Alignment Theory</strong> is an original constraint-based framework by <strong>Michael Nathan Bower</strong> for mapping coherence, overload, fragmentation, collapse, recovery, and alignment across human and artificial systems.</p>
+    <p>AI tools may assist with organization, drafting, formatting, coding, and refinement, but the core framework, synthesis, constraint architecture, terminology, interpretive structure, and product direction originate from Michael Nathan Bower.</p>
+    <p>Canonical source: <a href="https://alignmenttheory.org">AlignmentTheory.org</a></p>
+  </div>
+  <p class="site-footer-copy">&copy; 2026 Michael Nathan Bower. All rights reserved. Contact: <a href="mailto:mnbower.researcher@gmail.com">mnbower.researcher@gmail.com</a></p>
+</footer>
+
+<!-- SHARED-FOOTER:END -->
+  <script src="../assets/app.js?v=20260506a"></script>
+</body>
+</html>

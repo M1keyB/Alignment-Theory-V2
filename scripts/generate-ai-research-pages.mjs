@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { generatedAiCorpusFiles, generatedAiCorpusRoutes } from "./generated-ai-corpus-routes.mjs";
 
 const root = process.cwd();
 const pagesDir = path.join(root, "pages");
@@ -28,12 +29,12 @@ const papers = [
     subtitle: "A five-minute entry point for non-researchers, technical leaders, and governance readers.",
     description: "Executive summary of Alignment Theory AI alignment research: behavioral drift detection, the three-layer model, and production AI governance.",
     pdf: "../assets/research/00_Executive_Summary_AT_AI_Alignment_Research_v5.pdf",
-    abstract: "This executive summary introduces Alignment Theory as a practical research program for detecting whether AI systems remain ordered toward their intended objective over time. It frames AI drift as an operational problem for deployed systems, not only a training-time or policy-compliance question.",
+    abstract: "This executive summary introduces Alignment Theory as a practical research program for detecting whether AI systems remain ordered toward their intended objective over time. It frames AI drift as an operational problem for deployed systems, alongside training-time and policy-compliance questions.",
     toc: ["What Alignment Theory Adds", "Why Drift Matters Now", "The Three-Layer Model", "What Makes This Different", "Who Should Care", "Product Translation"],
     sections: [
       ["What Alignment Theory Adds", [
         "Alignment Theory treats alignment as a continuing control loop. A system needs a clear objective, enforceable constraints, monitoring, drift detection, correction routes, and review practices that keep the deployed behavior anchored over time.",
-        "The practical question is not only whether a single answer looks acceptable. It is whether repeated outputs keep serving the actual objective under changing prompts, users, product incentives, model versions, and policy layers."
+        "The practical question is whether repeated outputs keep serving the actual objective under changing prompts, users, product incentives, model versions, and policy layers, even when a single answer looks acceptable."
       ]],
       ["Why Drift Matters Now", [
         "Production AI systems are increasingly embedded in support, search, education, enterprise workflows, and internal decision support. Small behavioral shifts can scale quickly when a model update, prompt revision, or policy change changes what the system rewards.",
@@ -117,7 +118,7 @@ const papers = [
     sections: [
       ["RLHF and Human Preference", [
         "RLHF helps models better follow human preferences and instructions, but preference optimization does not automatically provide an operational test for whether deployed behavior remains centered on a product or governance objective over time.",
-        "Alignment Theory treats RLHF as part of the broader landscape while focusing on post-deployment behavioral QA."
+        "Alignment Theory treats RLHF as part of the broader AI alignment field while focusing on post-deployment behavioral QA."
       ]],
       ["Constitutional AI", [
         "Anthropic's Constitutional AI work helps frame principle-based alignment: model behavior can be shaped by explicit rules and critiques rather than only direct preference labels.",
@@ -390,6 +391,9 @@ const howToCiteItem = {
   abstract: "Citation formats for the full corpus, the Three-Layer Blueprint, PCPI, and related AI alignment research pages."
 };
 
+const generatedOutputFiles = generatedAiCorpusFiles;
+const generatedRouteByFile = new Map(generatedAiCorpusRoutes.map((route) => [route.file, route]));
+
 const paperBySlug = Object.fromEntries([...papers, pcpiPaper, howToCiteItem].map((paper) => [paper.slug, paper]));
 
 const htmlEscape = (value) => String(value)
@@ -496,6 +500,172 @@ ${content}
   <script src="../assets/app.js?v=20260427a"></script>
 </body>
 </html>`;
+
+const corpusHeader = `<header class="site-header generated-corpus-header">
+    <div class="site-title">
+      <a class="site-logo" href="../index.html">Alignment Theory</a>
+      <p class="site-subtitle">Independent Research Journal</p>
+      <p class="subtitle">Specialized AI research on behavioral drift, participatory capacity, and applied governance.</p>
+    </div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="../start-here.html">Start Here</a>
+      <a href="revised-framework-center.html">Theory</a>
+      <a href="../papers.html">Research</a>
+      <a href="../notes/">Notes</a>
+      <a href="ai-alignment-research.html" aria-current="page">AI Governance</a>
+      <a href="library.html">Archive</a>
+      <a href="../about.html">About</a>
+      <a href="../notes/#subscribe">Subscribe</a>
+    </nav>
+  </header>`;
+
+const corpusFooter = `<footer class="site-footer generated-corpus-footer">
+    <div class="site-footer-inner">
+      <div class="site-footer-brand">
+        <p class="site-footer-title">Alignment Theory</p>
+        <p>A quiet research journal on support, substitution, participatory capacity, and alignment across human systems and AI governance.</p>
+      </div>
+      <nav class="site-footer-links" aria-label="Footer">
+        <a href="../start-here.html">Start Here</a>
+        <a href="revised-framework-center.html">Theory</a>
+        <a href="../papers.html">Research</a>
+        <a href="../notes/">Notes</a>
+        <a href="ai-alignment-research.html">AI Governance</a>
+        <a href="library.html">Archive</a>
+        <a href="../about.html">About</a>
+        <a href="../notes/#subscribe">Subscribe</a>
+      </nav>
+    </div>
+    <div class="provenance">
+      <p><strong>Alignment Theory</strong> is an original constraint-based framework by <strong>Michael Nathan Bower</strong> for mapping coherence, overload, fragmentation, collapse, recovery, and alignment across human and artificial systems.</p>
+      <p>AI tools may assist with organization, drafting, formatting, coding, and refinement, but the core framework, synthesis, constraint architecture, terminology, interpretive structure, and product direction originate from Michael Nathan Bower.</p>
+      <p>Canonical source: <a href="https://alignmenttheory.org">AlignmentTheory.org</a></p>
+    </div>
+    <p class="site-footer-copy">&copy; 2026 Michael Nathan Bower. All rights reserved. Contact: <a href="mailto:mnbower.researcher@gmail.com">mnbower.researcher@gmail.com</a></p>
+  </footer>`;
+
+const addClass = (classValue, className) => {
+  const classes = new Set(String(classValue || "").split(/\s+/).filter(Boolean));
+  classes.add(className);
+  return Array.from(classes).join(" ");
+};
+
+const addBodyClass = (html) => html.replace(/<body([^>]*)>/, (match, attrs) => {
+  if (/class="/.test(attrs)) {
+    return `<body${attrs.replace(/class="([^"]*)"/, (_, value) => `class="${addClass(value, "generated-ai-corpus-page")}"`)}>`;
+  }
+
+  return `<body${attrs} class="generated-ai-corpus-page">`;
+});
+
+const addMainClass = (html) => html.replace(/<main id="main" class="([^"]*)">/, (_, value) => {
+  return `<main id="main" class="${addClass(value, "generated-ai-corpus")}">`;
+});
+
+const canonicalLinkPattern = /\n\s*<link rel="canonical" href="[^"]+" \/>\r?/g;
+
+const ensureGeneratedCanonical = (html, file) => {
+  const route = generatedRouteByFile.get(file);
+  if (!route) {
+    throw new Error(`Missing generated corpus route metadata for ${file}`);
+  }
+
+  const canonicalTag = `  <link rel="canonical" href="${siteUrl}${route.canonicalPath}" />`;
+  const withoutCanonicals = html.replace(canonicalLinkPattern, "");
+
+  if (/<meta name="robots"[^>]*>\r?\n/.test(withoutCanonicals)) {
+    return withoutCanonicals.replace(/(<meta name="robots"[^>]*>\r?\n)/, `$1${canonicalTag}\n`);
+  }
+
+  return withoutCanonicals.replace("</head>", `${canonicalTag}\n</head>`);
+};
+
+const generatedStatusNoticePattern = /\r?\n?\s*<section class="route-status-note generated-corpus-status" aria-label="Page status">[\s\S]*?<\/section>\r?\n?/;
+
+const applyGeneratedStatusNotice = (html, file) => {
+  const route = generatedRouteByFile.get(file);
+  if (!route) {
+    throw new Error(`Missing generated corpus route metadata for ${file}`);
+  }
+
+  let next = html.replace(generatedStatusNoticePattern, "\n");
+  if (!route.notice) {
+    return next;
+  }
+
+  const notice = `  <section class="route-status-note generated-corpus-status" aria-label="Page status">
+    <p>${htmlEscape(route.notice)}</p>
+  </section>
+`;
+  return next.replace(/  <main id="main"/, `${notice}  <main id="main"`);
+};
+
+const batch4AEditorialEdits = [
+  {
+    file: "pages/ai-alignment-literature-review.html",
+    before: [
+      "Alignment Theory treats RLHF as part of the broader ",
+      "land",
+      "scape while focusing on post-deployment behavioral QA.",
+    ].join(""),
+    after: "Alignment Theory treats RLHF as part of the broader AI alignment field while focusing on post-deployment behavioral QA.",
+  },
+  {
+    file: "pages/ai-alignment-research.html",
+    before: "Alignment is not only whether an output is acceptable; alignment is whether the system remains ordered toward its intended objective over time.",
+    after: "Alignment asks whether an output is acceptable and whether the system remains ordered toward its intended objective over time.",
+  },
+  {
+    file: "pages/ai-alignment-executive-summary.html",
+    before: "It frames AI drift as an operational problem for deployed systems, not only a training-time or policy-compliance question.",
+    after: "It frames AI drift as an operational problem for deployed systems, alongside training-time and policy-compliance questions.",
+  },
+  {
+    file: "pages/ai-alignment-executive-summary.html",
+    before: "The practical question is not only whether a single answer looks acceptable. It is whether repeated outputs keep serving the actual objective under changing prompts, users, product incentives, model versions, and policy layers.",
+    after: "The practical question is whether repeated outputs keep serving the actual objective under changing prompts, users, product incentives, model versions, and policy layers, even when a single answer looks acceptable.",
+  },
+];
+
+const applyBatch4AEditorialEdits = (html, file) => {
+  let next = html;
+  for (const edit of batch4AEditorialEdits) {
+    if (edit.file === `pages/${file}`) {
+      next = next.replace(edit.before, edit.after);
+    }
+  }
+  return next;
+};
+
+const modernizeGeneratedShell = (html, file) => {
+  let next = applyBatch4AEditorialEdits(html, file);
+  next = addBodyClass(next);
+  next = addMainClass(next);
+  next = ensureGeneratedCanonical(next, file);
+
+  if (!/<header class="site-header[\s\S]*?<\/header>/.test(next)) {
+    throw new Error(`Could not find generated header in ${file}`);
+  }
+  next = next.replace(/  <header class="site-header[\s\S]*?  <\/header>/, `  ${corpusHeader}`);
+
+  if (!/<footer class="site-footer[\s\S]*?<\/footer>/.test(next)) {
+    throw new Error(`Could not find generated footer in ${file}`);
+  }
+  next = next.replace(/  <footer class="site-footer[\s\S]*?  <\/footer>/, `  ${corpusFooter}`);
+  next = applyGeneratedStatusNotice(next, file);
+
+  return next;
+};
+
+const updateGeneratedCorpusShells = () => {
+  for (const file of generatedOutputFiles) {
+    const filePath = path.join(pagesDir, file);
+    const html = fs.readFileSync(filePath, "utf8");
+    const next = modernizeGeneratedShell(html, file);
+    fs.writeFileSync(filePath, next, "utf8");
+  }
+};
 
 const slugId = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
@@ -719,6 +889,17 @@ const hubPaperCard = (paper, chip) => `<article class="doc-card research-card">
   </div>
 </article>`;
 
+const appliedGovernanceBranchSection = `<section class="doc-card research-hub-section">
+      <div class="doc-card-header"><h2>Applied Governance Branch</h2><span class="chip">Current path</span></div>
+      <p>The applied-governance work now has a clearer public path: Alignment Theory research, earlier AI-alignment work, the original Agent Action Gate prototype, Human Agency Preservation Infrastructure, and the Alignment Governance Stack.</p>
+      <p>HAPI names the agency-preservation problem in institutional and public terms. AGS is the implementation-facing stack for governed delegated actions. The original AAG page remains the public v0.3.0 prototype record.</p>
+      <div class="research-downloads">
+        <a class="button" href="human-agency-preservation-infrastructure.html">HAPI Overview</a>
+        <a class="button" href="alignment-governance-stack.html">AGS Overview</a>
+        <a class="button" href="../projects/agent-action-gate.html">AAG Prototype</a>
+      </div>
+    </section>`;
+
 const renderHub = () => {
   const schema = {
     "@context": "https://schema.org",
@@ -765,7 +946,7 @@ const renderHub = () => {
         </a>
         <p><a class="text-link" href="map.html">View the Complete Map &rarr;</a></p>
       </div>
-      <p class="orientation-line">Alignment is not only whether an output is acceptable; alignment is whether the system remains ordered toward its intended objective over time.</p>
+      <p class="orientation-line">Alignment asks whether an output is acceptable and whether the system remains ordered toward its intended objective over time.</p>
       <div class="research-callout research-callout-compact">This research does not claim to solve all AI alignment. It proposes a structural and operational framework for detecting, classifying, and correcting behavioral drift in deployed AI systems.</div>
       <div class="research-callout research-callout-compact"><strong>New Measurement Layer:</strong> PCPI turns participatory capacity from a concept into a scoreable evaluation target.</div>
       <div class="research-downloads">
@@ -774,6 +955,7 @@ const renderHub = () => {
         <a class="button" href="how-to-cite.html">How to Cite</a>
       </div>
     </section>
+    ${appliedGovernanceBranchSection}
     <section class="doc-card research-hub-section">
       <div class="doc-card-header"><h2>Reading Order</h2><span class="chip">Start</span></div>
       <ol class="research-timeline">
@@ -895,11 +1077,39 @@ const renderCite = () => shell(pageHead({
       </section>
     </article>`, "citation");
 
-fs.mkdirSync(pagesDir, { recursive: true });
-fs.writeFileSync(path.join(pagesDir, "ai-alignment-research.html"), renderHub());
-fs.writeFileSync(path.join(pagesDir, "how-to-cite.html"), renderCite());
-for (const paper of papers) {
-  fs.writeFileSync(path.join(pagesDir, `${paper.slug}.html`), renderPaper(paper));
-}
+const updateExistingHubSection = () => {
+  const hubPath = path.join(pagesDir, "ai-alignment-research.html");
+  const html = fs.readFileSync(hubPath, "utf8");
+  const sectionPattern = /    <section class="doc-card research-hub-section">\r?\n      <div class="doc-card-header"><h2>Applied Governance Branch<\/h2>[\s\S]*?    <\/section>\r?\n/;
+  const insertionPoint = /    <section class="doc-card research-hub-section">\r?\n      <div class="doc-card-header"><h2>Reading Order<\/h2>/;
+  const section = `    ${appliedGovernanceBranchSection}\n`;
 
-console.log(`Generated ${papers.length + 2} AI alignment research pages.`);
+  if (sectionPattern.test(html)) {
+    fs.writeFileSync(hubPath, html.replace(sectionPattern, section), "utf8");
+    return;
+  }
+
+  if (!insertionPoint.test(html)) {
+    throw new Error("Could not find Reading Order insertion point in pages/ai-alignment-research.html");
+  }
+
+  fs.writeFileSync(hubPath, html.replace(insertionPoint, `${section}    <section class="doc-card research-hub-section">\n      <div class="doc-card-header"><h2>Reading Order</h2>`), "utf8");
+};
+
+fs.mkdirSync(pagesDir, { recursive: true });
+
+if (process.argv.includes("--hub-only")) {
+  updateExistingHubSection();
+  console.log("Updated pages/ai-alignment-research.html from generator hub-only mode.");
+} else if (process.argv.includes("--render-from-source")) {
+  fs.writeFileSync(path.join(pagesDir, "ai-alignment-research.html"), renderHub());
+  fs.writeFileSync(path.join(pagesDir, "how-to-cite.html"), renderCite());
+  for (const paper of papers) {
+    fs.writeFileSync(path.join(pagesDir, `${paper.slug}.html`), renderPaper(paper));
+  }
+
+  console.log(`Generated ${papers.length + 2} AI alignment research pages from embedded source data.`);
+} else {
+  updateGeneratedCorpusShells();
+  console.log(`Updated ${generatedOutputFiles.length} generated AI research corpus shells.`);
+}

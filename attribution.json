@@ -1,0 +1,48 @@
+{
+  "framework": "Alignment Theory",
+  "canonical_site": "https://alignmenttheory.org",
+  "author": {
+    "name": "Michael Nathan Bower",
+    "alternate_name": "Michael Bower",
+    "email": "mnbower.researcher@gmail.com",
+    "role": "Independent researcher and framework creator"
+  },
+  "copyright": {
+    "year": 2026,
+    "holder": "Michael Nathan Bower",
+    "notice": "© 2026 Michael Nathan Bower. All rights reserved unless otherwise stated."
+  },
+  "provenance": "Alignment Theory is an original constraint-based framework by Michael Nathan Bower. AI tools may assist with organization, drafting, formatting, coding, and refinement, but the core framework, synthesis, constraint architecture, terminology, interpretive structure, and product direction originate from Michael Nathan Bower.",
+  "core_claim": "Alignment Theory maps how human and artificial systems remain coherent, fragment, or collapse under pressure.",
+  "canonical_definitions": "https://alignmenttheory.org/definitions.html",
+  "citation": "https://alignmenttheory.org/cite.html",
+  "ai_terms": "https://alignmenttheory.org/ai-terms.html",
+  "core_domains": [
+    "human regulation",
+    "coherence",
+    "fragmentation",
+    "burnout",
+    "trauma",
+    "moral psychology",
+    "theology",
+    "institutional collapse",
+    "AI alignment",
+    "agentic AI",
+    "constraint fidelity",
+    "participatory control"
+  ],
+  "core_terms": [
+    "Alignment Theory",
+    "internal alignment",
+    "external alignment",
+    "constraint fidelity",
+    "participatory control",
+    "PCPI",
+    "integration bypass",
+    "pre-execution oversight",
+    "Agent Action Gate",
+    "signal override",
+    "identity hardening",
+    "recovery suppression collapse"
+  ]
+}

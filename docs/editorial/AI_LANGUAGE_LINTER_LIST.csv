@@ -1,0 +1,349 @@
+category,term_or_pattern,instruction
+hard-ban word,delve,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,delve into,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,delves into,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,delving into,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,tapestry,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,rich tapestry,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,intricate tapestry,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,realm,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,in the realm of,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,landscape,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,navigate the landscape,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,navigating the landscape,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,navigate the complexities of,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,navigating the complexities of,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,ever-evolving landscape,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,embark,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,embark on a journey,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,unlock,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,unlock the potential,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,unlock the secrets,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,unleash,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,unleash the power of,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,harness,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,harness the power of,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,harness the potential of,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,elevate,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,elevate your,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,revolutionize,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,transformative,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,game-changer,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,groundbreaking,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,cutting-edge,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,seamless,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,robust,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,pivotal,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,paramount,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,multifaceted,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,nuanced,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,meticulous,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,meticulously,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,intricacies,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,interplay,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,resonate,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,resonates,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,resonance,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,a testament to,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,testament to,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,foster,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,foster a culture of,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,underscore,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,underscores,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,underscoring,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,shed light on,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,illuminate,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,elucidate,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,bolster,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,burgeoning,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,vibrant,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,bustling,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,nestled,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,whimsical,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,poignant,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,profound,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,timeless,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban word,relentless,Avoid in public prose unless quoting or using an unavoidable technical term.
+hard-ban phrase/template,It's important to note,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,It is important to note,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,It's worth noting,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,It is worth noting,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,It's essential to,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,It is essential to,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,It's crucial to,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,It is crucial to,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Remember that,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Keep in mind that,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,In today's fast-paced world,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,In today's digital age,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,As technology continues to evolve,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,At the end of the day,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,In a world where,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,In the world of,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,When it comes to,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,In conclusion,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,In summary,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,To summarize,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,To sum up,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,"It's not just X, it's Y",Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,This is not X; it is Y,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,"This isn't X, it's Y",Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,"It's not about X, it's about Y",Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Not X. Not Y. But Z.,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Not because X. Not because Y. But because Z.,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,not just ___ but ___,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,not only ___ but also ___,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,more than just,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,not merely,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,is not merely,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Here's the thing,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,But here's the thing,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,The reality is,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,The truth is,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,The deeper issue is,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,This changes everything,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Everything changed,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Something shifted,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Let that sink in,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Sit with that,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Read that again,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Think about that,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,The solution?,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,The result?,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,The key?,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Why? Because,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,And that matters,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,That's the point,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,This is the core,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,You just cracked the core,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,This right here,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,The bigger question,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,The uncomfortable question,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,The strongest takeaway,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,That is huge,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,This is huge,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,At its core,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,In essence,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Fundamentally,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Serves as,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Paving the way,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Signals a shift,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Marks a shift,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Highlights the importance of,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Plays a crucial role,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Meaningful impact,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Valuable insights,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Deeper understanding,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,A wide range of,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,There are a few considerations,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,"Several factors, including",Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Can help to,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,I hope this email finds you well,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Best regards,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Picture this,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Imagine a world where,Rewrite directly. Do not retain the template with synonyms.
+hard-ban phrase/template,Welcome to the world of,Rewrite directly. Do not retain the template with synonyms.
+review word,align,Allowed when precise. Flag repeated or clustered use.
+review word,aligned,Allowed when precise. Flag repeated or clustered use.
+review word,alignment,Allowed when precise. Flag repeated or clustered use.
+review word,amplify,Allowed when precise. Flag repeated or clustered use.
+review word,amplifies,Allowed when precise. Flag repeated or clustered use.
+review word,amplified,Allowed when precise. Flag repeated or clustered use.
+review word,amplification,Allowed when precise. Flag repeated or clustered use.
+review word,coherent,Allowed when precise. Flag repeated or clustered use.
+review word,coherence,Allowed when precise. Flag repeated or clustered use.
+review word,convergence,Allowed when precise. Flag repeated or clustered use.
+review word,constraint,Allowed when precise. Flag repeated or clustered use.
+review word,constraints,Allowed when precise. Flag repeated or clustered use.
+review word,continuity,Allowed when precise. Flag repeated or clustered use.
+review word,framework,Allowed when precise. Flag repeated or clustered use.
+review word,infrastructure,Allowed when precise. Flag repeated or clustered use.
+review word,ecosystem,Allowed when precise. Flag repeated or clustered use.
+review word,architecture,Allowed when precise. Flag repeated or clustered use.
+review word,substrate,Allowed when precise. Flag repeated or clustered use.
+review word,agency,Allowed when precise. Flag repeated or clustered use.
+review word,authority,Allowed when precise. Flag repeated or clustered use.
+review word,accountability,Allowed when precise. Flag repeated or clustered use.
+review word,governance,Allowed when precise. Flag repeated or clustered use.
+review word,discernment,Allowed when precise. Flag repeated or clustered use.
+review word,critical,Allowed when precise. Flag repeated or clustered use.
+review word,crucial,Allowed when precise. Flag repeated or clustered use.
+review word,vital,Allowed when precise. Flag repeated or clustered use.
+review word,essential,Allowed when precise. Flag repeated or clustered use.
+review word,significant,Allowed when precise. Flag repeated or clustered use.
+review word,meaningful,Allowed when precise. Flag repeated or clustered use.
+review word,powerful,Allowed when precise. Flag repeated or clustered use.
+review word,dynamic,Allowed when precise. Flag repeated or clustered use.
+review word,comprehensive,Allowed when precise. Flag repeated or clustered use.
+review word,holistic,Allowed when precise. Flag repeated or clustered use.
+review word,innovative,Allowed when precise. Flag repeated or clustered use.
+review word,sustainable,Allowed when precise. Flag repeated or clustered use.
+review word,authentic,Allowed when precise. Flag repeated or clustered use.
+review word,valuable,Allowed when precise. Flag repeated or clustered use.
+review word,potential,Allowed when precise. Flag repeated or clustered use.
+review word,complexity,Allowed when precise. Flag repeated or clustered use.
+review word,complexities,Allowed when precise. Flag repeated or clustered use.
+review word,challenge,Allowed when precise. Flag repeated or clustered use.
+review word,challenges,Allowed when precise. Flag repeated or clustered use.
+review word,opportunity,Allowed when precise. Flag repeated or clustered use.
+review word,opportunities,Allowed when precise. Flag repeated or clustered use.
+review word,insight,Allowed when precise. Flag repeated or clustered use.
+review word,insights,Allowed when precise. Flag repeated or clustered use.
+review word,impact,Allowed when precise. Flag repeated or clustered use.
+review word,implications,Allowed when precise. Flag repeated or clustered use.
+review word,role,Allowed when precise. Flag repeated or clustered use.
+review word,journey,Allowed when precise. Flag repeated or clustered use.
+review word,roadmap,Allowed when precise. Flag repeated or clustered use.
+review word,toolkit,Allowed when precise. Flag repeated or clustered use.
+review word,highlight,Allowed when precise. Flag repeated or clustered use.
+review word,highlights,Allowed when precise. Flag repeated or clustered use.
+review word,showcase,Allowed when precise. Flag repeated or clustered use.
+review word,showcases,Allowed when precise. Flag repeated or clustered use.
+review word,showcasing,Allowed when precise. Flag repeated or clustered use.
+review word,reveal,Allowed when precise. Flag repeated or clustered use.
+review word,reveals,Allowed when precise. Flag repeated or clustered use.
+review word,enhance,Allowed when precise. Flag repeated or clustered use.
+review word,enhances,Allowed when precise. Flag repeated or clustered use.
+review word,enhancing,Allowed when precise. Flag repeated or clustered use.
+review word,empower,Allowed when precise. Flag repeated or clustered use.
+review word,empowers,Allowed when precise. Flag repeated or clustered use.
+review word,empowering,Allowed when precise. Flag repeated or clustered use.
+review word,integrate,Allowed when precise. Flag repeated or clustered use.
+review word,integrates,Allowed when precise. Flag repeated or clustered use.
+review word,explore,Allowed when precise. Flag repeated or clustered use.
+review word,explores,Allowed when precise. Flag repeated or clustered use.
+review word,exploring,Allowed when precise. Flag repeated or clustered use.
+review word,navigate,Allowed when precise. Flag repeated or clustered use.
+review word,navigates,Allowed when precise. Flag repeated or clustered use.
+review word,navigating,Allowed when precise. Flag repeated or clustered use.
+review word,shape,Allowed when precise. Flag repeated or clustered use.
+review word,shapes,Allowed when precise. Flag repeated or clustered use.
+review word,shaping,Allowed when precise. Flag repeated or clustered use.
+review word,underpin,Allowed when precise. Flag repeated or clustered use.
+review word,underpins,Allowed when precise. Flag repeated or clustered use.
+review word,underpinning,Allowed when precise. Flag repeated or clustered use.
+review word,underlying,Allowed when precise. Flag repeated or clustered use.
+review word,underlies,Allowed when precise. Flag repeated or clustered use.
+review word,evolving,Allowed when precise. Flag repeated or clustered use.
+review word,evolution,Allowed when precise. Flag repeated or clustered use.
+review word,curated,Allowed when precise. Flag repeated or clustered use.
+review word,crafted,Allowed when precise. Flag repeated or clustered use.
+review word,tailored,Allowed when precise. Flag repeated or clustered use.
+review word,structured,Allowed when precise. Flag repeated or clustered use.
+review word,streamlined,Allowed when precise. Flag repeated or clustered use.
+review word,scalable,Allowed when precise. Flag repeated or clustered use.
+review word,actionable,Allowed when precise. Flag repeated or clustered use.
+review word,commendable,Allowed when precise. Flag repeated or clustered use.
+review word,intricate,Allowed when precise. Flag repeated or clustered use.
+review word,meticulousness,Allowed when precise. Flag repeated or clustered use.
+review word,notable,Allowed when precise. Flag repeated or clustered use.
+review word,notably,Allowed when precise. Flag repeated or clustered use.
+review word,arguably,Allowed when precise. Flag repeated or clustered use.
+review word,moreover,Allowed when precise. Flag repeated or clustered use.
+review word,furthermore,Allowed when precise. Flag repeated or clustered use.
+review word,additionally,Allowed when precise. Flag repeated or clustered use.
+review word,consequently,Allowed when precise. Flag repeated or clustered use.
+review word,ultimately,Allowed when precise. Flag repeated or clustered use.
+review word,overall,Allowed when precise. Flag repeated or clustered use.
+review word,therefore,Allowed when precise. Flag repeated or clustered use.
+review word,indeed,Allowed when precise. Flag repeated or clustered use.
+review word,invaluable,Allowed when precise. Flag repeated or clustered use.
+review word,exemplary,Allowed when precise. Flag repeated or clustered use.
+review word,grand,Allowed when precise. Flag repeated or clustered use.
+review word,indelible,Allowed when precise. Flag repeated or clustered use.
+review word,enigmatic,Allowed when precise. Flag repeated or clustered use.
+review word,unwavering,Allowed when precise. Flag repeated or clustered use.
+review word,unyielding,Allowed when precise. Flag repeated or clustered use.
+review word,resilience,Allowed when precise. Flag repeated or clustered use.
+review word,perseverance,Allowed when precise. Flag repeated or clustered use.
+review word,transform,Allowed when precise. Flag repeated or clustered use.
+review word,transformation,Allowed when precise. Flag repeated or clustered use.
+review word,reimagine,Allowed when precise. Flag repeated or clustered use.
+review word,revitalize,Allowed when precise. Flag repeated or clustered use.
+review word,deepen,Allowed when precise. Flag repeated or clustered use.
+review word,deepening,Allowed when precise. Flag repeated or clustered use.
+review word,deeper,Allowed when precise. Flag repeated or clustered use.
+review word,deeply,Allowed when precise. Flag repeated or clustered use.
+review word,rich,Allowed when precise. Flag repeated or clustered use.
+review word,vast,Allowed when precise. Flag repeated or clustered use.
+review word,versatile,Allowed when precise. Flag repeated or clustered use.
+review word,vivid,Allowed when precise. Flag repeated or clustered use.
+review phrase,under pressure,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,load-bearing,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,central claim,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,central theme,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,core thesis,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,key takeaway,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,practical implication,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,the next phase,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,the missing layer,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,same pressure point,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,maps onto,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,maps to,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,the bridge is,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,plain-English version,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,clean conclusion,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,the practical takeaway,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,the principle is,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,This clarifies,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,This produces,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,This creates,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,This gives,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,This means,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,This points to,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,This suggests,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,For example,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,In practical terms,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,In other words,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,Put simply,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,To put it simply,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,On the one hand,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,On the other hand,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,As previously mentioned,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,As a result,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,In contrast,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,At the same time,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,In this context,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,In this frame,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,From this perspective,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,the broader stack,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,broader claim,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,broader pattern,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,deeper layer,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,deeper question,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,before consequence,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,proper order,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,rightful authority,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,ordered reality,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,restored discernment,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,at scale,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,in real time,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,future-proof,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,best-in-class,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,state-of-the-art,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,end-to-end,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,designed to enhance,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,provide valuable insights,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,new insights into,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,findings suggest,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,results provide,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,significant impact on,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,significant role in,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,paving the way for,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,a stark reminder,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,a cautionary tale,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,sense of purpose,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,human spirit,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,personal growth,Allowed occasionally. Replace if it sounds formulaic or vague.
+review phrase,quality of life,Allowed occasionally. Replace if it sounds formulaic or vague.
+structure/format flag,Excessive em dashes,"Use commas, parentheses, periods, or colons unless an em dash is clearly needed."
+structure/format flag,Negation-first parallelism,"Avoid repeated forms such as “not X, but Y” and “not this, not that, just Z.”"
+structure/format flag,Three-beat slogan cadence,"Avoid strings such as “fast, safe, and scalable” unless the three items are necessary."
+structure/format flag,Dramatic fragment followed by explanation,"Avoid “The result? …”, “The problem? …”, and “Why? Because …”."
+structure/format flag,Unearned profundity,"Remove phrases such as “something shifted,” “everything changed,” and “let that sink in.”"
+structure/format flag,Uniform paragraph rhythm,Do not make every paragraph the same length or use a repeated claim-explanation-summary pattern.
+structure/format flag,Overformatted sections,"Use fewer headings, fewer bold phrases, fewer colon-heavy labels, and fewer bullet lists."
+structure/format flag,Emoji bullets in professional writing,"Avoid checkmarks, sparkles, arrows, fire icons, and decorative Unicode bullets."
+structure/format flag,Overbalanced hedging,Do not reflexively present both sides when the evidence supports a direct claim.
+structure/format flag,Repeated summary endings,Do not restate the same idea at the end of every section.
+structure/format flag,Generic inspirational close,"End with a concrete implication, decision, test, or next action."
