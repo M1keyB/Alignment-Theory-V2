@@ -5816,4 +5816,177 @@ body.generated-ai-corpus-page pre {
   }
 }
 
+/* Site-wide monochrome publication palette */
+:root,
+body.generated-ai-corpus-page {
+  color-scheme: light;
+  --bg: #ffffff;
+  --paper: #ffffff;
+  --paper-strong: #ffffff;
+  --surface-soft: #ffffff;
+  --surface-card: #ffffff;
+  --ink: #111111;
+  --ink-strong: #000000;
+  --muted: #4d4d4d;
+  --rule: #d8d8d8;
+  --rule-strong: #9f9f9f;
+  --accent: #000000;
+  --accent-strong: #000000;
+  --accent-quiet: #f5f5f5;
+  --shadow: none;
+  --shadow-soft: none;
+}
+
+html,
+body,
+body.generated-ai-corpus-page {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+  color: #111111 !important;
+}
+
+body *,
+body *::before,
+body *::after {
+  background-image: none !important;
+  border-color: #d8d8d8 !important;
+  box-shadow: none !important;
+  color: inherit;
+  text-shadow: none !important;
+}
+
+body * {
+  background-color: transparent !important;
+}
+
+.site-header,
+.site-footer,
+.phase1-page .site-footer,
+body.generated-ai-corpus-page .site-header,
+body.generated-ai-corpus-page .site-footer,
+.page,
+.manuscript,
+.doc-card,
+.placeholder,
+.library-header,
+.toc-desktop,
+.toc-mobile,
+.toc-panel,
+.work-meta,
+.attribution-callout,
+.source-note,
+.research-hero,
+.citation-hero,
+.research-callout,
+.research-toc,
+.research-tools,
+.research-section,
+.research-table,
+.research-table th,
+.research-table td,
+.research-code-block,
+.citation-card,
+.related-research-card,
+.pcpi-example,
+.route-status-note,
+.license-callout,
+.provenance,
+pre,
+code,
+details,
+summary {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+  border-color: #d8d8d8 !important;
+  color: #111111 !important;
+}
+
+.site-subtitle,
+.subtitle,
+.doc-meta,
+.research-meta,
+.research-panel-label,
+.research-card-kicker,
+.site-footer,
+.site-footer-copy,
+.provenance,
+.phase1-page .provenance,
+small,
+figcaption {
+  color: #4d4d4d !important;
+}
+
+a,
+.text-link,
+.site-logo,
+.site-nav a,
+.site-footer a,
+.research-toc a,
+.research-tools a,
+body.generated-ai-corpus-page .text-link,
+body.generated-ai-corpus-page .text-link:hover,
+body.generated-ai-corpus-page .text-link:focus {
+  color: #000000 !important;
+}
+
+.button,
+.nav-toggle,
+.filter-button,
+.chip,
+body.generated-ai-corpus-page .button,
+body.generated-ai-corpus-page .button:hover,
+body.generated-ai-corpus-page .button:focus,
+body.generated-ai-corpus-page .chip {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+  border-color: #000000 !important;
+  color: #000000 !important;
+}
+
+.button:hover,
+.button:focus,
+.nav-toggle:hover,
+.nav-toggle:focus,
+.filter-button:hover,
+.filter-button:focus,
+.site-nav a:hover,
+.site-nav a:focus,
+.site-nav a[aria-current="page"],
+.site-footer a:hover,
+.site-footer a:focus {
+  background: #000000 !important;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+}
+
+a:focus-visible,
+.button:focus-visible,
+.nav-toggle:focus-visible,
+.filter-button:focus-visible,
+.field input:focus-visible,
+.toc-mobile summary:focus-visible {
+  outline: 2px solid #000000 !important;
+  box-shadow: none !important;
+}
+
+hr,
+thead,
+tbody,
+tr,
+th,
+td {
+  border-color: #d8d8d8 !important;
+}
+
+img,
+picture,
+video,
+canvas {
+  filter: grayscale(1);
+}
+
 
