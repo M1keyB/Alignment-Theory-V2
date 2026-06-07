@@ -89,8 +89,60 @@ Each result should include:
 |---|---|
 | Entry-page edit | Run default scan and fail on new hard-ban matches. |
 | Generator edit | Scan `scripts/generate-ai-research-pages.mjs` plus generated output after regeneration. |
+| Hub-only generator edit | Scan the generator section source and the changed rendered hub page only, then confirm no unrelated generated pages changed. |
 | Archive review | Run expanded scan and write report without failing. |
+| New planning docs | Scan new docs before commit, but do not treat planning docs as public copy by default. |
 | Release check | Run default scan after `npm run apply:shell` and static verification. |
+
+## Phase 6 Requirements
+
+Phase 5 and Phase 6 exposed a split between generated public HTML and manually maintained public HTML. The future linter should classify inputs before deciding whether a match is actionable.
+
+Manual public HTML:
+
+- scan rendered files directly
+- fail on new hard-ban matches in current public entry pages
+- report review terms separately
+
+Generated public HTML:
+
+- scan both generator source and rendered output
+- fail only when the durable source also contains the hard-ban match, unless the rendered output is the only current source
+- record which generated routes changed before scanning
+
+Source Markdown:
+
+- scan Markdown sources before rendered HTML when a page has a source marker
+- preserve code blocks, quotations, and citations
+
+JSON inputs:
+
+- scan values that become public copy
+- ignore private keys and structural identifiers unless they render as labels
+
+Templates:
+
+- scan shared shell fragments and generator templates because one match can spread across many pages
+
+Archive material:
+
+- report by default, but do not fail unless the archive page is being promoted or edited
+- support a baseline file for existing matches
+
+PDF text:
+
+- treat as a separate optional mode because PDF extraction can produce false line numbers
+- do not fail the default site check on PDF text
+
+Protected technical vocabulary:
+
+- track frequency for terms such as Alignment Theory, agency, governance, infrastructure, PGDL, AAG, Runtime Binding, Receipts, Governance Memory, permit, authority, refusal, execution, and audit
+- do not remove protected terms merely because they recur
+
+Documented exceptions:
+
+- allow source-level suppression only with a reason
+- include the reason in the report
 
 ## First Implementation Phase
 
