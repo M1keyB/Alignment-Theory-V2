@@ -61,6 +61,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://alignmenttheory.org/notes/index.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://alignmenttheory.org/pages/about.html</loc>
     <lastmod>2026-05-06</lastmod>
     <priority>0.65</priority>
@@ -142,6 +147,11 @@
   </url>
   <url>
     <loc>https://alignmenttheory.org/pages/alignment-diagnostic.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://alignmenttheory.org/pages/alignment-governance-stack.html</loc>
     <lastmod>2026-05-06</lastmod>
     <priority>0.65</priority>
   </url>
@@ -442,6 +452,11 @@
   </url>
   <url>
     <loc>https://alignmenttheory.org/pages/how-to-use-alignment-theory.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://alignmenttheory.org/pages/human-agency-preservation-infrastructure.html</loc>
     <lastmod>2026-05-06</lastmod>
     <priority>0.65</priority>
   </url>

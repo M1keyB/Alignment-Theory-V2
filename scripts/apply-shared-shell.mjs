@@ -33,6 +33,8 @@ const targets = [
   { file: "about.html", root: "", current: "ABOUT" },
   { file: "papers.html", root: "", current: "RESEARCH" },
   { file: "notes/index.html", root: "../", current: "NOTES" },
+  { file: "pages/human-agency-preservation-infrastructure.html", root: "../", current: "AI_GOVERNANCE" },
+  { file: "pages/alignment-governance-stack.html", root: "../", current: "AI_GOVERNANCE" },
 ];
 
 const headerTemplate = readUtf8("assets/fragments/site-header.html");

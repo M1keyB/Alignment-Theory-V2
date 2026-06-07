@@ -719,6 +719,17 @@ const hubPaperCard = (paper, chip) => `<article class="doc-card research-card">
   </div>
 </article>`;
 
+const appliedGovernanceBranchSection = `<section class="doc-card research-hub-section">
+      <div class="doc-card-header"><h2>Applied Governance Branch</h2><span class="chip">Current path</span></div>
+      <p>The applied-governance work now has a clearer public path: Alignment Theory research, earlier AI-alignment work, the original Agent Action Gate prototype, Human Agency Preservation Infrastructure, and the Alignment Governance Stack.</p>
+      <p>HAPI names the agency-preservation problem in institutional and public terms. AGS is the implementation-facing stack for governed delegated actions. The original AAG page remains the public v0.3.0 prototype record.</p>
+      <div class="research-downloads">
+        <a class="button" href="human-agency-preservation-infrastructure.html">HAPI Overview</a>
+        <a class="button" href="alignment-governance-stack.html">AGS Overview</a>
+        <a class="button" href="../projects/agent-action-gate.html">AAG Prototype</a>
+      </div>
+    </section>`;
+
 const renderHub = () => {
   const schema = {
     "@context": "https://schema.org",
@@ -774,6 +785,7 @@ const renderHub = () => {
         <a class="button" href="how-to-cite.html">How to Cite</a>
       </div>
     </section>
+    ${appliedGovernanceBranchSection}
     <section class="doc-card research-hub-section">
       <div class="doc-card-header"><h2>Reading Order</h2><span class="chip">Start</span></div>
       <ol class="research-timeline">
@@ -895,11 +907,36 @@ const renderCite = () => shell(pageHead({
       </section>
     </article>`, "citation");
 
-fs.mkdirSync(pagesDir, { recursive: true });
-fs.writeFileSync(path.join(pagesDir, "ai-alignment-research.html"), renderHub());
-fs.writeFileSync(path.join(pagesDir, "how-to-cite.html"), renderCite());
-for (const paper of papers) {
-  fs.writeFileSync(path.join(pagesDir, `${paper.slug}.html`), renderPaper(paper));
-}
+const updateExistingHubSection = () => {
+  const hubPath = path.join(pagesDir, "ai-alignment-research.html");
+  const html = fs.readFileSync(hubPath, "utf8");
+  const sectionPattern = /    <section class="doc-card research-hub-section">\r?\n      <div class="doc-card-header"><h2>Applied Governance Branch<\/h2>[\s\S]*?    <\/section>\r?\n/;
+  const insertionPoint = /    <section class="doc-card research-hub-section">\r?\n      <div class="doc-card-header"><h2>Reading Order<\/h2>/;
+  const section = `    ${appliedGovernanceBranchSection}\n`;
 
-console.log(`Generated ${papers.length + 2} AI alignment research pages.`);
+  if (sectionPattern.test(html)) {
+    fs.writeFileSync(hubPath, html.replace(sectionPattern, section), "utf8");
+    return;
+  }
+
+  if (!insertionPoint.test(html)) {
+    throw new Error("Could not find Reading Order insertion point in pages/ai-alignment-research.html");
+  }
+
+  fs.writeFileSync(hubPath, html.replace(insertionPoint, `${section}    <section class="doc-card research-hub-section">\n      <div class="doc-card-header"><h2>Reading Order</h2>`), "utf8");
+};
+
+fs.mkdirSync(pagesDir, { recursive: true });
+
+if (process.argv.includes("--hub-only")) {
+  updateExistingHubSection();
+  console.log("Updated pages/ai-alignment-research.html from generator hub-only mode.");
+} else {
+  fs.writeFileSync(path.join(pagesDir, "ai-alignment-research.html"), renderHub());
+  fs.writeFileSync(path.join(pagesDir, "how-to-cite.html"), renderCite());
+  for (const paper of papers) {
+    fs.writeFileSync(path.join(pagesDir, `${paper.slug}.html`), renderPaper(paper));
+  }
+
+  console.log(`Generated ${papers.length + 2} AI alignment research pages.`);
+}

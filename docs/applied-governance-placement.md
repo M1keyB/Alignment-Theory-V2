@@ -1,6 +1,6 @@
 # Applied Governance Placement
 
-Phase 4 planning document. No public routes were created.
+Phase 5 update: the first public overview routes now exist. This document remains the placement map for later applied-governance work.
 
 ## Placement Rule
 
@@ -14,8 +14,8 @@ AlignmentTheory.org should distinguish foundational theory, public agency-preser
 | AI Alignment Research Corpus | Research-facing corpus on agent alignment, human control, participation, PCPI, and related papers. | Current research section with generated/mixed pages. | `/pages/ai-alignment-research.html` |
 | PCPI | Index and measurement work for participatory capacity and preservation of intent. | Current technical research page; needs separate review before public rewrite. | `/pages/participatory-capacity-preservation-index.html` |
 | AAG v0.3.0 page | Older standalone Agent Action Gate prototype. | Historical once AGS page exists. | `projects/agent-action-gate.html` |
-| AGS | Implementation-facing Alignment Governance Stack. | External local repo; future public overview needed. | `/pages/alignment-governance-stack.html` |
-| HAPI | Public Human Agency Preservation Infrastructure, agency audit, restoration, and institutional language. | External local Next app; future public overview needed. | `/pages/human-agency-preservation-infrastructure.html` |
+| AGS | Implementation-facing Alignment Governance Stack. | Public overview created in Phase 5; external repo remains read-only. | `/pages/alignment-governance-stack.html` |
+| HAPI | Public Human Agency Preservation Infrastructure, agency audit, restoration, and institutional language. | Public overview created in Phase 5; external repo remains read-only. | `/pages/human-agency-preservation-infrastructure.html` |
 | Alignment Notes | Ongoing notes and shorter public reading path. | Current public section. | `notes/index.html` |
 | Archive | Earlier formulations, internal/external framing, and older route forms. | Keep live, mark carefully. | Existing pages by classification from `docs/site-audit.md` |
 
@@ -49,13 +49,15 @@ The AI Governance area can later contain:
 - PCPI technical page
 - AI Alignment Research Corpus
 
-## Phase 5 Candidate Scope
+## Phase 5 Completed Scope
 
-Only after author approval:
+Completed in Phase 5:
 
-- Update shared shell labels or destinations.
-- Update the small set of public entry pages that already use shared shell.
-- Add future overview pages only if the author approves their route and scope.
+- Added `/pages/human-agency-preservation-infrastructure.html`.
+- Added `/pages/alignment-governance-stack.html`.
+- Added both new pages to the controlled shared-shell target list.
+- Added a short generated-source section to the AI Governance hub.
+- Added a historical status notice to `projects/agent-action-gate.html`.
 
 Long papers, essays, generated AI research pages, PCPI, and archive pages should remain unchanged until reviewed one group at a time.
 

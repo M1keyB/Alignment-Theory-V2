@@ -1,10 +1,10 @@
 # Applied Governance Public Page Plan
 
-Phase 4 planning document. The pages below were not created.
+Phase 5 update: the two overview pages below now exist. This document records the implemented public-surface pass and the remaining follow-up work.
 
 ## Future Routes
 
-Default future routes from the Phase 4 brief:
+Implemented routes:
 
 - `/pages/alignment-governance-stack.html`
 - `/pages/human-agency-preservation-infrastructure.html`
@@ -33,12 +33,12 @@ Recommended source basis:
 - `C:\Users\micha\Desktop\alignment-governance-stack\docs\GOVERNANCE_MEMORY.md`
 - `C:\Users\micha\Desktop\alignment-governance-stack\docs\HUMAN_AGENCY_AUDIT.md`
 
-Draft page job:
+Implemented page job:
 
-- Explain AGS as the implementation-facing governance stack.
-- Show how it relates to PGDL, AAG, runtime binding, receipts, policy profiles, authority maps, participation checks, and governance memory.
-- Distinguish it from the older standalone AAG page.
-- Avoid claiming production validation or certification unless author-approved.
+- Explains AGS as the implementation-facing governance stack.
+- Relates AGS to PGDL, AAG, Runtime Binding, Receipts, Governance Memory, governance profiles, HAPI, and the original AAG prototype.
+- Distinguishes implemented repository evidence from documented design work.
+- Avoids production-readiness and certification claims.
 
 Recommended sections:
 
@@ -74,13 +74,13 @@ Recommended source basis:
 - `C:\Users\micha\Desktop\HAPI\components\AgencyAuditPage.tsx`
 - selected HAPI PDFs after author review
 
-Draft page job:
+Implemented page job:
 
-- Explain HAPI as Human Agency Preservation Infrastructure.
-- Position HAPI as the public agency-preservation and audit branch.
-- Name agency loss, false gates, refusal, authority, restoration, and continuity.
-- Distinguish HAPI from AGS implementation tooling.
-- Keep certification language future-facing unless author-approved.
+- Explains HAPI as Human Agency Preservation Infrastructure.
+- Positions HAPI as the public agency-preservation and audit branch.
+- Defines agency erosion, agency theater, dependency capture, true gates, false gates, meaningful refusal, and live human authority.
+- Distinguishes HAPI from AGS implementation tooling.
+- Keeps standard and certification language future-facing.
 
 Recommended sections:
 
@@ -95,7 +95,7 @@ Recommended sections:
 
 ## AI Alignment Research Hub Adjustment
 
-After the two overview pages are approved and drafted, the AI research hub should add a small reading-path note:
+The AI research hub now includes a short `Applied Governance Branch` section sourced from `scripts/generate-ai-research-pages.mjs` and written through its `--hub-only` mode.
 
 1. Alignment Theory research foundation
 2. AI alignment research corpus
@@ -104,17 +104,15 @@ After the two overview pages are approved and drafted, the AI research hub shoul
 5. HAPI as public agency-preservation branch
 6. AGS as implementation-facing governance stack
 
-That change should happen in `scripts/generate-ai-research-pages.mjs` if the generator remains source-of-truth.
+The full generator currently drifts from the rendered page shell, so Phase 5 added a narrow hub-only path instead of rewriting all generated paper pages.
 
 ## Migration Order
 
-1. Confirm AGS and HAPI route names.
-2. Confirm public status language for AGS and HAPI.
-3. Update shared shell with a single AI Governance destination only if needed.
-4. Draft the two overview pages.
-5. Add archive/historical status to the old AAG page.
-6. Update the AI research hub reading path.
-7. Run editorial lint, static verification, and shell determinism checks.
+1. Review the two overview pages for author approval.
+2. Decide whether AGS and HAPI should get direct navigation entries or remain under AI Governance.
+3. Decide whether to modernize the full AI research generator template in a later pass.
+4. Review PCPI separately before changing technical measurement copy.
+5. Review AGS/HAPI source links after public URLs are approved.
 
 ## Out Of Scope For First Implementation
 

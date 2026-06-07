@@ -80,6 +80,9 @@
           <h2>Part of the Alignment Theory Framework</h2>
           <p>This AI alignment work is part of <strong>Alignment Theory</strong>, an original framework by <strong>Michael Nathan Bower</strong>. It applies the same internal/external regulation distinction to artificial systems, where optimization pressure, tool access, and autonomous execution can create drift when constraint fidelity and human participation are not preserved.</p>
         </section>
+        <section class="route-status-note" aria-label="Historical status">
+          <p><strong>Status note:</strong> This page documents the original public Agent Action Gate prototype, released as v0.3.0. The applied-governance work has continued through <a href="../pages/human-agency-preservation-infrastructure.html">Human Agency Preservation Infrastructure</a> and the <a href="../pages/alignment-governance-stack.html">Alignment Governance Stack</a>. Those later branches should not be read as part of the original v0.3.0 release.</p>
+        </section>
       <p class="lead">Pre-execution action control for AI agents.</p>
       <p>Agent Action Gate is a pre-execution control layer for AI agents. It checks proposed tool actions before they run and returns a structured decision: allow, require_approval, revise_action, or block.</p>
       <p>The basic idea is simple: an AI agent should not move directly from proposed action to execution when the action is external-facing, irreversible, sensitive, broader than requested, command-capable, or outside authorized scope.</p>
