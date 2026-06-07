@@ -1,16 +1,64 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-07T13:46:01.698Z",
+  "generatedAt": "2026-06-07T23:09:10.360Z",
   "scope": "Historical archive hard-ban findings only. Routine lint must not rewrite this file.",
-  "count": 190,
+  "count": 311,
   "findings": [
     {
-      "fingerprint": "9a346487c69e2dc68457c2378d96e3e6c52460bc",
+      "fingerprint": "e0eac222851d32f7474e1b0e114d887560aa4f27",
       "file": "pages/about.html",
       "term": "robust",
       "category": "hard-ban word",
       "line": 71,
-      "context": "Alignment Theory is a cross-domain framework investigating how adaptive systems remain robust or become fragile depending on how their load-bearing functions are carried. The project"
+      "context": "Alignment Theory is a cross-domain framework investigating how adaptive systems remain robust or become fragile depending on how their capacity-forming functions are carried. The proj"
+    },
+    {
+      "fingerprint": "f0517f2ad25752f75405a01d699693263f63960a",
+      "file": "pages/addiction-and-recovery-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 79,
+      "context": "restore self-carrying capacity and supports that preserve behavioral order while leaving load-bearing regulatory functions externally carried. The domain is a strong stress test because appar"
+    },
+    {
+      "fingerprint": "293153b9e0fc9c010ce6b2182fc2dc8821cc55d4",
+      "file": "pages/addiction-and-recovery-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 80,
+      "context": "tantly present. Early stability matters, but it can mislead if taken as evidence that the load-bearing structure has already been restored. Translating Alignment Theory into Addict"
+    },
+    {
+      "fingerprint": "8638f6bea6183537f50e2b31b7d587441dd920f1",
+      "file": "pages/addiction-and-recovery-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 81,
+      "context": "d. Translating Alignment Theory into Addiction and Recovery Language Likely load-bearing functions in this domain include affect regulation, impulse control, tension-bearing, se"
+    },
+    {
+      "fingerprint": "abf55c49fbe5f05a39ab54327d1cddd120e41b87",
+      "file": "pages/addiction-and-recovery-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 81,
+      "context": "ision, responsibility under stress, meaning formation, and relational presence. These are load-bearing because their degradation changes resilience and developmental integrity rather than mere"
+    },
+    {
+      "fingerprint": "61124ad62d38d7d42fe0debf00ecc336610c39d6",
+      "file": "pages/addiction-and-recovery-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 86,
+      "context": "the strongest interventions will combine external support with growing re-entry into the load-bearing functions the support first helped stabilize. Limits / Hard Cases / Boundary"
+    },
+    {
+      "fingerprint": "d6df01b87d9956413ac42cab5bb96879f4e3841e",
+      "file": "pages/addiction-and-recovery-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 88,
+      "context": "hidden substitution. Stress Test Summary Domain Addiction and recovery Load-Bearing Functions Affect regulation, tension-bearing, impulse control, self-revision, meaning fo"
     },
     {
       "fingerprint": "adf5adcdb5461c2e4485b50aceaaa3f6db5c6982",
@@ -19,6 +67,14 @@
       "category": "hard-ban phrase/template",
       "line": 196,
       "context": "luated, and what decision was returned? A runtime boundary should not merely refuse. It should route. Decision Routes"
+    },
+    {
+      "fingerprint": "e6aba8f483d89c2f3f024bf7f2a9b095fa81fd5d",
+      "file": "pages/ai-alignment-and-alignment-theory.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 79,
+      "context": "y. The current framework is now better understood through the revised account centered on load-bearing functions, participatory capacity, co-regulation, and substitution."
     },
     {
       "fingerprint": "bccc685c3ee69ea7232be9e8232cd628e4f87e8d",
@@ -53,12 +109,84 @@
       "context": "s protects the page from a shallow moralism. Scripture is naming ways a life is governed, not merely labeling acceptable and unacceptable behaviors."
     },
     {
+      "fingerprint": "cf6c521070a0006039ecf95af05bf456e654a59f",
+      "file": "pages/biological-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 65,
+      "context": "articipation over time? Translating Alignment Theory into Biological Language Likely load-bearing functions include immune regulation, metabolic flexibility, tissue maintenance, stress r"
+    },
+    {
+      "fingerprint": "a2493133e7e94c79520df9efca73e963c399fc1e",
+      "file": "pages/biological-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 65,
+      "context": "rs to the system's active involvement in the formation, exercise, and revision of its own load-bearing function. A tissue loads, repairs, and adapts. An immune system samples, differentiates,"
+    },
+    {
+      "fingerprint": "035cfd4832be5b057783855441bf389baea76407",
+      "file": "pages/biological-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 65,
+      "context": "that biological systems will remain more robust where support preserves participation in load-bearing function. It predicts that chronic external maintenance without re-engagement will often"
+    },
+    {
+      "fingerprint": "cc32b28221e942d9000f3fbc1cb43385676ec3d4",
+      "file": "pages/biological-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 65,
+      "context": "lly replacing the function itself. Stress Test Summary Domain Biological systems Load-Bearing Functions Immune regulation, metabolic flexibility, tissue maintenance, stress response,"
+    },
+    {
       "fingerprint": "004f70b7ca4dddee936e9f492021a90a33679071",
       "file": "pages/biological-stress-test.html",
       "term": "robust",
       "category": "hard-ban word",
       "line": 65,
       "context": "ken them. Predictions The framework predicts that biological systems will remain more robust where support preserves participation in load-bearing function. It predicts that chronic"
+    },
+    {
+      "fingerprint": "b242bc34d1a8f8be58416dcb6e43a2d715941a8d",
+      "file": "pages/biology-and-adaptive-systems.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 69,
+      "context": "branch examining how self-maintaining systems strengthen or weaken depending on how their load-bearing functions are carried. This branch tests whether the revised framework identifies"
+    },
+    {
+      "fingerprint": "21116f3df0538c0d2c07dd74ac6d2b50473d26a5",
+      "file": "pages/boundary-conditions-and-failure-cases-of-alignment-theory.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 78,
+      "context": "is permanently appropriate. The question is whether the offloaded function was genuinely load-bearing for the system in question and whether participatory capacity is being preserved in the f"
+    },
+    {
+      "fingerprint": "48a351f6ae43b5ce5b7d216888626960018b8422",
+      "file": "pages/boundary-conditions-and-failure-cases-of-alignment-theory.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 80,
+      "context": "ply only loosely or not at all. The claim is narrower: some suffering is intensified when load-bearing structure is misidentified or when explanation substitutes for re-entry into the real pro"
+    },
+    {
+      "fingerprint": "e6aceda073fbf99149a297b8194f53e8d202e78d",
+      "file": "pages/boundary-conditions-and-failure-cases-of-alignment-theory.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 81,
+      "context": "orm of external support that was not disrupted. The perturbation test reveals location of load-bearing; it does not automatically identify cause or appropriate remedy. Failure Case"
+    },
+    {
+      "fingerprint": "81881e0958677e7cf1a02119c09a1a023903b12b",
+      "file": "pages/boundary-conditions-and-failure-cases-of-alignment-theory.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 83,
+      "context": "tems routinely became more adaptive precisely by becoming less participatory in their own load-bearing functions, the theory would need significant revision. The framework predicts the opposit"
     },
     {
       "fingerprint": "7122a2e27dcb069606606a022d448d072cb731e5",
@@ -69,12 +197,68 @@
       "context": "The framework predicts the opposite: systems that preserve participation tend to be more robust under perturbation. Cases where decreased participation reliably increases resilience are"
     },
     {
+      "fingerprint": "ae50fe78306d5db15bea96999f2f1ea77ea63965",
+      "file": "pages/community-and-high-control-group-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "efore partly structural. Translating Alignment Theory into Community Language Likely load-bearing functions include identity formation, conscience, reality-testing, mutual correction, re"
+    },
+    {
+      "fingerprint": "ff982cfd3bc1b9d232b490177f7bfbf384bfb494",
+      "file": "pages/community-and-high-control-group-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "cal or moral truth. Stress Test Summary Domain Community and high-control groups Load-Bearing Functions Identity, conscience, reality-testing, mutual correction, trust, conflict repa"
+    },
+    {
       "fingerprint": "9cd285c6cef1b91d83758ee26268c69ff3d54c15",
       "file": "pages/community-and-high-control-group-stress-test.html",
       "term": "not merely",
       "category": "hard-ban phrase/template",
       "line": 59,
       "context": "s the primary carrier of those functions. Departure or disagreement becomes destabilizing not merely because of social cost, but because participatory capacity has been narrowed. Particip"
+    },
+    {
+      "fingerprint": "300f04e438a6ba803e5cdb5fd3ba18a0a227efbc",
+      "file": "pages/conflict-and-polarization-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "nd human participation are not preserved. Why conflict intensifies when shared load-bearing structures become hidden, misidentified, or replaced by substitutive forms of coordinatio"
+    },
+    {
+      "fingerprint": "71e1ff3ee300deda2b197156545791ece6eaeccb",
+      "file": "pages/conflict-and-polarization-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "aper tests whether the revised framework can clarify why conflicts often deepen after the load-bearing structure of shared life becomes hidden or externally substituted. The narrow claim is th"
+    },
+    {
+      "fingerprint": "af566e0e879b9911f7c589928d32cb099a6a1d01",
+      "file": "pages/conflict-and-polarization-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "substitutive structures. Translating Alignment Theory into Conflict Language Likely load-bearing functions include perspective-taking, reality-testing, trust repair, ambiguity tolerance"
+    },
+    {
+      "fingerprint": "a2eba1b8d6d297feaa2e225077f345f2b451dc40",
+      "file": "pages/conflict-and-polarization-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "producing rhetorical common ground will have limited durable effect where the underlying load-bearing structures of shared reality-testing and mutual correction have not been rebuilt. It pred"
+    },
+    {
+      "fingerprint": "e3be40dc307df53ece51297b882e430aa8bd7ca6",
+      "file": "pages/conflict-and-polarization-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "ment or coercive asymmetry. Stress Test Summary Domain Conflict and polarization Load-Bearing Functions Reality-testing, trust repair, ambiguity tolerance, perspective-taking Main"
     },
     {
       "fingerprint": "15fca84770213eab7d5205765aac6281ed367357",
@@ -133,12 +317,84 @@
       "context": "reality. [1] Axiom 10 — Christ is structurally central. Jesus is not merely morally exemplary, but the clearest revelation of truth, restored coherence, and right re"
     },
     {
+      "fingerprint": "d49d32b125b1f46cb408f4a9b53faa226c6dcd39",
+      "file": "pages/cost-of-simulation-and-phase-transition.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 139,
+      "context": "Distortion carried briefly may be survivable. Distortion carried over time becomes load-bearing. The longer the gap is maintained, the more energy the system must spend to preserve appe"
+    },
+    {
+      "fingerprint": "f3f64e55b2fc023e1022051afb3234c4d8f772d7",
+      "file": "pages/economic-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 65,
+      "context": "brittle under disruption. Translating Alignment Theory into Economic Language Likely load-bearing functions include production capacity, maintenance competence, local adaptation, practic"
+    },
+    {
+      "fingerprint": "5d1e6da24e68f3f47f95808bfa83467be0239bf1",
+      "file": "pages/economic-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 65,
+      "context": "problem is not efficiency itself, but efficiency purchased by transferring more and more load-bearing function into narrower institutional channels. Growth, by contrast, occurs when support a"
+    },
+    {
+      "fingerprint": "041bc45e3b1595b45df11bd01a8f87658608c12b",
+      "file": "pages/economic-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 65,
+      "context": "ework would fail if it romanticized localism or treated all centralization as decay. Many load-bearing economic functions are healthy precisely because they are distributed across large coordi"
+    },
+    {
+      "fingerprint": "2806f6e72064fe7df6216de51e52201db89b897d",
+      "file": "pages/economic-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 65,
+      "context": "e questions would be misapplication. Stress Test Summary Domain Economic systems Load-Bearing Functions Production, maintenance, adaptation, risk distribution, practical judgment, re"
+    },
+    {
       "fingerprint": "a00349c9d24f7643a1fa944015ee2f0fe355eb0f",
       "file": "pages/economic-stress-test.html",
       "term": "robust",
       "category": "hard-ban word",
       "line": 65,
       "context": "n passivity. Stable distributed competence appears where complex specialization remains robust because competence is widely enough distributed to absorb shocks. Substitutive dependenc"
+    },
+    {
+      "fingerprint": "6321b204605083c6dd6e938baaadfb7ee0192b0a",
+      "file": "pages/education-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 65,
+      "context": "ps explain why students can appear successful while becoming less capable of carrying the load-bearing functions of learning. Education is a particularly useful domain because the line between"
+    },
+    {
+      "fingerprint": "ac18394f2888e0a38bed2de3b2bf2774a5536423",
+      "file": "pages/education-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 65,
+      "context": "not whether support exists, but whether support preserves or deepens participation in the load-bearing functions of learning. Translating Alignment Theory into Educational Language Likely"
+    },
+    {
+      "fingerprint": "56bddae321bb0b974614204581add227c47716ac",
+      "file": "pages/education-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 65,
+      "context": "functions of learning. Translating Alignment Theory into Educational Language Likely load-bearing functions include attention, memory consolidation, interpretation, transfer, self-correc"
+    },
+    {
+      "fingerprint": "29cd1ea7237686df0266f1c58122be48570f133e",
+      "file": "pages/education-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 65,
+      "context": "uity in access to good educational support. Stress Test Summary Domain Education Load-Bearing Functions Attention, memory, interpretation, transfer, self-correction, ambiguity tolera"
     },
     {
       "fingerprint": "712844a473fd0af614885064df6ce4984f13152d",
@@ -461,6 +717,14 @@
       "context": "John 1 is metaphysically central to Alignment Theory. It grounds the claim that truth is not merely negotiation. It is relation to underlying order. Related Concepts And Essays"
     },
     {
+      "fingerprint": "fb25be9130d3aa98045bf7e755cc758a095fa332",
+      "file": "pages/essay-when-systems-replace-truth.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 118,
+      "context": "ten become defensive precisely when reality pushes back. If the representation has become load-bearing, any threat to it will feel existential. A school cannot easily admit that grades are no"
+    },
+    {
       "fingerprint": "1d36692ff93079a31deccc8a9ba4c4f039826a84",
       "file": "pages/essay-when-systems-replace-truth.html",
       "term": "not merely",
@@ -565,6 +829,14 @@
       "context": "rather than a collapse case. It matters because the framework should be able to recognize not only counterfeit order and breakdown, but also a durable pattern in which structure, confession, repetition, and communal discipline oft"
     },
     {
+      "fingerprint": "8d660b08a14e5cdd439ba581b26c619d2923d1d3",
+      "file": "pages/framework.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 92,
+      "context": "Core Concepts Start with participatory capacity, load-bearing functions, and the four structural states. The center of the theory."
+    },
+    {
       "fingerprint": "b966fd2785adb8e79c538c45543d97148e524932",
       "file": "pages/from-human-regulation-to-alignment-theory.html",
       "term": "is not merely",
@@ -597,12 +869,12 @@
       "context": "sustain, and revise its own activity in relation to its goals and environment. Agency is not merely output but the active origination of behavior. In Alignment Theory, diminished agency is"
     },
     {
-      "fingerprint": "9a80335e0caca5d95b064cd48df944d87f5118e7",
+      "fingerprint": "4e8c08d562357055ad21a97395ba7c98c29363ce",
       "file": "pages/glossary.html",
       "term": "robust",
       "category": "hard-ban word",
       "line": 92,
-      "context": "A A structural framework for understanding how adaptive systems remain robust or become fragile depending on how their load-bearing functions are carried. The core cla"
+      "context": "A A structural framework for understanding how adaptive systems remain robust or become fragile depending on how their capacity-forming functions are carried. The core"
     },
     {
       "fingerprint": "4c0bf58366fbf703ce05b3d5296eb3a384270a29",
@@ -637,12 +909,76 @@
       "context": "hy this page remains This URL remains so older links continue working. It now serves as a short bridge rather than a third overlapping introduction to the same foundation materi"
     },
     {
+      "fingerprint": "ee2c2a3098ed2ff829913f28d012aff18f032a0a",
+      "file": "pages/health-behavior-and-lifestyle-change-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "tions externally carried. Translating Alignment Theory into Health Language Relevant load-bearing functions include appetite regulation, routine stability, emotional coping, sleep regula"
+    },
+    {
+      "fingerprint": "b391597fd58889ab0757273dbf72cec63bc47e67",
+      "file": "pages/health-behavior-and-lifestyle-change-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "res stronger self-monitoring, more truthful adjustment, and the capacity to return to the load-bearing function after disruption — not merely to follow a plan when conditions are favorable."
+    },
+    {
+      "fingerprint": "ed9640e1ecfc045bc5f71dd18207035f0edb74a6",
+      "file": "pages/health-behavior-and-lifestyle-change-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "not pathologies. Stress Test Summary Domain Health behavior and lifestyle change Load-Bearing Functions Routine stability, appetite regulation, coping, sleep regulation, self-monitor"
+    },
+    {
       "fingerprint": "a63ef33a031d2529253b3e4140841fa99506fdde",
       "file": "pages/health-behavior-and-lifestyle-change-stress-test.html",
       "term": "not merely",
       "category": "hard-ban phrase/template",
       "line": 59,
       "context": "ul adjustment, and the capacity to return to the load-bearing function after disruption — not merely to follow a plan when conditions are favorable. Participatory Capacity in This Domain"
+    },
+    {
+      "fingerprint": "b3897c348cf53f92d33a0bcacdab1eb0c5202497",
+      "file": "pages/how-the-revised-model-maps-to-the-dmn.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 108,
+      "context": "her regulation is internal or external. It is whether the person is participating in the load-bearing cognitive and moral functions &mdash; narrative construction, judgment, self-revision, e"
+    },
+    {
+      "fingerprint": "6323e6d3552679ad63bdf0cceb5ae44f4ec8ca0f",
+      "file": "pages/how-the-revised-model-maps-to-the-dmn.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 154,
+      "context": "n is reduced to selecting from options or following recommendations &mdash; the DMN's own load-bearing functions are being increasingly carried by the tool. The output may be indistinguishable"
+    },
+    {
+      "fingerprint": "2457b349c8d78d8b3b5a6e20a1b9a69cfda03832",
+      "file": "pages/how-the-revised-model-maps-to-the-dmn.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 161,
+      "context": "ernal in location. They are shaped by whether the person is participating in carrying the load-bearing cognitive and moral functions &mdash; self-modeling, judgment, narrative integration, emo"
+    },
+    {
+      "fingerprint": "3b0759f78ebd78fff3bca4ae294791e9736018b2",
+      "file": "pages/how-the-revised-model-maps-to-the-dmn.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 163,
+      "context": "ts DMN states as one expression of a deeper structural question: whether participation in load-bearing cognitive and moral functions is being formed, shared, or replaced."
+    },
+    {
+      "fingerprint": "a8052cf522298b2e58d4892e27714e9bb7fb73ae",
+      "file": "pages/how-the-revised-model-maps-to-the-dmn.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 180,
+      "context": "Revised Framework Center The updated conceptual core: load-bearing functions, participatory capacity, and the four modes of support. Open pa"
     },
     {
       "fingerprint": "796cb3fcd95a0421152f60ab08cded46512c1fc8",
@@ -693,6 +1029,54 @@
       "context": "ision. Scripture / theology IT clarifies why revelation and judgment are not merely informational. They expose whether truth can be received without immediate hiding, blame,"
     },
     {
+      "fingerprint": "10520b6ed07892ed68e45bb3b935f71a632f2c06",
+      "file": "pages/leadership-and-authority-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "rk is especially useful where strong leaders deliver visible order yet quietly centralize load-bearing functions that healthy groups need more widely shared. Introduction: The Leadership Ve"
+    },
+    {
+      "fingerprint": "3a6afeb02b45d90b35d9f9e916c70edcfa3fad84",
+      "file": "pages/leadership-and-authority-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "ir in the leader alone? Translating Alignment Theory into Leadership Language Likely load-bearing functions include judgment, accountability, conflict repair, situational awareness, norm"
+    },
+    {
+      "fingerprint": "3f6c9a3f9f96ea7d7eb8f097f8a0845e3dbe08e9",
+      "file": "pages/leadership-and-authority-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "ry capacity refers to whether members remain active participants in carrying the group's load-bearing functions. The Four Modes in This Domain Constitutive co-regulation appears where l"
+    },
+    {
+      "fingerprint": "0ed382e10d72daa5c89f77717ad97bd7977a2fe8",
+      "file": "pages/leadership-and-authority-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "er authority had formed stronger distributed competence or merely centralized the group's load-bearing functions. Predictions The framework predicts that systems over-centered on singular"
+    },
+    {
+      "fingerprint": "c3c156039293de5af5bbb20329fd785bf702b95e",
+      "file": "pages/leadership-and-authority-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "legitimacy, or moral truth. Stress Test Summary Domain Leadership and authority Load-Bearing Functions Judgment, accountability, initiative, norm enforcement, conflict repair Mai"
+    },
+    {
+      "fingerprint": "f6cc975c0604a1591759323670f9852a683e1355",
+      "file": "pages/leadership-and-authority-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "n Authority becomes fragile when it preserves order by absorbing too many of the group's load-bearing functions Conclusion The framework is clarifying where leadership can be judged by wh"
+    },
+    {
       "fingerprint": "cd288b150a7c04cb077a55bcbbc5683d6360e5d6",
       "file": "pages/lexicon.html",
       "term": "not merely",
@@ -717,12 +1101,36 @@
       "context": "ost. Why it matters Threshold pressure marks disclosure approaching, not merely discomfort. Nearest adjacent concepts Overlap: crisis, tipping poi"
     },
     {
-      "fingerprint": "1422668fb29b0d601ac3d4725afd795ef4c0950d",
+      "fingerprint": "da24e8fc0dfb9316a3a76f8d91850dc78716a10b",
+      "file": "pages/library.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 80,
+      "context": "Current Revised Framework Center Framework Open artifact Load-Bearing Function, Participatory Capacity, and the Four Modes of Support Note Open artifact"
+    },
+    {
+      "fingerprint": "a8e9e1a1024ddad5367b6ca50183b1916d00d31e",
+      "file": "pages/library.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 113,
+      "context": "Why the Present May Be Safer Than Success Paper Read Online Download PDF Load-Bearing Human Capacities in the AI Age Paper Read Online Download PDF Earlie"
+    },
+    {
+      "fingerprint": "ef2ccd4c7bf5eecc2984ff8e9c9adbba3ab8d234",
       "file": "pages/load-bearing-human-capacities-in-the-ai-age.html",
       "term": "not merely",
       "category": "hard-ban phrase/template",
       "line": 111,
-      "context": "l is quietly being displaced. A capacity is load-bearing when its disuse does not merely reduce performance, but alters the structure of the person's agency. That is"
+      "context": "is quietly being displaced. A capacity is agency-forming when its disuse does not merely reduce performance, but alters the structure of the person's agency. That is"
+    },
+    {
+      "fingerprint": "22ac4d268d9486b9bcfc9ed9230175b180fd2577",
+      "file": "pages/load-bearing-human-capacities-in-the-ai-age.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 121,
+      "context": "not merely skills. Skills can be lost and reacquired without permanent structural change. Load-bearing capacities are different: they are part of what keeps a person inwardly coherent, respons"
     },
     {
       "fingerprint": "0f522686732ebeb4d4c95bb8d68d3b0303aef34e",
@@ -781,12 +1189,12 @@
       "context": "the weight of actually knowing someone rather than managing a social interaction. This is not merely an emotional capacity. It is a mode of contact with reality - specifically with human rea"
     },
     {
-      "fingerprint": "536f6a82775980a1031484149baa7d6886b2a891",
+      "fingerprint": "e929beac8e29ebecbd92366959ea2c12bda9ddaa",
       "file": "pages/load-bearing-human-capacities-in-the-ai-age.html",
       "term": "not merely",
       "category": "hard-ban phrase/template",
       "line": 191,
-      "context": "the most diagnostic. If a person becomes more dependent on the scaffold for orientation - not merely more efficient within it - the outsourced capacity was probably load-bearing. Efficiency"
+      "context": "the most diagnostic. If a person becomes more dependent on the scaffold for orientation - not merely more efficient within it - the outsourced capacity was probably agency-forming. Efficienc"
     },
     {
       "fingerprint": "dbe677554d3859afb473e16c871f2994e1d5eb44",
@@ -813,12 +1221,12 @@
       "context": "ssistance, not merely confirms them. It would make reflection more demanding, not merely more frictionless: functioning as a better interlocutor rather than a replacement for tho"
     },
     {
-      "fingerprint": "8d4f70b1b9797811b047dbdd2968d9a0440d623e",
+      "fingerprint": "9a6d103a3972f484c0c75c98db942a5566a207f0",
       "file": "pages/load-bearing-human-capacities-in-the-ai-age.html",
       "term": "not merely",
       "category": "hard-ban phrase/template",
       "line": 247,
-      "context": "human capacities are load-bearing. When they are no longer practiced, external systems do not merely make life easier. They begin to replace the inner work through which agency is formed, th"
+      "context": "man capacities are agency-forming. When they are no longer practiced, external systems do not merely make life easier. They begin to replace the inner work through which agency is formed, th"
     },
     {
       "fingerprint": "59d65329d5eab879534b7a62c189d5349e846fbc",
@@ -899,6 +1307,54 @@
       "category": "hard-ban phrase/template",
       "line": 248,
       "context": "At its deepest level, Alignment Theory converges on Christ. Jesus is not merely a moral example inside the system. He is the clearest revelation of what the system is ac"
+    },
+    {
+      "fingerprint": "69aee5626e83273aee5f6e283afd668ce2577b8d",
+      "file": "pages/meaning-formation-and-suffering-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "t interpretation itself can fail. A story can relieve confusion while misidentifying the load-bearing function at stake. When that happens, narrative order may increase while adaptation stal"
+    },
+    {
+      "fingerprint": "754ae5e8413e11f95615325f6ef397f8d796b20f",
+      "file": "pages/meaning-formation-and-suffering-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "e while adaptation stalls. Translating Alignment Theory into Meaning Language Likely load-bearing functions include truth-bearing, value orientation, grief integration, temporal integrat"
+    },
+    {
+      "fingerprint": "714b5b3773487f74b3c0f91be53a089cd512b50c",
+      "file": "pages/meaning-formation-and-suffering-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "ic when it secures emotional or social order by preventing re-entry into what is actually load-bearing. Perturbation as the Diagnostic Test Perturbation appears when suffering persists d"
+    },
+    {
+      "fingerprint": "2cd56fb377d6565b8366ca957ea970dc2c63d290",
+      "file": "pages/meaning-formation-and-suffering-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "t substitutes for it. Stress Test Summary Domain Meaning formation and suffering Load-Bearing Functions Truth-bearing, grief integration, temporal integration, value orientation, sel"
+    },
+    {
+      "fingerprint": "6906a066f8b013e2cdb5badb35aa90e41e21040f",
+      "file": "pages/meaning-formation-and-suffering-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "rolonged when explanation preserves coherence without restoring participation in the real load-bearing function Conclusion The framework clarifies why some meaning-systems heal while other"
+    },
+    {
+      "fingerprint": "615c3e8f7b219110000869af13efa9f087b81613",
+      "file": "pages/metabolizing-truth.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 103,
+      "context": "or system without triggering defensive fragmentation. Metabolizing has been a load-bearing concept in Alignment Theory from the beginning, but it has often remained compressed. The"
     },
     {
       "fingerprint": "9b5eeb8a670b2413c7fd06e6a350b9af23fb4a3c",
@@ -989,6 +1445,14 @@
       "context": "n. The person or system no longer needs unreality in order to remain intact, and truth is not merely tolerated in fragments but increasingly welcomed as the medium of life itself."
     },
     {
+      "fingerprint": "509069a5e3f2e136c7f2e82289d3c41770bc353f",
+      "file": "pages/on-the-inner-outer-distinction.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 79,
+      "context": "y. The current framework is now better understood through the revised account centered on load-bearing functions, participatory capacity, co-regulation, and substitution."
+    },
+    {
       "fingerprint": "ac34e609d2738ce1c92ea0de547f5553e5e3142c",
       "file": "pages/one-pattern-across-scales.html",
       "term": "is not merely",
@@ -1013,6 +1477,22 @@
       "context": "scriptural layer gives the framework its deepest claim: true restoration is new creation, not merely stronger external conformity. The pattern ends not in better management of fragmentation,"
     },
     {
+      "fingerprint": "c4c4e94a242f4c7f3ad6f3e2118d2b121bc959f3",
+      "file": "pages/organizational-systems-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "terpret, and adapt. Translating Alignment Theory into Organizational Language Likely load-bearing functions in this domain include practical judgment, local problem recognition, truth-be"
+    },
+    {
+      "fingerprint": "3d18d4a9038278815170e1bfe87a9f0419f60eb5",
+      "file": "pages/organizational-systems-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "rning, and distributed repair. Stress Test Summary Domain Organizational systems Load-Bearing Functions Judgment, error correction, local diagnosis, institutional memory, responsible"
+    },
+    {
       "fingerprint": "a129557a2ab2313875604e21f73f2e500bf70381",
       "file": "pages/organizational-systems-stress-test.html",
       "term": "robust",
@@ -1021,12 +1501,148 @@
       "context": "ocal judgment, error correction, and adaptive competence that make institutions genuinely robust under novel conditions. The domain is a strong stress test because organizational fragili"
     },
     {
+      "fingerprint": "21bd4fb7f474fdfdb189b189410515ddb0fd5ddb",
+      "file": "pages/papers.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 83,
+      "context": "es Current How to Use Alignment Theory Guide Read online Load-Bearing Function, Participatory Capacity, and the Four Modes of Support Define Read online"
+    },
+    {
+      "fingerprint": "2bfc3e38f8edb5b59d03f8401808c79027cbd83a",
+      "file": "pages/papers.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 88,
+      "context": "Core Test Six papers that demonstrate the framework with the greatest clarity — where load-bearing functions are most identifiable, the perturbation test has observable consequences, and t"
+    },
+    {
+      "fingerprint": "b508d1b63207a288be384bb2aceb344f4cb50d32",
+      "file": "pages/papers.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 119,
+      "context": "Why the Present May Be Safer Than Success Paper Read Online Download PDF Load-Bearing Human Capacities in the AI Age Paper Read Online Download PDF Earlie"
+    },
+    {
       "fingerprint": "44bf0a93243fae85a68aa4c723b08d2651220d1f",
       "file": "pages/parables-and-real-life-translations.html",
       "term": "The truth is",
       "category": "hard-ban phrase/template",
       "line": 184,
       "context": "mething important finally needs to be named, neither person knows how &mdash; not because the truth is too painful, but because the function of saying hard things directly was never built into"
+    },
+    {
+      "fingerprint": "7cef66c1711e0c562794cb5841648a10e0eb2381",
+      "file": "pages/parables-and-real-life-translations.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 190,
+      "context": "ese stories extends the same underlying pattern from the main translation page: something load-bearing, something that carries it, and participation that grows or shrinks depending on how the"
+    },
+    {
+      "fingerprint": "94a9fd7ddbe0d322709446895583cb37aaa56cc4",
+      "file": "pages/parables-and-real-life-translations.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 192,
+      "context": "appears. They are representative, not exhaustive. The pattern appears wherever something load-bearing is being carried by something external &mdash; and the question of whether participation"
+    },
+    {
+      "fingerprint": "a7e2dd01288d30de2aa4839830aca4fa86fe9236",
+      "file": "pages/parables-and-real-life-translations.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 212,
+      "context": "How to Use Alignment Theory Five diagnostic questions, how to identify load-bearing functions, and what the framework does not do. Open page"
+    },
+    {
+      "fingerprint": "674a85b7d06687ff4e0a7e195e4f231899118902",
+      "file": "pages/parables-and-real-life-translations.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 217,
+      "context": "Revised Framework Center The technical core: load-bearing functions, participatory capacity, and the four modes of support. Open pa"
+    },
+    {
+      "fingerprint": "6bd97adce3982334b6e76830e1d8077c8df0b619",
+      "file": "pages/parenting-and-development-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "e, and developmental aid must be judged by whether they deepen a child’s participation in load-bearing functions rather than merely preserving order. Michael Nathan Bower — alignmenttheory.or"
+    },
+    {
+      "fingerprint": "4eba34b094623da0b74915f1f8faa87c33184706",
+      "file": "pages/parenting-and-development-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "child's capacities and support that preserves behavioral order while leaving the child's load-bearing functions underdeveloped. The narrow claim is not that the framework replaces attachment"
+    },
+    {
+      "fingerprint": "84ee4927c3a67a7ae7b7e1999e1e26256c8a4b50",
+      "file": "pages/parenting-and-development-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "ger participatory capacity , and when support keeps the child orderly while leaving key load-bearing functions underdeveloped. Translating Alignment Theory into Parenting Language In pa"
+    },
+    {
+      "fingerprint": "f4dc179e1990e8d023024aade7881190fd1a6ca1",
+      "file": "pages/parenting-and-development-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "ranslating Alignment Theory into Parenting Language In parenting and development, likely load-bearing functions include emotional regulation, frustration tolerance, truthfulness under stress,"
+    },
+    {
+      "fingerprint": "b3529d11abb58ce6ec4114504833da15523a639d",
+      "file": "pages/parenting-and-development-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "s developmentally possible. Stress Test Summary Domain Parenting and development Load-Bearing Functions Emotional regulation, frustration tolerance, relational trust, self-revision,"
+    },
+    {
+      "fingerprint": "ebdd45dba4b66524454463e5a73b09b30494fb80",
+      "file": "pages/participation-co-regulation-and-substitution.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 79,
+      "context": "er The stronger question is whether the system remains an active participant in carrying load-bearing function. That question can accommodate constitutive relation, developmental training, an"
+    },
+    {
+      "fingerprint": "43012499893ca6d0f1f0c08a72cab96927223d6b",
+      "file": "pages/political-systems-and-control-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "nly by compliance or stability, but must also be judged by whether civic participation in load-bearing functions is being preserved. Michael Nathan Bower — alignmenttheory.org Stress Tests"
+    },
+    {
+      "fingerprint": "a4444990ba60ed2f6b97d03c2ab90dfc67de06c1",
+      "file": "pages/political-systems-and-control-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "hat political fragility can accumulate beneath apparent stability when institutions carry load-bearing civic functions — public judgment, accountability, local problem-solving — on behalf of a"
+    },
+    {
+      "fingerprint": "7bbba70e5302b02a078943d1bd0b21513f570623",
+      "file": "pages/political-systems-and-control-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "y increasingly carrying those functions from above? Translating the Framework Likely load-bearing functions here include public judgment, civic trust, institutional accountability, local"
+    },
+    {
+      "fingerprint": "cb506b8317bafa0d49c1f34aba0a65089b2024c8",
+      "file": "pages/political-systems-and-control-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "or violence are acute. Stress Test Summary Domain Political systems and control Load-Bearing Functions Public judgment, civic trust, accountability, local problem-solving, truthful"
     },
     {
       "fingerprint": "7e7de51c0c0cd9535d84f36595d08dceef1081a4",
@@ -1043,6 +1659,30 @@
       "category": "hard-ban phrase/template",
       "line": 143,
       "context": "redesign Role structures, incentives, and symbolic legitimacy often have to be reworked, not merely re-described. Civilizational Scale"
+    },
+    {
+      "fingerprint": "94cf5c334467b84f6f9124fd2dc036290ff6654b",
+      "file": "pages/religion-and-spiritual-formation-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "not doctrinal truth in itself, but whether religious practices preserve participation in load-bearing functions such as truth-bearing, repentance, moral revision, attention, communal repair,"
+    },
+    {
+      "fingerprint": "caeac84dd6c7ee12c141ffee9c6ce8c1a9616e78",
+      "file": "pages/religion-and-spiritual-formation-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "ctions from outside. Translating Alignment Theory into Religion and Formation Likely load-bearing functions in this domain include repentance, truthfulness, attention, self-examination,"
+    },
+    {
+      "fingerprint": "61ed27a754e38247d11adb61bf09fb9333f9dab3",
+      "file": "pages/religion-and-spiritual-formation-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "ey claim to mediate. Stress Test Summary Domain Religion and spiritual formation Load-Bearing Functions Repentance, truthfulness, attention, disciplined desire, endurance, communal r"
     },
     {
       "fingerprint": "acc95b86fd6435a04d6a16267698765b88787297",
@@ -1101,12 +1741,12 @@
       "context": "ositive account of integration The framework is stronger when it explains not only fragmentation and counterfeit order, but also what metabolizing truth and inward coherence positively are. Open metabol"
     },
     {
-      "fingerprint": "c00f5219b750800e6bd965d52342982a882b7bd1",
+      "fingerprint": "16f2a2e8d5dedfd100c362e625fe9cda28d89225",
       "file": "pages/revised-framework-center.html",
       "term": "robust",
       "category": "hard-ban word",
       "line": 69,
-      "context": "Alignment Theory is a structural framework for understanding how adaptive systems remain robust or become fragile depending on how their load-bearing functions are carried. The revised"
+      "context": "Alignment Theory is a structural framework for understanding how adaptive systems remain robust or become fragile depending on how their capacity-forming functions are carried. The revi"
     },
     {
       "fingerprint": "c24a7402f504c022b99be6280de12a120b500209",
@@ -1173,12 +1813,36 @@
       "context": "Abstract This paper tests whether Alignment Theory clarifies why parts of the self-help landscape feel useful, hollow, or both at once. The framework is not used to dismiss technique as s"
     },
     {
-      "fingerprint": "e38be2f288ea6193c4afdd9c678b5991b3eba9b1",
+      "fingerprint": "b80992fafdeaa6138920a70d6e009c110e64ba2b",
+      "file": "pages/self-help-and-human-formation-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "r claim is that improvement systems differ structurally depending on whether they rebuild load-bearing human capacities or merely preserve output through habits, hacks, incentives, and identit"
+    },
+    {
+      "fingerprint": "bc4cc98502059b47fd6a8934affe5be262138efb",
+      "file": "pages/self-help-and-human-formation-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "they promise to restore. Translating Alignment Theory into Self-Help Language Likely load-bearing functions include attention, self-observation, frustration tolerance, self-revision, com"
+    },
+    {
+      "fingerprint": "fd6c72c52c9d4d7ba1992641a60b8218dae4451b",
+      "file": "pages/self-help-and-human-formation-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "person ought to pursue. Stress Test Summary Domain Self-help and human formation Load-Bearing Functions Attention, frustration tolerance, self-observation, commitment, value-guided a"
+    },
+    {
+      "fingerprint": "8c85fb97dc9dd94779b509343003e45cf4fd7df7",
       "file": "pages/shared-core-structure-across-domains.html",
       "term": "A wide range of",
       "category": "hard-ban phrase/template",
       "line": 138,
-      "context": "r trivial nor universal. It is more modest and more useful than either of those extremes. A wide range of systems appear healthier when support relations preserve or deepen participation in load-"
+      "context": "r trivial nor universal. It is more modest and more useful than either of those extremes. A wide range of systems appear healthier when support relations preserve or deepen participation in capac"
     },
     {
       "fingerprint": "8719d5ae1fd09da841c9dab6e3543ad62c9a64db",
@@ -1197,6 +1861,22 @@
       "context": "y incoming signal. The implication is that the signal anchoring constraint is not merely an abstract epistemological preference. It describes a structural requirement that biolog"
     },
     {
+      "fingerprint": "a4b40434ccd27297ebf1d9c102e33b6b83c5a60e",
+      "file": "pages/social-media-and-information-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "ory, credibility judgment, and relational presence. Translating the Framework Likely load-bearing functions here include attention regulation, source discrimination, memory consolidation"
+    },
+    {
+      "fingerprint": "65a2dab5e3fb94cd9a8607b2856e52a7baced56f",
+      "file": "pages/social-media-and-information-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "the managed environment. Stress Test Summary Domain Social media and information Load-Bearing Functions Attention regulation, source judgment, memory, context-building, relational pr"
+    },
+    {
       "fingerprint": "ecb91097f814c8033a28aec07ef3deac51cbfbca",
       "file": "pages/social-media-and-information-stress-test.html",
       "term": "not just ___ but ___",
@@ -1213,12 +1893,44 @@
       "context": "hat would count against cross-scale continuity If the same concepts repeatedly failed to illuminate transitions across person, relationship, institution, and civilization without collapsing"
     },
     {
+      "fingerprint": "de4d2ca70c163c33019dad1f9bf7f75b2c201e12",
+      "file": "pages/stress-tests.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 69,
+      "context": "tems. The Stress Test Series examines whether the framework's distinction between load-bearing functions, participatory capacity, and support relations remains coherent when translated"
+    },
+    {
       "fingerprint": "35dd11328e70ceea55d422b2e144d0d0263c3a35",
       "file": "pages/stress-tests.html",
       "term": "In summary",
       "category": "hard-ban phrase/template",
       "line": 76,
       "context": "Papers Series Overview Meta The series includes a cross-domain summary page that gathers the recurring diagnostic structure visible across the strongest-fit dom"
+    },
+    {
+      "fingerprint": "5557702014f3767508f26952b95d3fe515068b66",
+      "file": "pages/stress-tests.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 79,
+      "context": "Six papers demonstrate the framework with the greatest clarity &mdash; where the load-bearing functions are most identifiable, the perturbation test has the clearest observable conseq"
+    },
+    {
+      "fingerprint": "2232f5accda6a311a56dcc058a56e38d74d7ac6b",
+      "file": "pages/stress-tests.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 101,
+      "context": "A paper testing whether political order can remain stable while civic participation in load-bearing functions is quietly eroded. Open paper Leadership and Authority Stress Test"
+    },
+    {
+      "fingerprint": "7a1fc3d6d7f389fdf8e0707397617f92d8943b35",
+      "file": "pages/stress-tests.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 118,
+      "context": "Stress Test Suffering A direct test of whether suffering is often intensified when the load-bearing structure of a problem remains hidden or misidentified. Open paper"
     },
     {
       "fingerprint": "63f479fb974c93645b286bfa1f5150f452a57887",
@@ -1269,12 +1981,140 @@
       "context": "adaptation. Participatory Capacity in This Domain Participation means that the person is not merely being relieved from outside, but is gradually re-entering the function at stake: grieving"
     },
     {
+      "fingerprint": "b92d1d37785592222388760e130b49205439fd4f",
+      "file": "pages/suffering-and-hidden-structure-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "ion are not preserved. Testing whether suffering is often intensified when the load-bearing structure of a system is hidden, misidentified, or externally substituted. Michael Natha"
+    },
+    {
+      "fingerprint": "b33c271c17a616f9e92127c3d191753707d43aba",
+      "file": "pages/suffering-and-hidden-structure-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "aper tests a strong claim under restraint: suffering is often intensified when a system's load-bearing structure is hidden, misidentified, or externally substituted, and may lessen when that s"
+    },
+    {
+      "fingerprint": "2090ae3e554cb16c0d7af000023ca9726b85fc05",
+      "file": "pages/suffering-and-hidden-structure-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "persists partly because people are acting against the wrong diagnosis of what is actually load-bearing. Introduction: The Suffering Version of the Alignment Problem Not all suffering has t"
+    },
+    {
+      "fingerprint": "eb1d3685ad69a042536926bf68eea86e558bae6c",
+      "file": "pages/suffering-and-hidden-structure-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "touched. Translating Alignment Theory into the Language of Suffering In this domain, load-bearing functions may include truth-bearing, affect regulation, grief integration, tolerance of"
+    },
+    {
+      "fingerprint": "3987cfe3fad881360ed32e841b525d3dbec9a45e",
+      "file": "pages/suffering-and-hidden-structure-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "output, calm, or compliance while the person remains unable to participate in the hidden load-bearing function. The Core Dynamics of Failure and Growth Suffering is often intensified when"
+    },
+    {
+      "fingerprint": "c0e42599e63af0156382841d371c46dac047d41f",
+      "file": "pages/suffering-and-hidden-structure-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "and Growth Suffering is often intensified when a person fights the wrong battle. If the load-bearing issue is grief but the person treats the problem as efficiency loss, or if the load-beari"
+    },
+    {
+      "fingerprint": "9ae0679eb14503d60612656915fd24746b02e8ee",
+      "file": "pages/suffering-and-hidden-structure-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "ad-bearing issue is grief but the person treats the problem as efficiency loss, or if the load-bearing issue is truth-bearing but the person treats the problem as emotional discomfort alone, t"
+    },
+    {
+      "fingerprint": "f85cad0b579e35ca3971ed7ced57e817ba86b015",
+      "file": "pages/suffering-and-hidden-structure-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "hat some suffering will diminish not simply when distress is reduced, but when the hidden load-bearing structure becomes more legible and the person can participate in it more directly. It als"
+    },
+    {
+      "fingerprint": "fe4c60f4d94ccbc10dfcd8e43e7788488a3afdda",
+      "file": "pages/suffering-and-hidden-structure-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "ework is strongest where suffering is being prolonged by misdiagnosis of what is actually load-bearing, and weakest where the major drivers lie elsewhere. Stress Test Summary Domain Suff"
+    },
+    {
+      "fingerprint": "ad788da1f6e6c0b913a1a2a15fdfe0bd2b7bac8b",
+      "file": "pages/suffering-and-hidden-structure-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "drivers lie elsewhere. Stress Test Summary Domain Suffering and hidden structure Load-Bearing Functions Truth-bearing, grief integration, affect regulation, ambiguity tolerance, mean"
+    },
+    {
+      "fingerprint": "26896773e8ea6d240a4d7248e0403b3aa99e79f2",
+      "file": "pages/suffering-and-hidden-structure-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "ng was integrated or managed Core Prediction Suffering is often prolonged when hidden load-bearing structure is misidentified and relief carries the function without rebuilding participati"
+    },
+    {
+      "fingerprint": "6cde219736cdeb7e7d47fe02724079d90d81a729",
+      "file": "pages/suffering-and-hidden-structure-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "t of suffering. It does, however, show that some suffering is maintained because the real load-bearing issue remains hidden. Making that structure legible does not always reduce pain immediate"
+    },
+    {
       "fingerprint": "6548f6667303479d4669989751d643b667e4ce2f",
       "file": "pages/suffering-and-hidden-structure-stress-test.html",
       "term": "not merely",
       "category": "hard-ban phrase/template",
       "line": 59,
       "context": "ptation. Participatory Capacity in This Domain Participation means that the person is not merely being relieved from outside, but is gradually re-entering the function at stake: grieving"
+    },
+    {
+      "fingerprint": "1ba681d597c5e8b49ddc0b3bbae6a2a5fde0c464",
+      "file": "pages/technology-adoption-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "not only by efficiency gains but by what repeated use does to the user’s participation in load-bearing cognitive and social functions. Michael Nathan Bower — alignmenttheory.org Stress Test"
+    },
+    {
+      "fingerprint": "d0ffc7f211b1cc0262cd83aa747f015a846095ca",
+      "file": "pages/technology-adoption-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "unctions into the tool. Translating Alignment Theory into Technology Language Likely load-bearing functions include memory, orientation, troubleshooting, interpretive judgment, articulat"
+    },
+    {
+      "fingerprint": "1f433c05d0292be5cd6ae097318ebcfbf629cffe",
+      "file": "pages/technology-adoption-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "treated every offload as decay. The question is whether the offloaded function was truly load-bearing for the user, and whether the larger system becomes more or less robust under repeated re"
+    },
+    {
+      "fingerprint": "8afeee60724373506bb51b60542d612c98588df4",
+      "file": "pages/technology-adoption-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "s robust under repeated reliance. Stress Test Summary Domain Technology adoption Load-Bearing Functions Memory, interpretation, troubleshooting, deliberate judgment, articulation"
     },
     {
       "fingerprint": "769382f55f9a08830a2b27ccb8df036a561f3ff1",
@@ -1309,12 +2149,84 @@
       "context": "but it does not tell you how the system got there or whether it is becoming more or less robust over time. The framework needs a deeper structure. That structure is a two-di"
     },
     {
+      "fingerprint": "c5adbbdeb7e8300e8e8a9722e96f3a7ba0aa446b",
+      "file": "pages/the-four-structural-states-of-support-and-participation.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 102,
+      "context": "cated on two axes: whether support is present or absent, and whether participation in the load-bearing function is being preserved or reduced. Those two axes produce four structural states."
+    },
+    {
+      "fingerprint": "00e29b0f30a9bbe78ac0316b0627c54ecaadd594",
+      "file": "pages/the-four-structural-states-of-support-and-participation.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 107,
+      "context": "ntal scaffolding, stable distributed competence. The participant is actively carrying the load-bearing function within or alongside the support relation."
+    },
+    {
+      "fingerprint": "ad7178fc34ff0f94e98637d266ad0af3f0b74325",
+      "file": "pages/the-four-structural-states-of-support-and-participation.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 117,
+      "context": "participation preserved Independent function. The participant carries the load-bearing function without external support. This is what healthy scaffolding is structured to prod"
+    },
+    {
       "fingerprint": "8ce0a4f95ef49ffbeb0fb5369d0ff1632d8e1915",
       "file": "pages/the-four-structural-states-of-support-and-participation.html",
       "term": "not merely",
       "category": "hard-ban phrase/template",
       "line": 131,
       "context": "sts and develops. Language itself is constitutive co-regulation: thought is shaped by it, not merely expressed through it. Developmental scaffolding is support that temporarily"
+    },
+    {
+      "fingerprint": "f55c40c693c3f852cdca93e20e7cffaa75612eed",
+      "file": "pages/the-four-structural-states-of-support-and-participation.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 132,
+      "context": "nd; a surgical resident operates alongside a attending physician. The support is real and load-bearing, but it is structured toward its own reduction. Without this kind of support, capacity ca"
+    },
+    {
+      "fingerprint": "3564c0ae534447fa717a5019e52d5e8290e07023",
+      "file": "pages/the-four-structural-states-of-support-and-participation.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 147,
+      "context": "pation Preserved State 3 is independent function: the participant carries the load-bearing function without external support. This is the target state for developmental scaffolding"
+    },
+    {
+      "fingerprint": "7e2156304d8ab2b84b54c890e62867d22dd082ca",
+      "file": "pages/the-four-structural-states-of-support-and-participation.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 149,
+      "context": "respect to distributed judgment. State 3 is not the only healthy state. Many load-bearing functions are constitutively relational and should never be in State 3. Grief, moral reas"
+    },
+    {
+      "fingerprint": "309f2015da9e5a03fde52f7f6df7ab61c0268013",
+      "file": "pages/the-four-structural-states-of-support-and-participation.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 154,
+      "context": "State 4 is the failure state: support is absent and the participant cannot carry the load-bearing function. The function fails. State 4 has two very different origins that loo"
+    },
+    {
+      "fingerprint": "62af3e14e48742c36aad1943a64d77f2882fb44b",
+      "file": "pages/the-four-structural-states-of-support-and-participation.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 189,
+      "context": "Revised Framework Center The technical core: load-bearing functions, participatory capacity, and the four modes of support. Open pa"
+    },
+    {
+      "fingerprint": "cd1cffd1eed460357885b3208903dabb349ac265",
+      "file": "pages/the-four-structural-states-of-support-and-participation.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 204,
+      "context": "How to Use Alignment Theory Five diagnostic questions, how to identify load-bearing functions, and what the framework does not do. Open page"
     },
     {
       "fingerprint": "be9115dd43f110eecaca0acf8e8adf44ae9d5ddc",
@@ -1341,6 +2253,38 @@
       "context": "below the level of agentive systems, or whether some of its structural distinctions still illuminate how ordered systems persist or fail. Translating Alignment Theory into Thermodynamic L"
     },
     {
+      "fingerprint": "731d56c3f2392e0e5b5294ed71c8841935bd452e",
+      "file": "pages/thermodynamic-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "is only partially applicable here. It remains useful when translated into the language of load-bearing organization and sustaining relations, but it weakens where participatory capacity cannot"
+    },
+    {
+      "fingerprint": "0089d3f5510730dbff7bd87845e360c665fc3f0c",
+      "file": "pages/thermodynamic-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "ail. Translating Alignment Theory into Thermodynamic Language In this domain, likely load-bearing functions include boundary maintenance, gradient exploitation, energy throughput, and th"
+    },
+    {
+      "fingerprint": "7de78fca8e5beef0e7e5272f405d6232b3e89b69",
+      "file": "pages/thermodynamic-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "ins useful where apparent order is maintained only because external conditions do all the load-bearing work. The Core Dynamics of Failure and Growth Thermodynamic systems clarify that no o"
+    },
+    {
+      "fingerprint": "903f743242fc26ee4f16a6b334d0199f74b7e424",
+      "file": "pages/thermodynamic-stress-test.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 59,
+      "context": "ing translation. Stress Test Summary Domain Thermodynamics and dissipative order Load-Bearing Functions Boundary maintenance, gradient exploitation, organized persistence Main Sup"
+    },
+    {
       "fingerprint": "8b57f22ec2c7b445300b02b00afce3c2f344ea36",
       "file": "pages/thermodynamic-stress-test.html",
       "term": "robust",
@@ -1357,20 +2301,20 @@
       "context": "Intro Alignment Theory is strongest when it not only names fragmentation and counterfeit order, but also explains the positive process of integration and the structure of inward coherence. This"
     },
     {
-      "fingerprint": "d8d38ba1467a95cf5bd873c39ef669b69dd32627",
+      "fingerprint": "3a3cb0ef989db6519ae504235cb884f78ca612c7",
       "file": "pages/what-the-framework-actually-claims.html",
       "term": "robust",
       "category": "hard-ban word",
       "line": 83,
-      "context": "preserves participatory capacity rather than eroding it; cases where systems become more robust precisely by reducing their own participation in load-bearing functions; or the demonstra"
+      "context": "preserves participatory capacity rather than eroding it; cases where systems become more robust precisely by reducing their own participation in capacity-forming functions; or the demon"
     },
     {
-      "fingerprint": "fa5065f40027c804e8d693cbdcd0b7cf27836461",
+      "fingerprint": "c027c3a263d85f93b98c409b6a9e9099f4e87876",
       "file": "pages/where-to-start.html",
       "term": "robust",
       "category": "hard-ban word",
       "line": 104,
-      "context": "Alignment Theory is a framework for understanding how adaptive systems remain robust or become fragile depending on how their load-bearing functions are carried. The central"
+      "context": "Alignment Theory is a framework for understanding how adaptive systems remain robust or become fragile depending on how their capacity-forming functions are carried. The cent"
     },
     {
       "fingerprint": "4b65c1e82bdab2395596be47b6c37027e7a2f984",
@@ -1515,6 +2459,30 @@
       "category": "hard-ban phrase/template",
       "line": 173,
       "context": "nnecessary within them. If that risk is real, then the defining question of the AI age is not merely how to align powerful systems to human preferences, but how to ensure that living with su"
+    },
+    {
+      "fingerprint": "378f68ff655ef728ea5ab2d106a9852f33d6b7f9",
+      "file": "pages/why-structural-dependence-hides-behind-functional-success.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 65,
+      "context": ". The hidden cost is that the focal system may now be participating less in carrying the load-bearing function itself. The paper argues that this gap between apparent success and participato"
+    },
+    {
+      "fingerprint": "463a249dbb2fe47237760d882f7dccc5a795f51f",
+      "file": "pages/why-structural-dependence-hides-behind-functional-success.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 65,
+      "context": "nce in steady state says less than many observers assume about the actual location of the load-bearing function. Why This Pattern Recurs The pattern recurs because the benefits of substitu"
+    },
+    {
+      "fingerprint": "32ed1d4bff72071987a2bd940932b46fd0acdfe8",
+      "file": "pages/why-structural-dependence-hides-behind-functional-success.html",
+      "term": "load-bearing",
+      "category": "hard-ban phrase",
+      "line": 65,
+      "context": "provement, not collapse. Stress Test Summary Domain Cross-domain companion paper Load-Bearing Functions Varies by domain; the pattern concerns where function is actually being carrie"
     },
     {
       "fingerprint": "7d717e8d675e0b5460af51698d95021f5307f0ca",

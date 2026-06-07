@@ -118,7 +118,7 @@ This is a working editorial filter for HAPI, Alignment Theory, AGS, AAG, PGDL, w
 ## Review phrases: rewrite when repetitive or vague
 
 - `under pressure`
-- `load-bearing`
+- `load-bearing` as an abstract metaphor
 - `central claim`
 - `central theme`
 - `core thesis`
@@ -230,7 +230,7 @@ Do not remove technical terms merely because they are common. Keep them when the
 | `amplify` | increase, extend, improve, accelerate, or preserve; keep “agency amplification” only as a defined term |
 | `coherence` | consistency, agreement, fit, traceability, or the exact relationship being tested |
 | `under pressure` | during failure, under load, during conflict, during time constraints, or under a named condition |
-| `load-bearing` | necessary, structural, required, or name the dependency |
+| `load-bearing` | capacity-forming functions, agency-forming functions, necessary, structural, required, or name the dependency |
 | `not merely / not just` | state the positive claim directly |
 
 ## Current *True Gate* draft: first-pass review terms

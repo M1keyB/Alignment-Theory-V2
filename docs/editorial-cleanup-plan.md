@@ -128,7 +128,7 @@ Actions:
 - Apply `docs/editorial/AI_LANGUAGE_LINTER_LIST.csv`.
 - Remove hard-ban terms from newly revised public prose unless quoted, cited, technical, or intentionally preserved.
 - Reduce repeated review terms only where they are decorative or vague.
-- Preserve defined terms such as Alignment Theory, internal alignment, external alignment, participatory capacity, load-bearing function, support relation, AI governance, AAG, PGDL, Runtime Binding, Receipts, Governance Memory, and substrate.
+- Preserve defined terms such as Alignment Theory, internal alignment, external alignment, participatory capacity, capacity-forming functions, support relation, AI governance, AAG, PGDL, Runtime Binding, Receipts, Governance Memory, and substrate.
 - Keep uncertainty visible where claims are developing.
 
 Acceptance criteria:

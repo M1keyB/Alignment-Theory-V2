@@ -269,7 +269,7 @@ review word,vast,Allowed when precise. Flag repeated or clustered use.
 review word,versatile,Allowed when precise. Flag repeated or clustered use.
 review word,vivid,Allowed when precise. Flag repeated or clustered use.
 review phrase,under pressure,Allowed occasionally. Replace if it sounds formulaic or vague.
-review phrase,load-bearing,Allowed occasionally. Replace if it sounds formulaic or vague.
+hard-ban phrase,load-bearing,Do not use as a default abstract metaphor. Use capacity-forming functions for the formal Alignment Theory concept, agency-forming functions in HAPI-specific contexts, and direct language elsewhere.
 review phrase,central claim,Allowed occasionally. Replace if it sounds formulaic or vague.
 review phrase,central theme,Allowed occasionally. Replace if it sounds formulaic or vague.
 review phrase,core thesis,Allowed occasionally. Replace if it sounds formulaic or vague.

@@ -100,7 +100,7 @@ Protected terms include:
 - internal alignment
 - external alignment
 - participatory capacity
-- load-bearing function
+- capacity-forming functions
 - support relation
 - constitutive co-regulation
 - developmental scaffolding
@@ -129,6 +129,8 @@ Protected terms include:
 - substrate
 
 Use protected terms only where they add precision. Do not repeat them as decoration.
+
+Do not use load-bearing as a default abstract metaphor. Use capacity-forming functions for the formal Alignment Theory concept, agency-forming functions in HAPI-specific contexts, and plain direct language elsewhere.
 
 ## Site direction
 

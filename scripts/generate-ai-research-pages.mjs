@@ -256,10 +256,10 @@ const papers = [
     description: "The evolution of Alignment Theory from internal/external alignment to runtime AI drift detection and enterprise behavioral QA.",
     pdf: "../assets/research/07_Framework_Evolution_and_Research_Lineage_v5.pdf",
     abstract: "This lineage page tracks the development of the AI alignment research line from earlier alignment distinctions into a runtime architecture for behavioral QA.",
-    toc: ["Internal vs External Alignment", "Load-Bearing Function", "Misaligned Structures", "Objective / Constraint / Realignment", "Feature Extraction", "Detector Layer", "Judge Layer", "Universal Drift Metrics", "Behavioral QA"],
+    toc: ["Internal vs External Alignment", "Capacity-Forming Function", "Misaligned Structures", "Objective / Constraint / Realignment", "Feature Extraction", "Detector Layer", "Judge Layer", "Universal Drift Metrics", "Behavioral QA"],
     sections: [
       ["Internal vs External Alignment", ["The early research distinguished inner objective fit from outward rule compliance. That distinction later became more operational in the separation between objective anchoring and constraint enforcement."]],
-      ["Load-Bearing Function", ["The broader archive developed the idea that systems become fragile when a load-bearing function is preserved externally while the system loses participatory capacity. The AI branch translates this concern into production behavior and objective fidelity."]],
+      ["Capacity-Forming Function", ["The broader archive developed the idea that systems become fragile when a capacity-forming function is preserved externally while the system loses participatory capacity. The AI branch translates this concern into production behavior and objective fidelity."]],
       ["Misaligned Structures", ["The research then focused on cases where apparently functional behavior hides a deeper mismatch between what a system is doing and what it is for. In AI, this becomes the problem of fluent outputs that satisfy surface expectations while drifting from purpose."]],
       ["Objective / Constraint / Realignment", ["The three-layer architecture consolidated the corpus: Objective Layer for purpose, Constraint Layer for boundaries, and Realignment Layer for allowed-but-off-center behavior."]],
       ["Feature Extraction", ["Feature extraction made the framework evaluable by turning output traits into signals: certainty markers, genericity, unsupported authority, user-agency closure, source mismatch, and other detector inputs."]],

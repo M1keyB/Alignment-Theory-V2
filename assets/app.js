@@ -24,7 +24,7 @@ const slugify = (value) => value
 
 const GLOSSARY_TERMS = {
   "load-bearing-function": {
-    label: "load-bearing function",
+    label: "capacity-forming function",
     definition: "A function whose degradation changes resilience, viability, developmental integrity, or durable competence rather than merely reducing efficiency.",
     related: [
       { href: "biology", path: "biological-stress-test.html" },
@@ -34,7 +34,7 @@ const GLOSSARY_TERMS = {
   },
   "participatory-capacity": {
     label: "participatory capacity",
-    definition: "The system's active share in forming, carrying, and revising a load-bearing function rather than merely receiving its outputs.",
+    definition: "The system's active share in forming, carrying, and revising a capacity-forming function rather than merely receiving its outputs.",
     related: [
       { href: "education", path: "education-stress-test.html" },
       { href: "recovery", path: "addiction-and-recovery-stress-test.html" },
@@ -43,7 +43,7 @@ const GLOSSARY_TERMS = {
   },
   "support-relation": {
     label: "support relation",
-    definition: "Any external or distributed structure that helps carry a load-bearing function over time.",
+    definition: "Any external or distributed structure that helps carry a capacity-forming function over time.",
     related: [
       { href: "biology", path: "biological-stress-test.html" },
       { href: "economics", path: "economic-stress-test.html" },
@@ -79,7 +79,7 @@ const GLOSSARY_TERMS = {
   },
   "substitutive-dependence": {
     label: "substitutive dependence",
-    definition: "Support that preserves output while reducing participation in the load-bearing function over time.",
+    definition: "Support that preserves output while reducing participation in the capacity-forming function over time.",
     related: [
       { href: "ai", path: "ai-civilization-and-human-formation.html" },
       { href: "education", path: "education-stress-test.html" },
@@ -97,7 +97,7 @@ const GLOSSARY_TERMS = {
   },
   "hidden-structure": {
     label: "hidden structure",
-    definition: "The load-bearing arrangement or dependency pattern that is operating in a system without being clearly recognized by the participants within it.",
+    definition: "The support arrangement or dependency pattern that is operating in a system without being clearly recognized by the participants within it.",
     related: [
       { href: "suffering", path: "suffering-and-hidden-structure-stress-test.html" },
       { href: "meaning", path: "meaning-formation-and-suffering-stress-test.html" },
@@ -725,7 +725,7 @@ const FRAMEWORK_MAP_GROUPS = [
       { href: "parables-and-real-life-translations.html", label: "Parables and Translations" },
       { href: "revised-framework-center.html", label: "Revised Framework Center" },
       { href: "how-to-use-alignment-theory.html", label: "How to Use Alignment Theory" },
-      { href: "load-bearing-function-participatory-capacity-and-the-four-modes-of-support.html", label: "Load-Bearing Function and the Four Modes of Support" },
+      { href: "load-bearing-function-participatory-capacity-and-the-four-modes-of-support.html", label: "Capacity-Forming Functions and the Four Modes of Support" },
       { href: "boundary-conditions-and-failure-cases-of-alignment-theory.html", label: "Boundary Conditions and Failure Cases" },
       { href: "what-the-framework-actually-claims.html", label: "What the Framework Actually Claims" },
       { href: "participation-co-regulation-and-substitution.html", label: "Participation, Co-Regulation, and Substitution" },
@@ -1452,14 +1452,14 @@ const initStickyHeader = () => {
 const SEARCH_DATA = [
   // Framework / Core
   { title: "Where to Start", url: "where-to-start.html", section: "Framework", desc: "Entry point for understanding Alignment Theory and its structure.", tags: ["intro", "overview", "start", "guide", "begin"] },
-  { title: "Revised Framework Center", url: "revised-framework-center.html", section: "Framework", desc: "The updated core of Alignment Theory: load-bearing functions, participatory capacity, and four modes of support.", tags: ["load-bearing", "participatory capacity", "four modes", "co-regulation", "scaffolding", "substitution", "distributed competence", "center"] },
+  { title: "Revised Framework Center", url: "revised-framework-center.html", section: "Framework", desc: "The updated core of Alignment Theory: capacity-forming functions, participatory capacity, and four modes of support.", tags: ["capacity-forming functions", "participatory capacity", "four modes", "co-regulation", "scaffolding", "substitution", "distributed competence", "center"] },
   { title: "What the Framework Actually Claims", url: "what-the-framework-actually-claims.html", section: "Framework", desc: "Precise statement of Alignment Theory's claims and scope.", tags: ["claims", "scope", "precision", "definition"] },
-  { title: "Load-Bearing Function, Participatory Capacity, and the Four Modes of Support", url: "load-bearing-function-participatory-capacity-and-the-four-modes-of-support.html", section: "Framework", desc: "Core definitions of load-bearing function and the four support modes.", tags: ["load-bearing function", "participatory capacity", "four modes", "co-regulation", "scaffolding", "substitution", "distributed competence"] },
+  { title: "Capacity-Forming Functions, Participatory Capacity, and the Four Modes of Support", url: "load-bearing-function-participatory-capacity-and-the-four-modes-of-support.html", section: "Framework", desc: "Core definitions of capacity-forming functions and the four support modes.", tags: ["capacity-forming functions", "participatory capacity", "four modes", "co-regulation", "scaffolding", "substitution", "distributed competence"] },
   { title: "Participation, Co-Regulation, and Substitution", url: "participation-co-regulation-and-substitution.html", section: "Framework", desc: "Why participatory capacity replaced internal/external as the framework's center.", tags: ["participation", "co-regulation", "substitution", "internal", "external", "revised"] },
   { title: "How the Revised Model Maps to the DMN", url: "how-the-revised-model-maps-to-the-dmn.html", section: "Framework", desc: "Mapping revised Alignment Theory to Default Mode Network dynamics.", tags: ["DMN", "default mode network", "neuroscience", "Raichle", "Buckner", "Andrews-Hanna", "Newberg", "brain", "cognition", "neural"] },
   { title: "The Four Structural States of Support and Participation", url: "the-four-structural-states-of-support-and-participation.html", section: "Framework", desc: "The 2×2 structure mapping support presence against participation level.", tags: ["four states", "support", "participation", "structural states", "2x2", "matrix"] },
   { title: "Boundary Conditions and Failure Cases of Alignment Theory", url: "boundary-conditions-and-failure-cases-of-alignment-theory.html", section: "Framework", desc: "Where the framework reaches its limits and how it fails.", tags: ["limits", "failure", "boundary conditions", "edge cases"] },
-  { title: "Shared Core Structure Across Domains", url: "shared-core-structure-across-domains.html", section: "Framework", desc: "The repeating load-bearing structure found across biology, education, addiction, religion, and more.", tags: ["cross-domain", "shared structure", "pattern", "universal", "domains"] },
+  { title: "Shared Core Structure Across Domains", url: "shared-core-structure-across-domains.html", section: "Framework", desc: "The repeating support structure found across biology, education, addiction, religion, and more.", tags: ["cross-domain", "shared structure", "pattern", "universal", "domains"] },
   { title: "The Formation Mechanism", url: "the-formation-mechanism.html", section: "Framework", desc: "How structural formation works across domains.", tags: ["formation", "mechanism", "structure", "how"] },
   { title: "How to Use Alignment Theory", url: "how-to-use-alignment-theory.html", section: "Framework", desc: "A practical guide to applying the framework.", tags: ["guide", "apply", "how to", "practical", "use"] },
   { title: "Framework", url: "framework.html", section: "Framework", desc: "The main framework hub page.", tags: ["framework", "hub", "overview", "map"] },
@@ -1487,7 +1487,7 @@ const SEARCH_DATA = [
   { title: "Biology and Adaptive Systems", url: "biology-and-adaptive-systems.html", section: "Applied", desc: "The biology branch of Alignment Theory applied to adaptive systems.", tags: ["biology", "adaptive systems", "evolution", "homeostasis", "cells", "organisms"] },
   { title: "Why Multiple Fields Are Converging on the Same AI Question", url: "why-multiple-fields-are-converging-on-the-same-ai-question.html", section: "Applied", desc: "Cross-disciplinary convergence on AI and participatory capacity.", tags: ["AI", "convergence", "fields", "interdisciplinary", "neuroscience", "education", "psychology"] },
   { title: "Why Structural Dependence Hides Behind Functional Success", url: "why-structural-dependence-hides-behind-functional-success.html", section: "Applied", desc: "How systems can appear to function well while structural dependency grows invisibly.", tags: ["structural dependence", "functional success", "hidden", "dependency", "invisible"] },
-  { title: "Load-Bearing Human Capacities in the AI Age", url: "load-bearing-human-capacities-in-the-ai-age.html", section: "Applied", desc: "Which human capacities are load-bearing and what AI substitution risks.", tags: ["AI", "human capacities", "load-bearing", "skills", "cognition", "agency", "automation"] },
+  { title: "Agency-Forming Human Capacities in the AI Age", url: "load-bearing-human-capacities-in-the-ai-age.html", section: "Applied", desc: "Which human capacities form agency and what AI substitution risks.", tags: ["AI", "human capacities", "agency-forming", "skills", "cognition", "agency", "automation"] },
   { title: "Why the Present May Be Safer Than Success", url: "why-the-present-may-be-safer-than-success.html", section: "Applied", desc: "Why an earlier phase may preserve more capacity than a later successful one.", tags: ["present", "success", "safety", "capacity", "fragility", "growth"] },
   // AI Alignment Research
   { title: "AI Alignment Research", url: "ai-alignment-research.html", section: "AI Alignment Research", desc: "Research hub for behavioral drift detection, realignment architecture, and production AI governance.", tags: ["AI alignment research", "behavioral drift detection", "realignment layer", "AI governance", "behavioral QA"] },

@@ -12,7 +12,7 @@ The future page should present the current structure of Alignment Theory. The ex
 ## Required Map Contents
 
 1. Alignment Theory foundation
-2. Load-bearing functions
+2. Capacity-forming functions
 3. Participatory capacity
 4. Support relations
 5. Four modes of support
@@ -34,7 +34,7 @@ The future page should present the current structure of Alignment Theory. The ex
 
 - Opening status note: identify the page as the current map, with revision date.
 - Foundation layer: core claim, scope, and limits.
-- Capacity layer: load-bearing functions, participatory capacity, support relations, and the four support modes.
+- Capacity layer: capacity-forming functions, participatory capacity, support relations, and the four support modes.
 - Alignment layer: internal/external alignment and support versus substitution.
 - Research layer: stress tests, papers, AI alignment corpus, and PCPI.
 - Governance layer: HAPI, delegated agency, PGDL, AAG, Runtime Binding, Receipts, Governance Memory, and AGS.

@@ -189,14 +189,14 @@ Status: Phase 9 audit-only. No generated body copy was edited.
 
 - title: Framework Evolution and Research Lineage | Alignment Theory
 - hard-ban matches: none
-- review-term matches: high, especially alignment, framework, evolution, load-bearing, and architecture
+- review-term matches: high, especially alignment, framework, evolution, and architecture
 - repeated sentence patterns: repeated development-history progression
 - repeated transitions: moderate
 - repeated three-part lists: low
 - repeated contrast formulas: moderate
 - generic summary language: moderate
 - abstract language density: moderate
-- valid project vocabulary: internal/external alignment, load-bearing function, participatory capacity, runtime architecture
+- valid project vocabulary: internal/external alignment, capacity-forming function, participatory capacity, runtime architecture
 - terms needing human review: enterprise endpoint, behavioral QA, production behavior
 - clear AI-style wording problems: none urgent
 - possible AI-style wording problems: some history claims may need clearer dating or status labels
