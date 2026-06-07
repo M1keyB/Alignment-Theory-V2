@@ -1,0 +1,1528 @@
+{
+  "version": 1,
+  "generatedAt": "2026-06-07T13:46:01.698Z",
+  "scope": "Historical archive hard-ban findings only. Routine lint must not rewrite this file.",
+  "count": 190,
+  "findings": [
+    {
+      "fingerprint": "9a346487c69e2dc68457c2378d96e3e6c52460bc",
+      "file": "pages/about.html",
+      "term": "robust",
+      "category": "hard-ban word",
+      "line": 71,
+      "context": "Alignment Theory is a cross-domain framework investigating how adaptive systems remain robust or become fragile depending on how their load-bearing functions are carried. The project"
+    },
+    {
+      "fingerprint": "adf5adcdb5461c2e4485b50aceaaa3f6db5c6982",
+      "file": "pages/agent-runtime-control-boundary.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 196,
+      "context": "luated, and what decision was returned? A runtime boundary should not merely refuse. It should route. Decision Routes"
+    },
+    {
+      "fingerprint": "bccc685c3ee69ea7232be9e8232cd628e4f87e8d",
+      "file": "pages/alignment-theory-in-plain-language.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 217,
+      "context": "the community is no longer present. When the rules run out. These moments are diagnostic, not merely disruptive. They reveal whether the capacity was built or only borrowed. A person who com"
+    },
+    {
+      "fingerprint": "b7e06cca34c6e734adb510ce2fab3aadb22bf155",
+      "file": "pages/biblical-grammar.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 89,
+      "context": "nal order, hardening, fruit, judgment, and renewal. Alignment Theory reads these patterns not merely as religious language, but as descriptions of how human beings move between inward cohere"
+    },
+    {
+      "fingerprint": "544cf34b0e2a197a4dd74aa887a5c62524a779a2",
+      "file": "pages/biblical-grammar.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 161,
+      "context": "ewal of mind is regulatory reorganization at the level of interpretation. The person does not merely adopt new slogans; the frame through which reality is read begins to change. In that sens"
+    },
+    {
+      "fingerprint": "900b6b5bfd8e4c18c1f7c252ee0af15c5d8479f7",
+      "file": "pages/biblical-grammar.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 314,
+      "context": "s protects the page from a shallow moralism. Scripture is naming ways a life is governed, not merely labeling acceptable and unacceptable behaviors."
+    },
+    {
+      "fingerprint": "004f70b7ca4dddee936e9f492021a90a33679071",
+      "file": "pages/biological-stress-test.html",
+      "term": "robust",
+      "category": "hard-ban word",
+      "line": 65,
+      "context": "ken them. Predictions The framework predicts that biological systems will remain more robust where support preserves participation in load-bearing function. It predicts that chronic"
+    },
+    {
+      "fingerprint": "7122a2e27dcb069606606a022d448d072cb731e5",
+      "file": "pages/boundary-conditions-and-failure-cases-of-alignment-theory.html",
+      "term": "robust",
+      "category": "hard-ban word",
+      "line": 83,
+      "context": "The framework predicts the opposite: systems that preserve participation tend to be more robust under perturbation. Cases where decreased participation reliably increases resilience are"
+    },
+    {
+      "fingerprint": "9cd285c6cef1b91d83758ee26268c69ff3d54c15",
+      "file": "pages/community-and-high-control-group-stress-test.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 59,
+      "context": "s the primary carrier of those functions. Departure or disagreement becomes destabilizing not merely because of social cost, but because participatory capacity has been narrowed. Particip"
+    },
+    {
+      "fingerprint": "15fca84770213eab7d5205765aac6281ed367357",
+      "file": "pages/contact-before-interpretation.html",
+      "term": "profound",
+      "category": "hard-ban word",
+      "line": 140,
+      "context": "oul\" Phenomenon Adults sometimes hear children say things that feel uncannily profound, direct, or older than the child should be. One common way of naming that phenomenon is m"
+    },
+    {
+      "fingerprint": "fb99750f3e5ae64c08b899b8d36cbc194229ccc7",
+      "file": "pages/contact-before-interpretation.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 153,
+      "context": "and Restoration Integrative tolerance is one of the bridge variables here. IT is not merely resilience under stress. It is partly the capacity to remain in contact with disruptive r"
+    },
+    {
+      "fingerprint": "941cf69a2b4ea6324c89e3462ac7cdaf5debbd25",
+      "file": "pages/contact-before-interpretation.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 153,
+      "context": "Restoration Integrative tolerance is one of the bridge variables here. IT is not merely resilience under stress. It is partly the capacity to remain in contact with disruptive r"
+    },
+    {
+      "fingerprint": "83c4b3c043b3ca1943cc0d935790e6635a54c81f",
+      "file": "pages/core-axioms.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 109,
+      "context": "l consequences. It tends toward coherence when integrated. Axiom 4 — Falsehood is not merely error. Falsehood distorts perception, increases maintenance load, and fragments"
+    },
+    {
+      "fingerprint": "5a7efaff480a05e2eaf6823f7f4ad8e6487c5790",
+      "file": "pages/core-axioms.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 109,
+      "context": "onsequences. It tends toward coherence when integrated. Axiom 4 — Falsehood is not merely error. Falsehood distorts perception, increases maintenance load, and fragments"
+    },
+    {
+      "fingerprint": "c12be54d6ef895f83ec27c1dfabf043b6a342441",
+      "file": "pages/core-axioms.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 129,
+      "context": "and reality. [1] Axiom 10 — Christ is structurally central. Jesus is not merely morally exemplary, but the clearest revelation of truth, restored coherence, and right re"
+    },
+    {
+      "fingerprint": "f67d4679fa6e4ff510386312b03f419d3efb8170",
+      "file": "pages/core-axioms.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 129,
+      "context": "reality. [1] Axiom 10 — Christ is structurally central. Jesus is not merely morally exemplary, but the clearest revelation of truth, restored coherence, and right re"
+    },
+    {
+      "fingerprint": "a00349c9d24f7643a1fa944015ee2f0fe355eb0f",
+      "file": "pages/economic-stress-test.html",
+      "term": "robust",
+      "category": "hard-ban word",
+      "line": 65,
+      "context": "n passivity. Stable distributed competence appears where complex specialization remains robust because competence is widely enough distributed to absorb shocks. Substitutive dependenc"
+    },
+    {
+      "fingerprint": "712844a473fd0af614885064df6ce4984f13152d",
+      "file": "pages/education-stress-test.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 65,
+      "context": "n: The Educational Version of the Alignment Problem Educational systems aim at learning, not merely output. Yet the two can diverge. Students may produce correct answers, polished essays, o"
+    },
+    {
+      "fingerprint": "7ca628613c275e4a1da3546c679bc230ce9ec230",
+      "file": "pages/essay-alpha-and-omega-the-real-before-and-after-distortion.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 72,
+      "context": "creation of an alternate reality. They are reordering toward what is finally true. Christ is not merely a moral example inside a neutral universe. He is the center that precedes and outlasts di"
+    },
+    {
+      "fingerprint": "811de85576a4e5ac58c8dcd0535d4d3ed8c93878",
+      "file": "pages/essay-alpha-and-omega-the-real-before-and-after-distortion.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 72,
+      "context": "ation of an alternate reality. They are reordering toward what is finally true. Christ is not merely a moral example inside a neutral universe. He is the center that precedes and outlasts di"
+    },
+    {
+      "fingerprint": "7a874a5c463c435dc0a73565b265fb57e2a6ae41",
+      "file": "pages/essay-external-structure-external-control-and-why-the-difference-matters.html",
+      "term": "This is the core",
+      "category": "hard-ban phrase/template",
+      "line": 69,
+      "context": "order through force, dependency, or fear. Scaffold Versus Substitute This is the core distinction. A scaffold serves what it is not. It exists to support growth toward a more"
+    },
+    {
+      "fingerprint": "00156ff8701d076413530bb91df3d99ccb76622d",
+      "file": "pages/essay-false-religion-beyond-church.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 114,
+      "context": "it generates fear around falling outside the order it treats dissent not merely as disagreement but as corruption, danger, or impurity At that point,"
+    },
+    {
+      "fingerprint": "b9676b53e8944d15e765ea52f4a291a0448d3c02",
+      "file": "pages/essay-false-religion-beyond-church.html",
+      "term": "The deeper issue is",
+      "category": "hard-ban phrase/template",
+      "line": 124,
+      "context": "religion cannot be adequately diagnosed by looking only for explicit spiritual language. The deeper issue is whether a system binds people to an external sacred order as the path to legitimacy, safe"
+    },
+    {
+      "fingerprint": "eb3f31f56da6bb9662458f63550642d0c710f3ee",
+      "file": "pages/essay-gatekept-clarity.html",
+      "term": "The truth is",
+      "category": "hard-ban phrase/template",
+      "line": 108,
+      "context": "teach real things. In fact, gatekeeping often works best when it includes real truth. But the truth is managed. Access is regulated. Understanding is partially released rather than freely clar"
+    },
+    {
+      "fingerprint": "ed4ce821ea68562a4c2420d6a1247ff4ea1c303f",
+      "file": "pages/essay-law-written-within-why-internalization-is-the-biblical-goal.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 73,
+      "context": ". The fulfillment of law is not chaos but internalized moral orientation. The person does not merely avoid punishment. They become the kind of person whose center carries what once had to be"
+    },
+    {
+      "fingerprint": "baa73ca29e2aa8b569fdd8c5048091d3bb36671c",
+      "file": "pages/essay-low-agency-increases-steerability.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 108,
+      "context": "s is one reason fear is so politically, commercially, and religiously powerful. Fear does not merely produce emotional pain. It changes the structure of participation. It makes people more e"
+    },
+    {
+      "fingerprint": "cb3eb39fcbf283a7542909abf52c933ffadb3b9f",
+      "file": "pages/essay-low-agency-increases-steerability.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 124,
+      "context": "etter while continuing to outsource key dimensions of judgment. The goal, then, is not merely behavior management. The goal is increasing the conditions under which truthful participa"
+    },
+    {
+      "fingerprint": "e98a8bd2b1462633b3d713026b94c56bce9239c8",
+      "file": "pages/essay-low-agency-increases-steerability.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 124,
+      "context": "er while continuing to outsource key dimensions of judgment. The goal, then, is not merely behavior management. The goal is increasing the conditions under which truthful participa"
+    },
+    {
+      "fingerprint": "a512fd724dd3f5929095115e92fee3fcbf1505a1",
+      "file": "pages/essay-low-agency-increases-steerability.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 139,
+      "context": "a very different picture from modern ideals of performance. The restored person is not merely more productive, compliant, calm-looking, or optimized. The restored person is harder to"
+    },
+    {
+      "fingerprint": "fad89aa9cb7f286df586c1018937fc61661c8085",
+      "file": "pages/essay-low-agency-increases-steerability.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 139,
+      "context": "ery different picture from modern ideals of performance. The restored person is not merely more productive, compliant, calm-looking, or optimized. The restored person is harder to"
+    },
+    {
+      "fingerprint": "d4ceb2c537f1b09a94f7200c978e499fc36d337a",
+      "file": "pages/essay-psychedelics-unity-and-why-state-access-is-not-formation.html",
+      "term": "profound",
+      "category": "hard-ban word",
+      "line": 70,
+      "context": "rence between a temporary condition and an inwardly formed life. A state can be profound and still unstable. It can reveal possibility without establishing character. This is why"
+    },
+    {
+      "fingerprint": "7712fa0ef190d539ab0fa374c1e49fe8f7968ef5",
+      "file": "pages/essay-psychedelics-unity-and-why-state-access-is-not-formation.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 72,
+      "context": "ng, sobriety, fruit, self-control, and the law written within. These are formation terms, not merely access terms. They describe a person becoming capable of living from a reordered center o"
+    },
+    {
+      "fingerprint": "4c01d0d0cce833359897eb1c0f4ed1337d57a120",
+      "file": "pages/essay-psychedelics-unity-and-why-state-access-is-not-formation.html",
+      "term": "illuminate",
+      "category": "hard-ban word",
+      "line": 75,
+      "context": "ent Alignment Theory therefore takes a careful position. Psychedelic states may illuminate aspects of self, fear, or connectedness. They may even help some people break rigid loops"
+    },
+    {
+      "fingerprint": "0a6d4de7c501a87d31ec265ab3ec5d54fbdef034",
+      "file": "pages/essay-reality-fragmented-and-sold-back.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 102,
+      "context": "concerned with. Reality is often fragmented and sold back. The phrase is not merely rhetorical. It points to a recurring pattern in modern interpretive culture. The person e"
+    },
+    {
+      "fingerprint": "2fc9516e220013b9e8440a285ade125e05a43166",
+      "file": "pages/essay-reality-fragmented-and-sold-back.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 102,
+      "context": "cerned with. Reality is often fragmented and sold back. The phrase is not merely rhetorical. It points to a recurring pattern in modern interpretive culture. The person e"
+    },
+    {
+      "fingerprint": "6ca334e941201ec8ca538c8f996e1f75cae75113",
+      "file": "pages/essay-reality-fragmented-and-sold-back.html",
+      "term": "profound",
+      "category": "hard-ban word",
+      "line": 158,
+      "context": "ity to be fragmented and sold back. This helps explain why certain systems feel profound while remaining strangely unable to free. They contain real contact, but the contact has"
+    },
+    {
+      "fingerprint": "0112e8de1b3b9b82e1cd4e165eac9d687d26aeb7",
+      "file": "pages/essay-reality-fragmented-and-sold-back.html",
+      "term": "resonate",
+      "category": "hard-ban word",
+      "line": 158,
+      "context": "to free. They contain real contact, but the contact has been cut to size. It is enough to resonate, enough to spread, enough to retain attention, enough to build identity, but often not en"
+    },
+    {
+      "fingerprint": "08b08a1fcc5c9c13a760310527be6f2c6276d1a2",
+      "file": "pages/essay-reality-fragmented-and-sold-back.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 161,
+      "context": "themselves only been given fragments and are passing forward what helped them. The issue is not merely motive. It is the structure of mediation itself. A culture organized around fragmented ex"
+    },
+    {
+      "fingerprint": "088844ba213691a29405f14508451a065f5a3c9e",
+      "file": "pages/essay-reality-fragmented-and-sold-back.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 161,
+      "context": "emselves only been given fragments and are passing forward what helped them. The issue is not merely motive. It is the structure of mediation itself. A culture organized around fragmented ex"
+    },
+    {
+      "fingerprint": "a1d47d78432527c8546dfe5de99094b59bbef026",
+      "file": "pages/essay-reality-fragmented-and-sold-back.html",
+      "term": "resonate",
+      "category": "hard-ban word",
+      "line": 171,
+      "context": "also that reality has been atomized into saleable units that often carry enough truth to resonate but not enough depth to restore. That is why the framework keeps returning to c"
+    },
+    {
+      "fingerprint": "232d0d6a9db64ee5e7458712a75c5b58ba79abce",
+      "file": "pages/essay-renewal-of-the-mind-a-regulatory-reading-of-romans-12-2.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 78,
+      "context": "re to the right ideas. But scripture presents something deeper. The mind must be renewed, not merely informed. Discernment itself must change. What feels obvious, desirable, threatening, or"
+    },
+    {
+      "fingerprint": "6ee8620e3420cad47936b15df785b1e44f47e13d",
+      "file": "pages/essay-renewal-of-the-mind-a-regulatory-reading-of-romans-12-2.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 81,
+      "context": "es, certainty is overvalued, and interpretation narrows around defensive priorities. This is not merely a moral weakness. It is a regulatory condition. The person becomes increasingly unable to"
+    },
+    {
+      "fingerprint": "f256146938c045b93a5d72d7eb6193bd93d4b3a5",
+      "file": "pages/essay-renewal-of-the-mind-a-regulatory-reading-of-romans-12-2.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 81,
+      "context": "certainty is overvalued, and interpretation narrows around defensive priorities. This is not merely a moral weakness. It is a regulatory condition. The person becomes increasingly unable to"
+    },
+    {
+      "fingerprint": "e77620d105cd216b349527800e4f95da88dafbbb",
+      "file": "pages/essay-the-bible-keeps-pointing-to-the-inside.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 105,
+      "context": "ess are located. This is why scripture places such weight on the heart. The deepest issue is not merely what the person performs, but what governs them inwardly. This is also why the"
+    },
+    {
+      "fingerprint": "b14a8d3039c0a0254eed4168e6996035d1927402",
+      "file": "pages/essay-the-bible-keeps-pointing-to-the-inside.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 105,
+      "context": "are located. This is why scripture places such weight on the heart. The deepest issue is not merely what the person performs, but what governs them inwardly. This is also why the"
+    },
+    {
+      "fingerprint": "cc05436d70c7486052c1748520be9d43bb09a9e6",
+      "file": "pages/essay-the-bible-keeps-pointing-to-the-inside.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 110,
+      "context": "remaining inwardly resistant to truth. This matters because it means the Bible is not merely trying to produce correct behavior. It is trying to name the source from which behavior a"
+    },
+    {
+      "fingerprint": "a988106d533a666dca04a06fec911c6ef0628785",
+      "file": "pages/essay-the-bible-keeps-pointing-to-the-inside.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 110,
+      "context": "maining inwardly resistant to truth. This matters because it means the Bible is not merely trying to produce correct behavior. It is trying to name the source from which behavior a"
+    },
+    {
+      "fingerprint": "5fabdca8b8e88185280eca428d610e97444a67fb",
+      "file": "pages/essay-the-bible-keeps-pointing-to-the-inside.html",
+      "term": "profound",
+      "category": "hard-ban word",
+      "line": 116,
+      "context": "ion. What was once outside as command becomes inside as living order. That is a profound shift. It means maturity is not simply more obedience to visible rule. It is de"
+    },
+    {
+      "fingerprint": "a38e1ec0ce7d5ed866d2ad854d9aa6eff79b97fa",
+      "file": "pages/essay-the-bible-keeps-pointing-to-the-inside.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 119,
+      "context": "ins yielding to reality. That is why repentance belongs so centrally to the framework. It is not merely feeling bad. It is the beginning of realignment. Truth itself functions the sam"
+    },
+    {
+      "fingerprint": "9c7e45e9b391197c4d9e499b4905ba7cd2ab87fe",
+      "file": "pages/essay-the-bible-keeps-pointing-to-the-inside.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 119,
+      "context": "yielding to reality. That is why repentance belongs so centrally to the framework. It is not merely feeling bad. It is the beginning of realignment. Truth itself functions the sam"
+    },
+    {
+      "fingerprint": "3897257e477b8959724baa6464b30dd915ba5faa",
+      "file": "pages/essay-the-bible-keeps-pointing-to-the-inside.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 122,
+      "context": "d with inward restoration, life, freedom, and transformed desire. Flesh, in this grammar, is not merely the physical body. It is the externally conditioned, fear-driven, ego-defended order of t"
+    },
+    {
+      "fingerprint": "f51c13ce0ee823c56e7db1b14c48523583c792f3",
+      "file": "pages/essay-the-bible-keeps-pointing-to-the-inside.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 122,
+      "context": "ith inward restoration, life, freedom, and transformed desire. Flesh, in this grammar, is not merely the physical body. It is the externally conditioned, fear-driven, ego-defended order of t"
+    },
+    {
+      "fingerprint": "9d9373e8d3a46e785f2f760e980fad5957e91099",
+      "file": "pages/essay-the-difference-between-a-guide-and-a-gatekeeper.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 139,
+      "context": "through its own framework. This is where many modern systems go wrong. They do not merely help. They retain. They maintain interpretive centrality. The person becomes a returning"
+    },
+    {
+      "fingerprint": "e8bf6159114086451df6bb33ddc2e4889425fb3d",
+      "file": "pages/essay-the-kingdom-within-in-your-midst.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 69,
+      "context": "ce Alignment Theory reads this passage as protecting a distinction. The kingdom is not merely a future event or an external regime. It is also an operative order among and within pers"
+    },
+    {
+      "fingerprint": "538d841dce3b26373a25bb74c68a8b533849764a",
+      "file": "pages/essay-the-kingdom-within-in-your-midst.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 69,
+      "context": "Alignment Theory reads this passage as protecting a distinction. The kingdom is not merely a future event or an external regime. It is also an operative order among and within pers"
+    },
+    {
+      "fingerprint": "89d44363a64db5d2e4ff0dc4c60fa9814c7155b0",
+      "file": "pages/essay-the-word-reality-before-interpretation.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 73,
+      "context": "why John 1 is metaphysically central to Alignment Theory. It grounds the claim that truth is not merely negotiation. It is relation to underlying order. Related Concepts And Essays"
+    },
+    {
+      "fingerprint": "cbab1b4094fca8755f45de83b697c63a94ed145e",
+      "file": "pages/essay-the-word-reality-before-interpretation.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 73,
+      "context": "John 1 is metaphysically central to Alignment Theory. It grounds the claim that truth is not merely negotiation. It is relation to underlying order. Related Concepts And Essays"
+    },
+    {
+      "fingerprint": "1d36692ff93079a31deccc8a9ba4c4f039826a84",
+      "file": "pages/essay-when-systems-replace-truth.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 119,
+      "context": "er describe truthfully what it is doing. The system experiences such admissions not merely as correction, but as threat to the symbolic order through which it organizes itself."
+    },
+    {
+      "fingerprint": "da1014363298780242b7d1ed5ea486ce77b0a10e",
+      "file": "pages/essay-when-systems-replace-truth.html",
+      "term": "The deeper issue is",
+      "category": "hard-ban phrase/template",
+      "line": 121,
+      "context": "venient, disloyal, unprofessional, immature, rebellious, or spiritually unsafe. But often the deeper issue is simpler: they are noticing the gap between representation and reality. That gap"
+    },
+    {
+      "fingerprint": "bf7ab10f4fb5387f3efa09acbb83564e8334601f",
+      "file": "pages/essay-when-systems-replace-truth.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 126,
+      "context": "This is one reason the framework treats truth as intrinsically integrative. Truth is not merely a correct statement inside a system. It is contact with reality that reduces the maintena"
+    },
+    {
+      "fingerprint": "8ca7fdea127c8eff34210e02cf5965dd7b891900",
+      "file": "pages/essay-when-systems-replace-truth.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 126,
+      "context": "This is one reason the framework treats truth as intrinsically integrative. Truth is not merely a correct statement inside a system. It is contact with reality that reduces the maintena"
+    },
+    {
+      "fingerprint": "6e53b0ad891d1544da85f3450089c30d1b0cf749",
+      "file": "pages/essay-when-systems-replace-truth.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 133,
+      "context": "it? This is one of the central disciplines of discernment. The danger is not merely system. The danger is when systems stop being transparent to reality and become opaque re"
+    },
+    {
+      "fingerprint": "33afd9845dfc709204344695221aedd8d07fc6c4",
+      "file": "pages/essay-when-systems-replace-truth.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 133,
+      "context": "This is one of the central disciplines of discernment. The danger is not merely system. The danger is when systems stop being transparent to reality and become opaque re"
+    },
+    {
+      "fingerprint": "bc56dcc27f27abf9aa5e5ac8d8faf44527a13b2d",
+      "file": "pages/essay-why-performance-is-easier-than-transformation.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 119,
+      "context": "e of this guarantees inward change. Transformation is more difficult because it is not merely behavioral. It involves the reorganization of desire, fear, identity, conscience, and per"
+    },
+    {
+      "fingerprint": "15916bfa1226ab753eef0ca7c5bdcc2f74288e17",
+      "file": "pages/essay-why-performance-is-easier-than-transformation.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 119,
+      "context": "f this guarantees inward change. Transformation is more difficult because it is not merely behavioral. It involves the reorganization of desire, fear, identity, conscience, and per"
+    },
+    {
+      "fingerprint": "304edc7bfd97faefe120c24dfb6ac236a750e56e",
+      "file": "pages/essay-why-performance-is-easier-than-transformation.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 132,
+      "context": "ed to maintain the outer expression. Fruit becomes possible because the tree has changed, not merely because the branch has been wired into position. This helps explain why the Bib"
+    },
+    {
+      "fingerprint": "0960c9006b520192305d32b7937e2bdcfbafadb3",
+      "file": "pages/essay-why-self-help-feels-hollow.html",
+      "term": "The deeper issue is",
+      "category": "hard-ban phrase/template",
+      "line": 138,
+      "context": "changes if the person merely upgrades to a more sophisticated explanation loop. The deeper issue is not whether a field uses positive language or critical language. The issue is whether it"
+    },
+    {
+      "fingerprint": "5f8e8f87a5ec93969a2d53e4957897f4f46fed2b",
+      "file": "pages/essay-why-self-help-feels-hollow.html",
+      "term": "Fundamentally",
+      "category": "hard-ban phrase/template",
+      "line": 157,
+      "context": "can inspire. A fragment can stabilize. But a fragment can also leave the person fundamentally where they were: divided, externally governed, and dependent on recurring doses of interp"
+    },
+    {
+      "fingerprint": "d24b4fca13769b418f20c5085c04e86a8c41031a",
+      "file": "pages/essay-why-self-help-feels-hollow.html",
+      "term": "The reality is",
+      "category": "hard-ban phrase/template",
+      "line": 164,
+      "context": "even when it is speaking partial truths. It is not that it says nothing real. It is that the reality is frequently distributed in fragments too small to dissolve the system that profits from th"
+    },
+    {
+      "fingerprint": "942a0e975e0e7abe5519efb21c9b8719ac2a28c1",
+      "file": "pages/formation-case-study.html",
+      "term": "not only ___ but also ___",
+      "category": "hard-ban phrase/template",
+      "line": 101,
+      "context": "rather than a collapse case. It matters because the framework should be able to recognize not only counterfeit order and breakdown, but also a durable pattern in which structure, confession, repetition, and communal discipline oft"
+    },
+    {
+      "fingerprint": "b966fd2785adb8e79c538c45543d97148e524932",
+      "file": "pages/from-human-regulation-to-alignment-theory.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 109,
+      "context": "ion, control, fragmentation, and renewal operate across scales. Its distinct contribution is not merely that it describes human overload. It is that it preserves the same structure from the hum"
+    },
+    {
+      "fingerprint": "9176e36cd9bb4bc5f3620753842429f2a8ad9f69",
+      "file": "pages/from-human-regulation-to-alignment-theory.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 109,
+      "context": ", control, fragmentation, and renewal operate across scales. Its distinct contribution is not merely that it describes human overload. It is that it preserves the same structure from the hum"
+    },
+    {
+      "fingerprint": "a75ce84a1c69de1205c2a9b5d881c2a3f9066827",
+      "file": "pages/glossary.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 83,
+      "context": "te, sustain, and revise its own activity in relation to its goals and environment. Agency is not merely output but the active origination of behavior. In Alignment Theory, diminished agency is"
+    },
+    {
+      "fingerprint": "2835810398fdc2eddb13ee3d2cf5b8713fcb55af",
+      "file": "pages/glossary.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 83,
+      "context": "sustain, and revise its own activity in relation to its goals and environment. Agency is not merely output but the active origination of behavior. In Alignment Theory, diminished agency is"
+    },
+    {
+      "fingerprint": "9a80335e0caca5d95b064cd48df944d87f5118e7",
+      "file": "pages/glossary.html",
+      "term": "robust",
+      "category": "hard-ban word",
+      "line": 92,
+      "context": "A A structural framework for understanding how adaptive systems remain robust or become fragile depending on how their load-bearing functions are carried. The core cla"
+    },
+    {
+      "fingerprint": "4c0bf58366fbf703ce05b3d5296eb3a384270a29",
+      "file": "pages/grace-as-structural-enabling-condition.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 130,
+      "context": "authorizing interpretation would otherwise harden. It restores accountability to reality, not merely a soothed emotional state, and makes recovery of contact possible where the self would ot"
+    },
+    {
+      "fingerprint": "09fbdcc446425817292332ca82a3b60e9aaf2dc9",
+      "file": "pages/grace-as-structural-enabling-condition.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 135,
+      "context": "ce and New Creation If new creation is the fullest restoration pattern, grace is not merely the beginning of the path. It remains integral to the whole movement from exposure to rep"
+    },
+    {
+      "fingerprint": "1f8b07675d995bdf4e8e99e7760e519ae4485b54",
+      "file": "pages/grace-as-structural-enabling-condition.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 135,
+      "context": "and New Creation If new creation is the fullest restoration pattern, grace is not merely the beginning of the path. It remains integral to the whole movement from exposure to rep"
+    },
+    {
+      "fingerprint": "46d8a1591b64b55d2471c7bf7f800fbd696a6e41",
+      "file": "pages/grammar-of-suffering.html",
+      "term": "Serves as",
+      "category": "hard-ban phrase/template",
+      "line": 112,
+      "context": "hy this page remains This URL remains so older links continue working. It now serves as a short bridge rather than a third overlapping introduction to the same foundation materi"
+    },
+    {
+      "fingerprint": "a63ef33a031d2529253b3e4140841fa99506fdde",
+      "file": "pages/health-behavior-and-lifestyle-change-stress-test.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 59,
+      "context": "ul adjustment, and the capacity to return to the load-bearing function after disruption — not merely to follow a plan when conditions are favorable. Participatory Capacity in This Domain"
+    },
+    {
+      "fingerprint": "796cb3fcd95a0421152f60ab08cded46512c1fc8",
+      "file": "pages/how-to-use-alignment-theory.html",
+      "term": "not just ___ but ___",
+      "category": "hard-ban phrase/template",
+      "line": 83,
+      "context": "m's own participatory structure. The framework is useful when you want to ask not just whether a system is working, but whether the way it is working is preserving or eroding the capacities it depends on. The"
+    },
+    {
+      "fingerprint": "2066f1af2cf5f7d7d768df6fbf7972e0b59ffaed",
+      "file": "pages/how-to-use-alignment-theory.html",
+      "term": "robust",
+      "category": "hard-ban word",
+      "line": 90,
+      "context": "s here? What does this system actually need its participants to carry in order to remain robust, adaptive, and honest under pressure? Who or what is currently carrying th"
+    },
+    {
+      "fingerprint": "c42ba1ae7409a1e13d5f1ba2eafd1d5f741965af",
+      "file": "pages/human-condition.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 160,
+      "context": "ks are not random. They are predictable responses to recurring pressures. The deeper task is not merely solving symptoms, but understanding the structure that keeps generating them."
+    },
+    {
+      "fingerprint": "292ee873adc29046295bedfc5429f705d2b7257c",
+      "file": "pages/human-condition.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 160,
+      "context": "are not random. They are predictable responses to recurring pressures. The deeper task is not merely solving symptoms, but understanding the structure that keeps generating them."
+    },
+    {
+      "fingerprint": "694217e0867ae9f14bf869a244614021c2b7df40",
+      "file": "pages/human-signal.html",
+      "term": "Fundamentally",
+      "category": "hard-ban phrase/template",
+      "line": 121,
+      "context": "and historical interpretive chains. They are not direct expressions of what human beings fundamentally are &mdash; they are outputs of a system that can itself drift."
+    },
+    {
+      "fingerprint": "a41d630f67d7321fa9de11f27d1f8ee4b5c53ce4",
+      "file": "pages/integrative-tolerance.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 162,
+      "context": "ision. Scripture / theology IT clarifies why revelation and judgment are not merely informational. They expose whether truth can be received without immediate hiding, blame,"
+    },
+    {
+      "fingerprint": "cd288b150a7c04cb077a55bcbbc5683d6360e5d6",
+      "file": "pages/lexicon.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 184,
+      "context": "regulation. Difference: the term includes whole-system dependence on outside pressure, not merely a single instance of rule-following."
+    },
+    {
+      "fingerprint": "b491aa9f853cfbaeb164b6b89c8256d6713bdcd3",
+      "file": "pages/lexicon.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 200,
+      "context": "icacy, executive control. Difference: agency here is a live usable capacity under load, not merely belief in capability or freedom from interference."
+    },
+    {
+      "fingerprint": "7122d904cfcc961b49b50088b06b54a4863194e1",
+      "file": "pages/lexicon.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 360,
+      "context": "ost. Why it matters Threshold pressure marks disclosure approaching, not merely discomfort. Nearest adjacent concepts Overlap: crisis, tipping poi"
+    },
+    {
+      "fingerprint": "1422668fb29b0d601ac3d4725afd795ef4c0950d",
+      "file": "pages/load-bearing-human-capacities-in-the-ai-age.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 111,
+      "context": "l is quietly being displaced. A capacity is load-bearing when its disuse does not merely reduce performance, but alters the structure of the person's agency. That is"
+    },
+    {
+      "fingerprint": "0f522686732ebeb4d4c95bb8d68d3b0303aef34e",
+      "file": "pages/load-bearing-human-capacities-in-the-ai-age.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 121,
+      "context": "an relying primarily on external authority or scaffolds. These capacities are not merely skills. Skills can be lost and reacquired without permanent structural change. Load-beari"
+    },
+    {
+      "fingerprint": "81c4f5d0007ce9fb9c1afa7da5c184f0610dd403",
+      "file": "pages/load-bearing-human-capacities-in-the-ai-age.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 150,
+      "context": "ne decisions without it. 4.2 Moral Responsibility Responsibility is not merely the assignment of an outcome to a person. It is the experience of owning a decision - of"
+    },
+    {
+      "fingerprint": "fe0511143563a3fc0666dc2698ad91bf926e3142",
+      "file": "pages/load-bearing-human-capacities-in-the-ai-age.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 150,
+      "context": "decisions without it. 4.2 Moral Responsibility Responsibility is not merely the assignment of an outcome to a person. It is the experience of owning a decision - of"
+    },
+    {
+      "fingerprint": "1e870e505fabe1e1608f6e94b91a2065a4b261c0",
+      "file": "pages/load-bearing-human-capacities-in-the-ai-age.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 158,
+      "context": "lf-Revision Genuine agency requires the capacity to notice error and update - not merely to have errors corrected by an external system, but to recognize them from within, to fee"
+    },
+    {
+      "fingerprint": "23cbe6d49cd90d0d71c0161867bbfa451b4213c9",
+      "file": "pages/load-bearing-human-capacities-in-the-ai-age.html",
+      "term": "robust",
+      "category": "hard-ban word",
+      "line": 159,
+      "context": "rson whose beliefs are managed rather than owned is progressively less capable of forming robust convictions that survive outside the system that manages them. 4.5 Uncertain"
+    },
+    {
+      "fingerprint": "7b00d1ebe59470eb938368fe29e94f27a4b057f2",
+      "file": "pages/load-bearing-human-capacities-in-the-ai-age.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 174,
+      "context": "ar the weight of actually knowing someone rather than managing a social interaction. This is not merely an emotional capacity. It is a mode of contact with reality - specifically with human rea"
+    },
+    {
+      "fingerprint": "f4ca6009c0b076c53bd6b513e35b834e499139c2",
+      "file": "pages/load-bearing-human-capacities-in-the-ai-age.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 174,
+      "context": "the weight of actually knowing someone rather than managing a social interaction. This is not merely an emotional capacity. It is a mode of contact with reality - specifically with human rea"
+    },
+    {
+      "fingerprint": "536f6a82775980a1031484149baa7d6886b2a891",
+      "file": "pages/load-bearing-human-capacities-in-the-ai-age.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 191,
+      "context": "the most diagnostic. If a person becomes more dependent on the scaffold for orientation - not merely more efficient within it - the outsourced capacity was probably load-bearing. Efficiency"
+    },
+    {
+      "fingerprint": "dbe677554d3859afb473e16c871f2994e1d5eb44",
+      "file": "pages/load-bearing-human-capacities-in-the-ai-age.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 202,
+      "context": "is synthetic formation. This is more serious and more difficult to detect. A person does not merely become weaker. They become differently organized - shaped around external scaffolds in wa"
+    },
+    {
+      "fingerprint": "f4072004d60ba104ca81aae1134f66aecc259635",
+      "file": "pages/load-bearing-human-capacities-in-the-ai-age.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 218,
+      "context": "ing interactions so that the person genuinely owns the decisions made with AI assistance, not merely confirms them. It would make reflection more demanding, not merely more frict"
+    },
+    {
+      "fingerprint": "8807744f98d668f9cdeec55c36b878689dcf2b4f",
+      "file": "pages/load-bearing-human-capacities-in-the-ai-age.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 219,
+      "context": "ssistance, not merely confirms them. It would make reflection more demanding, not merely more frictionless: functioning as a better interlocutor rather than a replacement for tho"
+    },
+    {
+      "fingerprint": "8d4f70b1b9797811b047dbdd2968d9a0440d623e",
+      "file": "pages/load-bearing-human-capacities-in-the-ai-age.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 247,
+      "context": "human capacities are load-bearing. When they are no longer practiced, external systems do not merely make life easier. They begin to replace the inner work through which agency is formed, th"
+    },
+    {
+      "fingerprint": "59d65329d5eab879534b7a62c189d5349e846fbc",
+      "file": "pages/manuscript.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 100,
+      "context": "nsformation; that salvation is realignment with reality itself under God; and that Christ is not merely morally exemplary, but structurally central to restored truth, freedom, and being. [1]"
+    },
+    {
+      "fingerprint": "ca855e48840834909b9d159eb5a6e44811e5f570",
+      "file": "pages/manuscript.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 100,
+      "context": "ormation; that salvation is realignment with reality itself under God; and that Christ is not merely morally exemplary, but structurally central to restored truth, freedom, and being. [1]"
+    },
+    {
+      "fingerprint": "e9f098695a422432978e6107a1a75fc8fd6eab24",
+      "file": "pages/manuscript.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 120,
+      "context": "rnal alignment does not imply perfection. It implies decreasing contradiction. The person is not merely behaving correctly, but becoming less false. External alignment Exter"
+    },
+    {
+      "fingerprint": "f9471e9349f456ed2592d1ed8dbcb5cd32703346",
+      "file": "pages/manuscript.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 120,
+      "context": "l alignment does not imply perfection. It implies decreasing contradiction. The person is not merely behaving correctly, but becoming less false. External alignment Exter"
+    },
+    {
+      "fingerprint": "36de71401149b04a79402ddd23784734f5e17934",
+      "file": "pages/manuscript.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 193,
+      "context": "hemselves. 8. False Religion and Sacred External Order False religion is not merely wrong doctrine. It is the structural attempt to secure righteousness, belonging, and salv"
+    },
+    {
+      "fingerprint": "ccb143c17de45ae4894601044771257fed195995",
+      "file": "pages/manuscript.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 193,
+      "context": "selves. 8. False Religion and Sacred External Order False religion is not merely wrong doctrine. It is the structural attempt to secure righteousness, belonging, and salv"
+    },
+    {
+      "fingerprint": "76e3394b89149eac3c86f1f49affe47c750daf63",
+      "file": "pages/manuscript.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 245,
+      "context": "hological, moral, and spiritual dimensions of salvation converge structurally. The person is not merely reclassified. The person is restored. 11. Christ as Structural and Metaphysical"
+    },
+    {
+      "fingerprint": "b2be6fa847ba35bb1ae76b2624f7a0037bd54c90",
+      "file": "pages/manuscript.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 245,
+      "context": "ogical, moral, and spiritual dimensions of salvation converge structurally. The person is not merely reclassified. The person is restored. 11. Christ as Structural and Metaphysical"
+    },
+    {
+      "fingerprint": "e55af4e0bcd6bc9d106cebbe1179305a97a10ea1",
+      "file": "pages/manuscript.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 248,
+      "context": "ter At its deepest level, Alignment Theory converges on Christ. Jesus is not merely a moral example inside the system. He is the clearest revelation of what the system is ac"
+    },
+    {
+      "fingerprint": "1ac2b88d0965bae45fa877ad772fb59bd574cf53",
+      "file": "pages/manuscript.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 248,
+      "context": "At its deepest level, Alignment Theory converges on Christ. Jesus is not merely a moral example inside the system. He is the clearest revelation of what the system is ac"
+    },
+    {
+      "fingerprint": "9b5eeb8a670b2413c7fd06e6a350b9af23fb4a3c",
+      "file": "pages/metabolizing-truth.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 202,
+      "context": "gy / discipleship Instruction alone is insufficient. Truth must become inwardly carried, not merely externally confessed. Related Pages"
+    },
+    {
+      "fingerprint": "4cb9a579178bd21cbbe71c8dfbd233c92ff85cd6",
+      "file": "pages/metaphysical-claims.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 152,
+      "context": "Structurally Central The framework's deepest theological claim is that Christ is not merely exemplary but central to its account of truth, coherence, judgment, mercy, and restoratio"
+    },
+    {
+      "fingerprint": "1e5d02e183f351e7771d58b7bce91a1a8e08cf48",
+      "file": "pages/metaphysical-claims.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 152,
+      "context": "ucturally Central The framework's deepest theological claim is that Christ is not merely exemplary but central to its account of truth, coherence, judgment, mercy, and restoratio"
+    },
+    {
+      "fingerprint": "77e873b7438d7355e637cf8aaabb59c961f46270",
+      "file": "pages/new-creation-as-restored-order.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 110,
+      "context": "deeper orientation remains unchanged. Not institutional reform alone It is not merely better policies or cleaner systems while the culture beneath them remains disordered."
+    },
+    {
+      "fingerprint": "3ed482e69f9ab39bf88243c5dc535e928f006231",
+      "file": "pages/new-creation-as-restored-order.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 110,
+      "context": "eper orientation remains unchanged. Not institutional reform alone It is not merely better policies or cleaner systems while the culture beneath them remains disordered."
+    },
+    {
+      "fingerprint": "f803668c9d0897da37c2c4f748fafe88f19ff68a",
+      "file": "pages/new-creation-as-restored-order.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 112,
+      "context": "ithout durable truthful formation. Not only less distortion The endpoint is not merely subtraction of pathology but positive reordering."
+    },
+    {
+      "fingerprint": "33c15a232903fc4169f8d2ec544eb2e30d51cd5e",
+      "file": "pages/new-creation-as-restored-order.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 112,
+      "context": "out durable truthful formation. Not only less distortion The endpoint is not merely subtraction of pathology but positive reordering."
+    },
+    {
+      "fingerprint": "2878d2140f315d30f4a45cb40c3adf511b5141f7",
+      "file": "pages/new-creation-as-restored-order.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 118,
+      "context": "interpretation from reality, new creation names their restored convergence. The endpoint is not merely better conduct, but a life in which truth can again be received, interpreted, and lived w"
+    },
+    {
+      "fingerprint": "ec00ad0f4375b76ba1c7c801b12f4df8130435c2",
+      "file": "pages/new-creation-as-restored-order.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 118,
+      "context": "terpretation from reality, new creation names their restored convergence. The endpoint is not merely better conduct, but a life in which truth can again be received, interpreted, and lived w"
+    },
+    {
+      "fingerprint": "85004d04190cfa190b43d33e71b7a508ee1ec1f1",
+      "file": "pages/new-creation-as-restored-order.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 120,
+      "context": "tion. The person or system no longer needs unreality in order to remain intact, and truth is not merely tolerated in fragments but increasingly welcomed as the medium of life itself."
+    },
+    {
+      "fingerprint": "fcdbfb377acabce7d261c75cb16984233f170e64",
+      "file": "pages/new-creation-as-restored-order.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 120,
+      "context": "n. The person or system no longer needs unreality in order to remain intact, and truth is not merely tolerated in fragments but increasingly welcomed as the medium of life itself."
+    },
+    {
+      "fingerprint": "ac34e609d2738ce1c92ea0de547f5553e5e3142c",
+      "file": "pages/one-pattern-across-scales.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 188,
+      "context": "The framework reads personal renewal as restored inward coherence. Real change is not merely stricter self-control from outside, but a return to truth, agency, and identity that can"
+    },
+    {
+      "fingerprint": "8283e3aa1776eea9b18c887b4006cd400a53a03a",
+      "file": "pages/one-pattern-across-scales.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 188,
+      "context": "The framework reads personal renewal as restored inward coherence. Real change is not merely stricter self-control from outside, but a return to truth, agency, and identity that can"
+    },
+    {
+      "fingerprint": "09096ddcf76c67ac0d11cb079ac84156cb80e678",
+      "file": "pages/one-pattern-across-scales.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 256,
+      "context": "scriptural layer gives the framework its deepest claim: true restoration is new creation, not merely stronger external conformity. The pattern ends not in better management of fragmentation,"
+    },
+    {
+      "fingerprint": "a129557a2ab2313875604e21f73f2e500bf70381",
+      "file": "pages/organizational-systems-stress-test.html",
+      "term": "robust",
+      "category": "hard-ban word",
+      "line": 59,
+      "context": "ocal judgment, error correction, and adaptive competence that make institutions genuinely robust under novel conditions. The domain is a strong stress test because organizational fragili"
+    },
+    {
+      "fingerprint": "44bf0a93243fae85a68aa4c723b08d2651220d1f",
+      "file": "pages/parables-and-real-life-translations.html",
+      "term": "The truth is",
+      "category": "hard-ban phrase/template",
+      "line": 184,
+      "context": "mething important finally needs to be named, neither person knows how &mdash; not because the truth is too painful, but because the function of saying hard things directly was never built into"
+    },
+    {
+      "fingerprint": "7e7de51c0c0cd9535d84f36595d08dceef1081a4",
+      "file": "pages/political-systems-and-control-stress-test.html",
+      "term": "robust",
+      "category": "hard-ban word",
+      "line": 59,
+      "context": "ation, and durable competence. Stable distributed competence appears when governance is robust because power and civic capacity are genuinely distributed. Substitutive dependence app"
+    },
+    {
+      "fingerprint": "f8091e8b6e3058363a59e554c24f44cd7062a8d0",
+      "file": "pages/reintegration-conditions.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 143,
+      "context": "redesign Role structures, incentives, and symbolic legitimacy often have to be reworked, not merely re-described. Civilizational Scale"
+    },
+    {
+      "fingerprint": "acc95b86fd6435a04d6a16267698765b88787297",
+      "file": "pages/research-backbone.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 139,
+      "context": "rature supports the idea that chronic stress produces cumulative burden and that overload is not merely a moral failure or attitude problem, but a real burden of adaptation."
+    },
+    {
+      "fingerprint": "4c05f35a9b8b748c8602fa6ac3a22f717af25cd2",
+      "file": "pages/research-backbone.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 139,
+      "context": "ure supports the idea that chronic stress produces cumulative burden and that overload is not merely a moral failure or attitude problem, but a real burden of adaptation."
+    },
+    {
+      "fingerprint": "42575ab802f7dd1926807a03ad59f04f4e2c49c0",
+      "file": "pages/research-backbone.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 235,
+      "context": "What this contributes Threat is predicted, not merely observed. Body regulation, interoception, and perception are tightly linked, and dysregul"
+    },
+    {
+      "fingerprint": "76bce9cd0f26ce55c3c12c58c94adb113fe15690",
+      "file": "pages/research-backbone.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 478,
+      "context": "an a simplistic internal versus external binary. The framework's strength is not merely critique of coercion, but functional differentiation between kinds of order and the condi"
+    },
+    {
+      "fingerprint": "afeabf30864d1b5064bb9113383d6c5fd294dfd3",
+      "file": "pages/research-backbone.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 478,
+      "context": "a simplistic internal versus external binary. The framework's strength is not merely critique of coercion, but functional differentiation between kinds of order and the condi"
+    },
+    {
+      "fingerprint": "d252aad867f0515088783f33e41faf7c9c1bbb14",
+      "file": "pages/research-backbone.html",
+      "term": "illuminate",
+      "category": "hard-ban word",
+      "line": 518,
+      "context": "ork becomes stronger when observable markers, semi-formal variables, and worked cases can illuminate one another rather than remaining isolated layers. Open markers to indice"
+    },
+    {
+      "fingerprint": "4b6c34857ece165070ca75c743542590b3d626a4",
+      "file": "pages/research-backbone.html",
+      "term": "not only ___ but also ___",
+      "category": "hard-ban phrase/template",
+      "line": 538,
+      "context": "ositive account of integration The framework is stronger when it explains not only fragmentation and counterfeit order, but also what metabolizing truth and inward coherence positively are. Open metabol"
+    },
+    {
+      "fingerprint": "c00f5219b750800e6bd965d52342982a882b7bd1",
+      "file": "pages/revised-framework-center.html",
+      "term": "robust",
+      "category": "hard-ban word",
+      "line": 69,
+      "context": "Alignment Theory is a structural framework for understanding how adaptive systems remain robust or become fragile depending on how their load-bearing functions are carried. The revised"
+    },
+    {
+      "fingerprint": "c24a7402f504c022b99be6280de12a120b500209",
+      "file": "pages/scaffolding-and-counterfeit-order.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 158,
+      "context": "structure is merely stabilizing weakness through pressure. The strongest test is not merely whether order exists, but whether agency, judgment, and updateability are increasing as p"
+    },
+    {
+      "fingerprint": "a7a958de9a260c59c51d44c3cd320612429da20b",
+      "file": "pages/scaffolding-and-counterfeit-order.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 158,
+      "context": "ucture is merely stabilizing weakness through pressure. The strongest test is not merely whether order exists, but whether agency, judgment, and updateability are increasing as p"
+    },
+    {
+      "fingerprint": "897fc310e1313bb3aafbf721a612e779c03abf10",
+      "file": "pages/scripture-explorer.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 436,
+      "context": "/ New Spirit Restored Responsiveness Transformation is not merely correction of behavior, but replacement of the inner organizing center."
+    },
+    {
+      "fingerprint": "0f5585f647789f6bb9296003b82cf4afc3460188",
+      "file": "pages/scripture-explorer.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 436,
+      "context": "ew Spirit Restored Responsiveness Transformation is not merely correction of behavior, but replacement of the inner organizing center."
+    },
+    {
+      "fingerprint": "95afc4b17fabd4ee1647f388a2b82008a1dd26d8",
+      "file": "pages/scripture-explorer.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 790,
+      "context": "Beast-like order is externally enforced conformity through material dependence. The issue is not merely political control, but alignment pressure strong enough to override inward conviction."
+    },
+    {
+      "fingerprint": "2bc14ebd1ea46202fa84f3fb514988baeb34705d",
+      "file": "pages/scripture-explorer.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 790,
+      "context": "st-like order is externally enforced conformity through material dependence. The issue is not merely political control, but alignment pressure strong enough to override inward conviction."
+    },
+    {
+      "fingerprint": "876995258568847edfdc926bd312edbae8b841a4",
+      "file": "pages/scripture-regulation-and-inner-transformation.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 210,
+      "context": "pattern Renewal concerns transformed discernment. The mind is reordered, not merely instructed, and interpretation itself begins to change."
+    },
+    {
+      "fingerprint": "dff19a4b87313c67a57f58f922b8d744517145e2",
+      "file": "pages/self-help-and-human-formation-stress-test.html",
+      "term": "landscape",
+      "category": "hard-ban word",
+      "line": 59,
+      "context": "Abstract This paper tests whether Alignment Theory clarifies why parts of the self-help landscape feel useful, hollow, or both at once. The framework is not used to dismiss technique as s"
+    },
+    {
+      "fingerprint": "e38be2f288ea6193c4afdd9c678b5991b3eba9b1",
+      "file": "pages/shared-core-structure-across-domains.html",
+      "term": "A wide range of",
+      "category": "hard-ban phrase/template",
+      "line": 138,
+      "context": "r trivial nor universal. It is more modest and more useful than either of those extremes. A wide range of systems appear healthier when support relations preserve or deepen participation in load-"
+    },
+    {
+      "fingerprint": "8719d5ae1fd09da841c9dab6e3543ad62c9a64db",
+      "file": "pages/signal-anchoring-constraint.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 179,
+      "context": "n by incoming signal. The implication is that the signal anchoring constraint is not merely an abstract epistemological preference. It describes a structural requirement that biolog"
+    },
+    {
+      "fingerprint": "40702505cf7084727be8d1747fc8dd0e81620fbf",
+      "file": "pages/signal-anchoring-constraint.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 179,
+      "context": "y incoming signal. The implication is that the signal anchoring constraint is not merely an abstract epistemological preference. It describes a structural requirement that biolog"
+    },
+    {
+      "fingerprint": "ecb91097f814c8033a28aec07ef3deac51cbfbca",
+      "file": "pages/social-media-and-information-stress-test.html",
+      "term": "not just ___ but ___",
+      "category": "hard-ban phrase/template",
+      "line": 59,
+      "context": "orientation rather than reconstituting it internally. The perturbation test is therefore not just a disruption — it is a diagnostic. The question is not whether the loss of the platform is unpleasant, but whether the user's capacity for attention, source judgment, and contextual reasoning can"
+    },
+    {
+      "fingerprint": "485f8969c29a29eba98bdbcec962020fe31ffc98",
+      "file": "pages/stress-tests-and-limits.html",
+      "term": "illuminate",
+      "category": "hard-ban word",
+      "line": 141,
+      "context": "hat would count against cross-scale continuity If the same concepts repeatedly failed to illuminate transitions across person, relationship, institution, and civilization without collapsing"
+    },
+    {
+      "fingerprint": "35dd11328e70ceea55d422b2e144d0d0263c3a35",
+      "file": "pages/stress-tests.html",
+      "term": "In summary",
+      "category": "hard-ban phrase/template",
+      "line": 76,
+      "context": "Papers Series Overview Meta The series includes a cross-domain summary page that gathers the recurring diagnostic structure visible across the strongest-fit dom"
+    },
+    {
+      "fingerprint": "63f479fb974c93645b286bfa1f5150f452a57887",
+      "file": "pages/structural-reasoning-and-theological-commitment.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 127,
+      "context": "which interpretation can drift. Truth is intrinsically integrative Truth is not merely useful signaling; it has a deeper relation to coherence. Agency is ontolo"
+    },
+    {
+      "fingerprint": "9baabafe914b7f642fa7fd389f16d2b696a4b0ac",
+      "file": "pages/structural-reasoning-and-theological-commitment.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 127,
+      "context": "ch interpretation can drift. Truth is intrinsically integrative Truth is not merely useful signaling; it has a deeper relation to coherence. Agency is ontolo"
+    },
+    {
+      "fingerprint": "cc28cb380d6802618bc39a3b4a100319b2ca3be9",
+      "file": "pages/structural-reasoning-and-theological-commitment.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 137,
+      "context": "Christ is structurally central The fullest resolution of the framework is not merely conceptual but Christological. Salvation is realignment with reality itse"
+    },
+    {
+      "fingerprint": "b74dc71367047660e85b7b623940ccb2470ecee8",
+      "file": "pages/structural-reasoning-and-theological-commitment.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 137,
+      "context": "Christ is structurally central The fullest resolution of the framework is not merely conceptual but Christological. Salvation is realignment with reality itse"
+    },
+    {
+      "fingerprint": "c7e34ca3ff3142fad3a8a9d0c66087cf3e46190f",
+      "file": "pages/structural-reasoning-and-theological-commitment.html",
+      "term": "not just ___ but ___",
+      "category": "hard-ban phrase/template",
+      "line": 139,
+      "context": "utional. New creation is the fullest restoration pattern The endpoint is not just improved behavior but renewed relation to truth, love, and being. Grace is indispensable to ful"
+    },
+    {
+      "fingerprint": "72bd2b5d91197172a668850dce6731f67a810b64",
+      "file": "pages/suffering-and-hidden-structure-stress-test.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 59,
+      "context": "adaptation. Participatory Capacity in This Domain Participation means that the person is not merely being relieved from outside, but is gradually re-entering the function at stake: grieving"
+    },
+    {
+      "fingerprint": "6548f6667303479d4669989751d643b667e4ce2f",
+      "file": "pages/suffering-and-hidden-structure-stress-test.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 59,
+      "context": "ptation. Participatory Capacity in This Domain Participation means that the person is not merely being relieved from outside, but is gradually re-entering the function at stake: grieving"
+    },
+    {
+      "fingerprint": "769382f55f9a08830a2b27ccb8df036a561f3ff1",
+      "file": "pages/technology-adoption-stress-test.html",
+      "term": "robust",
+      "category": "hard-ban word",
+      "line": 59,
+      "context": "n was truly load-bearing for the user, and whether the larger system becomes more or less robust under repeated reliance. Stress Test Summary Domain Technology adoption Load-Bea"
+    },
+    {
+      "fingerprint": "91b36c71f0da939b15034705e89c6937deb14829",
+      "file": "pages/the-fall-as-self-authorizing-interpretation.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 118,
+      "context": "distorted frame. That is why the event matters so deeply to Alignment Theory. Distortion is not merely moral failure after the fact. It is a fracture in how reality is read, borne, and answere"
+    },
+    {
+      "fingerprint": "a349d2fad8ca7fceecd6fb0ff8f6d33ac220c692",
+      "file": "pages/the-fall-as-self-authorizing-interpretation.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 118,
+      "context": "storted frame. That is why the event matters so deeply to Alignment Theory. Distortion is not merely moral failure after the fact. It is a fracture in how reality is read, borne, and answere"
+    },
+    {
+      "fingerprint": "f45980c50e177f30cd0a8856cb3b284a8dd2417c",
+      "file": "pages/the-four-structural-states-of-support-and-participation.html",
+      "term": "robust",
+      "category": "hard-ban word",
+      "line": 96,
+      "context": "but it does not tell you how the system got there or whether it is becoming more or less robust over time. The framework needs a deeper structure. That structure is a two-di"
+    },
+    {
+      "fingerprint": "8ce0a4f95ef49ffbeb0fb5369d0ff1632d8e1915",
+      "file": "pages/the-four-structural-states-of-support-and-participation.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 131,
+      "context": "sts and develops. Language itself is constitutive co-regulation: thought is shaped by it, not merely expressed through it. Developmental scaffolding is support that temporarily"
+    },
+    {
+      "fingerprint": "be9115dd43f110eecaca0acf8e8adf44ae9d5ddc",
+      "file": "pages/the-transition-trigger.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 127,
+      "context": "Distortion Load Over Time Distortion is not merely static misalignment. It accumulates through time and maintenance burden. A co"
+    },
+    {
+      "fingerprint": "401d94f43cadff22d3c6246b32cb84df3763bcd9",
+      "file": "pages/the-transition-trigger.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 127,
+      "context": "Distortion Load Over Time Distortion is not merely static misalignment. It accumulates through time and maintenance burden. A co"
+    },
+    {
+      "fingerprint": "b0ae15f7657ee5fcbb593d5d3cc9849146e70500",
+      "file": "pages/thermodynamic-stress-test.html",
+      "term": "illuminate",
+      "category": "hard-ban word",
+      "line": 59,
+      "context": "below the level of agentive systems, or whether some of its structural distinctions still illuminate how ordered systems persist or fail. Translating Alignment Theory into Thermodynamic L"
+    },
+    {
+      "fingerprint": "8b57f22ec2c7b445300b02b00afce3c2f344ea36",
+      "file": "pages/thermodynamic-stress-test.html",
+      "term": "robust",
+      "category": "hard-ban word",
+      "line": 59,
+      "context": "tence Perturbation Test Gradient loss and environmental shift reveal whether order is robust or narrowly dependent Core Prediction Order persists only through sustaining relation"
+    },
+    {
+      "fingerprint": "af2a93cdae3ff5e650b449f042ece148c1eed977",
+      "file": "pages/what-inward-coherence-is.html",
+      "term": "not only ___ but also ___",
+      "category": "hard-ban phrase/template",
+      "line": 101,
+      "context": "Intro Alignment Theory is strongest when it not only names fragmentation and counterfeit order, but also explains the positive process of integration and the structure of inward coherence. This"
+    },
+    {
+      "fingerprint": "d8d38ba1467a95cf5bd873c39ef669b69dd32627",
+      "file": "pages/what-the-framework-actually-claims.html",
+      "term": "robust",
+      "category": "hard-ban word",
+      "line": 83,
+      "context": "preserves participatory capacity rather than eroding it; cases where systems become more robust precisely by reducing their own participation in load-bearing functions; or the demonstra"
+    },
+    {
+      "fingerprint": "fa5065f40027c804e8d693cbdcd0b7cf27836461",
+      "file": "pages/where-to-start.html",
+      "term": "robust",
+      "category": "hard-ban word",
+      "line": 104,
+      "context": "Alignment Theory is a framework for understanding how adaptive systems remain robust or become fragile depending on how their load-bearing functions are carried. The central"
+    },
+    {
+      "fingerprint": "4b65c1e82bdab2395596be47b6c37027e7a2f984",
+      "file": "pages/why-christ-is-structurally-central.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 104,
+      "context": "ence Is Intro This page does not merely assert Christian commitment. It argues from within the framework's own logic. If Alignmen"
+    },
+    {
+      "fingerprint": "134ddb014b3d5e4095749486d7784f3c84b33dd5",
+      "file": "pages/why-christ-is-structurally-central.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 118,
+      "context": "an be aligned with or resisted. Christ as the Word made visible If Logos is not merely principle but personal disclosure, then Christ is not only a teacher about truth but the"
+    },
+    {
+      "fingerprint": "ae2e7380a806cf2e5a8aace2a708aad953fbf798",
+      "file": "pages/why-christ-is-structurally-central.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 118,
+      "context": "be aligned with or resisted. Christ as the Word made visible If Logos is not merely principle but personal disclosure, then Christ is not only a teacher about truth but the"
+    },
+    {
+      "fingerprint": "ee06a3b903b403207e150b0cd4a612e020d83e5a",
+      "file": "pages/why-christ-is-structurally-central.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 135,
+      "context": "ruth is affirmed but not personally restored. Why Christ Is Not Merely Exemplary Within Alignment Theory, Christ is not only a model of coherence. C"
+    },
+    {
+      "fingerprint": "a4ce23ffd0e1b073f9ccba65e9bfa5e3a796336a",
+      "file": "pages/why-christ-is-structurally-central.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 135,
+      "context": "h is affirmed but not personally restored. Why Christ Is Not Merely Exemplary Within Alignment Theory, Christ is not only a model of coherence. C"
+    },
+    {
+      "fingerprint": "a96379a3ef0f85b087e9ffa19dee206fce0f4aad",
+      "file": "pages/why-christ-is-structurally-central.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 137,
+      "context": "tion of truth to restored participation in it. Christ is structurally central not merely because he teaches truth, but because in him reality and interpretation converge again wi"
+    },
+    {
+      "fingerprint": "2c63064a4b215e1d11f926f2141272b012513fa6",
+      "file": "pages/why-christ-is-structurally-central.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 142,
+      "context": "ework needs a point where Logos, truth, judgment, mercy, humility, and restored order are not merely described but enacted and embodied. In that sense Christ closes the fracture"
+    },
+    {
+      "fingerprint": "3970577e3a97fb51be30da9af4c69825794c0546",
+      "file": "pages/why-frameworks-appear.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 291,
+      "context": "ghboring frameworks emerge from the same real constraint field. Its distinct contribution is not merely that it names fragmentation, overload, fear, or regulation. Its distinct contribution is"
+    },
+    {
+      "fingerprint": "511e9e41e43ccbc09230fcee1bcab61c16eaa945",
+      "file": "pages/why-frameworks-appear.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 291,
+      "context": "oring frameworks emerge from the same real constraint field. Its distinct contribution is not merely that it names fragmentation, overload, fear, or regulation. Its distinct contribution is"
+    },
+    {
+      "fingerprint": "c80d37e71c547fc83027e95e0223f94ae93f8349",
+      "file": "pages/why-frameworks-appear.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 298,
+      "context": "y consequential. Logos / the Word as reality structure The deepest layer is not merely pragmatic usefulness, but whether a framework remains answerable to reality itself."
+    },
+    {
+      "fingerprint": "0aaf691b3e3fd86182e351f6d8438ab64badb8cd",
+      "file": "pages/why-frameworks-appear.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 298,
+      "context": "onsequential. Logos / the Word as reality structure The deepest layer is not merely pragmatic usefulness, but whether a framework remains answerable to reality itself."
+    },
+    {
+      "fingerprint": "d1aabe11f6493c9edfc1eeb7e145a58ace964f3c",
+      "file": "pages/why-multiple-fields-are-converging-on-the-same-ai-question.html",
+      "term": "The deeper issue is",
+      "category": "hard-ban phrase/template",
+      "line": 108,
+      "context": "ral problem. The issue is no longer only whether advanced systems can perform tasks well. The deeper issue is whether their increasing competence changes what human beings must still be able to do fr"
+    },
+    {
+      "fingerprint": "b553dece1f56b62532f7a61a533681611775107b",
+      "file": "pages/why-multiple-fields-are-converging-on-the-same-ai-question.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 116,
+      "context": "ecisions they no longer fully comprehend. Related work on AI delegation treats delegation not merely as task transfer, but as a transfer of authority, accountability, and practical control."
+    },
+    {
+      "fingerprint": "7bcf72cd6cde264195458cec0dd51fe70bccee92",
+      "file": "pages/why-multiple-fields-are-converging-on-the-same-ai-question.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 124,
+      "context": "In philosophy of technology, the concern appears as externalization. Technologies do not merely help human beings do things more efficiently; they reorganize which capacities must still"
+    },
+    {
+      "fingerprint": "21e7ff73e4d0ec63296dab8240328093bf3683d6",
+      "file": "pages/why-multiple-fields-are-converging-on-the-same-ai-question.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 156,
+      "context": "What makes AI uniquely important is that it may become all of these things at once. It is not merely a computational tool. It can function as an assistant, advisor, interpreter, planner, soc"
+    },
+    {
+      "fingerprint": "9edfea754d40b6a1d7eddafd6a4866763677437b",
+      "file": "pages/why-multiple-fields-are-converging-on-the-same-ai-question.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 156,
+      "context": "What makes AI uniquely important is that it may become all of these things at once. It is not merely a computational tool. It can function as an assistant, advisor, interpreter, planner, soc"
+    },
+    {
+      "fingerprint": "2039fcd69806194cb67fd99d1819264a764254ee",
+      "file": "pages/why-multiple-fields-are-converging-on-the-same-ai-question.html",
+      "term": "is not merely",
+      "category": "hard-ban phrase/template",
+      "line": 173,
+      "context": "e unnecessary within them. If that risk is real, then the defining question of the AI age is not merely how to align powerful systems to human preferences, but how to ensure that living with su"
+    },
+    {
+      "fingerprint": "9b5df4af19cf1404a2554e70b6e7a3183046fc7f",
+      "file": "pages/why-multiple-fields-are-converging-on-the-same-ai-question.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 173,
+      "context": "nnecessary within them. If that risk is real, then the defining question of the AI age is not merely how to align powerful systems to human preferences, but how to ensure that living with su"
+    },
+    {
+      "fingerprint": "7d717e8d675e0b5460af51698d95021f5307f0ca",
+      "file": "pages/worked-case-study.html",
+      "term": "not merely",
+      "category": "hard-ban phrase/template",
+      "line": 102,
+      "context": "ical competition. If Alignment Theory adds anything here, it must add a clearer sequence, not merely a new set of labels. What Standard Explanations Say"
+    }
+  ]
+}

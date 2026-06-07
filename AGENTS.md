@@ -193,6 +193,14 @@ Use this sequence:
 - Do not rewrite archival prose during the first cleanup pass.
 - Preserve paper download links and citation metadata.
 
+## Editorial linting
+
+- Run `npm run lint:editorial` after editing public-facing copy, public page generators, or shared shell copy.
+- Do not regenerate `docs/editorial/editorial-lint-baseline.json` during ordinary edits. Use `npm run lint:editorial:baseline` only when intentionally rebaselining archival material.
+- Do not add broad exceptions. Each exception must name a file, matched entry, local anchor, reason, and active status.
+- Treat protected theory vocabulary as reviewable frequency data, not automatic cleanup text.
+- Keep historical baseline findings separate from new hard-ban matches in current public pages.
+
 ## Validation
 
 After implementation:

@@ -1,6 +1,6 @@
 # Editorial Linter Integration Plan
 
-Phase 4 audit document. No public copy was rewritten.
+Phase 4 audit document, updated after the Phase 11 first implementation pass. No public copy was rewritten.
 
 ## Goal
 
@@ -17,19 +17,23 @@ The CSV has two main classes:
 - Hard-ban terms and phrase templates.
 - Review terms that can be valid when precise, but should be checked for clustering or vague usage.
 
-## Proposed Command
+## Implemented Commands
 
-Add a future script:
+Phase 11 added:
 
 ```json
-"lint:editorial": "node scripts/lint-editorial.mjs"
+"lint:editorial": "node scripts/lint-editorial.mjs",
+"lint:editorial:baseline": "node scripts/lint-editorial.mjs --write-baseline"
 ```
 
-The script should produce:
+The script currently produces:
 
-- `docs/editorial-lint-report.md`
-- nonzero exit only for new hard-ban matches outside allowed zones
-- zero exit for review-term reports
+- a deterministic console report
+- nonzero exit for hard-ban matches on strict current public surfaces and generated public source
+- nonzero exit for archive hard-ban matches not represented in the baseline
+- zero exit for review-term and protected-term reports
+
+The script does not write a routine report file because ordinary lint runs should not dirty the worktree.
 
 ## Scan Scope
 
@@ -146,12 +150,24 @@ Documented exceptions:
 
 ## First Implementation Phase
 
-1. Build `scripts/lint-editorial.mjs`.
-2. Read the CSV directly.
-3. Classify source files with a small route map.
-4. Exclude code blocks and quoted blocks.
-5. Produce a Markdown report.
-6. Fail only on hard-ban matches in current public source files.
+Complete in Phase 11:
+
+1. Built `scripts/lint-editorial.mjs`.
+2. Read the CSV directly with a dependency-free parser.
+3. Classified strict current public pages, generated public source, and archive HTML.
+4. Excluded script, style, pre, code, comments, and HTML tags from rendered HTML scans.
+5. Added archive baseline support in `docs/editorial/editorial-lint-baseline.json`.
+6. Added documented exception support in `docs/editorial/editorial-lint-exceptions.json`.
+7. Failed on strict current hard-ban matches and new archive hard-ban matches.
+8. Reported review terms and protected-term frequency separately.
+
+Deferred:
+
+- Markdown report output for audit runs.
+- Column numbers.
+- Rich source maps from generated HTML back to generator data objects.
+- PDF text extraction mode.
+- Markdown quote and citation handling beyond the current HTML/source scan.
 
 ## Author Decisions Needed
 
