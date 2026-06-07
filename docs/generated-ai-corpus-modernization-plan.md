@@ -168,7 +168,7 @@ Recommended checks:
 
 Batch 1: Update generated hub and corpus shell styling only.
 
-Batch 2: Add status labels and canonical consistency.
+Batch 2: Add status labels and canonical consistency. Complete in Phase 8.
 
 Batch 3: Review editorial source data and templates.
 

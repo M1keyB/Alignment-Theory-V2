@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { generatedAiCorpusFiles, generatedAiCorpusRoutes } from "./generated-ai-corpus-routes.mjs";
 
 const root = process.cwd();
 const pagesDir = path.join(root, "pages");
@@ -390,11 +391,8 @@ const howToCiteItem = {
   abstract: "Citation formats for the full corpus, the Three-Layer Blueprint, PCPI, and related AI alignment research pages."
 };
 
-const generatedOutputFiles = [
-  "ai-alignment-research.html",
-  "how-to-cite.html",
-  ...papers.map((paper) => `${paper.slug}.html`),
-];
+const generatedOutputFiles = generatedAiCorpusFiles;
+const generatedRouteByFile = new Map(generatedAiCorpusRoutes.map((route) => [route.file, route]));
 
 const paperBySlug = Object.fromEntries([...papers, pcpiPaper, howToCiteItem].map((paper) => [paper.slug, paper]));
 
@@ -565,9 +563,48 @@ const addMainClass = (html) => html.replace(/<main id="main" class="([^"]*)">/, 
   return `<main id="main" class="${addClass(value, "generated-ai-corpus")}">`;
 });
 
+const canonicalLinkPattern = /\n\s*<link rel="canonical" href="[^"]+" \/>\r?/g;
+
+const ensureGeneratedCanonical = (html, file) => {
+  const route = generatedRouteByFile.get(file);
+  if (!route) {
+    throw new Error(`Missing generated corpus route metadata for ${file}`);
+  }
+
+  const canonicalTag = `  <link rel="canonical" href="${siteUrl}${route.canonicalPath}" />`;
+  const withoutCanonicals = html.replace(canonicalLinkPattern, "");
+
+  if (/<meta name="robots"[^>]*>\r?\n/.test(withoutCanonicals)) {
+    return withoutCanonicals.replace(/(<meta name="robots"[^>]*>\r?\n)/, `$1${canonicalTag}\n`);
+  }
+
+  return withoutCanonicals.replace("</head>", `${canonicalTag}\n</head>`);
+};
+
+const generatedStatusNoticePattern = /\r?\n?\s*<section class="route-status-note generated-corpus-status" aria-label="Page status">[\s\S]*?<\/section>\r?\n?/;
+
+const applyGeneratedStatusNotice = (html, file) => {
+  const route = generatedRouteByFile.get(file);
+  if (!route) {
+    throw new Error(`Missing generated corpus route metadata for ${file}`);
+  }
+
+  let next = html.replace(generatedStatusNoticePattern, "\n");
+  if (!route.notice) {
+    return next;
+  }
+
+  const notice = `  <section class="route-status-note generated-corpus-status" aria-label="Page status">
+    <p>${htmlEscape(route.notice)}</p>
+  </section>
+`;
+  return next.replace(/  <main id="main"/, `${notice}  <main id="main"`);
+};
+
 const modernizeGeneratedShell = (html, file) => {
   let next = addBodyClass(html);
   next = addMainClass(next);
+  next = ensureGeneratedCanonical(next, file);
 
   if (!/<header class="site-header[\s\S]*?<\/header>/.test(next)) {
     throw new Error(`Could not find generated header in ${file}`);
@@ -578,6 +615,7 @@ const modernizeGeneratedShell = (html, file) => {
     throw new Error(`Could not find generated footer in ${file}`);
   }
   next = next.replace(/  <footer class="site-footer[\s\S]*?  <\/footer>/, `  ${corpusFooter}`);
+  next = applyGeneratedStatusNotice(next, file);
 
   return next;
 };
