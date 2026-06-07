@@ -10,13 +10,15 @@ Inspected files:
 - `docs/editorial/AI_LANGUAGE_LINTER_LIST.csv`
 - `AGENTS.md`
 
-No linter changes were made during this audit.
+Batch 1 update: review-only reporting has now been added for the selected structural phrases. `Structural` itself remains allowed.
 
 ## Recommendation
 
 Do not make `structural` a hard-ban word. It is part of legitimate theory, route titles, technical descriptions, archive language, and compatibility references.
 
-Later, add review-only reporting for selected phrases, limited to current public surfaces first:
+Use structural only when it names a concrete arrangement or relationship. Prefer the exact mechanism where possible.
+
+Review-only reporting now covers these selected phrases:
 
 - `structural problem`
 - `structural pattern`
@@ -25,7 +27,8 @@ Later, add review-only reporting for selected phrases, limited to current public
 - `structural change`
 - `structural insight`
 - `structural logic`
-- `structural lens`
+- `structural boundary`
+- `structural layer`
 
 ## Suggested Linter Behavior
 

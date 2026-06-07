@@ -90,6 +90,8 @@ Flag and reduce:
 - abstract importance adjectives where a specific consequence can be stated
 - repeated use of the same theory term when a simpler sentence would work
 
+Use structural only when it names a concrete arrangement or relationship. Prefer the exact mechanism where possible.
+
 ## Protected theory vocabulary
 
 Do not remove a term merely because it appears on a review list. Keep it when it names a real concept and use it consistently after defining it.
