@@ -20,6 +20,10 @@ Phase 12 planning document for a later controlled implementation pass. Do not im
 
 ## Batch A: Status Wording And Route Clarity
 
+Status:
+
+- Implemented and awaiting review in Phase 13.
+
 Scope:
 
 - clarify PCPI v1.0 / v1 / v5 wording
@@ -41,6 +45,10 @@ Reason:
 
 ## Batch B: Scoped Visual Modernization
 
+Status:
+
+- Deferred.
+
 Scope:
 
 - PCPI route only
@@ -52,6 +60,10 @@ Scope:
 Do not combine with formula changes.
 
 ## Batch C: High-Confidence Editorial Cleanup
+
+Status:
+
+- Deferred.
 
 Scope:
 
@@ -68,6 +80,10 @@ Requirements:
 
 ## Batch D: HAPI Cross-Linking
 
+Status:
+
+- Deferred until after PCPI terminology revision.
+
 Scope:
 
 - add one restrained HAPI link if approved
@@ -79,6 +95,10 @@ Recommended timing:
 - after Batch A
 
 ## Batch E: Formula Or Scoring Revision
+
+Status:
+
+- Deferred. Requires separate approval.
 
 Scope:
 

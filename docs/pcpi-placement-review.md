@@ -151,3 +151,34 @@ Phase 12 conclusion:
 - Validation, inter-rater reliability, threshold justification, penalty-weight justification, MAI maturity, certification language, and version wording require later review.
 - A future HAPI cross-link is plausible, but should be added after PCPI terminology and status wording are clarified.
 - The smallest safe later implementation pass is status wording and route clarity only.
+
+## Phase 13 Update
+
+Batch A was implemented and is awaiting review.
+
+Changed public surface:
+
+- `pages/participatory-capacity-preservation-index.html`
+
+Implemented:
+
+- added a quiet status note near the top of the PCPI page before the scoring model
+- clarified description metadata and JSON-LD description
+
+Preserved:
+
+- formula
+- weights
+- scoring bands
+- examples
+- evaluator link
+- evaluator source code
+- route
+- canonical URL
+
+Deferred:
+
+- scoped visual modernization
+- high-confidence editorial cleanup
+- HAPI cross-linking after terminology revision
+- formula or scoring revision only after separate approval
