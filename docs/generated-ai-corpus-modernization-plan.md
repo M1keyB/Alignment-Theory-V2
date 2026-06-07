@@ -170,9 +170,37 @@ Batch 1: Update generated hub and corpus shell styling only.
 
 Batch 2: Add status labels and canonical consistency. Complete in Phase 8.
 
-Batch 3: Review editorial source data and templates.
+Batch 3: Review editorial source data and templates. Complete in Phase 9 as an audit-only source and technical-review pass.
 
-Batch 4: Regenerate outputs and inspect route-by-route diffs.
+Batch 4A: First controlled editorial implementation batch.
+
+Limits:
+
+- no more than 3 generated routes
+- no more than 15 editorial edits
+- only high-confidence edits
+- no claim expansion
+- no new technical claims
+- no route changes
+- no visual changes
+- no PCPI edits
+- route-by-route diff review required
+- `<main>` hashes expected to change only for approved routes
+
+Recommended first routes:
+
+- `pages/ai-alignment-literature-review.html`
+- `pages/ai-alignment-research.html`
+- `pages/ai-alignment-executive-summary.html`
+
+Reason:
+
+- clear persistent source locations in `scripts/generate-ai-research-pages.mjs`
+- one known hard-ban match in the literature review source
+- high reader visibility
+- low technical risk if edits are limited to wording cleanup and do not change claims
+
+Batch 4: Regenerate outputs and inspect route-by-route diffs after approved editorial changes.
 
 Batch 5: Run hard-ban scanning and technical review.
 

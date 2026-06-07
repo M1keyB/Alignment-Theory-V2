@@ -159,3 +159,32 @@ Documented exceptions:
 - Should hard-ban matches in AI-readable artifacts fail the build?
 - Should citations and quotations require explicit markup to be skipped?
 - Should the linter scan rendered HTML, generator source, or both for generated pages?
+
+## Phase 9 Generated Corpus Audit Additions
+
+The generated AI corpus now has a split source model:
+
+- normal generator mode preserves current rendered `<main>` bodies and updates shell, canonical tags, body class, and route notices
+- `--render-from-source` can rewrite all 12 generated pages from embedded source data and remains quarantined
+- body-copy cleanup must be checked against both rendered HTML and durable generator source objects
+
+Future linter behavior should distinguish:
+
+- new violations introduced by a patch
+- historical or baseline violations already present in generated bodies
+- allowed documentation references to flagged terms in audit queues
+- protected project vocabulary such as Alignment Theory, PCPI, AAG, HAPI, AGS, governance, authority, refusal, execution, audit, workflow, and substrate
+- generated body copy from `papers`, `glossaryEntries`, `renderHub()`, and `renderCite()`
+- generated interface copy from shell, status notices, nav, buttons, and cards
+- source copy in `scripts/generate-ai-research-pages.mjs`
+- rendered output in `pages/*.html`
+- citation examples, BibTeX blocks, URLs, code, and quoted examples
+
+Recommended generated-corpus linter mode:
+
+1. Read `scripts/generated-ai-corpus-routes.mjs` for the 12 generated routes.
+2. Scan rendered `<main>` bodies for public output.
+3. Scan `scripts/generate-ai-research-pages.mjs` source sections that feed those bodies.
+4. Treat candidate-output examples in the casebook as examples, not automatic cleanup targets.
+5. Fail only on new hard-ban matches in edited current public copy unless a suppression or review-queue entry marks an intentional reference.
+6. Report protected-term frequency separately from hard-ban and review-term matches.
