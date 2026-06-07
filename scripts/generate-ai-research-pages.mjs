@@ -390,6 +390,12 @@ const howToCiteItem = {
   abstract: "Citation formats for the full corpus, the Three-Layer Blueprint, PCPI, and related AI alignment research pages."
 };
 
+const generatedOutputFiles = [
+  "ai-alignment-research.html",
+  "how-to-cite.html",
+  ...papers.map((paper) => `${paper.slug}.html`),
+];
+
 const paperBySlug = Object.fromEntries([...papers, pcpiPaper, howToCiteItem].map((paper) => [paper.slug, paper]));
 
 const htmlEscape = (value) => String(value)
@@ -496,6 +502,94 @@ ${content}
   <script src="../assets/app.js?v=20260427a"></script>
 </body>
 </html>`;
+
+const corpusHeader = `<header class="site-header generated-corpus-header">
+    <div class="site-title">
+      <a class="site-logo" href="../index.html">Alignment Theory</a>
+      <p class="site-subtitle">Independent Research Journal</p>
+      <p class="subtitle">Specialized AI research on behavioral drift, participatory capacity, and applied governance.</p>
+    </div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="../start-here.html">Start Here</a>
+      <a href="revised-framework-center.html">Theory</a>
+      <a href="../papers.html">Research</a>
+      <a href="../notes/">Notes</a>
+      <a href="ai-alignment-research.html" aria-current="page">AI Governance</a>
+      <a href="library.html">Archive</a>
+      <a href="../about.html">About</a>
+      <a href="../notes/#subscribe">Subscribe</a>
+    </nav>
+  </header>`;
+
+const corpusFooter = `<footer class="site-footer generated-corpus-footer">
+    <div class="site-footer-inner">
+      <div class="site-footer-brand">
+        <p class="site-footer-title">Alignment Theory</p>
+        <p>A quiet research journal on support, substitution, participatory capacity, and alignment across human systems and AI governance.</p>
+      </div>
+      <nav class="site-footer-links" aria-label="Footer">
+        <a href="../start-here.html">Start Here</a>
+        <a href="revised-framework-center.html">Theory</a>
+        <a href="../papers.html">Research</a>
+        <a href="../notes/">Notes</a>
+        <a href="ai-alignment-research.html">AI Governance</a>
+        <a href="library.html">Archive</a>
+        <a href="../about.html">About</a>
+        <a href="../notes/#subscribe">Subscribe</a>
+      </nav>
+    </div>
+    <div class="provenance">
+      <p><strong>Alignment Theory</strong> is an original constraint-based framework by <strong>Michael Nathan Bower</strong> for mapping coherence, overload, fragmentation, collapse, recovery, and alignment across human and artificial systems.</p>
+      <p>AI tools may assist with organization, drafting, formatting, coding, and refinement, but the core framework, synthesis, constraint architecture, terminology, interpretive structure, and product direction originate from Michael Nathan Bower.</p>
+      <p>Canonical source: <a href="https://alignmenttheory.org">AlignmentTheory.org</a></p>
+    </div>
+    <p class="site-footer-copy">&copy; 2026 Michael Nathan Bower. All rights reserved. Contact: <a href="mailto:mnbower.researcher@gmail.com">mnbower.researcher@gmail.com</a></p>
+  </footer>`;
+
+const addClass = (classValue, className) => {
+  const classes = new Set(String(classValue || "").split(/\s+/).filter(Boolean));
+  classes.add(className);
+  return Array.from(classes).join(" ");
+};
+
+const addBodyClass = (html) => html.replace(/<body([^>]*)>/, (match, attrs) => {
+  if (/class="/.test(attrs)) {
+    return `<body${attrs.replace(/class="([^"]*)"/, (_, value) => `class="${addClass(value, "generated-ai-corpus-page")}"`)}>`;
+  }
+
+  return `<body${attrs} class="generated-ai-corpus-page">`;
+});
+
+const addMainClass = (html) => html.replace(/<main id="main" class="([^"]*)">/, (_, value) => {
+  return `<main id="main" class="${addClass(value, "generated-ai-corpus")}">`;
+});
+
+const modernizeGeneratedShell = (html, file) => {
+  let next = addBodyClass(html);
+  next = addMainClass(next);
+
+  if (!/<header class="site-header[\s\S]*?<\/header>/.test(next)) {
+    throw new Error(`Could not find generated header in ${file}`);
+  }
+  next = next.replace(/  <header class="site-header[\s\S]*?  <\/header>/, `  ${corpusHeader}`);
+
+  if (!/<footer class="site-footer[\s\S]*?<\/footer>/.test(next)) {
+    throw new Error(`Could not find generated footer in ${file}`);
+  }
+  next = next.replace(/  <footer class="site-footer[\s\S]*?  <\/footer>/, `  ${corpusFooter}`);
+
+  return next;
+};
+
+const updateGeneratedCorpusShells = () => {
+  for (const file of generatedOutputFiles) {
+    const filePath = path.join(pagesDir, file);
+    const html = fs.readFileSync(filePath, "utf8");
+    const next = modernizeGeneratedShell(html, file);
+    fs.writeFileSync(filePath, next, "utf8");
+  }
+};
 
 const slugId = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
@@ -931,12 +1025,15 @@ fs.mkdirSync(pagesDir, { recursive: true });
 if (process.argv.includes("--hub-only")) {
   updateExistingHubSection();
   console.log("Updated pages/ai-alignment-research.html from generator hub-only mode.");
-} else {
+} else if (process.argv.includes("--render-from-source")) {
   fs.writeFileSync(path.join(pagesDir, "ai-alignment-research.html"), renderHub());
   fs.writeFileSync(path.join(pagesDir, "how-to-cite.html"), renderCite());
   for (const paper of papers) {
     fs.writeFileSync(path.join(pagesDir, `${paper.slug}.html`), renderPaper(paper));
   }
 
-  console.log(`Generated ${papers.length + 2} AI alignment research pages.`);
+  console.log(`Generated ${papers.length + 2} AI alignment research pages from embedded source data.`);
+} else {
+  updateGeneratedCorpusShells();
+  console.log(`Updated ${generatedOutputFiles.length} generated AI research corpus shells.`);
 }
