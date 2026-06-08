@@ -269,7 +269,14 @@ review word,vast,Allowed when precise. Flag repeated or clustered use.
 review word,versatile,Allowed when precise. Flag repeated or clustered use.
 review word,vivid,Allowed when precise. Flag repeated or clustered use.
 review phrase,under pressure,Allowed occasionally. Replace if it sounds formulaic or vague.
-review phrase,load-bearing,Allowed occasionally. Replace if it sounds formulaic or vague.
+hard-ban phrase,load-bearing,Do not use as a default abstract metaphor. Use capacity-forming functions for the formal Alignment Theory concept, agency-forming functions in HAPI-specific contexts, and direct language elsewhere.
+review phrase,structural problem,Review only. Use structural only when it names a concrete arrangement or relationship; prefer the exact mechanism where possible.
+review phrase,structural pattern,Review only. Use structural only when it names a concrete arrangement or relationship; prefer the exact mechanism where possible.
+review phrase,structural pressure,Review only. Use structural only when it names a concrete arrangement or relationship; prefer the exact mechanism where possible.
+review phrase,structural failure,Review only. Use structural only when it names a concrete arrangement or relationship; prefer the exact mechanism where possible.
+review phrase,structural logic,Review only. Use structural only when it names a concrete arrangement or relationship; prefer the exact mechanism where possible.
+review phrase,structural boundary,Review only. Use structural only when it names a concrete arrangement or relationship; prefer the exact mechanism where possible.
+review phrase,structural layer,Review only. Use structural only when it names a concrete arrangement or relationship; prefer the exact mechanism where possible.
 review phrase,central claim,Allowed occasionally. Replace if it sounds formulaic or vague.
 review phrase,central theme,Allowed occasionally. Replace if it sounds formulaic or vague.
 review phrase,core thesis,Allowed occasionally. Replace if it sounds formulaic or vague.

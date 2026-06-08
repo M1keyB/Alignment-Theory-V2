@@ -90,6 +90,8 @@ Flag and reduce:
 - abstract importance adjectives where a specific consequence can be stated
 - repeated use of the same theory term when a simpler sentence would work
 
+Use structural only when it names a concrete arrangement or relationship. Prefer the exact mechanism where possible.
+
 ## Protected theory vocabulary
 
 Do not remove a term merely because it appears on a review list. Keep it when it names a real concept and use it consistently after defining it.
@@ -100,7 +102,7 @@ Protected terms include:
 - internal alignment
 - external alignment
 - participatory capacity
-- load-bearing function
+- capacity-forming functions
 - support relation
 - constitutive co-regulation
 - developmental scaffolding
@@ -129,6 +131,8 @@ Protected terms include:
 - substrate
 
 Use protected terms only where they add precision. Do not repeat them as decoration.
+
+Do not use load-bearing as a default abstract metaphor. Use capacity-forming functions for the formal Alignment Theory concept, agency-forming functions in HAPI-specific contexts, and plain direct language elsewhere.
 
 ## Site direction
 

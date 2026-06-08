@@ -100,6 +100,10 @@ function classifyEntry(entry) {
 
 function termRegex(term) {
   const cleaned = term.trim();
+  if (/^load[-\s\u2010\u2011\u2012\u2013\u2014]bearing$/i.test(cleaned)) {
+    return /\bload[-\s\u2010\u2011\u2012\u2013\u2014]bearing\b/gi;
+  }
+
   if (cleaned.includes("___")) {
     const parts = cleaned.split("___").map((part) => escapeRegex(part.trim()));
     const pattern = parts

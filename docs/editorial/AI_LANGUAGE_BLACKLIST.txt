@@ -161,3 +161,5 @@ STRUCTURE AND FORMATTING FLAGS
 - Overbalanced hedging: Do not reflexively present both sides when the evidence supports a direct claim.
 - Repeated summary endings: Do not restate the same idea at the end of every section.
 - Generic inspirational close: End with a concrete implication, decision, test, or next action.
+load-bearing
+load bearing
