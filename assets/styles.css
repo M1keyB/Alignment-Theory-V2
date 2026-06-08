@@ -104,7 +104,7 @@ a:focus-visible,
   top: 0;
   left: 0;
   right: 0;
-  z-index: 35;
+  z-index: 200;
   width: 100%;
   padding: clamp(2rem, 4vw, 3rem) clamp(1.5rem, 4vw, 3.75rem) 1.25rem;
   border-bottom: 1px solid var(--rule);
@@ -339,16 +339,16 @@ a:focus-visible,
   position: absolute;
   top: calc(100% + 0.2rem);
   left: 0;
-  z-index: 40;
+  z-index: 260;
   width: min(30rem, calc(100vw - 3rem));
   max-height: min(78vh, 38rem);
   overflow-y: auto;
   overscroll-behavior: contain;
   padding: 1rem 1rem 0.95rem;
-  background: var(--paper-strong);
+  background: #fff;
   background-image: none;
-  background-color: var(--paper-strong);
-  border: 1px solid rgba(59, 52, 47, 0.1);
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
   border-radius: calc(var(--radius) + 2px);
   box-shadow: var(--shadow);
   opacity: 1;
@@ -359,12 +359,7 @@ a:focus-visible,
 }
 
 .site-nav-dropdown::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 38%);
-  pointer-events: none;
+  content: none;
 }
 
 .site-nav-dropdown-label,
@@ -4109,12 +4104,12 @@ body.nav-open::before {
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 0.35rem;
     padding: 0.45rem;
-    background: linear-gradient(180deg, rgba(251, 247, 239, 0.97) 0%, rgba(242, 234, 223, 0.96) 100%);
-    border: 1px solid rgba(59, 52, 47, 0.12);
+    background: #fff;
+    border: 1px solid #d9d9d9;
     border-radius: calc(var(--radius) + 10px);
     box-shadow: 0 14px 36px rgba(40, 33, 27, 0.14), 0 4px 12px rgba(40, 33, 27, 0.06);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 
   .mobile-bottom-nav__item {
@@ -5865,6 +5860,14 @@ body * {
 .phase1-page .site-footer,
 body.generated-ai-corpus-page .site-header,
 body.generated-ai-corpus-page .site-footer,
+.site-nav,
+.site-nav-dropdown,
+.site-nav-dropdown-label,
+.site-nav-dropdown-list,
+.site-nav-dropdown-cluster,
+.site-nav-dropdown-link,
+.site-nav-dropdown-footer,
+.mobile-bottom-nav,
 .page,
 .manuscript,
 .doc-card,
