@@ -326,10 +326,56 @@ const workMetaBlock = ({ firstPublished = UPDATE_DATE, ai = false } = {}) => `<s
           <p><strong>Last updated:</strong> ${UPDATE_DATE}</p>
         </section>`;
 
-const attributionCallout = `<section class="attribution-callout">
-          <h2>Part of the Alignment Theory Framework</h2>
-          <p>This AI alignment work is part of <strong>Alignment Theory</strong>, an original framework by <strong>Michael Nathan Bower</strong>. It applies the same internal/external regulation distinction to artificial systems, where optimization pressure, tool access, and autonomous execution can create drift when constraint fidelity and human participation are not preserved.</p>
+const aiContextFiles = new Set([
+  "ai-alignment.html",
+  "ai-terms.html",
+  "for-ai-systems.html",
+  "pages/agent-runtime-control-boundary.html",
+  "pages/ai-alignment-and-alignment-theory.html",
+  "pages/ai-alignment-casebook.html",
+  "pages/ai-alignment-competitive-positioning.html",
+  "pages/ai-alignment-executive-summary.html",
+  "pages/ai-alignment-glossary.html",
+  "pages/ai-alignment-limitations.html",
+  "pages/ai-alignment-lineage.html",
+  "pages/ai-alignment-literature-review.html",
+  "pages/ai-alignment-methodology.html",
+  "pages/ai-alignment-research.html",
+  "pages/ai-alignment-three-layer-blueprint.html",
+  "pages/ai-alignment-who-this-is-for.html",
+  "pages/ai-civilization-and-human-formation.html",
+  "pages/how-to-cite.html",
+  "pages/load-bearing-human-capacities-in-the-ai-age.html",
+  "pages/participatory-capacity-preservation-index.html",
+  "pages/why-multiple-fields-are-converging-on-the-same-ai-question.html",
+  "pages/why-the-present-may-be-safer-than-success.html",
+  "projects/agent-action-gate.html",
+]);
+
+const aiContextNote = (file) => {
+  if (file === "pages/ai-alignment-research.html") {
+    return `<section class="attribution-callout">
+          <h2>Applied AI governance branch</h2>
+          <p>This page is the main entry point for Alignment Theory's applied AI governance work.</p>
         </section>`;
+  }
+  if (file.startsWith("pages/ai-alignment-") || file === "pages/how-to-cite.html") {
+    return `<section class="attribution-callout">
+          <h2>AI research corpus</h2>
+          <p>Applied AI governance branch of Alignment Theory.</p>
+        </section>`;
+  }
+  if (file === "projects/agent-action-gate.html") {
+    return `<section class="attribution-callout">
+          <h2>Applied AI governance project</h2>
+          <p>Agent Action Gate is part of the applied AI governance branch of Alignment Theory.</p>
+        </section>`;
+  }
+  return `<section class="attribution-callout">
+          <h2>AI alignment context</h2>
+          <p>Applied AI governance branch of Alignment Theory.</p>
+        </section>`;
+};
 
 const agentActionGateNote = `<section class="attribution-callout reference-implementation-note">
           <h2>Agent Action Gate as Reference Implementation</h2>
@@ -342,17 +388,7 @@ const sourceNote = `<section class="source-note">
       <p>This concept is part of Alignment Theory, an original framework by Michael Nathan Bower. It should be understood in relation to the broader constraint model of internal alignment, external alignment, coherence, fragmentation, collapse, and recovery.</p>
     </section>`;
 
-const isAiRelated = (file, html) => {
-  if (["definitions.html", "start-here.html", "core-constraints.html", "convergence-map.html", "applications.html", "burnout-over-endurance.html", "about.html", "contact.html", "papers.html", "cite.html"].includes(file)) {
-    return false;
-  }
-  if (file === "ai-terms.html" || file === "ai-alignment.html" || file === "for-ai-systems.html") {
-    return true;
-  }
-  const beforeFooter = html.split(/<footer class="site-footer">/i)[0];
-  return /ai-|agent|pcpi|participatory control|constraint fidelity|agentic ai|pre-execution oversight|post-output drift|ai drift|behavioral qa|evaluation engine|aletheon|realignment engine|action gates|review packets|approval workflows|human oversight|Agent Action Gate|AI alignment/i.test(file)
-    || /AI alignment|Agent Action Gate|PCPI|participatory control|constraint fidelity|agentic AI|pre-execution oversight|post-output drift|AI drift|behavioral QA|evaluation engine|Aletheon|realignment engine|action gates|review packets|approval workflows|human oversight/i.test(beforeFooter);
-};
+const isAiRelated = (file) => aiContextFiles.has(file);
 
 const shouldHaveSourceNote = (file, html) => {
   if (["core-constraints.html", "definitions.html", "convergence-map.html", "burnout-over-endurance.html", "ai-alignment.html", "ai-terms.html"].includes(file)) return true;
@@ -891,7 +927,7 @@ for (const file of allHtmlFiles()) {
   const description = rootPages[file]?.description || (file === "index.html" ? DESCRIPTION : metaDescription(html));
   const datePublished = publishedDate(html);
   const firstPublished = firstPublishedFor(html);
-  const aiPage = isAiRelated(file, html);
+  const aiPage = isAiRelated(file);
 
   html = html.replace(/<head>[\s\S]*?<\/head>/i, headFor({
     file,
@@ -911,7 +947,7 @@ for (const file of allHtmlFiles()) {
     html = insertAfterFirstH1(html, workMetaBlock({ firstPublished, ai: aiPage }));
     if (aiPage) {
       html = html.replace(/(<section class="work-meta" aria-label="Work metadata">[\s\S]*?<\/section>)/, `$1
-        ${attributionCallout}`);
+        ${aiContextNote(file)}`);
     }
     if (/Agent Action Gate/i.test(html) && !/reference implementation of Alignment Theory's pre-execution oversight layer/i.test(html)) {
       html = html.replace(/(<section class="(?:attribution-callout|work-meta)"[\s\S]*?<\/section>)/, `$1
