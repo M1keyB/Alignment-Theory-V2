@@ -1,13 +1,13 @@
 # Current Framework Map Plan
 
-Status: planning only. Do not create `/pages/current-framework-map.html` during the Complete Map repair pass.
+Status: implemented on `/pages/map.html` during the Current Framework Map repair pass. No `/pages/current-framework-map.html` route was created.
 
 ## Proposed Route
 
-- Future page: `/pages/current-framework-map.html`
-- Existing preserved route: `/pages/map.html`
+- Current page: `/pages/map.html`
+- No separate `/pages/current-framework-map.html` route.
 
-The future page should present the current structure of Alignment Theory. The existing map page should remain an earlier framework artifact and should link back into the current reading path.
+The map route now presents the current structure of Alignment Theory. The earlier diagram remains linked from a development-history section.
 
 ## Required Map Contents
 
@@ -42,8 +42,16 @@ The future page should present the current structure of Alignment Theory. The ex
 
 ## Open Author Decisions
 
-- Whether HAPI and AGS should be presented as current public terms, project names, or external-link labels.
-- Whether the map should be mostly textual, visual, or both.
-- Whether PCPI belongs in the research layer only or should also appear in the governance layer.
-- Whether theological source-alignment language belongs in the first-view map or in a separate provenance layer.
-- Whether `/pages/map.html` should later include a stronger archive label once the current map exists.
+- Whether HAPI and AGS should later link to external project sites when those sites are ready.
+- Whether PCPI should remain a research-layer reference only or receive a separate current-map subpage.
+- Whether theological source-alignment language should remain in archive provenance only or receive a current theory note.
+- Whether older map-related routes, especially `/pages/framework.html`, should be rebuilt under the shared publication shell.
+
+## Implemented Scope
+
+- `/pages/map.html` rebuilt as `Current Framework Map`.
+- New current map asset added at `assets/images/alignment-theory-current-framework-map.png`.
+- Old map asset preserved at `assets/images/alignment-theory-complete-map.png`.
+- Current map page added to the shared-shell target list.
+- Scoped CSS added for the map page, figure, explanatory sections, action path, development history, and citation.
+- Current public reading-path labels updated where they pointed readers to the older map as the primary map.
