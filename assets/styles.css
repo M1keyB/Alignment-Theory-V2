@@ -1,5 +1,11 @@
-﻿:root {
+﻿@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap");
+
+:root {
   color-scheme: light;
+  --font-body: "Open Sans", Arial, sans-serif;
+  --font-heading: "Open Sans", Arial, sans-serif;
+  --font-ui: "Open Sans", Arial, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   --bg: #f2ede3;
   --paper: #f7f2e8;
   --paper-strong: #fbf7ef;
@@ -47,7 +53,7 @@
 
 body {
   margin: 0;
-  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-family: var(--font-body);
   font-size: 18px;
   line-height: 1.74;
   letter-spacing: 0.005em;
@@ -61,6 +67,15 @@ body {
   min-height: 100dvh;
   scroll-behavior: smooth;
   padding-top: var(--header-offset);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
 }
 
 a {
@@ -135,7 +150,7 @@ a:focus-visible,
   border: 1px solid var(--rule);
   background: transparent;
   color: var(--ink);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.65rem;
@@ -269,7 +284,7 @@ a:focus-visible,
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem 1.35rem;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -645,7 +660,7 @@ body.nav-open::before {
 }
 
 .architecture-line {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.86rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -829,7 +844,7 @@ body.nav-open::before {
   display: block;
   padding: 0.28rem 0;
   color: var(--muted);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.72rem;
   letter-spacing: 0.06em;
   line-height: 1.45;
@@ -861,7 +876,7 @@ body.nav-open::before {
 .research-card-kicker {
   margin: 0;
   color: var(--muted);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.64rem;
   letter-spacing: 0.15em;
   line-height: 1.35;
@@ -972,7 +987,7 @@ body.nav-open::before {
   border: 1px solid rgba(59, 52, 47, 0.12);
   border-radius: 999px;
   color: var(--muted);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.72rem;
   letter-spacing: 0.1em;
 }
@@ -995,7 +1010,7 @@ body.nav-open::before {
   border-radius: var(--radius-tight);
   background: rgba(255, 255, 255, 0.16);
   color: var(--ink-strong);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.76rem;
   letter-spacing: 0.11em;
   text-align: center;
@@ -1056,7 +1071,7 @@ body.nav-open::before {
 .research-metadata-row dt {
   margin: 0 0 0.2rem;
   color: var(--muted);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.62rem;
   letter-spacing: 0.14em;
   line-height: 1.35;
@@ -1110,7 +1125,7 @@ body.nav-open::before {
 
 .research-table thead th {
   color: var(--ink-strong);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.68rem;
   letter-spacing: 0.11em;
   text-transform: uppercase;
@@ -1185,7 +1200,7 @@ body.nav-open::before {
 .framework-hub-label {
   margin: 0;
   color: var(--muted);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.68rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -1231,7 +1246,7 @@ body.nav-open::before {
 .framework-featured-affordance {
   margin: 0;
   color: var(--muted);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.68rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1284,7 +1299,7 @@ body.nav-open::before {
 
 .framework-featured-kicker {
   color: var(--muted);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.68rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1473,7 +1488,7 @@ body.nav-open::before {
 }
 
 .stress-summary-row strong {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1505,7 +1520,7 @@ body.nav-open::before {
   flex-wrap: wrap;
   gap: 0.5rem;
   color: var(--muted);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.74rem;
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -1531,7 +1546,7 @@ body.nav-open::before {
   background: rgba(255, 255, 255, 0.08);
   color: var(--ink);
   text-decoration: none;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.68rem;
@@ -1589,7 +1604,7 @@ body.nav-open::before {
   display: inline-block;
   margin: 0 0 0.55rem;
   color: var(--muted);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1837,7 +1852,7 @@ body.nav-open::before {
   display: inline-block;
   margin: 0 0 0.45rem;
   color: var(--muted);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1919,7 +1934,7 @@ body.nav-open::before {
 .lexicon-meta-block h4 {
   margin: 0 0 0.35rem;
   font-size: 0.78rem;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--muted);
@@ -1968,7 +1983,7 @@ body.nav-open::before {
 .translation-cell h4 {
   margin: 0 0 0.4rem;
   font-size: 0.78rem;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--muted);
@@ -1988,7 +2003,7 @@ body.nav-open::before {
 .translation-shared h4 {
   margin: 0 0 0.35rem;
   font-size: 0.78rem;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--muted);
@@ -2061,7 +2076,7 @@ body.nav-open::before {
 .grammar-entry-grid h3 {
   margin: 0 0 0.4rem;
   font-size: 0.78rem;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--muted);
@@ -2185,7 +2200,7 @@ body.nav-open::before {
 .field {
   display: grid;
   gap: 0.5rem;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -2197,7 +2212,7 @@ body.nav-open::before {
   border-radius: 8px;
   border: 1px solid var(--rule);
   font-size: 1rem;
-  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-family: var(--font-body);
   transition: border-color var(--dur-quick) var(--ease-out),
     box-shadow var(--dur-quick) var(--ease-out);
 }
@@ -2217,7 +2232,7 @@ body.nav-open::before {
   border-radius: 4px;
   border: 1px solid var(--rule);
   background: transparent;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.65rem;
@@ -2293,7 +2308,7 @@ body.nav-open::before {
 .threshold-subtitle {
   margin: -0.25rem 0 0;
   color: var(--muted);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.74rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -2357,7 +2372,7 @@ body.nav-open::before {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.78) 0%, rgba(247, 242, 232, 0.94) 100%);
   box-shadow: 0 10px 20px rgba(40, 33, 27, 0.08);
   color: var(--ink-strong);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -2406,7 +2421,7 @@ body.nav-open::before {
 .threshold-step-kicker {
   margin: 0 0 0.45rem;
   color: var(--muted);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.68rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -2717,7 +2732,7 @@ body.nav-open::before {
   cursor: pointer;
   list-style: none;
   color: var(--muted);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.73rem;
   letter-spacing: 0.14em;
   min-height: 48px;
@@ -2895,7 +2910,7 @@ body.nav-open::before {
   padding: 0.16rem 0.48rem;
   border-radius: 999px;
   border: 1px solid rgba(59, 52, 47, 0.12);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.68rem;
   letter-spacing: 0.13em;
   text-transform: uppercase;
@@ -2931,7 +2946,7 @@ body.nav-open::before {
 .backbone-entry-block h4 {
   margin: 0 0 0.4rem;
   font-size: 0.78rem;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--muted);
@@ -3110,7 +3125,7 @@ body.nav-open::before {
 .precision-threshold-card h4 {
   margin: 0 0 0.4rem;
   font-size: 0.8rem;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--muted);
@@ -3122,7 +3137,7 @@ body.nav-open::before {
   display: inline-block;
   margin: 0 0 0.45rem;
   color: var(--muted);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -3134,7 +3149,7 @@ body.nav-open::before {
   background: rgba(59, 52, 47, 0.05);
   border: 1px solid rgba(59, 52, 47, 0.08);
   border-radius: calc(var(--radius) - 2px);
-  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.6;
   color: var(--ink-strong);
@@ -3345,7 +3360,7 @@ body.nav-open::before {
   width: min(100%, 920px);
   margin: 0 auto;
   color: var(--muted);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.86rem;
   line-height: 1.55;
 }
@@ -3399,7 +3414,7 @@ body.nav-open::before {
   gap: 0.45rem 0.65rem;
   margin-top: 0.2rem;
   color: var(--ink);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.84rem;
   line-height: 1.45;
 }
@@ -3673,7 +3688,7 @@ body.nav-open::before {
 .explorer-theme-note h4 {
   margin: 0 0 0.35rem;
   font-size: 0.78rem;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--muted);
@@ -3754,7 +3769,7 @@ body.nav-open::before {
 .explorer-block h4 {
   margin: 0 0 0.45rem;
   font-size: 0.78rem;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--muted);
@@ -3884,7 +3899,7 @@ body.nav-open::before {
 .regulation-model-card h3 {
   margin: 0 0 0.4rem;
   font-size: 0.78rem;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--muted);
@@ -3907,7 +3922,7 @@ body.nav-open::before {
 .regulation-cross-note h3 {
   margin: 0;
   font-size: 0.78rem;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--muted);
@@ -4308,7 +4323,7 @@ body.nav-open::before {
     background: transparent;
     color: rgba(45, 40, 36, 0.74);
     text-decoration: none;
-    font-family: "Arial", "Helvetica", sans-serif;
+    font-family: var(--font-ui);
     cursor: pointer;
     transition: background-color var(--dur-quick) var(--ease-out),
       color var(--dur-quick) var(--ease-out),
@@ -4392,7 +4407,7 @@ body.nav-open::before {
   .research-toc-mobile summary {
     cursor: pointer;
     color: var(--ink-strong);
-    font-family: "Arial", "Helvetica", sans-serif;
+    font-family: var(--font-ui);
     font-size: 0.72rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -5271,7 +5286,7 @@ body.nav-open::before {
 .page-article .toc-desktop h2 {
   margin: 0 0 0.35rem;
   color: var(--ink-strong);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -5286,7 +5301,7 @@ body.nav-open::before {
 
 .page-article .toc-list a {
   color: var(--muted);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.74rem;
   letter-spacing: 0.06em;
   text-decoration: none;
@@ -5368,7 +5383,7 @@ body.nav-open::before {
 
 .doc-body th {
   color: var(--ink-strong);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.68rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -5427,7 +5442,7 @@ body.nav-open::before {
 }
 
 .path-sequence {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: clamp(1rem, 1.7vw, 1.25rem);
   letter-spacing: 0.04em;
   line-height: 1.8;
@@ -5458,7 +5473,7 @@ body.nav-open::before {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   gap: 0.2rem 1.1rem;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.82rem;
   line-height: 1.45;
   color: var(--muted);
@@ -5489,7 +5504,7 @@ body.nav-open::before {
   border-radius: var(--radius-tight);
   background: rgba(255, 255, 255, 0.12);
   color: var(--muted);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.86rem;
   line-height: 1.55;
 }
@@ -5528,7 +5543,7 @@ body.nav-open::before {
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 0.45rem 1rem;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.68rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -5550,7 +5565,7 @@ body.nav-open::before {
   width: min(100%, 1040px);
   margin: 1.25rem auto 0;
   color: var(--muted);
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
   font-size: 0.68rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -5628,7 +5643,7 @@ body.phase1-page {
 .phase1-kicker,
 .phase1-section-header p,
 .nav-planned {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
 }
 
 .phase1-page .site-nav {
@@ -5969,7 +5984,7 @@ body.generated-ai-corpus-page .text-link:focus {
 
 body.generated-ai-corpus-page .research-toc,
 body.generated-ai-corpus-page .research-tools {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: var(--font-ui);
 }
 
 body.generated-ai-corpus-page .research-toc a,
@@ -6175,5 +6190,90 @@ video,
 canvas {
   filter: grayscale(1);
 }
+/* Open Sans publication typography pass */
+pre,
+code,
+kbd,
+samp,
+.citation-block pre,
+.citation-card pre,
+.research-code-block,
+.doc-body pre,
+.manuscript pre,
+.framework-map-citation pre,
+.formula-block,
+.precision-formula,
+body.generated-ai-corpus-page .research-code-block,
+body.generated-ai-corpus-page pre {
+  font-family: var(--font-mono);
+}
 
+body {
+  font-weight: 400;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.site-logo,
+.site-title h1,
+.framework-map-header h1,
+.phase1-start .manuscript-header h1 {
+  font-weight: 700;
+}
+
+.site-nav,
+.site-nav a,
+.site-nav-dropdown,
+.nav-toggle,
+.button,
+.filter-button,
+.chip,
+.field,
+.meta-label,
+.doc-meta,
+.research-meta,
+.research-panel-label,
+.research-card-kicker,
+.research-metadata-row dt,
+.research-table th,
+.framework-hub-label,
+.framework-featured-affordance,
+.framework-featured-kicker,
+.stress-summary-row strong,
+.formal-label,
+.translation-label,
+.threshold-subtitle,
+.threshold-step-kicker,
+.toc-mobile summary,
+.backbone-distinct-label,
+.precision-variable-symbol,
+.precision-formula-label,
+.precision-state-label,
+.framework-map-caption,
+.framework-map-full-resolution,
+.framework-map-mobile-note,
+.framework-map-path,
+.page-article .toc-desktop h2,
+.page-article .toc-list a,
+.doc-body th,
+.path-sequence,
+.constraint-list,
+.definition-source,
+.source-note,
+.site-footer-copy,
+.phase1-kicker,
+.phase1-section-header p,
+.nav-planned,
+body.generated-ai-corpus-page .research-toc,
+body.generated-ai-corpus-page .research-tools {
+  font-family: var(--font-ui);
+  font-weight: 600;
+}
