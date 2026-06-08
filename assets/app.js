@@ -445,7 +445,7 @@ const initArchiveFooter = () => {
       </nav>
     </div>
     <div class="provenance">
-      <p><strong>Provenance:</strong> The Complete Map and PCPI framework were first published by Michael Bower on AlignmentTheory.org, 2026.</p>
+      <p><strong>Provenance:</strong> The Current Framework Map and PCPI framework were first published by Michael Bower on AlignmentTheory.org, 2026.</p>
       <p><strong>License:</strong> Research content CC BY-NC 4.0. PCPI methodology, MAI dataset, and certification for commercial use require license. <a href="/pages/license.html">Full terms →</a></p>
     </div>
     <p class="site-footer-copy">&copy; ${new Date().getFullYear()} Alignment Theory. All rights reserved.</p>
@@ -698,7 +698,7 @@ const normalizePrimaryNav = (nav) => {
     { href: homeHref, label: "Home", match: () => currentPath === "index.html" || bodyPage === "home" },
     { href: resolveArchiveHref("where-to-start.html"), label: "Where to Start", match: () => currentPath === "where-to-start.html" },
     { href: resolveArchiveHref("framework.html"), label: "Framework", match: () => currentPath === "framework.html" || bodyPage === "framework" },
-    { href: resolveArchiveHref("map.html"), label: "Map", match: () => currentPath === "map.html" || bodyPage === "map" },
+    { href: resolveArchiveHref("map.html"), label: "Current Map", match: () => currentPath === "map.html" || bodyPage === "map" },
     { href: resolveArchiveHref("stress-tests.html"), label: "Stress Tests", match: () => currentPath === "stress-tests.html" },
     { href: resolveArchiveHref("ai-alignment-research.html"), label: "AI Alignment Research", match: () => currentPath.startsWith("ai-alignment-") || currentPath === "agent-action-gate.html" || currentPath === "how-to-cite.html" || bodyPage === "ai-research" || bodyPage === "citation" },
     { href: resolveArchiveHref("papers.html"), label: "Papers", match: () => currentPath === "papers.html" || bodyPage === "papers" },
@@ -1463,7 +1463,7 @@ const SEARCH_DATA = [
   { title: "The Formation Mechanism", url: "the-formation-mechanism.html", section: "Framework", desc: "How structural formation works across domains.", tags: ["formation", "mechanism", "structure", "how"] },
   { title: "How to Use Alignment Theory", url: "how-to-use-alignment-theory.html", section: "Framework", desc: "A practical guide to applying the framework.", tags: ["guide", "apply", "how to", "practical", "use"] },
   { title: "Framework", url: "framework.html", section: "Framework", desc: "The main framework hub page.", tags: ["framework", "hub", "overview", "map"] },
-  { title: "Earlier Alignment Theory Map", url: "map.html", section: "Archive", desc: "Preserved earlier Alignment Theory diagram from source alignment through AI inheritance and realignment.", tags: ["earlier map", "complete map", "creator alignment", "AI inheritance", "realignment", "diagram", "archive"] },
+  { title: "Current Framework Map", url: "map.html", section: "Framework", desc: "Current Alignment Theory diagram connecting capacity-forming functions, participatory capacity, HAPI, and AGS.", tags: ["current map", "framework map", "capacity-forming functions", "participatory capacity", "HAPI", "AGS", "diagram"] },
   // Stress Tests — Core
   { title: "Biological Stress Test", url: "biological-stress-test.html", section: "Stress Tests", desc: "Framework applied to biological systems, evolutionary pressure, and adaptive capacity.", tags: ["biology", "evolution", "adaptive systems", "homeostasis", "organism", "physical", "cells", "embodied"] },
   { title: "Addiction and Recovery Stress Test", url: "addiction-and-recovery-stress-test.html", section: "Stress Tests", desc: "How substitutive dependence and participatory capacity appear in addiction and recovery.", tags: ["addiction", "recovery", "dependence", "substance", "relapse", "sobriety", "drugs", "alcohol"] },

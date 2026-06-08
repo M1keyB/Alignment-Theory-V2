@@ -458,7 +458,7 @@ const shell = (head, content, page = "ai-research") => `${head}
       <a href="../index.html">Home</a>
       <a href="where-to-start.html">Where to Start</a>
       <a href="framework.html">Framework</a>
-      <a href="map.html">Map</a>
+      <a href="map.html">Current Map</a>
       <a href="stress-tests.html">Stress Tests</a>
       <a href="ai-alignment-research.html">AI Alignment Research</a>
       <a href="papers.html">Papers</a>
@@ -482,7 +482,7 @@ ${content}
         <a href="../index.html">Home</a>
         <a href="where-to-start.html">Where to Start</a>
         <a href="framework.html">Framework</a>
-        <a href="map.html">Map</a>
+        <a href="map.html">Current Map</a>
         <a href="stress-tests.html">Stress Tests</a>
         <a href="ai-alignment-research.html">AI Alignment Research</a>
         <a href="papers.html">Papers</a>
@@ -492,7 +492,7 @@ ${content}
       </nav>
     </div>
     <div class="provenance">
-      <p><strong>Provenance:</strong> The Complete Map and PCPI framework were first published by Michael Bower on AlignmentTheory.org, 2026.</p>
+      <p><strong>Provenance:</strong> The Current Framework Map and PCPI framework were first published by Michael Bower on AlignmentTheory.org, 2026.</p>
       <p><strong>License:</strong> Research content CC BY-NC 4.0. PCPI methodology, MAI dataset, and certification for commercial use require license. <a href="/pages/license.html">Full terms →</a></p>
     </div>
     <p class="site-footer-copy">&copy; 2026 Alignment Theory. All rights reserved.</p>
@@ -937,15 +937,15 @@ const renderHub = () => {
       <p>Alignment Theory treats AI alignment as an ongoing control-loop problem: define the objective, enforce constraints, monitor behavior, detect drift, route meaningful deviations to review, and re-anchor the system over time.</p>
       <div class="research-callout research-callout-compact map-callout">
         <div>
-          <strong>For the current theory, begin with Start Here or the Revised Framework Center.</strong>
-          <p class="research-meta"><span class="chip">Michael Bower &middot; April 28, 2026</span></p>
-          <p>The earlier Alignment Theory map remains available as part of the development history.</p>
-          <p><a class="text-link" href="../start-here.html">Start Here</a> &middot; <a class="text-link" href="revised-framework-center.html">Revised Framework Center</a> &middot; <a class="text-link" href="map.html">Earlier Map</a></p>
+          <strong>For the current theory, begin with Start Here, the Revised Framework Center, or the Current Framework Map.</strong>
+          <p class="research-meta"><span class="chip">Current Map</span></p>
+          <p>The map page now presents the current framework and keeps the earlier diagram in its development-history section.</p>
+          <p><a class="text-link" href="../start-here.html">Start Here</a> &middot; <a class="text-link" href="revised-framework-center.html">Revised Framework Center</a> &middot; <a class="text-link" href="map.html">Current Framework Map</a></p>
         </div>
         <a class="map-callout-image-link" href="map.html">
-          <img class="map-callout-image" src="../assets/images/alignment-theory-complete-map.png" width="600" alt="Earlier Alignment Theory diagram tracing source alignment, separation, external constraint, institutional drift, AI inheritance, and realignment." loading="lazy" />
+          <img class="map-callout-image" src="../assets/images/alignment-theory-current-framework-map.png" width="600" alt="Current Alignment Theory framework map connecting capacity-forming functions, support relations, participatory capacity, internal and external alignment, cross-domain research, HAPI, and the Alignment Governance Stack." loading="lazy" />
         </a>
-        <p><a class="text-link" href="map.html">View Earlier Map &rarr;</a></p>
+        <p><a class="text-link" href="map.html">View the Current Framework Map &rarr;</a></p>
       </div>
       <p class="orientation-line">Alignment asks whether an output is acceptable and whether the system remains ordered toward its intended objective over time.</p>
       <div class="research-callout research-callout-compact">This research does not claim to solve all AI alignment. It proposes a structural and operational framework for detecting, classifying, and correcting behavioral drift in deployed AI systems.</div>
