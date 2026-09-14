@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
+<title id="title">Alignment Theory: coherent agency under constraint</title>
+<desc id="desc">Reality and constraints lead through capacity-forming functions, participation, participatory capacity, agency, authority and governance, continuity, and coherent action. Support and substitution operate across participation. HAPI and AGS are applied branches. The ten-node AGS trajectory is grouped by responsibility, with Handoff Integrity across every transfer.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#555"/></marker></defs>
+<rect width="1200" height="1500" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#171717} .title{font-size:30px;font-weight:700}.node{font-size:21px;font-weight:700}.copy{font-size:17px}.meta{font-size:15px;fill:#555} rect.box{fill:white;stroke:#aaa} path.line{stroke:#555;fill:none;stroke-width:1.5;marker-end:url(#arrow)}</style>
+<text x="50" y="55" class="title">Alignment Theory</text>
+<text x="50" y="90" class="node">The preservation of coherent agency under constraint</text>
+<text x="50" y="121" class="meta">Working conceptual synthesis · Michael Nathan Bower · September 14, 2026</text>
+<rect class="box" x="50" y="155" width="670" height="61"/>
+<text x="69" y="180" class="node">Reality and constraints</text>
+<text x="69" y="202" class="copy">The conditions and boundaries in which a system acts.</text>
+<path class="line" d="M385 217V232"/>
+<rect class="box" x="50" y="234" width="670" height="61"/>
+<text x="69" y="259" class="node">Capacity-forming functions</text>
+<text x="69" y="281" class="copy">Activities through which capacity is maintained.</text>
+<path class="line" d="M385 296V311"/>
+<rect class="box" x="50" y="313" width="670" height="61"/>
+<text x="69" y="338" class="node">Participation</text>
+<text x="69" y="360" class="copy">Continued involvement in carrying those functions.</text>
+<path class="line" d="M385 375V390"/>
+<rect class="box" x="50" y="392" width="670" height="61"/>
+<text x="69" y="417" class="node">Participatory capacity</text>
+<text x="69" y="439" class="copy">Retained ability to remain meaningfully involved.</text>
+<path class="line" d="M385 454V469"/>
+<rect class="box" x="50" y="471" width="670" height="61"/>
+<text x="69" y="496" class="node">Agency</text>
+<text x="69" y="518" class="copy">Usable understanding, judgment, refusal, revision, and action.</text>
+<path class="line" d="M385 533V548"/>
+<rect class="box" x="50" y="550" width="670" height="61"/>
+<text x="69" y="575" class="node">Authority and governance</text>
+<text x="69" y="597" class="copy">Legitimate scope to bind action and preserve agency.</text>
+<path class="line" d="M385 612V627"/>
+<rect class="box" x="50" y="629" width="670" height="61"/>
+<text x="69" y="654" class="node">Continuity</text>
+<text x="69" y="676" class="copy">Meaning and authorization survive time and handoffs.</text>
+<path class="line" d="M385 691V706"/>
+<rect class="box" x="50" y="708" width="670" height="61"/>
+<text x="69" y="733" class="node">Coherent action and adaptation</text>
+<text x="69" y="755" class="copy">Action stays accountable as demands and conditions change.</text>
+<rect class="box" x="760" y="234" width="390" height="260"/>
+<text x="780" y="266" class="node">Support/substitution</text>
+<text x="780" y="296" class="copy">Across functions and participation:</text>
+<text x="780" y="326" class="copy">Co-regulation, scaffolding, and</text>
+<text x="780" y="356" class="copy">distributed competence can preserve</text>
+<text x="780" y="386" class="copy">participation. Substitution can preserve</text>
+<text x="780" y="416" class="copy">output while eroding capacity.</text>
+<text x="780" y="446" class="copy">Context determines the relation.</text>
+<path class="line" d="M760 360H725"/>
+<rect class="box" x="50" y="825" width="515" height="165"/><rect class="box" x="595" y="825" width="555" height="165"/>
+<text x="70" y="857" class="node">HAPI</text>
+<text x="70" y="889" class="copy">From agency and governance</text>
+<text x="70" y="921" class="copy">Human and institutional agency; refusal,</text>
+<text x="70" y="953" class="copy">legitimate gates, restoration and maturity.</text>
+<text x="615" y="857" class="node">AGS</text>
+<text x="615" y="889" class="copy">From delegated authority and continuity</text>
+<text x="615" y="921" class="copy">Delegated AI action under human authority;</text>
+<text x="615" y="953" class="copy">the operator trajectory below.</text>
+<path class="line" d="M385 769V798H307V823"/><path class="line" d="M385 798H875V823"/>
+<text x="50" y="1034" class="node">Ten-node trajectory-governance spine</text>
+<text x="50" y="1080" class="meta">Human-authority plane</text>
+<text x="380" y="1080" class="copy">1 Human Agency → 2 Governance Substrate</text>
+<text x="50" y="1128" class="meta">Deliberative plane</text>
+<text x="380" y="1128" class="copy">3 Context Admission → 4 Agent Reasoning → 5 PGDL</text>
+<text x="50" y="1176" class="meta">Enforcement plane</text>
+<text x="380" y="1176" class="copy">6 AAG → 7 Runtime Binding</text>
+<text x="50" y="1224" class="meta">Evidence and maturation plane</text>
+<text x="380" y="1224" class="copy">8 Receipts → 9 Governance Memory</text>
+<text x="50" y="1272" class="meta">Operator surface</text>
+<text x="380" y="1272" class="copy">10 Continuity Console</text>
+<text x="50" y="1340" class="copy">Handoff Integrity crosses all transfers: lineage, context, scope, transformations, expiration, proof.</text>
+<text x="50" y="1372" class="copy">Semantic continuity: meaning survives. Runtime continuity: execution stays authorized.</text>
+<text x="50" y="1414" class="meta">Governance Memory recommends improvements for human review; it does not silently change policy.</text>
+<text x="50" y="1444" class="meta">Ten positions are not ten enforcement modules. Architecture does not establish implementation status.</text>
+<text x="50" y="1475" class="meta">Conceptual relationships, not empirical proof. Read the responsive map at AlignmentTheory.org/pages/map.html.</text>
+</svg>

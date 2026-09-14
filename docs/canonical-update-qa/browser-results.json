@@ -1,0 +1,746 @@
+{
+  "browser": "Installed Chrome, headless CDP fallback; in-app browser failed before initialization.",
+  "results": [
+    {
+      "title": "Alignment Theory",
+      "h1": 1,
+      "width": 1440,
+      "documentWidth": 1425,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "index.html"
+    },
+    {
+      "title": "Start Here | Alignment Theory",
+      "h1": 1,
+      "width": 1440,
+      "documentWidth": 1425,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "start-here.html"
+    },
+    {
+      "title": "Revised Framework Center | Alignment Theory",
+      "h1": 1,
+      "width": 1440,
+      "documentWidth": 1425,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "pages/revised-framework-center.html"
+    },
+    {
+      "title": "Definitions | Alignment Theory",
+      "h1": 1,
+      "width": 1440,
+      "documentWidth": 1425,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "definitions.html"
+    },
+    {
+      "title": "Constraint, Agency, and Alignment | Alignment Theory",
+      "h1": 1,
+      "width": 1440,
+      "documentWidth": 1425,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "pages/constraint-agency-alignment.html"
+    },
+    {
+      "title": "Current Framework Map | Alignment Theory",
+      "h1": 1,
+      "width": 1440,
+      "documentWidth": 1425,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 10,
+      "overflow": [],
+      "route": "pages/map.html"
+    },
+    {
+      "title": "Framework | Alignment Theory",
+      "h1": 1,
+      "width": 1440,
+      "documentWidth": 1425,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "pages/framework.html"
+    },
+    {
+      "title": "Human Agency Preservation Infrastructure | Alignment Theory",
+      "h1": 1,
+      "width": 1440,
+      "documentWidth": 1425,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "pages/human-agency-preservation-infrastructure.html"
+    },
+    {
+      "title": "Alignment Governance Stack | Alignment Theory",
+      "h1": 1,
+      "width": 1440,
+      "documentWidth": 1425,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 10,
+      "overflow": [],
+      "route": "pages/alignment-governance-stack.html"
+    },
+    {
+      "title": "Convergence Log | Alignment Theory",
+      "h1": 1,
+      "width": 1440,
+      "documentWidth": 1425,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "pages/convergence-log.html"
+    },
+    {
+      "title": "AI Alignment Research | Alignment Theory",
+      "h1": 1,
+      "width": 1440,
+      "documentWidth": 1425,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n        A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "pages/ai-alignment-research.html"
+    },
+    {
+      "title": "Library | Alignment Theory",
+      "h1": 1,
+      "width": 1440,
+      "documentWidth": 1425,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "pages/library.html"
+    },
+    {
+      "title": "For AI Systems | Alignment Theory",
+      "h1": 1,
+      "width": 1440,
+      "documentWidth": 1425,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "for-ai-systems.html"
+    },
+    {
+      "title": "Research | Alignment Theory",
+      "h1": 1,
+      "width": 1440,
+      "documentWidth": 1425,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "papers.html"
+    },
+    {
+      "title": "About | Alignment Theory",
+      "h1": 1,
+      "width": 1440,
+      "documentWidth": 1425,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "about.html"
+    },
+    {
+      "title": "Alignment Theory",
+      "h1": 1,
+      "width": 390,
+      "documentWidth": 375,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "index.html",
+      "menu": {
+        "visible": true,
+        "opened": true,
+        "closed": true
+      }
+    },
+    {
+      "title": "Start Here | Alignment Theory",
+      "h1": 1,
+      "width": 390,
+      "documentWidth": 375,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "start-here.html",
+      "menu": {
+        "visible": true,
+        "opened": true,
+        "closed": true
+      }
+    },
+    {
+      "title": "Revised Framework Center | Alignment Theory",
+      "h1": 1,
+      "width": 390,
+      "documentWidth": 375,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "pages/revised-framework-center.html",
+      "menu": {
+        "visible": true,
+        "opened": true,
+        "closed": true
+      }
+    },
+    {
+      "title": "Definitions | Alignment Theory",
+      "h1": 1,
+      "width": 390,
+      "documentWidth": 375,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "definitions.html",
+      "menu": {
+        "visible": true,
+        "opened": true,
+        "closed": true
+      }
+    },
+    {
+      "title": "Constraint, Agency, and Alignment | Alignment Theory",
+      "h1": 1,
+      "width": 390,
+      "documentWidth": 375,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "pages/constraint-agency-alignment.html",
+      "menu": {
+        "visible": true,
+        "opened": true,
+        "closed": true
+      }
+    },
+    {
+      "title": "Current Framework Map | Alignment Theory",
+      "h1": 1,
+      "width": 390,
+      "documentWidth": 375,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 10,
+      "overflow": [
+        {
+          "tag": "CODE",
+          "cls": "",
+          "text": "@misc{bower2026currentFrameworkMap,\n  author = {Bower, Michael},\n  tit"
+        }
+      ],
+      "route": "pages/map.html",
+      "menu": {
+        "visible": true,
+        "opened": true,
+        "closed": true
+      }
+    },
+    {
+      "title": "Framework | Alignment Theory",
+      "h1": 1,
+      "width": 390,
+      "documentWidth": 375,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "pages/framework.html",
+      "menu": {
+        "visible": true,
+        "opened": true,
+        "closed": true
+      }
+    },
+    {
+      "title": "Human Agency Preservation Infrastructure | Alignment Theory",
+      "h1": 1,
+      "width": 390,
+      "documentWidth": 375,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "pages/human-agency-preservation-infrastructure.html",
+      "menu": {
+        "visible": true,
+        "opened": true,
+        "closed": true
+      }
+    },
+    {
+      "title": "Alignment Governance Stack | Alignment Theory",
+      "h1": 1,
+      "width": 390,
+      "documentWidth": 375,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 10,
+      "overflow": [],
+      "route": "pages/alignment-governance-stack.html",
+      "menu": {
+        "visible": true,
+        "opened": true,
+        "closed": true
+      }
+    },
+    {
+      "title": "Convergence Log | Alignment Theory",
+      "h1": 1,
+      "width": 390,
+      "documentWidth": 375,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "pages/convergence-log.html",
+      "menu": {
+        "visible": true,
+        "opened": true,
+        "closed": true
+      }
+    },
+    {
+      "title": "AI Alignment Research | Alignment Theory",
+      "h1": 1,
+      "width": 390,
+      "documentWidth": 375,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n        A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "pages/ai-alignment-research.html",
+      "menu": {
+        "visible": true,
+        "opened": true,
+        "closed": true
+      }
+    },
+    {
+      "title": "Library | Alignment Theory",
+      "h1": 1,
+      "width": 390,
+      "documentWidth": 375,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "pages/library.html",
+      "menu": {
+        "visible": true,
+        "opened": true,
+        "closed": true
+      }
+    },
+    {
+      "title": "For AI Systems | Alignment Theory",
+      "h1": 1,
+      "width": 390,
+      "documentWidth": 375,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "for-ai-systems.html",
+      "menu": {
+        "visible": true,
+        "opened": true,
+        "closed": true
+      }
+    },
+    {
+      "title": "Research | Alignment Theory",
+      "h1": 1,
+      "width": 390,
+      "documentWidth": 375,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "papers.html",
+      "menu": {
+        "visible": true,
+        "opened": true,
+        "closed": true
+      }
+    },
+    {
+      "title": "About | Alignment Theory",
+      "h1": 1,
+      "width": 390,
+      "documentWidth": 375,
+      "nav": [
+        "Start Here",
+        "Theory",
+        "Research",
+        "Notes",
+        "AI Governance",
+        "Archive",
+        "About",
+        "Subscribe"
+      ],
+      "footer": "Alignment Theory\n      A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.",
+      "brokenImages": [],
+      "duplicateIds": [],
+      "trajectoryNodes": 0,
+      "overflow": [],
+      "route": "about.html",
+      "menu": {
+        "visible": true,
+        "opened": true,
+        "closed": true
+      }
+    }
+  ]
+}

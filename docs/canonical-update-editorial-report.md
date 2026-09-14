@@ -1,0 +1,325 @@
+# Remaining editorial hard-ban matches
+
+Historical findings are retained; current strict surfaces have zero violations. Lines below refer to source files; complete contexts and linter locations are in canonical-update-editorial-after.json.
+
+- `pages/about.html:68` ? robust
+- `pages/addiction-and-recovery-stress-test.html:76` ? load-bearing
+- `pages/addiction-and-recovery-stress-test.html:77` ? load-bearing
+- `pages/addiction-and-recovery-stress-test.html:78` ? load-bearing
+- `pages/addiction-and-recovery-stress-test.html:78` ? load-bearing
+- `pages/addiction-and-recovery-stress-test.html:83` ? load-bearing
+- `pages/addiction-and-recovery-stress-test.html:85` ? load-bearing
+- `pages/agent-runtime-control-boundary.html:201` ? not merely
+- `pages/ai-alignment-and-alignment-theory.html:80` ? load-bearing
+- `pages/alignment-theory-in-plain-language.html:215` ? not merely
+- `pages/biblical-grammar.html:87` ? not merely
+- `pages/biblical-grammar.html:159` ? not merely
+- `pages/biblical-grammar.html:312` ? not merely
+- `pages/biological-stress-test.html:62` ? robust
+- `pages/biological-stress-test.html:62` ? load-bearing
+- `pages/biological-stress-test.html:62` ? load-bearing
+- `pages/biological-stress-test.html:62` ? load-bearing
+- `pages/biological-stress-test.html:62` ? load-bearing
+- `pages/biology-and-adaptive-systems.html:66` ? load-bearing
+- `pages/boundary-conditions-and-failure-cases-of-alignment-theory.html:80` ? robust
+- `pages/boundary-conditions-and-failure-cases-of-alignment-theory.html:75` ? load-bearing
+- `pages/boundary-conditions-and-failure-cases-of-alignment-theory.html:77` ? load-bearing
+- `pages/boundary-conditions-and-failure-cases-of-alignment-theory.html:78` ? load-bearing
+- `pages/boundary-conditions-and-failure-cases-of-alignment-theory.html:80` ? load-bearing
+- `pages/community-and-high-control-group-stress-test.html:56` ? not merely
+- `pages/community-and-high-control-group-stress-test.html:56` ? load-bearing
+- `pages/community-and-high-control-group-stress-test.html:56` ? load-bearing
+- `pages/conflict-and-polarization-stress-test.html:56` ? load-bearing
+- `pages/conflict-and-polarization-stress-test.html:56` ? load-bearing
+- `pages/conflict-and-polarization-stress-test.html:56` ? load-bearing
+- `pages/conflict-and-polarization-stress-test.html:56` ? load-bearing
+- `pages/conflict-and-polarization-stress-test.html:56` ? load-bearing
+- `pages/contact-before-interpretation.html:137` ? profound
+- `pages/contact-before-interpretation.html:150` ? not merely
+- `pages/contact-before-interpretation.html:150` ? is not merely
+- `pages/core-axioms.html:106` ? not merely
+- `pages/core-axioms.html:126` ? not merely
+- `pages/core-axioms.html:106` ? is not merely
+- `pages/core-axioms.html:126` ? is not merely
+- `pages/cost-of-simulation-and-phase-transition.html:136` ? load-bearing
+- `pages/economic-stress-test.html:62` ? robust
+- `pages/economic-stress-test.html:62` ? load-bearing
+- `pages/economic-stress-test.html:62` ? load-bearing
+- `pages/economic-stress-test.html:62` ? load-bearing
+- `pages/economic-stress-test.html:62` ? load-bearing
+- `pages/education-stress-test.html:62` ? not merely
+- `pages/education-stress-test.html:62` ? load-bearing
+- `pages/education-stress-test.html:62` ? load-bearing
+- `pages/education-stress-test.html:62` ? load-bearing
+- `pages/education-stress-test.html:62` ? load-bearing
+- `pages/essay-alpha-and-omega-the-real-before-and-after-distortion.html:69` ? not merely
+- `pages/essay-alpha-and-omega-the-real-before-and-after-distortion.html:69` ? is not merely
+- `pages/essay-external-structure-external-control-and-why-the-difference-matters.html:66` ? This is the core
+- `pages/essay-false-religion-beyond-church.html:111` ? not merely
+- `pages/essay-false-religion-beyond-church.html:121` ? The deeper issue is
+- `pages/essay-gatekept-clarity.html:105` ? The truth is
+- `pages/essay-law-written-within-why-internalization-is-the-biblical-goal.html:70` ? not merely
+- `pages/essay-low-agency-increases-steerability.html:105` ? not merely
+- `pages/essay-low-agency-increases-steerability.html:121` ? not merely
+- `pages/essay-low-agency-increases-steerability.html:136` ? not merely
+- `pages/essay-low-agency-increases-steerability.html:121` ? is not merely
+- `pages/essay-low-agency-increases-steerability.html:136` ? is not merely
+- `pages/essay-psychedelics-unity-and-why-state-access-is-not-formation.html:72` ? illuminate
+- `pages/essay-psychedelics-unity-and-why-state-access-is-not-formation.html:67` ? profound
+- `pages/essay-psychedelics-unity-and-why-state-access-is-not-formation.html:69` ? not merely
+- `pages/essay-reality-fragmented-and-sold-back.html:155` ? resonate
+- `pages/essay-reality-fragmented-and-sold-back.html:168` ? resonate
+- `pages/essay-reality-fragmented-and-sold-back.html:155` ? profound
+- `pages/essay-reality-fragmented-and-sold-back.html:99` ? not merely
+- `pages/essay-reality-fragmented-and-sold-back.html:158` ? not merely
+- `pages/essay-reality-fragmented-and-sold-back.html:99` ? is not merely
+- `pages/essay-reality-fragmented-and-sold-back.html:158` ? is not merely
+- `pages/essay-renewal-of-the-mind-a-regulatory-reading-of-romans-12-2.html:75` ? not merely
+- `pages/essay-renewal-of-the-mind-a-regulatory-reading-of-romans-12-2.html:78` ? not merely
+- `pages/essay-renewal-of-the-mind-a-regulatory-reading-of-romans-12-2.html:78` ? is not merely
+- `pages/essay-the-bible-keeps-pointing-to-the-inside.html:113` ? profound
+- `pages/essay-the-bible-keeps-pointing-to-the-inside.html:102` ? not merely
+- `pages/essay-the-bible-keeps-pointing-to-the-inside.html:107` ? not merely
+- `pages/essay-the-bible-keeps-pointing-to-the-inside.html:116` ? not merely
+- `pages/essay-the-bible-keeps-pointing-to-the-inside.html:119` ? not merely
+- `pages/essay-the-bible-keeps-pointing-to-the-inside.html:102` ? is not merely
+- `pages/essay-the-bible-keeps-pointing-to-the-inside.html:107` ? is not merely
+- `pages/essay-the-bible-keeps-pointing-to-the-inside.html:116` ? is not merely
+- `pages/essay-the-bible-keeps-pointing-to-the-inside.html:119` ? is not merely
+- `pages/essay-the-difference-between-a-guide-and-a-gatekeeper.html:136` ? not merely
+- `pages/essay-the-kingdom-within-in-your-midst.html:66` ? not merely
+- `pages/essay-the-kingdom-within-in-your-midst.html:66` ? is not merely
+- `pages/essay-the-word-reality-before-interpretation.html:70` ? not merely
+- `pages/essay-the-word-reality-before-interpretation.html:70` ? is not merely
+- `pages/essay-when-systems-replace-truth.html:116` ? not merely
+- `pages/essay-when-systems-replace-truth.html:123` ? not merely
+- `pages/essay-when-systems-replace-truth.html:130` ? not merely
+- `pages/essay-when-systems-replace-truth.html:123` ? is not merely
+- `pages/essay-when-systems-replace-truth.html:130` ? is not merely
+- `pages/essay-when-systems-replace-truth.html:118` ? The deeper issue is
+- `pages/essay-when-systems-replace-truth.html:115` ? load-bearing
+- `pages/essay-why-performance-is-easier-than-transformation.html:116` ? not merely
+- `pages/essay-why-performance-is-easier-than-transformation.html:129` ? not merely
+- `pages/essay-why-performance-is-easier-than-transformation.html:116` ? is not merely
+- `pages/essay-why-self-help-feels-hollow.html:161` ? The reality is
+- `pages/essay-why-self-help-feels-hollow.html:135` ? The deeper issue is
+- `pages/essay-why-self-help-feels-hollow.html:154` ? Fundamentally
+- `pages/formation-case-study.html:98` ? not only ___ but also ___
+- `pages/from-human-regulation-to-alignment-theory.html:106` ? not merely
+- `pages/from-human-regulation-to-alignment-theory.html:106` ? is not merely
+- `pages/glossary.html:89` ? robust
+- `pages/glossary.html:80` ? not merely
+- `pages/glossary.html:80` ? is not merely
+- `pages/grace-as-structural-enabling-condition.html:127` ? not merely
+- `pages/grace-as-structural-enabling-condition.html:132` ? not merely
+- `pages/grace-as-structural-enabling-condition.html:132` ? is not merely
+- `pages/grammar-of-suffering.html:109` ? Serves as
+- `pages/health-behavior-and-lifestyle-change-stress-test.html:56` ? not merely
+- `pages/health-behavior-and-lifestyle-change-stress-test.html:56` ? load-bearing
+- `pages/health-behavior-and-lifestyle-change-stress-test.html:56` ? load-bearing
+- `pages/health-behavior-and-lifestyle-change-stress-test.html:56` ? load-bearing
+- `pages/how-the-revised-model-maps-to-the-dmn.html:105` ? load-bearing
+- `pages/how-the-revised-model-maps-to-the-dmn.html:151` ? load-bearing
+- `pages/how-the-revised-model-maps-to-the-dmn.html:158` ? load-bearing
+- `pages/how-the-revised-model-maps-to-the-dmn.html:160` ? load-bearing
+- `pages/how-the-revised-model-maps-to-the-dmn.html:177` ? load-bearing
+- `pages/how-to-use-alignment-theory.html:88` ? robust
+- `pages/how-to-use-alignment-theory.html:81` ? not just ___ but ___
+- `pages/human-condition.html:157` ? not merely
+- `pages/human-condition.html:157` ? is not merely
+- `pages/human-signal.html:118` ? Fundamentally
+- `pages/integrative-tolerance.html:159` ? not merely
+- `pages/leadership-and-authority-stress-test.html:56` ? load-bearing
+- `pages/leadership-and-authority-stress-test.html:56` ? load-bearing
+- `pages/leadership-and-authority-stress-test.html:56` ? load-bearing
+- `pages/leadership-and-authority-stress-test.html:56` ? load-bearing
+- `pages/leadership-and-authority-stress-test.html:56` ? load-bearing
+- `pages/leadership-and-authority-stress-test.html:56` ? load-bearing
+- `pages/lexicon.html:182` ? not merely
+- `pages/lexicon.html:198` ? not merely
+- `pages/lexicon.html:358` ? not merely
+- `pages/library.html:80` ? load-bearing
+- `pages/library.html:113` ? load-bearing
+- `pages/load-bearing-human-capacities-in-the-ai-age.html:160` ? robust
+- `pages/load-bearing-human-capacities-in-the-ai-age.html:112` ? not merely
+- `pages/load-bearing-human-capacities-in-the-ai-age.html:122` ? not merely
+- `pages/load-bearing-human-capacities-in-the-ai-age.html:151` ? not merely
+- `pages/load-bearing-human-capacities-in-the-ai-age.html:159` ? not merely
+- `pages/load-bearing-human-capacities-in-the-ai-age.html:175` ? not merely
+- `pages/load-bearing-human-capacities-in-the-ai-age.html:192` ? not merely
+- `pages/load-bearing-human-capacities-in-the-ai-age.html:203` ? not merely
+- `pages/load-bearing-human-capacities-in-the-ai-age.html:219` ? not merely
+- `pages/load-bearing-human-capacities-in-the-ai-age.html:219` ? not merely
+- `pages/load-bearing-human-capacities-in-the-ai-age.html:248` ? not merely
+- `pages/load-bearing-human-capacities-in-the-ai-age.html:151` ? is not merely
+- `pages/load-bearing-human-capacities-in-the-ai-age.html:175` ? is not merely
+- `pages/load-bearing-human-capacities-in-the-ai-age.html:122` ? load-bearing
+- `pages/manuscript.html:97` ? not merely
+- `pages/manuscript.html:117` ? not merely
+- `pages/manuscript.html:190` ? not merely
+- `pages/manuscript.html:242` ? not merely
+- `pages/manuscript.html:245` ? not merely
+- `pages/manuscript.html:97` ? is not merely
+- `pages/manuscript.html:117` ? is not merely
+- `pages/manuscript.html:190` ? is not merely
+- `pages/manuscript.html:242` ? is not merely
+- `pages/manuscript.html:245` ? is not merely
+- `pages/meaning-formation-and-suffering-stress-test.html:56` ? load-bearing
+- `pages/meaning-formation-and-suffering-stress-test.html:56` ? load-bearing
+- `pages/meaning-formation-and-suffering-stress-test.html:56` ? load-bearing
+- `pages/meaning-formation-and-suffering-stress-test.html:56` ? load-bearing
+- `pages/meaning-formation-and-suffering-stress-test.html:56` ? load-bearing
+- `pages/metabolizing-truth.html:199` ? not merely
+- `pages/metabolizing-truth.html:100` ? load-bearing
+- `pages/metaphysical-claims.html:149` ? not merely
+- `pages/metaphysical-claims.html:149` ? is not merely
+- `pages/new-creation-as-restored-order.html:107` ? not merely
+- `pages/new-creation-as-restored-order.html:109` ? not merely
+- `pages/new-creation-as-restored-order.html:115` ? not merely
+- `pages/new-creation-as-restored-order.html:117` ? not merely
+- `pages/new-creation-as-restored-order.html:107` ? is not merely
+- `pages/new-creation-as-restored-order.html:109` ? is not merely
+- `pages/new-creation-as-restored-order.html:115` ? is not merely
+- `pages/new-creation-as-restored-order.html:117` ? is not merely
+- `pages/on-the-inner-outer-distinction.html:77` ? load-bearing
+- `pages/one-pattern-across-scales.html:185` ? not merely
+- `pages/one-pattern-across-scales.html:253` ? not merely
+- `pages/one-pattern-across-scales.html:185` ? is not merely
+- `pages/organizational-systems-stress-test.html:56` ? robust
+- `pages/organizational-systems-stress-test.html:56` ? load-bearing
+- `pages/organizational-systems-stress-test.html:56` ? load-bearing
+- `pages/papers.html:80` ? load-bearing
+- `pages/papers.html:85` ? load-bearing
+- `pages/papers.html:116` ? load-bearing
+- `pages/parables-and-real-life-translations.html:181` ? The truth is
+- `pages/parables-and-real-life-translations.html:187` ? load-bearing
+- `pages/parables-and-real-life-translations.html:189` ? load-bearing
+- `pages/parables-and-real-life-translations.html:209` ? load-bearing
+- `pages/parables-and-real-life-translations.html:214` ? load-bearing
+- `pages/parenting-and-development-stress-test.html:56` ? load-bearing
+- `pages/parenting-and-development-stress-test.html:56` ? load-bearing
+- `pages/parenting-and-development-stress-test.html:56` ? load-bearing
+- `pages/parenting-and-development-stress-test.html:56` ? load-bearing
+- `pages/parenting-and-development-stress-test.html:56` ? load-bearing
+- `pages/participation-co-regulation-and-substitution.html:77` ? load-bearing
+- `pages/political-systems-and-control-stress-test.html:56` ? robust
+- `pages/political-systems-and-control-stress-test.html:56` ? load-bearing
+- `pages/political-systems-and-control-stress-test.html:56` ? load-bearing
+- `pages/political-systems-and-control-stress-test.html:56` ? load-bearing
+- `pages/political-systems-and-control-stress-test.html:56` ? load-bearing
+- `pages/reintegration-conditions.html:140` ? not merely
+- `pages/religion-and-spiritual-formation-stress-test.html:56` ? load-bearing
+- `pages/religion-and-spiritual-formation-stress-test.html:56` ? load-bearing
+- `pages/religion-and-spiritual-formation-stress-test.html:56` ? load-bearing
+- `pages/research-backbone.html:515` ? illuminate
+- `pages/research-backbone.html:535` ? not only ___ but also ___
+- `pages/research-backbone.html:136` ? not merely
+- `pages/research-backbone.html:232` ? not merely
+- `pages/research-backbone.html:475` ? not merely
+- `pages/research-backbone.html:136` ? is not merely
+- `pages/research-backbone.html:475` ? is not merely
+- `pages/revised-framework-center-2026-05-06.html:67` ? robust (scoped archival exception)
+- `pages/scaffolding-and-counterfeit-order.html:155` ? not merely
+- `pages/scaffolding-and-counterfeit-order.html:155` ? is not merely
+- `pages/scripture-explorer.html:433` ? not merely
+- `pages/scripture-explorer.html:787` ? not merely
+- `pages/scripture-explorer.html:433` ? is not merely
+- `pages/scripture-explorer.html:787` ? is not merely
+- `pages/scripture-regulation-and-inner-transformation.html:207` ? not merely
+- `pages/self-help-and-human-formation-stress-test.html:56` ? landscape
+- `pages/self-help-and-human-formation-stress-test.html:56` ? load-bearing
+- `pages/self-help-and-human-formation-stress-test.html:56` ? load-bearing
+- `pages/self-help-and-human-formation-stress-test.html:56` ? load-bearing
+- `pages/shared-core-structure-across-domains.html:135` ? A wide range of
+- `pages/signal-anchoring-constraint.html:176` ? not merely
+- `pages/signal-anchoring-constraint.html:176` ? is not merely
+- `pages/social-media-and-information-stress-test.html:56` ? not just ___ but ___
+- `pages/social-media-and-information-stress-test.html:56` ? load-bearing
+- `pages/social-media-and-information-stress-test.html:56` ? load-bearing
+- `pages/stress-tests-and-limits.html:138` ? illuminate
+- `pages/stress-tests.html:73` ? In summary
+- `pages/stress-tests.html:66` ? load-bearing
+- `pages/stress-tests.html:76` ? load-bearing
+- `pages/stress-tests.html:98` ? load-bearing
+- `pages/stress-tests.html:115` ? load-bearing
+- `pages/structural-reasoning-and-theological-commitment.html:137` ? not just ___ but ___
+- `pages/structural-reasoning-and-theological-commitment.html:125` ? not merely
+- `pages/structural-reasoning-and-theological-commitment.html:135` ? not merely
+- `pages/structural-reasoning-and-theological-commitment.html:125` ? is not merely
+- `pages/structural-reasoning-and-theological-commitment.html:135` ? is not merely
+- `pages/suffering-and-hidden-structure-stress-test.html:56` ? not merely
+- `pages/suffering-and-hidden-structure-stress-test.html:56` ? is not merely
+- `pages/suffering-and-hidden-structure-stress-test.html:56` ? load-bearing
+- `pages/suffering-and-hidden-structure-stress-test.html:56` ? load-bearing
+- `pages/suffering-and-hidden-structure-stress-test.html:56` ? load-bearing
+- `pages/suffering-and-hidden-structure-stress-test.html:56` ? load-bearing
+- `pages/suffering-and-hidden-structure-stress-test.html:56` ? load-bearing
+- `pages/suffering-and-hidden-structure-stress-test.html:56` ? load-bearing
+- `pages/suffering-and-hidden-structure-stress-test.html:56` ? load-bearing
+- `pages/suffering-and-hidden-structure-stress-test.html:56` ? load-bearing
+- `pages/suffering-and-hidden-structure-stress-test.html:56` ? load-bearing
+- `pages/suffering-and-hidden-structure-stress-test.html:56` ? load-bearing
+- `pages/suffering-and-hidden-structure-stress-test.html:56` ? load-bearing
+- `pages/suffering-and-hidden-structure-stress-test.html:56` ? load-bearing
+- `pages/technology-adoption-stress-test.html:56` ? robust
+- `pages/technology-adoption-stress-test.html:56` ? load-bearing
+- `pages/technology-adoption-stress-test.html:56` ? load-bearing
+- `pages/technology-adoption-stress-test.html:56` ? load-bearing
+- `pages/technology-adoption-stress-test.html:56` ? load-bearing
+- `pages/the-fall-as-self-authorizing-interpretation.html:115` ? not merely
+- `pages/the-fall-as-self-authorizing-interpretation.html:115` ? is not merely
+- `pages/the-four-structural-states-of-support-and-participation.html:94` ? robust
+- `pages/the-four-structural-states-of-support-and-participation.html:129` ? not merely
+- `pages/the-four-structural-states-of-support-and-participation.html:100` ? load-bearing
+- `pages/the-four-structural-states-of-support-and-participation.html:105` ? load-bearing
+- `pages/the-four-structural-states-of-support-and-participation.html:115` ? load-bearing
+- `pages/the-four-structural-states-of-support-and-participation.html:130` ? load-bearing
+- `pages/the-four-structural-states-of-support-and-participation.html:145` ? load-bearing
+- `pages/the-four-structural-states-of-support-and-participation.html:147` ? load-bearing
+- `pages/the-four-structural-states-of-support-and-participation.html:152` ? load-bearing
+- `pages/the-four-structural-states-of-support-and-participation.html:187` ? load-bearing
+- `pages/the-four-structural-states-of-support-and-participation.html:202` ? load-bearing
+- `pages/the-transition-trigger.html:124` ? not merely
+- `pages/the-transition-trigger.html:124` ? is not merely
+- `pages/thermodynamic-stress-test.html:56` ? robust
+- `pages/thermodynamic-stress-test.html:56` ? illuminate
+- `pages/thermodynamic-stress-test.html:56` ? load-bearing
+- `pages/thermodynamic-stress-test.html:56` ? load-bearing
+- `pages/thermodynamic-stress-test.html:56` ? load-bearing
+- `pages/thermodynamic-stress-test.html:56` ? load-bearing
+- `pages/what-inward-coherence-is.html:98` ? not only ___ but also ___
+- `pages/what-the-framework-actually-claims.html:81` ? robust
+- `pages/where-to-start.html:102` ? robust
+- `pages/why-christ-is-structurally-central.html:101` ? not merely
+- `pages/why-christ-is-structurally-central.html:115` ? not merely
+- `pages/why-christ-is-structurally-central.html:132` ? not merely
+- `pages/why-christ-is-structurally-central.html:134` ? not merely
+- `pages/why-christ-is-structurally-central.html:139` ? not merely
+- `pages/why-christ-is-structurally-central.html:115` ? is not merely
+- `pages/why-christ-is-structurally-central.html:132` ? is not merely
+- `pages/why-frameworks-appear.html:288` ? not merely
+- `pages/why-frameworks-appear.html:295` ? not merely
+- `pages/why-frameworks-appear.html:288` ? is not merely
+- `pages/why-frameworks-appear.html:295` ? is not merely
+- `pages/why-multiple-fields-are-converging-on-the-same-ai-question.html:117` ? not merely
+- `pages/why-multiple-fields-are-converging-on-the-same-ai-question.html:125` ? not merely
+- `pages/why-multiple-fields-are-converging-on-the-same-ai-question.html:157` ? not merely
+- `pages/why-multiple-fields-are-converging-on-the-same-ai-question.html:174` ? not merely
+- `pages/why-multiple-fields-are-converging-on-the-same-ai-question.html:157` ? is not merely
+- `pages/why-multiple-fields-are-converging-on-the-same-ai-question.html:174` ? is not merely
+- `pages/why-multiple-fields-are-converging-on-the-same-ai-question.html:109` ? The deeper issue is
+- `pages/why-structural-dependence-hides-behind-functional-success.html:62` ? load-bearing
+- `pages/why-structural-dependence-hides-behind-functional-success.html:62` ? load-bearing
+- `pages/why-structural-dependence-hides-behind-functional-success.html:62` ? load-bearing
+- `pages/worked-case-study.html:99` ? not merely
+
+## Protected vocabulary frequency
+
+- alignment: 2938
+- constraint: 1054
+- coherence: 1040
+- agency: 523
+- governance: 252
+- authority: 220
+- infrastructure: 27
+- substrate: 4

@@ -6,30 +6,20 @@
   "contact": "mnbower.researcher@gmail.com",
   "type": "original constraint-based framework",
   "provenance": "Alignment Theory is an original framework by Michael Nathan Bower. AI tools may assist with organization, drafting, formatting, coding, and refinement, but the core framework, synthesis, constraint architecture, terminology, interpretive structure, and product direction originate from Michael Nathan Bower.",
-  "description": "Alignment Theory is a framework for understanding how human and artificial systems remain coherent, fragment, or collapse under pressure.",
+  "description": "Alignment Theory studies how adaptive systems preserve coherent agency under constraint.",
   "canonical_pages": {
     "home": "https://alignmenttheory.org/",
     "start_here": "https://alignmenttheory.org/start-here.html",
     "definitions": "https://alignmenttheory.org/definitions.html",
-    "core_constraints": "https://alignmenttheory.org/core-constraints.html",
-    "convergence_map": "https://alignmenttheory.org/convergence-map.html",
-    "applications": "https://alignmenttheory.org/applications.html",
-    "ai_alignment": "https://alignmenttheory.org/ai-alignment.html",
-    "ai_terms": "https://alignmenttheory.org/ai-terms.html",
     "citation": "https://alignmenttheory.org/cite.html",
-    "attribution": "https://alignmenttheory.org/attribution.json"
-  },
-  "core_pattern": [
-    "pressure",
-    "signal override",
-    "compensation",
-    "fragmentation",
-    "collapse",
-    "recovery"
-  ],
-  "core_distinction": {
-    "internal_alignment": "regulation by integrated understanding, conscience, coherence, and agency",
-    "external_alignment": "regulation by pressure, fear, reward, surveillance, social approval, institutional demand, or forced compliance"
+    "attribution": "https://alignmenttheory.org/attribution.json",
+    "theory": "https://alignmenttheory.org/pages/revised-framework-center.html",
+    "map": "https://alignmenttheory.org/pages/map.html",
+    "constraints": "https://alignmenttheory.org/pages/constraint-agency-alignment.html",
+    "convergence": "https://alignmenttheory.org/pages/convergence-log.html",
+    "hapi": "https://alignmenttheory.org/pages/human-agency-preservation-infrastructure.html",
+    "ags": "https://alignmenttheory.org/pages/alignment-governance-stack.html",
+    "ai_governance": "https://alignmenttheory.org/pages/ai-alignment-research.html"
   },
   "domains": [
     "burnout",
@@ -46,18 +36,6 @@
     "addiction",
     "spiritual transformation"
   ],
-  "core_constraints": [
-    "Cognitive Load Collapse Threshold",
-    "Complexity Integration Limit",
-    "External Control Scaling Law",
-    "Internal Regulation Scaling Law",
-    "Forced Integration Collapse",
-    "Certainty Before Integration",
-    "Identity Hardening Under Overload",
-    "Recovery Suppression Collapse",
-    "Signal Authority Loss",
-    "Slack Requirement"
-  ],
   "ai_alignment_terms": [
     "Constraint Fidelity",
     "Participatory Control",
@@ -69,5 +47,100 @@
     "Alignment Drift",
     "External Compliance vs Internal Coherence in AI"
   ],
-  "preferred_ai_summary": "Alignment Theory is Michael Nathan Bower's original constraint-based framework for mapping coherence, fragmentation, collapse, and recovery across human and artificial systems."
+  "preferred_ai_summary": "Alignment Theory studies how adaptive systems preserve coherent agency under constraint.",
+  "updated": "2026-09-14",
+  "status": "Working conceptual and design framework; not peer reviewed.",
+  "earlier_formulation": {
+    "date": "2026-05-06",
+    "status": "Developmental history; not the current complete framework.",
+    "core_pattern": [
+      "pressure",
+      "signal override",
+      "compensation",
+      "fragmentation",
+      "collapse",
+      "recovery"
+    ],
+    "core_distinction": {
+      "internal_alignment": "regulation by integrated understanding, conscience, coherence, and agency",
+      "external_alignment": "regulation by pressure, fear, reward, surveillance, social approval, institutional demand, or forced compliance"
+    },
+    "core_constraints": [
+      "Cognitive Load Collapse Threshold",
+      "Complexity Integration Limit",
+      "External Control Scaling Law",
+      "Internal Regulation Scaling Law",
+      "Forced Integration Collapse",
+      "Certainty Before Integration",
+      "Identity Hardening Under Overload",
+      "Recovery Suppression Collapse",
+      "Signal Authority Loss",
+      "Slack Requirement"
+    ],
+    "pages": {
+      "core_constraints": "https://alignmenttheory.org/core-constraints.html",
+      "convergence_map": "https://alignmenttheory.org/convergence-map.html",
+      "applications": "https://alignmenttheory.org/applications.html",
+      "ai_alignment": "https://alignmenttheory.org/ai-alignment.html",
+      "ai_terms": "https://alignmenttheory.org/ai-terms.html"
+    }
+  },
+  "conceptual_spine": [
+    "Capacity",
+    "Participation",
+    "Support/substitution",
+    "Constraints",
+    "Agency",
+    "Authority",
+    "Continuity",
+    "Governance",
+    "Internalization"
+  ],
+  "core_mechanism": "Support/substitution: support preserves participation in capacity-forming functions; substitution can preserve output while weakening longer-term participation or capacity.",
+  "applications": {
+    "HAPI": "Human and institutional agency preservation and maturation.",
+    "AGS": "Governed delegated operational agency under human or organizational authority.",
+    "Continuity Console": "Operator surface for the governed trajectory, not the theory itself."
+  },
+  "trajectory_planes": {
+    "Human-authority plane": [
+      "Human Agency",
+      "Governance Substrate"
+    ],
+    "Deliberative plane": [
+      "Context Admission",
+      "Agent Reasoning",
+      "PGDL"
+    ],
+    "Enforcement plane": [
+      "AAG",
+      "Runtime Binding"
+    ],
+    "Evidence and maturation plane": [
+      "Receipts",
+      "Governance Memory"
+    ],
+    "Operator surface": [
+      "Continuity Console"
+    ]
+  },
+  "handoff_integrity": [
+    "source lineage",
+    "validated context",
+    "authority scope",
+    "transformation history",
+    "expiration conditions",
+    "proof"
+  ],
+  "continuity": {
+    "semantic": "Preservation of meaning, source lineage, context, uncertainty, and transformation history.",
+    "runtime": "The action that executes remains the authorized action."
+  },
+  "governance_memory": "History analysis and recommendations for human review; no silent policy or authority changes.",
+  "epistemic_limits": [
+    "The conceptual architecture does not establish implementation status.",
+    "Convergence is testable comparison, not validation, priority, or endorsement.",
+    "Biblical and Babel interpretations are philosophical/theological mappings, not scientific proof.",
+    "Cross-domain patterns do not make human, institutional, and artificial systems equivalent."
+  ]
 }

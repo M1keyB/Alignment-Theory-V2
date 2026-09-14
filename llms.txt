@@ -1,5 +1,41 @@
 # Alignment Theory
 
+> Alignment Theory studies how adaptive systems preserve coherent agency under constraint.
+
+Author: Michael Nathan Bower. Canonical synthesis updated September 14, 2026. Working conceptual and design framework; not peer reviewed.
+
+## Current framework
+
+Capacity → participation → support/substitution → constraints → agency → authority → continuity → governance → internalization.
+
+Support/substitution remains a central mechanism. Legitimate constraints can preserve agency; arbitrary, deceptive, illegitimate, or dependency-producing constraints can capture it. A true gate requires rightful authority and effective power to change an outcome before consequence.
+
+Alignment Theory is the foundation. HAPI applies it to human and institutional agency. AGS applies it to delegated operational agency under borrowed human or organizational authority. The Continuity Console is an operator surface. Human responsibility remains upstream.
+
+Semantic continuity preserves meaning across handoffs. Runtime continuity preserves authorization through execution. Handoff Integrity carries source lineage, validated context, authority scope, transformation history, expiration conditions, and proof. Governance Memory recommends improvements from receipt history for human review; it does not silently mutate policy or authority.
+
+Independent convergence is testable comparison, not validation or proof of ownership. Biblical and Babel readings are philosophical/theological interpretation, not scientific proof. Consult AGS status caveats before making implementation claims.
+
+## Current resources
+
+- [Framework center](https://alignmenttheory.org/pages/revised-framework-center.html)
+- [Start Here](https://alignmenttheory.org/start-here.html)
+- [Definitions](https://alignmenttheory.org/definitions.html)
+- [Constraint and agency](https://alignmenttheory.org/pages/constraint-agency-alignment.html)
+- [Framework map](https://alignmenttheory.org/pages/map.html)
+- [HAPI](https://alignmenttheory.org/pages/human-agency-preservation-infrastructure.html)
+- [AGS](https://alignmenttheory.org/pages/alignment-governance-stack.html)
+- [Convergence log](https://alignmenttheory.org/pages/convergence-log.html)
+- [Canonical Markdown](https://alignmenttheory.org/alignment-theory-canonical.md)
+- [AI summary JSON](https://alignmenttheory.org/ai-summary.json)
+- [Attribution](https://alignmenttheory.org/attribution.json)
+
+## Historical discovery record: May 6, 2026
+
+The earlier discovery record below is preserved for provenance. Its summaries, priority links, and core formulation are historical; use the current resources above for the evolved framework.
+
+### Alignment Theory
+
 > Alignment Theory is an original constraint-based framework by Michael Nathan Bower for understanding how human and artificial systems remain coherent, fragment, or collapse under pressure.
 
 Canonical site: https://alignmenttheory.org  

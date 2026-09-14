@@ -28,13 +28,21 @@ const currentKeys = [
 ];
 
 const targets = [
+  { file: "definitions.html", root: "", current: "THEORY" },
+  { file: "for-ai-systems.html", root: "", current: "THEORY" },
+  { file: "pages/revised-framework-center.html", root: "../", current: "THEORY" },
+  { file: "pages/framework.html", root: "../", current: "THEORY" },
+  { file: "pages/constraint-agency-alignment.html", root: "../", current: "THEORY" },
+  { file: "pages/convergence-log.html", root: "../", current: "RESEARCH" },
+  { file: "pages/library.html", root: "../", current: "ARCHIVE" },
+
   { file: "index.html", root: "", current: "" },
   { file: "start-here.html", root: "", current: "START" },
   { file: "about.html", root: "", current: "ABOUT" },
   { file: "papers.html", root: "", current: "RESEARCH" },
   { file: "notes/index.html", root: "../", current: "NOTES" },
   { file: "pages/map.html", root: "../", current: "THEORY" },
-  { file: "pages/human-agency-preservation-infrastructure.html", root: "../", current: "AI_GOVERNANCE" },
+  { file: "pages/human-agency-preservation-infrastructure.html", root: "../", current: "THEORY" },
   { file: "pages/alignment-governance-stack.html", root: "../", current: "AI_GOVERNANCE" },
 ];
 

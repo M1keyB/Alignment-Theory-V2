@@ -6191,6 +6191,133 @@ canvas {
   filter: grayscale(1);
 }
 /* Open Sans publication typography pass */
+/* September 2026 conceptual maps: text remains usable without scripts or image zoom. */
+.theory-spine {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.theory-spine li:not(:last-child)::after {
+  content: " →";
+  color: #666;
+}
+
+.canonical-map {
+  margin: 2rem 0;
+}
+
+.canonical-map-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.canonical-map-chain {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.canonical-map-chain li {
+  position: relative;
+  border: 1px solid #bdbdbd;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.canonical-map-chain li:not(:last-child)::after {
+  content: "↓";
+  position: absolute;
+  left: 50%;
+  bottom: -1.7rem;
+  color: #666;
+}
+
+.canonical-map-chain strong,
+.canonical-map-chain span,
+.trajectory-plane li span {
+  display: block;
+}
+
+.canonical-map-chain span,
+.trajectory-plane li span {
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+.canonical-map-support {
+  margin-top: 7rem;
+  padding: 0 0 0 1rem;
+  border-left: 2px solid #888;
+}
+
+.canonical-map-branches {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  border-top: 1px solid #aaa;
+  padding-top: 1.5rem;
+}
+
+.canonical-map figcaption {
+  margin-top: 1.5rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.trajectory-planes {
+  display: grid;
+  gap: 1.1rem;
+  margin: 1.5rem 0;
+}
+
+.trajectory-plane {
+  border-left: 2px solid #aaa;
+  padding: 0.4rem 1rem;
+}
+
+.trajectory-plane h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.trajectory-plane ol,
+.maturity-model {
+  padding-left: 1.5rem;
+}
+
+.trajectory-plane li,
+.maturity-model li {
+  margin: 0.75rem 0;
+  padding-left: 0.35rem;
+}
+
+.phase1-page .definition-list dt {
+  scroll-margin-top: 2rem;
+}
+
+.phase1-page details summary {
+  cursor: pointer;
+  padding: 0.75rem 0;
+}
+
+@media (max-width: 700px) {
+  .canonical-map-body,
+  .canonical-map-branches {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .canonical-map-support {
+    margin: 0 0 1.5rem;
+  }
+}
+
 pre,
 code,
 kbd,
@@ -6276,4 +6403,24 @@ body.generated-ai-corpus-page .research-toc,
 body.generated-ai-corpus-page .research-tools {
   font-family: var(--font-ui);
   font-weight: 600;
+}
+@media (max-width: 960px) {
+  :is(.phase1-page, .generated-ai-corpus-page) .site-title { padding-right: 0; }
+  :is(.phase1-page, .generated-ai-corpus-page) .nav-toggle {
+    display: inline-flex;
+    position: relative;
+    z-index: 35;
+    margin-top: .75rem;
+    background: var(--paper, #fff);
+  }
+  :is(.phase1-page, .generated-ai-corpus-page) .search-trigger {
+    top: auto;
+    bottom: 1rem;
+    right: 1rem;
+    min-height: 44px;
+  }
+  :is(.phase1-page, .generated-ai-corpus-page) .site-nav {
+    top: 8.5rem;
+    bottom: 1rem;
+  }
 }

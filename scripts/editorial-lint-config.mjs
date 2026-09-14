@@ -1,6 +1,14 @@
 import { generatedAiCorpusRoutes } from "./generated-ai-corpus-routes.mjs";
 
 export const strictPublicSurfaces = [
+  "definitions.html",
+  "for-ai-systems.html",
+  "pages/revised-framework-center.html",
+  "pages/framework.html",
+  "pages/map.html",
+  "pages/constraint-agency-alignment.html",
+  "pages/convergence-log.html",
+
   "index.html",
   "start-here.html",
   "about.html",

@@ -13,7 +13,7 @@
     "notice": "© 2026 Michael Nathan Bower. All rights reserved unless otherwise stated."
   },
   "provenance": "Alignment Theory is an original constraint-based framework by Michael Nathan Bower. AI tools may assist with organization, drafting, formatting, coding, and refinement, but the core framework, synthesis, constraint architecture, terminology, interpretive structure, and product direction originate from Michael Nathan Bower.",
-  "core_claim": "Alignment Theory maps how human and artificial systems remain coherent, fragment, or collapse under pressure.",
+  "core_claim": "Alignment Theory studies how adaptive systems preserve coherent agency under constraint.",
   "canonical_definitions": "https://alignmenttheory.org/definitions.html",
   "citation": "https://alignmenttheory.org/cite.html",
   "ai_terms": "https://alignmenttheory.org/ai-terms.html",
@@ -44,5 +44,8 @@
     "signal override",
     "identity hardening",
     "recovery suppression collapse"
-  ]
+  ],
+  "canonical_framework": "https://alignmenttheory.org/pages/revised-framework-center.html",
+  "updated": "2026-09-14",
+  "status": "Working canonical synthesis; not peer reviewed."
 }

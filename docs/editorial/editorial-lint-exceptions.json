@@ -1,4 +1,12 @@
 {
   "version": 1,
-  "exceptions": []
+  "exceptions": [
+    {
+      "file": "pages/revised-framework-center-2026-05-06.html",
+      "matchedEntry": "robust",
+      "anchor": "how adaptive systems remain robust or become fragile depending on how their capacity-forming functions are carried",
+      "reason": "Verbatim May 6 framework-center prose preserved at a dated archive route as required by the September canonical handoff. The current center uses revised wording; this exception applies only to this historical sentence.",
+      "status": "active"
+    }
+  ]
 }

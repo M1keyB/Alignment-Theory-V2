@@ -8,6 +8,7 @@ README
 
 const qs = (selector, scope = document) => scope.querySelector(selector);
 const qsa = (selector, scope = document) => Array.from(scope.querySelectorAll(selector));
+const usesCurrentShell = () => document.body.matches(".phase1-page, .generated-ai-corpus-page");
 
 const escapeHtml = (value) => value
   .replace(/&/g, "&amp;")
@@ -420,6 +421,7 @@ const initArchiveVisualSystem = () => {
 };
 
 const initArchiveFooter = () => {
+  if (usesCurrentShell()) return;
   const footer = qs(".site-footer");
   if (!footer) return;
 
@@ -469,6 +471,7 @@ const buildNavIcon = (name) => {
 };
 
 const initMobileBottomNav = () => {
+  if (usesCurrentShell()) return;
   if (qs(".mobile-bottom-nav")) return;
 
   const currentPath = getCurrentPath();
@@ -845,9 +848,9 @@ const initNav = () => {
   const toggles = qsa(".nav-toggle, .bottom-nav-toggle");
   if (!nav || !toggles.length) return;
 
-  normalizePrimaryNav(nav);
+  if (!usesCurrentShell()) normalizePrimaryNav(nav);
 
-  if (!nav.dataset.enhanced) {
+  if (!usesCurrentShell() && !nav.dataset.enhanced) {
     const currentPath = window.location.pathname.split("/").pop() || "index.html";
     const pageRoot = getPageRoot();
     const frameworkLink = nav.querySelector('a[href$="framework.html"]');
@@ -1450,12 +1453,16 @@ const initStickyHeader = () => {
 };
 
 const SEARCH_DATA = [
+  { title: "Constraint, Agency, and Alignment", url: "constraint-agency-alignment.html", section: "Framework", desc: "Agency-preserving constraints, legitimate authority, true and false gates, and maturation.", tags: ["constraints", "agency", "authority", "true gate", "false gate", "internalization"] },
+  { title: "Convergence Log", url: "convergence-log.html", section: "Research", desc: "Dated external comparisons with evidence limits, chronology, and influence uncertainty.", tags: ["convergence", "Hawks", "Babel", "evidence"] },
+  { title: "Human Agency Preservation Infrastructure", url: "human-agency-preservation-infrastructure.html", section: "Human application", desc: "HAPI applies Alignment Theory to human and institutional agency, constraints, and maturation.", tags: ["HAPI", "agency", "maturity", "refusal"] },
+  { title: "Alignment Governance Stack", url: "alignment-governance-stack.html", section: "AI Governance", desc: "AGS: delegated action, the ten-node trajectory, Handoff Integrity, continuity, and Governance Memory.", tags: ["AGS", "PGDL", "AAG", "runtime", "continuity", "memory"] },
   // Framework / Core
-  { title: "Where to Start", url: "where-to-start.html", section: "Framework", desc: "Entry point for understanding Alignment Theory and its structure.", tags: ["intro", "overview", "start", "guide", "begin"] },
-  { title: "Revised Framework Center", url: "revised-framework-center.html", section: "Framework", desc: "The updated core of Alignment Theory: capacity-forming functions, participatory capacity, and four modes of support.", tags: ["capacity-forming functions", "participatory capacity", "four modes", "co-regulation", "scaffolding", "substitution", "distributed competence", "center"] },
-  { title: "What the Framework Actually Claims", url: "what-the-framework-actually-claims.html", section: "Framework", desc: "Precise statement of Alignment Theory's claims and scope.", tags: ["claims", "scope", "precision", "definition"] },
+  { title: "Where to Start", url: "where-to-start.html", section: "Framework", desc: "Earlier guide to the participatory-capacity mechanism; begin with the current framework center.", tags: ["intro", "overview", "start", "guide", "begin"] },
+  { title: "Revised Framework Center", url: "revised-framework-center.html", section: "Framework", desc: "The September synthesis: coherent agency under constraint, with support/substitution, authority, continuity, and internalization.", tags: ["capacity-forming functions", "participatory capacity", "four modes", "co-regulation", "scaffolding", "substitution", "distributed competence", "center"] },
+  { title: "What the Framework Actually Claims", url: "what-the-framework-actually-claims.html", section: "Framework", desc: "May 2026 claims and limits of the support/substitution mechanism.", tags: ["claims", "scope", "precision", "definition"] },
   { title: "Capacity-Forming Functions, Participatory Capacity, and the Four Modes of Support", url: "load-bearing-function-participatory-capacity-and-the-four-modes-of-support.html", section: "Framework", desc: "Core definitions of capacity-forming functions and the four support modes.", tags: ["capacity-forming functions", "participatory capacity", "four modes", "co-regulation", "scaffolding", "substitution", "distributed competence"] },
-  { title: "Participation, Co-Regulation, and Substitution", url: "participation-co-regulation-and-substitution.html", section: "Framework", desc: "Why participatory capacity replaced internal/external as the framework's center.", tags: ["participation", "co-regulation", "substitution", "internal", "external", "revised"] },
+  { title: "Participation, Co-Regulation, and Substitution", url: "participation-co-regulation-and-substitution.html", section: "Framework", desc: "Earlier development of the participatory-capacity mechanism within the broader theory.", tags: ["participation", "co-regulation", "substitution", "internal", "external", "revised"] },
   { title: "How the Revised Model Maps to the DMN", url: "how-the-revised-model-maps-to-the-dmn.html", section: "Framework", desc: "Mapping revised Alignment Theory to Default Mode Network dynamics.", tags: ["DMN", "default mode network", "neuroscience", "Raichle", "Buckner", "Andrews-Hanna", "Newberg", "brain", "cognition", "neural"] },
   { title: "The Four Structural States of Support and Participation", url: "the-four-structural-states-of-support-and-participation.html", section: "Framework", desc: "The 2×2 structure mapping support presence against participation level.", tags: ["four states", "support", "participation", "structural states", "2x2", "matrix"] },
   { title: "Boundary Conditions and Failure Cases of Alignment Theory", url: "boundary-conditions-and-failure-cases-of-alignment-theory.html", section: "Framework", desc: "Where the framework reaches its limits and how it fails.", tags: ["limits", "failure", "boundary conditions", "edge cases"] },
@@ -1463,7 +1470,7 @@ const SEARCH_DATA = [
   { title: "The Formation Mechanism", url: "the-formation-mechanism.html", section: "Framework", desc: "How structural formation works across domains.", tags: ["formation", "mechanism", "structure", "how"] },
   { title: "How to Use Alignment Theory", url: "how-to-use-alignment-theory.html", section: "Framework", desc: "A practical guide to applying the framework.", tags: ["guide", "apply", "how to", "practical", "use"] },
   { title: "Framework", url: "framework.html", section: "Framework", desc: "The main framework hub page.", tags: ["framework", "hub", "overview", "map"] },
-  { title: "Current Framework Map", url: "map.html", section: "Framework", desc: "Current Alignment Theory diagram connecting capacity-forming functions, participatory capacity, HAPI, and AGS.", tags: ["current map", "framework map", "capacity-forming functions", "participatory capacity", "HAPI", "AGS", "diagram"] },
+  { title: "Current Framework Map", url: "map.html", section: "Framework", desc: "Current diagram connecting constraints, capacity, agency, authority, continuity, HAPI, and the ten-node AGS trajectory.", tags: ["current map", "framework map", "capacity-forming functions", "participatory capacity", "HAPI", "AGS", "diagram"] },
   // Stress Tests — Core
   { title: "Biological Stress Test", url: "biological-stress-test.html", section: "Stress Tests", desc: "Framework applied to biological systems, evolutionary pressure, and adaptive capacity.", tags: ["biology", "evolution", "adaptive systems", "homeostasis", "organism", "physical", "cells", "embodied"] },
   { title: "Addiction and Recovery Stress Test", url: "addiction-and-recovery-stress-test.html", section: "Stress Tests", desc: "How substitutive dependence and participatory capacity appear in addiction and recovery.", tags: ["addiction", "recovery", "dependence", "substance", "relapse", "sobriety", "drugs", "alcohol"] },

@@ -3,7 +3,12 @@ import path from "node:path";
 
 const root = process.cwd();
 const site = "https://alignmenttheory.org";
-const updateDate = "2026-05-06";
+const lastModified = (file) => {
+  const html = fs.readFileSync(path.join(root, file), "utf8");
+  return html.match(/"dateModified"\s*:\s*"(\d{4}-\d{2}-\d{2})"/)?.[1]
+    ?? html.match(/name="dcterms.date" content="(\d{4}-\d{2}-\d{2})"/)?.[1]
+    ?? "2026-05-06";
+};
 
 const allHtmlFiles = () => {
   const out = [];
@@ -39,7 +44,9 @@ const escapeHtml = (value) => String(value)
 
 const sitemapPriority = (file) => {
   if (file === "index.html") return "1.0";
-  if (["start-here.html", "core-constraints.html", "convergence-map.html", "applications.html", "ai-alignment.html"].includes(file)) return "0.95";
+  if (["start-here.html", "pages/revised-framework-center.html", "pages/map.html", "pages/constraint-agency-alignment.html", "definitions.html"].includes(file)) return "0.95";
+  if (["pages/human-agency-preservation-infrastructure.html", "pages/alignment-governance-stack.html", "pages/ai-alignment-research.html", "pages/convergence-log.html"].includes(file)) return "0.9";
+  if (file === "pages/revised-framework-center-2026-05-06.html") return "0.4";
   if (["burnout-over-endurance.html", "papers.html", "about.html", "contact.html"].includes(file)) return "0.9";
   if (file.startsWith("pages/") || file.startsWith("projects/")) return "0.65";
   return "0.5";
@@ -50,7 +57,7 @@ const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${sitemapFiles.map((file) => `  <url>
     <loc>${escapeHtml(urlFor(file))}</loc>
-    <lastmod>${updateDate}</lastmod>
+    <lastmod>${lastModified(file)}</lastmod>
     <priority>${sitemapPriority(file)}</priority>
   </url>`).join("\n")}
 </urlset>

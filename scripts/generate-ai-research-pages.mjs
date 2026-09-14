@@ -444,7 +444,7 @@ const pageHead = ({ title, description, slug, type = "article", schemaType = "Sc
     gtag("config", "G-QVFSZRN0PB");
   </script>
   ${schema}
-  <link rel="stylesheet" href="../assets/styles.css?v=20260427a" />
+  <link rel="stylesheet" href="../assets/styles.css?v=20260914a" />
 </head>`;
 };
 
@@ -497,7 +497,7 @@ ${content}
     </div>
     <p class="site-footer-copy">&copy; 2026 Alignment Theory. All rights reserved.</p>
   </footer>
-  <script src="../assets/app.js?v=20260427a"></script>
+  <script src="../assets/app.js?v=20260914a"></script>
 </body>
 </html>`;
 
@@ -505,7 +505,7 @@ const corpusHeader = `<header class="site-header generated-corpus-header">
     <div class="site-title">
       <a class="site-logo" href="../index.html">Alignment Theory</a>
       <p class="site-subtitle">Independent Research Journal</p>
-      <p class="subtitle">Specialized AI research on behavioral drift, participatory capacity, and applied governance.</p>
+      <p class="subtitle">Research on coherent agency under constraint across human and artificial systems.</p>
     </div>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">Menu</button>
     <nav class="site-nav" id="site-nav" aria-label="Primary">
@@ -524,7 +524,7 @@ const corpusFooter = `<footer class="site-footer generated-corpus-footer">
     <div class="site-footer-inner">
       <div class="site-footer-brand">
         <p class="site-footer-title">Alignment Theory</p>
-        <p>A quiet research journal on support, substitution, participatory capacity, and alignment across human systems and AI governance.</p>
+        <p>A research framework on agency, capacity, constraint, coherence, continuity, and governance across human and artificial systems.</p>
       </div>
       <nav class="site-footer-links" aria-label="Footer">
         <a href="../start-here.html">Start Here</a>
@@ -654,6 +654,9 @@ const modernizeGeneratedShell = (html, file) => {
   }
   next = next.replace(/  <footer class="site-footer[\s\S]*?  <\/footer>/, `  ${corpusFooter}`);
   next = applyGeneratedStatusNotice(next, file);
+  next = next.replace(/\s*<aside class="canonical-context-note route-status-note"[\s\S]*?<\/aside>/, "");
+  const canonicalContext = `<aside class="canonical-context-note route-status-note" aria-label="Canonical framework context"><p><strong>Framework context, September 14, 2026.</strong> This specialized AI research belongs within Alignment Theory's broader account of coherent agency under constraint. Its dated research and implementation limits remain in force. Read the <a href="revised-framework-center.html">current synthesis</a>, <a href="constraint-agency-alignment.html">constraints and agency</a>, or <a href="alignment-governance-stack.html#trajectory-governance">AGS trajectory and continuity</a>.</p></aside>`;
+  next = next.replace(/(<main\b[^>]*>)/, `$1\n${canonicalContext}`);
 
   return next;
 };
@@ -891,8 +894,8 @@ const hubPaperCard = (paper, chip) => `<article class="doc-card research-card">
 
 const appliedGovernanceBranchSection = `<section class="doc-card research-hub-section">
       <div class="doc-card-header"><h2>Applied Governance Branch</h2><span class="chip">Current path</span></div>
-      <p>The applied-governance work now has a clearer public path: Alignment Theory research, earlier AI-alignment work, the original Agent Action Gate prototype, Human Agency Preservation Infrastructure, and the Alignment Governance Stack.</p>
-      <p>HAPI names the agency-preservation problem in institutional and public terms. AGS is the implementation-facing stack for governed delegated actions. The original AAG page remains the public v0.3.0 prototype record.</p>
+      <p>Alignment Theory is the foundation: coherent agency under constraint. Support/substitution remains a central mechanism. HAPI applies the theory to human and institutional agency; AGS applies it to delegated operational agency in AI.</p>
+      <p>HAPI examines usable agency, legitimate constraints, and maturation. AGS connects human authority to proposal, execution, evidence, and memory. The original AAG page remains the public v0.3.0 prototype record.</p><p><a href="alignment-governance-stack.html#trajectory-governance">Ten-node trajectory and Handoff Integrity</a> · <a href="constraint-agency-alignment.html">Constraints and agency</a> · <a href="convergence-log.html">Convergence Log</a></p>
       <div class="research-downloads">
         <a class="button" href="human-agency-preservation-infrastructure.html">HAPI Overview</a>
         <a class="button" href="alignment-governance-stack.html">AGS Overview</a>
@@ -939,11 +942,11 @@ const renderHub = () => {
         <div>
           <strong>For the current theory, begin with Start Here, the Revised Framework Center, or the Current Framework Map.</strong>
           <p class="research-meta"><span class="chip">Current Map</span></p>
-          <p>The map page now presents the current framework and keeps the earlier diagram in its development-history section.</p>
+          <p>The September 2026 map connects coherent agency under constraint to HAPI and AGS. Its responsive version groups the ten-node trajectory by responsibility and preserves earlier diagrams as history.</p>
           <p><a class="text-link" href="../start-here.html">Start Here</a> &middot; <a class="text-link" href="revised-framework-center.html">Revised Framework Center</a> &middot; <a class="text-link" href="map.html">Current Framework Map</a></p>
         </div>
         <a class="map-callout-image-link" href="map.html">
-          <img class="map-callout-image" src="../assets/images/alignment-theory-current-framework-map.png" width="600" alt="Current Alignment Theory framework map connecting capacity-forming functions, support relations, participatory capacity, internal and external alignment, cross-domain research, HAPI, and the Alignment Governance Stack." loading="lazy" />
+          <img class="map-callout-image" src="../assets/images/alignment-theory-canonical-map-2026-09-14.svg" width="600" alt="September 2026 framework map connecting constraints, participation, agency, authority, continuity, HAPI, and the ten-node AGS trajectory." loading="lazy" />
         </a>
         <p><a class="text-link" href="map.html">View the Current Framework Map &rarr;</a></p>
       </div>
