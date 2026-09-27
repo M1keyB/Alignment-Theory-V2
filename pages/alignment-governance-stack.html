@@ -7,7 +7,7 @@
   <meta name="description" content="AGS applies Alignment Theory to delegated operational agency, with a ten-node trajectory, Handoff Integrity, semantic and runtime continuity, and human-reviewed Governance Memory." />
   <meta name="author" content="Michael Nathan Bower" />
   <meta name="dcterms.creator" content="Michael Nathan Bower" />
-  <meta name="dcterms.date" content="2026-09-14" />
+  <meta name="dcterms.date" content="2026-09-27" />
   <meta name="dcterms.rights" content="© 2026 Michael Nathan Bower. All rights reserved unless otherwise stated." />
   <meta name="license" content="© 2026 Michael Nathan Bower. All rights reserved unless otherwise stated." />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -27,7 +27,7 @@
     gtag("js", new Date());
     gtag("config", "G-QVFSZRN0PB");
   </script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Alignment Governance Stack","description":"AGS applies Alignment Theory to delegated operational agency, with a ten-node trajectory, Handoff Integrity, semantic and runtime continuity, and human-reviewed Governance Memory.","author":{"@type":"Person","name":"Michael Nathan Bower","alternateName":"Michael Bower"},"publisher":{"@type":"Organization","name":"Alignment Theory"},"datePublished":"2026-06-06","dateModified":"2026-09-14","mainEntityOfPage":{"@type":"WebPage","@id":"https://alignmenttheory.org/pages/alignment-governance-stack.html"},"url":"https://alignmenttheory.org/pages/alignment-governance-stack.html"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Alignment Governance Stack","description":"AGS applies Alignment Theory to delegated operational agency, with a ten-node trajectory, Handoff Integrity, semantic and runtime continuity, and human-reviewed Governance Memory.","author":{"@type":"Person","name":"Michael Nathan Bower","alternateName":"Michael Bower"},"publisher":{"@type":"Organization","name":"Alignment Theory"},"datePublished":"2026-06-06","dateModified":"2026-09-27","mainEntityOfPage":{"@type":"WebPage","@id":"https://alignmenttheory.org/pages/alignment-governance-stack.html"},"url":"https://alignmenttheory.org/pages/alignment-governance-stack.html"}</script>
   <link rel="stylesheet" href="../assets/styles.css?v=20260914a" />
 </head>
 <body data-page="ai-research" class="phase1-page">
@@ -62,7 +62,7 @@
       </header>
 
       <section class="route-status-note" aria-label="Current status">
-        <p><strong>Current status:</strong> The external AGS repository contains implemented TypeScript packages, examples, documentation, evals, a CLI, and a local-first Continuity Console. Some areas, including runtime governance profile selection, are documented design work rather than completed runtime selection. This page does not claim production readiness or certification status.</p>
+        <p><strong>Current release: AGS v1.14.0, Risk-Scaled Assurance and Independent Validation.</strong> The external AGS repository contains implemented TypeScript packages, examples, documentation, evals, a CLI, and a local-first Continuity Console. Some areas, including runtime governance profile selection, are documented design work rather than completed runtime selection. This page does not claim production readiness or certification status.</p>
       </section>
 
       <section class="doc-body precision-shell" data-static-toc>
@@ -84,50 +84,42 @@
 
 <p>Agentic AI is treated here as <strong>delegated operational agency</strong>, not as a moral person. Human or organizational responsibility remains upstream. Authority should have inspectable scope, conditions, expiration, and a revocation path.</p>
         <section class="precision-section" id="governed-action-path">
-          <h2>The Governed Action Path</h2>
-          <p>The local AGS documentation describes a governed path from human and organizational authority through proposal formation, PGDL, AAG, Runtime Binding, receipts, Governance Memory, and Human Agency Audit.</p>
-          <div class="research-callout research-callout-compact">
-            <p>Human authority to policy boundary to agent proposal to PGDL to AAG to runtime permit to execution evidence to receipt to Governance Memory to human agency audit.</p>
-          </div>
-          <p>The point of the sequence is to keep proposal, authorization, execution, and memory from drifting apart. Each stage has a narrower job.</p>
-        </section>
+<h2>The Governed Action Path</h2>
+<p>The operator-facing spine below follows delegated action from human agency through evidence and operator review. Proposal formation, deliberation, authorization, execution checks, and learning have distinct responsibilities. <strong>Handoff Integrity</strong> applies across the entire path.</p>
+</section>
 
 <section class="precision-section" id="trajectory-governance">
 <h2>Ten-node trajectory-governance spine</h2>
 <p>The September 2026 canonical handoff describes the following operator-facing architecture. These are ten positions in a governed trajectory, grouped by responsibility. They are not ten equivalent enforcement modules or a claim that every position is a separately implemented package.</p><div class="trajectory-planes">
 <section class="trajectory-plane"><h3>Human-authority plane</h3><ol start="1"><li><strong>Human Agency</strong><span>Human understanding, judgment, refusal, responsibility, and direction.</span></li><li><strong>Governance Substrate</strong><span>Policies, context, roles, and explicit authority boundaries.</span></li></ol></section>
-<section class="trajectory-plane"><h3>Deliberative plane</h3><ol start="3"><li><strong>Context Admission</strong><span>The place for deciding what context is admissible for reasoning.</span></li><li><strong>Agent Reasoning</strong><span>Proposal formation under delegated scope.</span></li><li><strong>PGDL</strong><span>Pre-Gate Deliberation Layer: scrutinizes and matures proposals; does not approve or execute.</span></li></ol></section>
-<section class="trajectory-plane"><h3>Enforcement plane</h3><ol start="6"><li><strong>AAG</strong><span>Agent Action Gate: allows, requires approval, revises, or blocks before execution.</span></li><li><strong>Runtime Binding</strong><span>Checks that actual execution matches a valid permit.</span></li></ol></section>
+<section class="trajectory-plane"><h3>Deliberative plane</h3><ol start="3"><li><strong>Context Admission</strong><span>The place for deciding what context is admissible for reasoning.</span></li><li><strong>Agent Reasoning</strong><span>Forms proposals under delegated scope; reasoning is not itself a governance control.</span></li><li><strong>PGDL</strong><span>Pre-Gate Deliberation Layer: scrutinizes and matures proposals; does not approve or execute.</span></li></ol></section>
+<section class="trajectory-plane"><h3>Enforcement plane</h3><ol start="6"><li><strong>AAG</strong><span>Agent Action Gate: the consequential authorization boundary.</span></li><li><strong>Runtime Binding</strong><span>Checks that actual execution matches a valid permit.</span></li></ol></section>
 <section class="trajectory-plane"><h3>Evidence and maturation plane</h3><ol start="8"><li><strong>Receipts</strong><span>Tamper-evident evidence of the governance path; evidence is not approval.</span></li><li><strong>Governance Memory</strong><span>Analyzes receipt history and recommends improvements for human review.</span></li></ol></section>
-<section class="trajectory-plane"><h3>Operator surface</h3><ol start="10"><li><strong>Continuity Console</strong><span>Makes the trajectory and evidence visible to an operator.</span></li></ol></section>
-</div><p>Context Admission, Handoff Integrity, and the continuity tests describe architectural requirements here. The implementation evidence and limitations remain in the component and status sections below. The Continuity Console is the operator surface, not the theory or an additional approval authority.</p>
+<section class="trajectory-plane"><h3>Operator surface</h3><ol start="10"><li><strong>Continuity Console</strong><span>Read-only operator and evidence surface; not an enforcement layer.</span></li></ol></section>
+</div><p>Context Admission evaluates supplied context and provenance for a receiving use. Handoff Integrity and the continuity tests apply across stages. The implementation evidence and limitations remain in the component and status sections below. The Continuity Console is the operator surface, not the theory or an additional approval authority.</p>
 </section><section class="precision-section" id="handoff-integrity">
 <h2>Handoff Integrity and continuity</h2>
 <p><strong>Handoff Integrity</strong> is cross-cutting: source lineage, validated context, authority scope, transformation history, expiration conditions, and proof should survive every transfer between agents or stages.</p><dl class="definition-list"><dt>Semantic continuity</dt><dd>Did meaning remain intact through the handoff? Preserve the source, context, uncertainty, and transformation history so inherited interpretation is not mistaken for original fact.</dd><dt>Runtime continuity</dt><dd>Did the authorized branch remain the executed branch? Preserve authorization from permit through the actual tool, target, environment, scope, and execution.</dd></dl><p>A plausible proposal can inherit distorted context. A valid approval can also be followed by a substituted runtime action. The two tests address different failures.</p>
 </section>
         <section class="precision-section" id="pgdl">
-          <h2>PGDL</h2>
-          <p>PGDL means Pre-Gate Deliberation Layer. In the AGS documentation, PGDL asks what kind of action should be proposed before an action reaches the hard gate.</p>
-          <p>PGDL is a proposal-maturation layer. It can analyze, object, revise, escalate, reject, or forward a proposal. The local v0.1 description says it uses deterministic rule-based logic, does not call LLMs, and does not execute or approve actions.</p>
-        </section>
+<h2>Pre-Gate Deliberation Layer (PGDL)</h2>
+<p>PGDL challenges and matures a proposed trajectory before authorization. It can analyze objections, seek revision, escalate, reject, or forward a proposal. It does not grant permission or execute the action.</p>
+</section>
 
         <section class="precision-section" id="aag">
-          <h2>AAG</h2>
-          <p>AAG means Agent Action Gate. In AGS, AAG remains the hard pre-execution gate. It evaluates whether a proposed action should be allowed before execution.</p>
-          <p>The AGS docs state that AAG core is imported from the existing Agent Action Gate implementation and adapted into `@alignment-governance-stack/aag-core`. It returns `allow`, `require_approval`, `revise_action`, or `block`. It does not execute actions and does not perform PGDL's proposal-maturation role.</p>
-        </section>
+<h2>Agent Action Gate (AAG)</h2>
+<p>AAG is the consequential authorization boundary. It evaluates the proposal against authority, policy, and applicable requirements before execution. A satisfied assurance result cannot authorize an action by itself or repair missing legitimate approval. AAG does not execute actions.</p>
+</section>
 
         <section class="precision-section" id="runtime-binding">
-          <h2>Runtime Binding</h2>
-          <p>Runtime Binding validates that the actual action being executed matches a valid permit. Its job is to prevent drift between the approved proposal and the runtime action.</p>
-          <p>The local Runtime Binding v0.1 documentation says it checks exact permitted execution and denies missing permits, expired permits, hash mismatches, tool substitution, target substitution, environment substitution, scope expansion, external-facing escalation, sensitive-data escalation, and approval-state changes.</p>
-        </section>
+<h2>Runtime Binding</h2>
+<p>Runtime Binding verifies that the authorized action remains the action being executed. It checks the permit and the actual tool, target, environment, scope, and applicable approval conditions. Authorization must remain valid until the final mutation-capable boundary: the last point before an operation can change external state.</p><p>For protected actions in v1.14.0, assurance is re-evaluated at the consequence boundary. Expired evidence or changed conditions cannot be treated as continuing permission. Trusted hosts remain responsible for complete integration at that boundary.</p>
+</section>
 
         <section class="precision-section" id="receipts">
-          <h2>Receipts</h2>
-          <p>Receipts preserve proof after PGDL, AAG, Runtime Binding, and final governance decisions. They are audit evidence, not approval.</p>
-          <p>The current AGS receipt package creates tamper-evident governance receipts for the spine from original proposal through PGDL packet, AAG decision, runtime permit, Runtime Binding result when supplied, final decision, receipt hash, and hash verification. The v0.1 docs describe receipts as in-memory proof artifacts, with persistence and signing listed as future work.</p>
-        </section>
+<h2>Receipts</h2>
+<p>Receipts preserve evidence of proposals, governance decisions, runtime checks, and applicable assurance results. They do not create authority. Tamper-evident records help detect changes to supplied evidence; integrity is not authentication, and authorization is not proof of execution.</p>
+</section>
 
         <section class="precision-section" id="governance-memory">
           <h2>Governance Memory</h2>
@@ -137,7 +129,7 @@
 
 <section class="precision-section" id="internalization">
 <h2>Internalization under authority</h2>
-<p>The theory-level maturation process is internalization. The safe Governance Memory loop is action, receipt, pattern detection, recommendation, human review, approved governance change, and improved future proposal.</p><p>A gate that never remembers cannot mature. A gate that remembers without authority can drift. A true gate remembers under authority.</p><p>Better proposals may justify fewer unnecessary escalations when capacity, authority, and accountability mature. Receipt history alone does not grant permission to weaken controls or change policy.</p>
+<p>The theory-level maturation process is internalization. The safe Governance Memory loop is action, receipt, pattern detection, recommendation, human review, approved governance change, and improved future proposal.</p><p><a href="cultivated-alignment.html">Cultivated Alignment</a> tests whether governed experience produces lasting improvement. The research asks whether governance-consistent behavior persists as external support is progressively reduced. Model/policy internalization has not been demonstrated here.</p><p>Better proposals may justify fewer unnecessary escalations when capacity, authority, and accountability mature. Receipt history alone does not grant permission to weaken controls or change policy.</p>
 </section>
         <section class="precision-section" id="governance-profiles">
           <h2>Governance Profiles</h2>
@@ -158,12 +150,56 @@
         </section>
 
         <section class="precision-section" id="current-status">
-          <h2>Current Status</h2>
-          <p>Local evidence for AGS includes a TypeScript monorepo, implemented packages, examples, docs, evals, a developer CLI, receipt-history analysis, and a Continuity Console with read-only Local Evidence Mode. The changelog's latest observed heading is v1.12.0, while `package.json` still reports version 0.1.0, so public version wording should remain cautious until the author confirms the release reference.</p>
-          <p>AGS is not an AI model, hosted service, legal compliance certification, identity provider, or replacement for human judgment.</p>
-        </section>
+<h2>Current Status</h2>
+<p><strong>AGS v1.14.0: Risk-Scaled Assurance and Independent Validation</strong> has been released. The project includes TypeScript packages, examples, documentation, evaluation tools, a developer CLI, Governance Memory, and the read-only Continuity Console. Project release milestones and individual package versions are distinct.</p><p>AGS is not an AI model, hosted service, legal compliance certification, identity provider, or replacement for human judgment. Supplied evidence and host integration determine what its checks can establish.</p>
+</section>
 
-        <section class="precision-section" id="technical-source-material">
+
+<section class="precision-section" id="risk-scaled-assurance">
+<h2>Risk-Scaled Assurance in v1.14.0</h2>
+<p><strong>The required strength of assurance must scale with consequence.</strong></p>
+<p>Risk-Scaled Assurance supports AAG and Runtime Binding within the existing architecture. It does not add an eleventh position to the operator-facing spine. Assurance is evidence, not authority: a satisfied result cannot authorize an action by itself.</p>
+<ul>
+<li>Risk-scaled validation requirements for host-designated protected actions.</li>
+<li>Declared validator roles and independence groups.</li>
+<li>Freshness and expiry checks for validation evidence.</li>
+<li>Refusal-history preservation, including explicit resolutions.</li>
+<li>Mandatory-human requirements where policy requires them.</li>
+<li>Runtime re-evaluation at the consequence boundary.</li>
+</ul>
+<p>AGS evaluates declared identity and independence metadata supplied by trusted hosts. It does not prove real-world validator independence. More validators can share the same dependencies; plurality must not be mistaken for independence. Hosts remain responsible for current identity and revocation information, policy coverage, complete history, and the final mutation boundary.</p>
+<p>See the repository <a href="https://github.com/mnbower-research/alignment-governance-stack/blob/main/CHANGELOG.md">changelog</a> and <a href="https://github.com/mnbower-research/alignment-governance-stack/blob/main/docs/RISK_SCALED_ASSURANCE.md">Risk-Scaled Assurance specification</a> for implementation details and limitations.</p>
+<p><strong>Release status:</strong> The implementation described here is released as AGS v1.14.0. Older candidate-era copies of the assurance specification describe its pre-release status; that wording does not describe the released implementation.</p>
+</section>
+
+<section class="precision-section" id="governance-invariants">
+<h2>Governance invariants</h2>
+<p>The project states these principles:</p>
+<blockquote>
+<ul>
+<li>Capability does not create authority.</li>
+<li>Persistence does not preserve authority.</li>
+<li>Information transfer does not transfer authority.</li>
+<li>Authorization is not proof of execution.</li>
+<li>Integrity is not authentication.</li>
+<li>Consensus does not create authority.</li>
+<li>Approval does not establish truth.</li>
+<li>Denial does not establish falsehood.</li>
+<li>Governance should constrain consequence without constraining truth-seeking.</li>
+<li>Authority may stop an action, but should not rewrite the epistemic record.</li>
+<li>A valid refusal must remain visible to the trajectory.</li>
+<li>The governor must also be governed.</li>
+<li>High stakes require stronger assurance, not merely more validators.</li>
+<li>Context must not outrun provenance.</li>
+<li>Availability is not admissibility.</li>
+<li>Assurance should be plural, but plurality must not be mistaken for independence.</li>
+<li>Authorization must remain valid until the final mutation-capable boundary.</li>
+<li>Preserve legitimate human agency across delegation.</li>
+</ul>
+</blockquote>
+<p>For the origin and limits of stewardship, see <a href="../about.html#origin-stewardship">Claim lineage, not control</a>.</p>
+</section>
+<section class="precision-section" id="technical-source-material">
           <h2>Technical Source Material</h2>
           <div class="phase1-link-grid">
             <article>

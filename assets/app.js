@@ -1536,6 +1536,7 @@ const SEARCH_DATA = [
   { title: "The Word: Reality Before Interpretation", url: "essay-the-word-reality-before-interpretation.html", section: "Essays", desc: "How the Word functions as a pre-interpretive structural contact.", tags: ["word", "logos", "interpretation", "reality", "scripture", "bible"] },
   { title: "Why Fruit Is Not Performance", url: "essay-fruit-not-performance-why-outward-behavior-is-not-enough.html", section: "Essays", desc: "Why outward fruit differs structurally from performance of it.", tags: ["fruit", "performance", "formation", "behavior", "bible", "virtue"] },
   { title: "Gatekept Clarity", url: "essay-gatekept-clarity.html", section: "Essays", desc: "How clarity is withheld and used as a control mechanism.", tags: ["gatekeeping", "clarity", "control", "information", "authority", "access"] },
+  { title: "Cultivated Alignment", url: "cultivated-alignment.html", section: "Current Research", desc: "Research on governed experience and preservation of rare cases, dissent, and provenance.", tags: ["cultivated alignment", "tail-preserving", "internalization", "research"] },
   // Tools & Reference
   { title: "Alignment Diagnostic Tool", url: "tools.html", section: "Tools", desc: "Interactive diagnostic for assessing alignment in a system.", tags: ["diagnostic", "tool", "assessment", "interactive", "measure"] },
   { title: "Scripture Explorer", url: "scripture-explorer.html", section: "Tools", desc: "Tool for exploring scripture through an Alignment Theory lens.", tags: ["scripture", "bible", "explorer", "tool", "search"] },

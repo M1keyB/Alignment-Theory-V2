@@ -16,6 +16,7 @@ export const strictPublicSurfaces = [
   "notes/index.html",
   "pages/human-agency-preservation-infrastructure.html",
   "pages/alignment-governance-stack.html",
+  "pages/cultivated-alignment.html",
   "projects/agent-action-gate.html",
   ...generatedAiCorpusRoutes.map((route) => `pages/${route.file}`),
 ];

@@ -911,12 +911,12 @@ const renderHub = () => {
     author: { "@type": "Person", name: author },
     publisher: { "@type": "Organization", name: publisher },
     url: `${siteUrl}/pages/ai-alignment-research.html`,
-    description: "AI alignment research from Alignment Theory: behavioral drift detection, realignment architecture, detector taxonomy, and production AI governance."
+    description: "Current AI governance research: HAPI, AGS v1.14.0, Cultivated Alignment, and preserved behavioral-drift papers."
   };
 
   const head = pageHead({
     title: "AI Alignment Research",
-    description: "AI alignment research from Alignment Theory: behavioral drift detection, realignment architecture, detector taxonomy, and production AI governance.",
+    description: "Current AI governance research: HAPI, AGS v1.14.0, Cultivated Alignment, and preserved behavioral-drift papers.",
     slug: "ai-alignment-research",
     type: "website",
     schemaType: null
@@ -934,10 +934,18 @@ const renderHub = () => {
 
   return shell(head, `
     <section class="research-hero research-hub-hero">
-      <p class="research-meta"><span class="chip">ACTIVE RESEARCH CORPUS &mdash; v1.1 | Updated April 27, 2026</span></p>
+      <p class="research-meta"><span class="chip">CURRENT RESEARCH | Updated September 27, 2026</span></p>
       <h1>AI Alignment Research</h1>
-      <p class="lead">A research program for behavioral drift detection, objective anchoring, runtime realignment, and production AI governance.</p>
-      <p>Alignment Theory treats AI alignment as an ongoing control-loop problem: define the objective, enforce constraints, monitor behavior, detect drift, route meaningful deviations to review, and re-anchor the system over time.</p>
+      <p class="lead">Research on agency-preserving governance for delegated AI, governed experience, and the limits of internalization claims.</p>
+      <p>Alignment Theory supplies the general framework. Human Agency Infrastructure (HAPI) applies it to people and institutions; the Alignment Governance Stack (AGS) applies it to delegated artificial agency.</p>
+
+<section class="research-map-section" id="current-research">
+<h2>Current Research</h2>
+<p><a href="cultivated-alignment.html">Cultivated Alignment</a> is a research hypothesis about stronger self-governance through governed experience. The research asks whether governance-consistent behavior persists as external support is progressively reduced. Model/policy internalization has not been demonstrated here.</p>
+<p><a href="cultivated-alignment.html#tail-preserving">Tail-Preserving Cultivated Alignment</a> asks whether rare cases, dissent, provenance, and minority evidence survive repeated cycles. Lower intervention rates alone do not establish successful internalization.</p>
+<p><a href="alignment-governance-stack.html#risk-scaled-assurance">AGS v1.14.0: Risk-Scaled Assurance and Independent Validation</a> strengthens evidence requirements in AAG and Runtime Binding. Assurance does not grant authority.</p>
+<p>The earlier behavioral-drift corpus and its downloads remain below as a distinct research strand; its version labels do not describe the current AGS release.</p>
+</section>
       <div class="research-callout research-callout-compact map-callout">
         <div>
           <strong>For the current theory, begin with Start Here, the Revised Framework Center, or the Current Framework Map.</strong>

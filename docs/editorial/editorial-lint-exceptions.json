@@ -2,6 +2,13 @@
   "version": 1,
   "exceptions": [
     {
+      "file": "pages/alignment-governance-stack.html",
+      "matchedEntry": "not merely",
+      "anchor": "High stakes require stronger assurance, not merely more validators.",
+      "reason": "Exact canonical AGS invariant supplied by the author, preserved as a quotation in the governance-invariants section. This exception covers only this sentence.",
+      "status": "active"
+    },
+    {
       "file": "pages/revised-framework-center-2026-05-06.html",
       "matchedEntry": "robust",
       "anchor": "how adaptive systems remain robust or become fragile depending on how their capacity-forming functions are carried",
